@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Truth Revealed – The Falcon and the Broken Wing</title>
+  <style>
+    body {
+      background-color: #f4fbf9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      line-height: 1.8;
+      direction: ltr;
+      text-align: left;
+      font-family: Arial, sans-serif;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: Tahoma, sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #16a085;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #1abc9c;
+      color: white;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #16a085;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #12876f;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="pageTitle">🕊️ The Truth Revealed</h1>
+    <h3 id="pageSubtitle" style="font-weight: normal;">A continuation of “The Falcon and the Broken Wing”</h3>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+    <div id="enText">
+      <img src="images/story8.png" alt="Falcon in flight during sunset" />
+      <p>You see, the falcon never tried to fly because it had grown too comfortable. It believed the branch was its home, its safety, its limit. Once the branch was gone, the falcon had no choice but to trust its wings.</p>
+
+      <p>But the story didn’t end there.</p>
+
+      <p>Later that year, a war broke out. The fast falcon — the king’s pride — was shot down by an enemy archer during a risky mission.</p>
+
+      <p>But the second falcon — once “broken” — flew lower, wiser, and silently delivered the most crucial messages across enemy lines. Its calm, quiet strength helped save the kingdom.</p>
+
+      <p>The king wept. He realized that greatness is not in noise or speed, but in knowing when to rise, and why.</p>
+
+      <p><strong>Moral:</strong> True greatness comes not from power alone, but from purpose, timing, and quiet courage.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story8.png" alt="باز پرنده در هنگام غروب" />
+      <p>می‌بینی، آن شاهین هرگز تلاش نکرد پرواز کند چون خیلی راحت شده بود. باور داشت شاخه خانه‌اش، امنیتش و محدودیتش است. وقتی شاخه رفت، شاهین چاره‌ای جز اعتماد به بال‌هایش نداشت.</p>
+
+      <p>اما داستان اینجا تمام نشد.</p>
+
+      <p>در ادامه همان سال، جنگی آغاز شد. شاهین سریع — غرور پادشاه — توسط یک تیرانداز دشمن در مأموریتی خطرناک سرنگون شد.</p>
+
+      <p>اما شاهین دوم — که روزی “شکسته” بود — پایین‌تر، عاقل‌تر پرواز کرد و به‌طور سکوت‌آمیز مهم‌ترین پیام‌ها را از خطوط دشمن عبور داد. قدرت آرام و ساکتش به نجات پادشاهی کمک کرد.</p>
+
+      <p>پادشاه گریست. فهمید بزرگی در سر و صدا یا سرعت نیست، بلکه در دانستن زمان و چرایی برخاستن است.</p>
+
+      <p><strong>نتیجه‌گیری:</strong> بزرگی واقعی تنها از قدرت نمی‌آید، بلکه از هدف، زمان‌بندی و شجاعت آرام سرچشمه می‌گیرد.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      const pageSubtitle = document.getElementById('pageSubtitle');
+
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = '🕊️ حقیقت آشکار شد';
+        pageSubtitle.textContent = 'ادامه‌ی داستان «شاهین و بال شکسته»';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = '🕊️ The Truth Revealed';
+        pageSubtitle.textContent = 'A continuation of “The Falcon and the Broken Wing”';
+      }
+    }
+  </script>
+
+</body>
+</html>

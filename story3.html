@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Farmer and the Golden Eggs</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      direction: ltr;
+      text-align: left;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Tahoma', sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+      position: relative;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #1f6391;
+    }
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+
+  <header>
+    <h1 id="pageTitle">The Farmer and the Golden Eggs</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+
+    <div id="enText">
+      <img src="images/story3.png" alt="The Farmer and the Golden Eggs" />
+      <p>A poor farmer once had a goose that laid a golden egg every morning. At first, he couldn’t believe it. He took the egg to town and sold it for a large sum of money. The next day, another golden egg appeared. This continued every day, and soon the farmer became very wealthy.</p>
+
+      <p>However, as the money piled up, greed started growing in his heart. He thought, “Why should I wait for one egg each day? The goose must have a lot of gold inside. If I cut it open, I can get all the gold at once!”</p>
+
+      <p>Blinded by greed, the farmer took a knife and killed the goose. But when he opened it, there was no gold inside—just a regular goose. He had destroyed the very thing that brought him fortune.</p>
+
+      <p>From that day on, the farmer was filled with regret. He had nothing left—not even a goose to lay eggs.</p>
+
+      <p><strong>Moral:</strong> Greed can destroy what you already have. Patience brings more rewards than rushing for more.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story3.png" alt="کشاورز و تخم‌های طلایی" />
+      <p>روزی روزگاری یک کشاورز فقیر داشت که هر صبح یک غاز داشت که یک تخم طلایی می‌گذاشت. اولش نمی‌توانست باور کند. تخم را به شهر برد و با قیمت زیادی فروخت. روز بعد، یک تخم طلایی دیگر ظاهر شد. این کار هر روز ادامه داشت و کم‌کم کشاورز خیلی ثروتمند شد.</p>
+
+      <p>اما وقتی پول‌ها زیاد شد، طمع در دلش رشد کرد. فکر کرد: «چرا باید هر روز منتظر یک تخم باشم؟ حتماً داخل غاز مقدار زیادی طلا است. اگر آن را ببُرم، می‌توانم همه طلا را یک‌جا بردارم!»</p>
+
+      <p>کور از طمع، کشاورز چاقویی برداشت و غاز را کشت. اما وقتی آن را باز کرد، هیچ طلایی نبود — فقط یک غاز معمولی. او همان چیزی را که برایش ثروت آورده بود نابود کرد.</p>
+
+      <p>از آن روز به بعد، کشاورز پر از پشیمانی شد. دیگر چیزی نداشت — حتی غازی برای گذاشتن تخم.</p>
+
+      <p><strong>نتیجه‌گیری:</strong> طمع می‌تواند آنچه را که داری نابود کند. صبر بیشتر از عجله برای بیشتر آوردن پاداش دارد.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'کشاورز و تخم‌های طلایی';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'The Farmer and the Golden Eggs';
+      }
+    }
+  </script>
+
+</body>
+</html>

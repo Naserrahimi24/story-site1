@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mulla Nasruddin Buys a Donkey – A Humorous and Wise Tale</title>
+  <style>
+    body {
+      background-color: #f4fbf9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      line-height: 1.8;
+      direction: ltr;
+      text-align: left;
+      font-family: Arial, sans-serif;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: Tahoma, sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #16a085;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #1abc9c;
+      color: white;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #16a085;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #12876f;
+    }
+    blockquote {
+      background-color:#eef7f5;
+      padding:15px;
+      border-left:4px solid #1abc9c;
+      font-style: italic;
+      margin: 15px 0;
+    }
+    blockquote.dark {
+      background-color:#333;
+      color:white;
+      padding:20px;
+      border-radius:8px;
+      text-align:center;
+      font-weight:bold;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="pageTitle">Mulla Nasruddin Buys a Donkey</h1>
+    <h3 id="pageSubtitle" style="font-weight: normal;">A humorous and wise tale of Mulla Nasruddin</h3>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+    <div id="enText">
+      <img src="images/story11.png" alt="Mulla Nasruddin and a donkey" />
+      <p>One day, Mulla Nasruddin went to the market to buy a donkey. After hours of bargaining, he finally bought one and began leading it home. On the way, a man offered to buy the donkey for double the price.</p>
+
+      <p>Mulla agreed and sold it. But with that money, he went right back and bought another donkey. Then he sold that one too—for more.</p>
+
+      <p>This happened three more times in one day.</p>
+
+      <p>By sunset, he came home without a donkey, but with gold in his pockets.</p>
+
+      <p>His wife scolded him,</p>
+
+      <blockquote>“What foolishness is this? You went to buy a donkey, and now we have none!”</blockquote>
+
+      <p>Nasruddin said calmly,</p>
+
+      <blockquote>“Wrong. I bought five donkeys today. It’s not my fault they refused to stay.”</blockquote>
+
+      <p>She asked,</p>
+
+      <blockquote>“And what will you do tomorrow?”</blockquote>
+
+      <p>He smiled,</p>
+
+      <blockquote>“Rest. For today, I rode the donkey of opportunity, and it carried me far.”</blockquote>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story11.png" alt="ملا نصرالدین و الاغ" />
+      <p>روزی ملا نصرالدین به بازار رفت تا الاغی بخرد. بعد از ساعتها چانه‌زنی، بالاخره یکی خرید و شروع کرد به بردن آن به خانه. در راه، مردی پیشنهاد داد الاغ را دو برابر قیمت بخرد.</p>
+
+      <p>ملا قبول کرد و فروخت. اما با آن پول، دوباره برگشت و الاغ دیگری خرید. سپس آن را هم فروخت — با قیمت بالاتر.</p>
+
+      <p>این اتفاق سه بار دیگر در همان روز تکرار شد.</p>
+
+      <p>تا غروب، بدون الاغ به خانه آمد، اما جیبش پر از طلا بود.</p>
+
+      <p>زنش او را سرزنش کرد،</p>
+
+      <blockquote>«این چه احمقانه بازی است؟ تو رفتی الاغ بخری، و حالا هیچ الاغی نداریم!»</blockquote>
+
+      <p>نصرالدین آرام گفت،</p>
+
+      <blockquote>«اشتباه می‌کنی. من امروز پنج الاغ خریدم. تقصیر من نیست که آنها نخواستند بمانند.»</blockquote>
+
+      <p>زن پرسید،</p>
+
+      <blockquote>«فردا چه خواهی کرد؟»</blockquote>
+
+      <p>او لبخند زد،</p>
+
+      <blockquote>«استراحت. امروز من سوار الاغ فرصت شدم و او مرا به دورها برد.»</blockquote>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      const pageSubtitle = document.getElementById('pageSubtitle');
+
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'ملا نصرالدین الاغی می‌خرد';
+        pageSubtitle.textContent = 'داستانی طنزآمیز و پندآموز از ملا نصرالدین';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'Mulla Nasruddin Buys a Donkey';
+        pageSubtitle.textContent = 'A humorous and wise tale of Mulla Nasruddin';
+      }
+    }
+  </script>
+
+</body>
+</html>

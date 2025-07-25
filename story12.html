@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Behlul and the Man with a Sack of Gold</title>
+  <style>
+    body {
+      background-color: #f4fbf9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      line-height: 1.8;
+      direction: ltr;
+      text-align: left;
+      font-family: Arial, sans-serif;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: Tahoma, sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #16a085;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #1abc9c;
+      color: white;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #16a085;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #12876f;
+    }
+    blockquote {
+      background-color:#eef7f5;
+      padding:15px;
+      border-left:4px solid #1abc9c;
+      font-style: italic;
+      margin: 15px 0;
+    }
+    blockquote.dark {
+      background-color:#333;
+      color:white;
+      padding:20px;
+      border-radius:8px;
+      text-align:center;
+      font-weight:bold;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="pageTitle">Behlul and the Man with a Sack of Gold</h1>
+    <h3 id="pageSubtitle" style="font-weight: normal;">A parable of true wealth</h3>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+    <div id="enText">
+      <img src="images/story12.png" alt="Behlul and the merchant" />
+      <p>A rich merchant once ran to Behlul in the streets of Baghdad.</p>
+
+      <blockquote>“O madman! My gold is gone. I buried it under a tree and now it’s missing!”</blockquote>
+
+      <p>Behlul calmly said,</p>
+
+      <blockquote>“Go bury your worries in the same hole.”</blockquote>
+
+      <p>The man shouted,</p>
+
+      <blockquote>“You mock me! I’ve lost everything!”</blockquote>
+
+      <p>Behlul then asked,</p>
+
+      <blockquote>“Was your wealth with you yesterday?”</blockquote>
+
+      <p>“Yes!” cried the man.</p>
+
+      <blockquote>“And today it’s gone?” Behlul asked.</blockquote>
+
+      <p>“Yes,” the man sobbed.</p>
+
+      <p>Behlul pointed to the sky,</p>
+
+      <blockquote>“Then it wasn’t truly yours. If it could leave you without saying goodbye, it was just visiting.”</blockquote>
+
+      <p>The merchant stood silent. Behlul smiled,</p>
+
+      <blockquote>“True wealth is what stays when the gold walks away.”</blockquote>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story12.png" alt="بهلول و تاجر" />
+      <p>روزی تاجری ثروتمند در خیابان‌های بغداد به سوی بهلول دوید.</p>
+
+      <blockquote>«ای دیوانه! طلای من رفته است. آن را زیر درختی دفن کردم و حالا گم شده!»</blockquote>
+
+      <p>بهلول آرام گفت،</p>
+
+      <blockquote>«برو نگرانی‌هایت را در همان چاله دفن کن.»</blockquote>
+
+      <p>مرد فریاد زد،</p>
+
+      <blockquote>«تو مرا مسخره می‌کنی! من همه چیز را از دست داده‌ام!»</blockquote>
+
+      <p>بهلول سپس پرسید،</p>
+
+      <blockquote>«دیروز ثروتت پیشت بود؟»</blockquote>
+
+      <p>«بله!» مرد گریه‌کنان جواب داد.</p>
+
+      <blockquote>«و امروز رفته؟» بهلول پرسید.</blockquote>
+
+      <p>«بله،» مرد زارزار گریست.</p>
+
+      <p>بهلول به آسمان اشاره کرد،</p>
+
+      <blockquote>«پس واقعاً مال تو نبود. اگر بدون خداحافظی می‌تواند تو را ترک کند، فقط مهمان بوده.»</blockquote>
+
+      <p>تاجر ساکت ماند. بهلول لبخند زد،</p>
+
+      <blockquote>«ثروت واقعی چیزی است که وقتی طلا رفت، می‌ماند.»</blockquote>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      const pageSubtitle = document.getElementById('pageSubtitle');
+
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'بهلول و مرد کیسه‌طلایی';
+        pageSubtitle.textContent = 'مثالی از ثروت واقعی';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'Behlul and the Man with a Sack of Gold';
+        pageSubtitle.textContent = 'A parable of true wealth';
+      }
+    }
+  </script>
+
+</body>
+</html>

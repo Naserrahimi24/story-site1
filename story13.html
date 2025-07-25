@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mulla Nasruddin and the Judge</title>
+  <style>
+    body {
+      background-color: #f4fbf9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      line-height: 1.8;
+      direction: ltr;
+      text-align: left;
+      font-family: Arial, sans-serif;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: Tahoma, sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #16a085;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #1abc9c;
+      color: white;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #16a085;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #12876f;
+    }
+    blockquote {
+      background-color:#eef7f5;
+      padding:15px;
+      border-left:4px solid #1abc9c;
+      font-style: italic;
+      margin: 15px 0;
+    }
+    blockquote.dark {
+      background-color:#333;
+      color:white;
+      padding:20px;
+      border-radius:8px;
+      text-align:center;
+      font-weight:bold;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="pageTitle">Mulla Nasruddin and the Judge</h1>
+    <h3 id="pageSubtitle" style="font-weight: normal;">A humorous and wise tale</h3>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+    <div id="enText">
+      <img src="images/story13.png" alt="Mulla Nasruddin in court" />
+      <p>One day, Mulla Nasruddin was taken to court for not paying a tailor. The judge asked,</p>
+
+      <blockquote>“Mulla, did you take the coat and not pay for it?”</blockquote>
+
+      <p>Mulla said,</p>
+
+      <blockquote>“Your honor, I took the coat, yes. But I wore it for one day only. Then I returned it—mentally.”</blockquote>
+
+      <p>The judge blinked.</p>
+
+      <blockquote>“Returned it… mentally?”</blockquote>
+
+      <p>“Yes,” said Nasruddin. “In my heart, I gave it back. Surely you believe in intention?”</p>
+
+      <p>The courtroom laughed.</p>
+
+      <p>The judge sighed,</p>
+
+      <blockquote>“And how should I punish you?”</blockquote>
+
+      <p>Nasruddin smiled,</p>
+
+      <blockquote>“Punish me in your heart.”</blockquote>
+
+      <p>The judge could not stop laughing and let him go—but made him promise never to borrow clothing ‘mentally’ again.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story13.png" alt="ملا نصرالدین در دادگاه" />
+      <p>روزی ملا نصرالدین به خاطر نپرداختن به خیاط به دادگاه برده شد. قاضی پرسید،</p>
+
+      <blockquote>«ملا، آیا کت را گرفتی و پولش را ندادی؟»</blockquote>
+
+      <p>ملا گفت،</p>
+
+      <blockquote>«حضرت قاضی، بله کت را گرفتم. اما فقط یک روز پوشیدم. سپس آن را — ذهنی — پس دادم.»</blockquote>
+
+      <p>قاضی متعجب شد.</p>
+
+      <blockquote>«ذهنی پس دادی؟»</blockquote>
+
+      <p>«بله،» نصرالدین گفت. «در قلبم آن را پس دادم. حتماً به نیت اعتقاد داری؟»</p>
+
+      <p>دادگاه خندید.</p>
+
+      <p>قاضی آه کشید،</p>
+
+      <blockquote>«پس چگونه باید تو را مجازات کنم؟»</blockquote>
+
+      <p>ملا لبخند زد،</p>
+
+      <blockquote>«در قلبت مجازات کن.»</blockquote>
+
+      <p>قاضی نتوانست جلوی خنده‌اش را بگیرد و او را آزاد کرد — اما از او قول گرفت که دیگر هرگز لباس را «ذهنی» قرض نگیرد.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      const pageSubtitle = document.getElementById('pageSubtitle');
+
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'ملا نصرالدین و قاضی';
+        pageSubtitle.textContent = 'داستانی طنز و حکیمانه';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'Mulla Nasruddin and the Judge';
+        pageSubtitle.textContent = 'A humorous and wise tale';
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Wise Man and the Complainer</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      direction: ltr;
+      text-align: left;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Tahoma', sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+      position: relative;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #1f6391;
+    }
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+
+  <header>
+    <h1 id="pageTitle">The Wise Man and the Complainer</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+
+    <div id="enText">
+      <img src="images/story1.png" alt="The Wise Man and the Complainer" />
+      <p>There was once a wise man who lived in a small village. People from all over would come to him for advice, because they knew he always spoke with deep wisdom and kindness. One day, a man started visiting the wise man daily. Every single day, he would come and complain about the same things: how unfair life was, how people mistreated him, how nothing seemed to go his way.</p>
+      
+      <p>The wise man listened patiently every time, never interrupting. But after many days of hearing the same complaints, he decided to teach the man a lesson.</p>
+      
+      <p>He gathered the villagers one morning and told a funny joke. Everyone burst into laughter. A few minutes later, he told the exact same joke again. This time, only a few people chuckled. Then he told the same joke a third time. Now, no one laughed. People just looked at him, confused.</p>
+      
+      <p>Then the wise man smiled and said, “You can’t laugh at the same joke again and again, so why do you cry over the same problem again and again?”</p>
+      
+      <p>The complaining man understood. He realized that repeating the same complaints won’t solve anything—action was needed.</p>
+      
+      <p><strong>Moral:</strong> Complaining does nothing. Change comes through action.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story1.png" alt="مرد دانا و شکایت‌کننده" />
+      <p>روزی روزگاری مرد دانایی در یک روستای کوچک زندگی می‌کرد. مردم از همه جا برای گرفتن نصیحت به او مراجعه می‌کردند، چون می‌دانستند همیشه با حکمت و مهربانی سخن می‌گوید. روزی مردی شروع به دیدار روزانه از مرد دانا کرد. هر روز، درباره‌ی همان چیزها شکایت می‌کرد: چقدر زندگی ناعادلانه است، مردم چگونه با او بدرفتاری می‌کنند و هیچ چیزی به نفعش پیش نمی‌رود.</p>
+      
+      <p>مرد دانا هر بار با صبر گوش می‌داد و هیچ‌گاه حرف او را قطع نمی‌کرد. اما بعد از چند روز شنیدن همان شکایات، تصمیم گرفت به او درسی بدهد.</p>
+      
+      <p>روزی صبح مردم روستا را جمع کرد و یک جوک خنده‌دار تعریف کرد. همه با خنده منفجر شدند. چند دقیقه بعد همان جوک را دوباره تعریف کرد. این بار فقط چند نفر خندیدند. سپس همان جوک را بار سوم تعریف کرد. این بار هیچ‌کس نخندید و مردم با تعجب به او نگاه کردند.</p>
+      
+      <p>مرد دانا لبخند زد و گفت: «نمی‌توانی بارها و بارها به یک جوک بخندی، پس چرا بارها و بارها به یک مشکل گریه می‌کنی؟»</p>
+      
+      <p>مرد شکایت‌کننده متوجه شد که تکرار شکایات چیزی را حل نمی‌کند—باید عمل کرد.</p>
+      
+      <p><strong>نتیجه‌گیری:</strong> شکایت کردن هیچ کاری نمی‌کند. تغییر از طریق عمل است.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'مرد دانا و شکایت‌کننده';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'The Wise Man and the Complainer';
+      }
+    }
+  </script>
+
+</body>
+</html>

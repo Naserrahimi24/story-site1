@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Elias’s Journey</title>
+  <style>
+    body {
+      background-color: #f0f4f8;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      line-height: 1.8;
+      direction: ltr;
+      text-align: left;
+      font-family: Arial, sans-serif;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: Tahoma, sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #e67e22;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #d35400;
+      color: white;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #e67e22;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #b54d00;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="pageTitle">⛰️ Elias’s Journey</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+    <div id="enText">
+      <img src="images/story7.png" alt="Elias climbing the mountain" />
+      <p>Elias struggled with every step. The trail was muddy, rocks cut his feet, and brambles scratched his arms. He often wanted to turn back, but he kept going.</p>
+
+      <p>Along the way, he met animals in need — a trapped bird, an injured deer — and helped them, though it slowed him down. He met an old woman who had lost her way, and carried her on his back to her home in a hidden valley. Each challenge taught him patience, empathy, and strength.</p>
+
+      <p>Finally, after many weeks, Elias reached the summit. But there was no temple, no wise man waiting — only a stone bench and a clear view of the world below. Confused, he sat in silence.</p>
+
+      <p>As the wind whispered through the trees, he suddenly understood: the wisdom wasn’t at the top — it had grown inside him during the journey. The mountain had taught him through hardship, kindness, and perseverance.</p>
+
+      <p>He smiled, not because he had found the hermit, but because he no longer needed to.</p>
+
+      <p><strong>Moral:</strong> True wisdom comes from the journey, not the destination.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story7.png" alt="الیاس در حال کوهنوردی" />
+      <p>الیاس با هر قدم مبارزه می‌کرد. مسیر گل‌آلود بود، سنگ‌ها پایش را می‌بریدند و خارها به بازوانش خراش می‌انداختند. اغلب می‌خواست برگردد، اما ادامه داد.</p>
+
+      <p>در مسیر، با حیوانات نیازمندی برخورد کرد — پرنده‌ای گرفتار، آهویی زخمی — و به آن‌ها کمک کرد، اگرچه این کار او را کند می‌کرد. زنی سالخورده را دید که راهش را گم کرده بود و او را بر پشت خود به خانه‌اش در دره‌ای مخفی رساند. هر چالشی به او صبر، همدلی و قدرت آموخت.</p>
+
+      <p>بالاخره، پس از هفته‌ها، الیاس به قله رسید. اما معبدی نبود، مرد دانایی منتظرش نبود — فقط نیمکتی سنگی و نمای روشنی از دنیای پایین بود. گیج و مبهوت نشست و سکوت کرد.</p>
+
+      <p>وقتی باد از میان درختان وزید، ناگهان فهمید: حکمت در قله نبود — بلکه درون خود او در طول سفر رشد کرده بود. کوه از طریق سختی، مهربانی و استقامت به او درس داده بود.</p>
+
+      <p>او لبخند زد، نه به خاطر اینکه راهب را یافته بود، بلکه چون دیگر نیازی به آن نداشت.</p>
+
+      <p><strong>نتیجه‌گیری:</strong> حکمت واقعی از سفر می‌آید، نه مقصد.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = '⛰️ سفر الیاس';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = '⛰️ Elias’s Journey';
+      }
+    }
+  </script>
+
+</body>
+</html>

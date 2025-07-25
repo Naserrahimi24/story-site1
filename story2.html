@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Donkey in the Lion's Skin</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      direction: ltr;
+      text-align: left;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Tahoma', sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+      position: relative;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #1f6391;
+    }
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+
+  <header>
+    <h1 id="pageTitle">The Donkey in the Lion's Skin</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+
+    <div id="enText">
+      <img src="images/story2.png" alt="The Donkey in the Lion's Skin" />
+      <p>Once upon a time, a foolish donkey was wandering in the jungle when he found a lion's skin lying under a tree. The lion must have died, and his skin was left behind by hunters. The donkey thought, “If I wear this skin, I’ll look just like a lion. Everyone will be afraid of me!”</p>
+      
+      <p>He put the skin on and started walking around proudly. As he passed by animals in the forest—deer, monkeys, even wolves—they all ran away in fear. The donkey was thrilled. He thought, “I’m powerful now. I can scare anyone I want!”</p>
+      
+      <p>Later that day, he saw a group of foxes. Wanting to scare them too, he came closer. But he got so excited that he forgot himself and let out a loud bray:<br>
+      “Hee-haw! Hee-haw!”</p>
+      
+      <p>The foxes stopped and looked at him. One of them said,<br>
+      “If you had kept quiet, we would have thought you were a lion. But your voice gave you away.”</p>
+      
+      <p>The donkey realized his mistake too late.</p>
+      
+      <p><strong>Moral:</strong> You can pretend to be someone else, but your true nature will always reveal itself—especially through your words.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story2.png" alt="الاغ در پوست شیر" />
+      <p>روزی روزگاری، یک الاغ احمق در جنگل پرسه می‌زد که پوست شیری را زیر درختی پیدا کرد. حتماً شیر مرده بود و شکارچیان پوستش را رها کرده بودند. الاغ فکر کرد: «اگر این پوست را بپوشم، شبیه شیر می‌شوم. همه از من می‌ترسند!»</p>
+      
+      <p>پوست را پوشید و با افتخار شروع به راه رفتن کرد. وقتی از کنار حیوانات جنگل — مانند آهو، میمون‌ها و حتی گرگ‌ها — عبور می‌کرد، همه از ترس فرار کردند. الاغ خیلی خوشحال شد و فکر کرد: «حالا قدرتمند شده‌ام. می‌توانم هر کسی را که بخواهم بترسانم!»</p>
+      
+      <p>بعدتر همان روز، گروهی روباه دید. خواست آنها را هم بترساند، به آنها نزدیک شد. اما آن‌قدر هیجان زده شد که خودش را فراموش کرد و صدای بلند عرعر داد:<br>
+      «عی‌عی! عی‌عی!»</p>
+      
+      <p>روباه‌ها ایستادند و به او نگاه کردند. یکی از آنها گفت:<br>
+      «اگر ساکت می‌ماندی، فکر می‌کردیم که شیر هستی. اما صدایت تو را لو داد.»</p>
+      
+      <p>الاغ خیلی دیر اشتباهش را فهمید.</p>
+      
+      <p><strong>نتیجه‌گیری:</strong> می‌توانی وانمود کنی کسی هستی، اما طبیعت واقعی‌ات همیشه به‌خصوص از طریق حرف‌هایت آشکار می‌شود.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'الاغ در پوست شیر';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = "The Donkey in the Lion's Skin";
+      }
+    }
+  </script>
+
+</body>
+</html>

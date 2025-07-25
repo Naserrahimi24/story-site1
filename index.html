@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>English Moral Stories</title>
+  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+<title>داستان‌های پندآموز | Moral Stories</title>
+<meta name="description" content="مجموعه‌ای از داستان‌های پندآموز به زبان فارسی و انگلیسی برای آموزش ارزش‌ها و اخلاقیات.">
+<meta name="keywords" content="داستان پندآموز, moral stories, داستان‌های آموزشی, داستان‌های کوتاه, Persian moral stories, English moral stories">
+<meta name="author" content="نام شما یا نام سایت">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+
+</head>
+<body>
+
+  <header>
+    <h1 id="main-title">English Moral Stories</h1>
+    <p id="subtitle">Short stories with valuable life lessons</p>
+    <button onclick="toggleLanguage()" style="margin-top: 10px;">🌐 تغییر زبان / Switch Language</button>
+  </header>
+
+  <nav>
+    <table>
+      <tr>
+        <td><a id="nav-home" href="#">Home</a></td>
+        <td><a id="nav-stories" href="#stories">Stories</a></td>
+        <td><a id="nav-contact" href="mailto:nasrrahimi24@gmail.com">Contact Us</a></td>
+        <td><a id="nav-support" href="#">Support</a></td>
+      </tr>
+    </table>
+  </nav>
+
+  <div class="controls">
+    <input type="text" id="searchBox" placeholder="🔍 Search stories..." />
+    <button onclick="toggleDarkMode()">🌓 Toggle Dark Mode</button>
+  </div>
+
+  <main id="stories">
+
+    <!-- 16 داستان به ترتیب -->
+    <!-- ساختار بخش کارت داستان برای هر کدام -->
+    
+    <section class="story-card" data-index="0">
+      <a href="story1.html">
+        <img src="images/story1.png" alt="The Wise Man and the Complainer" />
+        <h2 class="story-title">The Wise Man and the Complainer</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> A man keeps complaining to a wise elder. The elder shows him the foolishness of repeating the same complaint without action.<br>
+        <strong>Theme:</strong> Act instead of complain.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+    <section class="story-card" data-index="1">
+      <a href="story2.html">
+        <img src="images/story2.png" alt="The Donkey in the Lion's Skin" />
+        <h2 class="story-title">The Donkey in the Lion's Skin</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> A donkey wears a lion's skin and fools others until he brays and reveals the truth.<br>
+        <strong>Theme:</strong> Pretending will always be exposed.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+    <section class="story-card" data-index="2">
+      <a href="story3.html">
+        <img src="images/story3.png" alt="The Farmer and the Golden Eggs" />
+        <h2 class="story-title">The Farmer and the Golden Eggs</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> A farmer kills his goose that lays golden eggs hoping to get rich faster, but loses everything.<br>
+        <strong>Theme:</strong> Greed leads to loss.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+    <section class="story-card" data-index="3">
+      <a href="story4.html">
+        <img src="images/story4.png" alt="The Falcon and the Broken Wing" />
+        <h2 class="story-title">The Falcon and the Broken Wing</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> One falcon soared, the other refused to fly — and no one knew why. Sometimes silence hides strength.<br>
+        <strong>Theme:</strong> True value may be hidden behind silence or pain.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+    <section class="story-card" data-index="4">
+      <a href="story5.html">
+        <img src="images/story5.png" alt="The Mountain, the River, and the Two Travelers" />
+        <h2 class="story-title">The Mountain, the River, and the Two Travelers</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> Two travelers take different paths up a mountain and learn that peace comes from the journey, not the ease of the way.<br>
+        <strong>Theme:</strong> The journey teaches more than the destination.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+    <section class="story-card" data-index="5">
+      <a href="story6.html">
+        <img src="images/story6.png" alt="Aaron’s Journey" />
+        <h2 class="story-title">Aaron’s Journey</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> Aaron took the easy river path but got lost because it never led to the mountain’s peak.<br>
+        <strong>Theme:</strong> Easy choices may not lead to meaningful outcomes.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+    <section class="story-card" data-index="6">
+      <a href="story7.html">
+        <img src="images/story7.png" alt="Elias’s Journey" />
+        <h2 class="story-title">Elias’s Journey</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> Elias chose the hard path and gained wisdom through his challenges and kindness.<br>
+        <strong>Theme:</strong> Growth comes through struggle and compassion.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+    <section class="story-card" data-index="7">
+      <a href="story8.html">
+        <img src="images/story8.png" alt="The Truth Revealed" />
+        <h2 class="story-title">The Truth Revealed</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> The quiet falcon flew when it mattered most — proving that true strength is silent and purposeful.<br>
+        <strong>Theme:</strong> Quiet strength is often the greatest.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+    <section class="story-card" data-index="8">
+      <a href="story9.html">
+        <img src="images/story9.png" alt="Saadi and the King’s Mirror" />
+        <h2 class="story-title">Saadi and the King’s Mirror</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> Saadi told a vain king that mirrors reveal flaws, not just beauty. The king kept one mirror, reminding himself it teaches, not flatters.<br>
+        <strong>Theme:</strong> Truth reflects our flaws to help us grow.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+    <!-- اضافه شدن داستان‌های 10 تا 15 -->
+    <section class="story-card" data-index="9">
+      <a href="story10.html">
+        <img src="images/story10.png" alt="Behlul and the Marble Palace" />
+        <h2 class="story-title">Behlul and the Marble Palace</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> Behlul shatters the pride of the caliph and his marble palace with a bitter phrase about the fleeting nature of life.<br>
+        <strong>Theme:</strong> Critique of pride and the world's impermanence.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+    <section class="story-card" data-index="10">
+      <a href="story11.html">
+        <img src="images/story11.png" alt="Mulla Nasruddin Buys a Donkey" />
+        <h2 class="story-title">Mulla Nasruddin Buys a Donkey</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> Mulla Nasruddin buys and sells the same donkey multiple times in one day, returning home rich without ever owning it.<br>
+        <strong>Theme:</strong> Cleverness in opportunism.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+    <section class="story-card" data-index="11">
+      <a href="story12.html">
+        <img src="images/story12.png" alt="Behlul and the Man with a Sack of Gold" />
+        <h2 class="story-title">Behlul and the Man with a Sack of Gold</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> Behlul teaches a merchant who lost his gold that true wealth is what stays with us, not what suddenly disappears.<br>
+        <strong>Theme:</strong> The concept of real possession.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+    <section class="story-card" data-index="12">
+      <a href="story13.html">
+        <img src="images/story13.png" alt="Mulla Nasruddin and the Judge" />
+        <h2 class="story-title">Mulla Nasruddin and the Judge</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> Mulla Nasruddin escapes punishment by humorously claiming to "return a coat mentally" to the judge.<br>
+        <strong>Theme:</strong> Humor and wit in justice.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+    <section class="story-card" data-index="13">
+      <a href="story14.html">
+        <img src="images/story14.png" alt="The Fire and the Clay" />
+        <h2 class="story-title">The Fire and the Clay</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> Fire mocks clay, but learns clay’s humble service to humanity is lasting and valuable.<br>
+        <strong>Theme:</strong> Humility in true service.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+    <section class="story-card" data-index="14">
+      <a href="story15.html">
+        <img src="images/story15.png" alt="The Three Doors of Speech" />
+        <h2 class="story-title">The Three Doors of Speech</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> A young man learns that every speech must pass through three gates: truth, necessity, and kindness—or better remain silent.<br>
+        <strong>Theme:</strong> Wisdom in speech.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+    <section class="story-card" data-index="15">
+      <a href="story16.html">
+        <img src="images/story16.png" alt="The Silent Sage" />
+        <h2 class="story-title">The Silent Sage</h2>
+      </a>
+      <p class="story-summary">
+        <strong>Summary:</strong> A sage teaches that silence sometimes speaks louder than words, bringing clarity and peace.<br>
+        <strong>Theme:</strong> Power of silence.
+      </p>
+      <div class="like-container">
+        <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+        <span class="like-count">0</span>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // Like button toggle
+    function toggleLike(button) {
+      const countSpan = button.nextElementSibling;
+      let count = parseInt(countSpan.textContent);
+      if(button.classList.contains('liked')) {
+        count--;
+        button.classList.remove('liked');
+        button.textContent = '👍 Like';
+      } else {
+        count++;
+        button.classList.add('liked');
+        button.textContent = '❤️ Liked';
+      }
+      countSpan.textContent = count;
+    }
+
+    // Dark mode toggle
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    // Language toggle English/Persian
+    let isEnglish = true;
+    function toggleLanguage() {
+      const titles = document.querySelectorAll('.story-title');
+      const summaries = document.querySelectorAll('.story-summary');
+
+      const englishTitles = [
+        "The Wise Man and the Complainer",
+        "The Donkey in the Lion's Skin",
+        "The Farmer and the Golden Eggs",
+        "The Falcon and the Broken Wing",
+        "The Mountain, the River, and the Two Travelers",
+        "Aaron’s Journey",
+        "Elias’s Journey",
+        "The Truth Revealed",
+        "Saadi and the King’s Mirror",
+        "Behlul and the Marble Palace",
+        "Mulla Nasruddin Buys a Donkey",
+        "Behlul and the Man with a Sack of Gold",
+        "Mulla Nasruddin and the Judge",
+        "The Fire and the Clay",
+        "The Three Doors of Speech",
+        "The Silent Sage"
+      ];
+
+      const englishSummaries = [
+        "<strong>Summary:</strong> A man keeps complaining to a wise elder. The elder shows him the foolishness of repeating the same complaint without action.<br><strong>Theme:</strong> Act instead of complain.",
+        "<strong>Summary:</strong> A donkey wears a lion's skin and fools others until he brays and reveals the truth.<br><strong>Theme:</strong> Pretending will always be exposed.",
+        "<strong>Summary:</strong> A farmer kills his goose that lays golden eggs hoping to get rich faster, but loses everything.<br><strong>Theme:</strong> Greed leads to loss.",
+        "<strong>Summary:</strong> One falcon soared, the other refused to fly — and no one knew why. Sometimes silence hides strength.<br><strong>Theme:</strong> True value may be hidden behind silence or pain.",
+        "<strong>Summary:</strong> Two travelers take different paths up a mountain and learn that peace comes from the journey, not the ease of the way.<br><strong>Theme:</strong> The journey teaches more than the destination.",
+        "<strong>Summary:</strong> Aaron took the easy river path but got lost because it never led to the mountain’s peak.<br><strong>Theme:</strong> Easy choices may not lead to meaningful outcomes.",
+        "<strong>Summary:</strong> Elias chose the hard path and gained wisdom through his challenges and kindness.<br><strong>Theme:</strong> Growth comes through struggle and compassion.",
+        "<strong>Summary:</strong> The quiet falcon flew when it mattered most — proving that true strength is silent and purposeful.<br><strong>Theme:</strong> Quiet strength is often the greatest.",
+        "<strong>Summary:</strong> Saadi told a vain king that mirrors reveal flaws, not just beauty. The king kept one mirror, reminding himself it teaches, not flatters.<br><strong>Theme:</strong> Truth reflects our flaws to help us grow.",
+        "<strong>Summary:</strong> Behlul shatters the pride of the caliph and his marble palace with a bitter phrase about the fleeting nature of life.<br><strong>Theme:</strong> Critique of pride and the world's impermanence.",
+        "<strong>Summary:</strong> Mulla Nasruddin buys and sells the same donkey multiple times in one day, returning home rich without ever owning it.<br><strong>Theme:</strong> Cleverness in opportunism.",
+        "<strong>Summary:</strong> Behlul teaches a merchant who lost his gold that true wealth is what stays with us, not what suddenly disappears.<br><strong>Theme:</strong> The concept of real possession.",
+        "<strong>Summary:</strong> Mulla Nasruddin escapes punishment by humorously claiming to \"return a coat mentally\" to the judge.<br><strong>Theme:</strong> Humor and wit in justice.",
+        "<strong>Summary:</strong> Fire mocks clay, but learns clay’s humble service to humanity is lasting and valuable.<br><strong>Theme:</strong> Humility in true service.",
+        "<strong>Summary:</strong> A young man learns that every speech must pass through three gates: truth, necessity, and kindness—or better remain silent.<br><strong>Theme:</strong> Wisdom in speech.",
+        "<strong>Summary:</strong> A sage teaches that silence sometimes speaks louder than words, bringing clarity and peace.<br><strong>Theme:</strong> Power of silence."
+      ];
+
+      const persianTitles = [
+        "مرد دانا و شاکی",
+        "خر در پوست شیر",
+        "کشاورز و تخم مرغ‌های طلایی",
+        "باز شکسته و شاهین",
+        "کوه، رود و دو مسافر",
+        "سفر آرون",
+        "سفر الیاس",
+        "حقیقت آشکار شده",
+        "سعدی و آینه پادشاه",
+        "بهلول و قصر مرمری",
+        "ملا نصرالدین خر می‌خرد",
+        "بهلول و مرد با کیسه طلا",
+        "ملا نصرالدین و قاضی",
+        "آتش و گل",
+        "سه دروازه گفتار",
+        "حکیم خاموش"
+      ];
+
+      const persianSummaries = [
+        "<strong>خلاصه:</strong> مردی مرتب به یک پیر دانا شکایت می‌کند. پیر به او نشان می‌دهد که تکرار شکایت بدون عمل بی‌فایده است.<br><strong>موضوع:</strong> عمل کن، نه شکایت.",
+        "<strong>خلاصه:</strong> خر پوست شیر به تن می‌کند و دیگران را فریب می‌دهد تا زمانی که با نعره‌اش حقیقت را آشکار می‌کند.<br><strong>موضوع:</strong> تظاهر همیشه آشکار می‌شود.",
+        "<strong>خلاصه:</strong> کشاورز غاز تخم‌گذار طلایی‌اش را می‌کشد تا سریع‌تر ثروتمند شود اما همه چیز را از دست می‌دهد.<br><strong>موضوع:</strong> حرص و طمع به زیان می‌انجامد.",
+        "<strong>خلاصه:</strong> یکی از شاهین‌ها پرواز می‌کند، دیگری پرواز نمی‌کند — و هیچ‌کس نمی‌داند چرا. گاهی سکوت قدرت پنهان است.<br><strong>موضوع:</strong> ارزش واقعی ممکن است پشت سکوت یا درد پنهان باشد.",
+        "<strong>خلاصه:</strong> دو مسافر مسیرهای مختلفی به کوه می‌روند و می‌آموزند آرامش از سفر است، نه از آسانی راه.<br><strong>موضوع:</strong> سفر بیشتر از مقصد درس می‌دهد.",
+        "<strong>خلاصه:</strong> آرون مسیر آسان رودخانه را رفت اما گم شد چون هرگز به قله کوه نرسید.<br><strong>موضوع:</strong> انتخاب‌های آسان ممکن است به نتایج معنی‌دار نرسند.",
+        "<strong>خلاصه:</strong> الیاس مسیر سخت را انتخاب کرد و از طریق چالش‌ها و مهربانی خرد گرفت.<br><strong>موضوع:</strong> رشد از طریق مبارزه و همدلی حاصل می‌شود.",
+        "<strong>خلاصه:</strong> شاهین ساکت وقتی که مهم بود پرواز کرد — ثابت کرد که قدرت واقعی سکوت و هدفمندی است.<br><strong>موضوع:</strong> قدرت خاموش اغلب بزرگ‌ترین است.",
+        "<strong>خلاصه:</strong> سعدی به پادشاهی خودخواه گفت که آینه‌ها فقط زیبایی را نشان نمی‌دهند بلکه نقص‌ها را نیز آشکار می‌کنند. پادشاه یکی از آینه‌ها را نگه داشت تا به یاد داشته باشد که آینه آموزش می‌دهد، نه چاپلوسی.<br><strong>موضوع:</strong> حقیقت نقص‌های ما را برای رشد نشان می‌دهد.",
+        "<strong>خلاصه:</strong> بهلول با یک جمله‌ی تلخ درباره ناپایداری عمر انسان، غرور خلیفه و شکوه قصر مرمری‌اش را در هم می‌شکند.<br><strong>موضوع:</strong> نقد غرور و ناپایداری دنیا.",
+        "<strong>خلاصه:</strong> ملا نصرالدین با خرید و فروش چندباره‌ی یک خر در یک روز، بدون داشتن خر، با جیب پر از طلا به خانه بازمی‌گردد.<br><strong>موضوع:</strong> زیرکی در فرصت‌طلبی.",
+        "<strong>خلاصه:</strong> بهلول به بازرگانی که طلاهایش را گم کرده می‌فهماند که ثروت واقعی آن چیزی‌ست که با ما می‌ماند، نه آنچه ناگهانی ناپدید می‌شود.<br><strong>موضوع:</strong> مفهوم دارایی واقعی.",
+        "<strong>خلاصه:</strong> ملا با ادعای \"بازگرداندن کت به‌صورت ذهنی\" قاضی را می‌خنداند و از مجازات می‌گریزد.<br><strong>موضوع:</strong> طنز نیت‌گرایی و شوخ‌طبعی در دادگاه.",
+        "<strong>خلاصه:</strong> آتش با تمسخر گل شروع می‌کند، اما می‌فهمد که گل ساده، خدمتی بی‌ادعا ولی ماندگار به بشر می‌کند.<br><strong>موضوع:</strong> تواضع در برابر خدمت‌گزاری واقعی.",
+        "<strong>خلاصه:</strong> مرد جوان می‌آموزد که هر سخنی باید از سه دروازه عبور کند: حقیقت، ضرورت، و مهربانی—وگرنه بهتر است خاموش ماند.<br><strong>موضوع:</strong> حکمت در گفتار.",
+        "<strong>خلاصه:</strong> حکیمی می‌آموزد که سکوت گاهی از کلمات بلندتر سخن می‌گوید و وضوح و آرامش می‌آورد.<br><strong>موضوع:</strong> قدرت سکوت."
+      ];
+
+      if (isEnglish) {
+        titles.forEach((title, i) => { title.textContent = persianTitles[i]; });
+        summaries.forEach((summary, i) => { summary.innerHTML = persianSummaries[i]; });
+        document.getElementById('main-title').textContent = 'داستان‌های اخلاقی انگلیسی';
+        document.getElementById('subtitle').textContent = 'داستان‌های کوتاه با درس‌های ارزشمند زندگی';
+        document.getElementById('nav-home').textContent = 'خانه';
+        document.getElementById('nav-stories').textContent = 'داستان‌ها';
+        document.getElementById('nav-contact').textContent = 'تماس با ما';
+        document.getElementById('nav-support').textContent = 'پشتیبانی';
+        document.getElementById('searchBox').placeholder = '🔍 جستجوی داستان‌ها...';
+        isEnglish = false;
+      } else {
+        titles.forEach((title, i) => { title.textContent = englishTitles[i]; });
+        summaries.forEach((summary, i) => { summary.innerHTML = englishSummaries[i]; });
+        document.getElementById('main-title').textContent = 'English Moral Stories';
+        document.getElementById('subtitle').textContent = 'Short stories with valuable life lessons';
+        document.getElementById('nav-home').textContent = 'Home';
+        document.getElementById('nav-stories').textContent = 'Stories';
+        document.getElementById('nav-contact').textContent = 'Contact Us';
+        document.getElementById('nav-support').textContent = 'Support';
+        document.getElementById('searchBox').placeholder = '🔍 Search stories...';
+        isEnglish = true;
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #0077cc;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav table {
+      width: 100%;
+      background: #005fa3;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      padding: 12px 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background: #003f66;
+    }
+    .controls {
+      margin: 15px 20px;
+      text-align: center;
+    }
+    .controls input {
+      width: 60%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-right: 10px;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 20px;
+    }
+    .story-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 280px;
+      padding: 15px;
+      box-shadow: 0 3px 8px rgb(0 

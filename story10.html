@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Behlul and the Marble Palace – A Parable of Behlul the Wise Fool</title>
+  <style>
+    body {
+      background-color: #f4fbf9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      line-height: 1.8;
+      direction: ltr;
+      text-align: left;
+      font-family: Arial, sans-serif;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: Tahoma, sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #16a085;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #1abc9c;
+      color: white;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #16a085;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #12876f;
+    }
+    blockquote {
+      background-color:#eef7f5;
+      padding:15px;
+      border-left:4px solid #1abc9c;
+      font-style: italic;
+      margin: 15px 0;
+    }
+    blockquote.dark {
+      background-color:#333;
+      color:white;
+      padding:20px;
+      border-radius:8px;
+      text-align:center;
+      font-weight:bold;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="pageTitle">Behlul and the Marble Palace</h1>
+    <h3 id="pageSubtitle" style="font-weight: normal;">A parable of Behlul the Wise Fool</h3>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+    <div id="enText">
+      <img src="images/story10.png" alt="Marble palace illustration" />
+      <p>Harun al-Rashid built a magnificent marble palace with fountains and silver domes. All the scholars praised it, but Behlul, the madman of Baghdad, stood at the gate staring silently.</p>
+
+      <p>The Caliph saw him and asked,</p>
+
+      <blockquote>“Why do you not praise my palace like the others?”</blockquote>
+
+      <p>Behlul replied,</p>
+
+      <blockquote>“I am waiting.”</blockquote>
+
+      <p>“Waiting for what?” the Caliph asked.</p>
+
+      <p>Behlul said,</p>
+
+      <blockquote>“Waiting to see who will live here longer—you or the palace.”</blockquote>
+
+      <p>The Caliph frowned. “Do you mock me?”</p>
+
+      <p>Behlul walked away laughing,</p>
+
+      <blockquote>“No, I mock the illusions of permanence. You build palaces for eternity, yet forget that your body is built of dust.”</blockquote>
+
+      <p>The next day, Harun sent money to repair a poor district of the city instead of building another tower.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story10.png" alt="تصویری از کاخ مرمر" />
+      <p>هارون‌الرشید کاخ باشکوهی از مرمر با فواره‌ها و گنبدهای نقره‌ای ساخت. همه دانشمندان آن را تحسین کردند، اما بهلول، دیوانه بغداد، در ورودی ایستاد و سکوت کرد.</p>
+
+      <p>خلیفه او را دید و پرسید،</p>
+
+      <blockquote>«چرا مانند دیگران کاخ مرا تحسین نمی‌کنی؟»</blockquote>
+
+      <p>بهلول پاسخ داد،</p>
+
+      <blockquote>«منتظرم.»</blockquote>
+
+      <p>خلیفه پرسید، «منتظر چی هستی؟»</p>
+
+      <p>بهلول گفت،</p>
+
+      <blockquote>«منتظرم ببینم چه کسی اینجا بیشتر زنده می‌ماند — تو یا کاخ.»</blockquote>
+
+      <p>خلیفه اخم کرد. «تو مسخره‌ام می‌کنی؟»</p>
+
+      <p>بهلول خندید و دور شد،</p>
+
+      <blockquote>«نه، من توهم دوام را مسخره می‌کنم. تو کاخ می‌سازی برای ابدیت، اما فراموش می‌کنی که بدن تو از خاک ساخته شده.»</blockquote>
+
+      <p>روز بعد، هارون به جای ساختن برج جدید، پولی برای تعمیر یکی از محله‌های فقیر شهر فرستاد.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      const pageSubtitle = document.getElementById('pageSubtitle');
+
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'بهلول و کاخ مرمر';
+        pageSubtitle.textContent = 'مثلی از بهلول دیوانه دانا';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'Behlul and the Marble Palace';
+        pageSubtitle.textContent = 'A parable of Behlul the Wise Fool';
+      }
+    }
+  </script>
+
+</body>
+</html>

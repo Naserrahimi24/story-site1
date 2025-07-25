@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Three Doors of Speech</title>
+  <style>
+    body {
+      background-color: #f4fbf9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      line-height: 1.8;
+      direction: ltr;
+      text-align: left;
+      font-family: Arial, sans-serif;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: Tahoma, sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #16a085;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #1abc9c;
+      color: white;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #16a085;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #12876f;
+    }
+    blockquote {
+      background-color:#eef7f5;
+      padding:15px;
+      border-left:4px solid #1abc9c;
+      font-style: italic;
+      margin: 15px 0;
+    }
+    blockquote.dark {
+      background-color:#333;
+      color:white;
+      padding:20px;
+      border-radius:8px;
+      text-align:center;
+      font-weight:bold;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="pageTitle">🚪 The Three Doors of Speech</h1>
+    <h3 id="pageSubtitle" style="font-weight: normal;">A universal wisdom tale</h3>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+    <div id="enText">
+      <img src="images/story15.png" alt="Three Doors" />
+      <p>A young man came to a wise elder and said,</p>
+
+      <blockquote>“Master, I wish to speak great truths to the world.”</blockquote>
+
+      <p>The elder nodded and said,</p>
+
+      <blockquote>“Before speaking, let your words pass through three doors.”</blockquote>
+
+      <p>“Three doors?” asked the youth.</p>
+
+      <p>“Yes,” the elder said. “The first door asks: Is it true? If not, don’t speak it.”</p>
+
+      <p>“The second door asks: Is it necessary? If not, let silence speak instead.”</p>
+
+      <p>“And the third door asks: Is it kind? If your words will wound, let them stay behind the door.”</p>
+
+      <p>The young man fell silent.</p>
+
+      <p>The elder smiled,</p>
+
+      <blockquote>“Speak only when your words can pass through all three—and you will speak like the wise.”</blockquote>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story15.png" alt="سه دروازه سخن" />
+      <p>جوانی پیش پیرمردی دانا آمد و گفت،</p>
+
+      <blockquote>«استاد، می‌خواهم حقایق بزرگ را به جهان بگویم.»</blockquote>
+
+      <p>پیرمرد سر تکان داد و گفت،</p>
+
+      <blockquote>«قبل از گفتن، بگذار کلماتت از سه دروازه بگذرند.»</blockquote>
+
+      <p>«سه دروازه؟» جوان پرسید.</p>
+
+      <p>«بله،» پیرمرد گفت. «دروازه اول می‌پرسد: آیا این حقیقت دارد؟ اگر نه، آن را نگوی.»</p>
+
+      <p>«دروازه دوم می‌پرسد: آیا این ضروری است؟ اگر نه، بگذار سکوت سخن بگوید.»</p>
+
+      <p>«و دروازه سوم می‌پرسد: آیا مهربان است؟ اگر کلماتت زخمی کنند، بگذار پشت دروازه بمانند.»</p>
+
+      <p>جوان ساکت شد.</p>
+
+      <p>پیرمرد لبخند زد،</p>
+
+      <blockquote>«فقط وقتی بگو که کلماتت از هر سه دروازه بگذرند — و آن‌گاه مانند داناها سخن خواهی گفت.»</blockquote>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      const pageSubtitle = document.getElementById('pageSubtitle');
+
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = '🚪 سه دروازه سخن';
+        pageSubtitle.textContent = 'داستانی جهانی از حکمت';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = '🚪 The Three Doors of Speech';
+        pageSubtitle.textContent = 'A universal wisdom tale';
+      }
+    }
+  </script>
+
+</body>
+</html>

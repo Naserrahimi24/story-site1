@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Falcon and the Broken Wing</title>
+  <style>
+    body {
+      background-color: #f4fbf9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      line-height: 1.8;
+      direction: ltr;
+      text-align: left;
+      font-family: Arial, sans-serif;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: Tahoma, sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #16a085;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #1abc9c;
+      color: white;
+      position: relative;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #16a085;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #138a75;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="pageTitle">🕊️ The Falcon and the Broken Wing</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+    <div id="enText">
+      <img src="images/story4.png" alt="Falcon sitting on a branch" />
+
+      <p>In a great kingdom surrounded by forests and rivers, the king owned the two most majestic falcons in the land. These birds had been gifted to him by a foreign emperor — trained in the arts of hunting and flight.</p>
+
+      <p>One falcon soared higher and faster than any bird ever seen. The other, however, never left the branch of the tree it was tied to. It wouldn’t fly, wouldn’t move, and seemed broken in spirit.</p>
+
+      <p>The king was frustrated. “Why does this second falcon refuse to fly? It was raised the same way. It has the same wings, the same food. What’s wrong with it?”</p>
+
+      <p>He called the best bird trainers, doctors, and even priests, but none could make the falcon fly.</p>
+
+      <p>One day, a humble farmer visited the palace. After hearing the king’s concern, he asked for a chance to try. The next morning, the king looked out his window — and saw the falcon soaring high in the sky, wings wide and free.</p>
+
+      <p>Stunned, he summoned the farmer and asked, “What did you do that no one else could?”</p>
+
+      <p>The farmer smiled and replied, “I simply cut the branch it was sitting on.”</p>
+
+      <p><strong>Moral:</strong> Sometimes, we cling to what feels safe — even if it holds us back. True potential is discovered only when we’re forced to leave our comfort zone.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story4.png" alt="شکاری روی شاخه نشسته" />
+
+      <p>در یک پادشاهی بزرگ که با جنگل‌ها و رودخانه‌ها احاطه شده بود، پادشاه صاحب دو شاهین باشکوه‌ترین در سرزمین بود. این پرندگان هدیه‌ای از یک امپراتور خارجی بودند — آموزش‌دیده در هنرهای شکار و پرواز.</p>
+
+      <p>یکی از شاهین‌ها بالاتر و سریع‌تر از هر پرنده دیگری پرواز می‌کرد. اما دیگری هرگز از شاخه درختی که به آن بسته شده بود جدا نمی‌شد. پرواز نمی‌کرد، حرکت نمی‌کرد و به نظر می‌رسید که روحش شکسته است.</p>
+
+      <p>پادشاه ناامید بود. «چرا این شاهین دوم پرواز نمی‌کند؟ او هم مثل دیگری بزرگ شده است. بال‌ها و غذاش یکی است. مشکلش چیست؟»</p>
+
+      <p>او بهترین مربیان پرندگان، پزشکان و حتی روحانیون را فراخواند، اما هیچ‌کدام نتوانستند شاهین را به پرواز درآورند.</p>
+
+      <p>روزی یک کشاورز ساده به کاخ آمد. پس از شنیدن نگرانی پادشاه، درخواست فرصت کرد تا امتحان کند. صبح روز بعد، پادشاه از پنجره نگاه کرد — و شاهین را دید که بال‌هایش را باز کرده و آزادانه در آسمان پرواز می‌کند.</p>
+
+      <p>متحیر، کشاورز را فراخواند و پرسید: «چه کار کردی که هیچ کس دیگر نتوانست؟»</p>
+
+      <p>کشاورز لبخند زد و پاسخ داد: «من فقط شاخه‌ای را که روی آن نشسته بود، قطع کردم.»</p>
+
+      <p><strong>نتیجه‌گیری:</strong> گاهی ما به چیزهایی که احساس امنیت می‌دهند چسبیده‌ایم — حتی اگر ما را عقب نگه دارند. پتانسیل واقعی تنها زمانی کشف می‌شود که مجبور شویم منطقه راحتی خود را ترک کنیم.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = '🕊️ شاهین و بال شکسته';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = '🕊️ The Falcon and the Broken Wing';
+      }
+    }
+  </script>
+
+</body>
+</html>

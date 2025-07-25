@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aaron’s Journey</title>
+  <style>
+    body {
+      background-color: #f0f4f8;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      line-height: 1.8;
+      direction: ltr;
+      text-align: left;
+      font-family: Arial, sans-serif;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: Tahoma, sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #1f5a8a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="pageTitle">🌊 Aaron’s Journey</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+    <div id="enText">
+      <img src="images/story6.png" alt="Aaron walking along the river" />
+
+      <p>Aaron walked along the river, enjoying birdsong and the shade of tall trees. He found food easily and even met others who entertained him with music and stories. But days passed, and the path seemed endless — always curving but never climbing.</p>
+
+      <p>He grew frustrated. “Where is the mountain’s peak? Why does this road go in circles?” he asked an old fisherman he met.</p>
+
+      <p>The man replied, “This path never reaches the summit. It only follows the river to the sea.”</p>
+
+      <p>Realizing he had chosen comfort over purpose, Aaron felt lost. He turned back, but it had been too long. The river’s current had changed, and the forest seemed unfamiliar. He never reached the top.</p>
+
+      <p><strong>Moral:</strong> The easy road may bring pleasure, but not always meaning.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story6.png" alt="آرون در کنار رودخانه قدم می‌زند" />
+
+      <p>آرون در کنار رودخانه قدم می‌زد و از صدای پرندگان و سایه درختان بلند لذت می‌برد. او به آسانی غذا پیدا می‌کرد و حتی با کسانی آشنا شد که با موسیقی و داستان‌هایشان او را سرگرم می‌کردند. اما روزها گذشت و مسیر بی‌انتها به نظر می‌رسید — همیشه پیچ می‌خورد اما هرگز بالا نمی‌رفت.</p>
+
+      <p>او ناامید شد. از مرد ماهی‌گیری که ملاقات کرد پرسید: «قله کوه کجاست؟ چرا این راه دایره‌وار است؟»</p>
+
+      <p>مرد پاسخ داد: «این مسیر هرگز به قله نمی‌رسد. فقط رودخانه را تا دریا دنبال می‌کند.»</p>
+
+      <p>وقتی فهمید راحتی را به هدف ترجیح داده، آرون احساس گم‌شدگی کرد. برگشت اما خیلی دیر شده بود. جریان رودخانه تغییر کرده بود و جنگل ناآشنا به نظر می‌رسید. او هیچ‌گاه به قله نرسید.</p>
+
+      <p><strong>نتیجه‌گیری:</strong> راه آسان ممکن است لذت‌بخش باشد، اما همیشه معنا نمی‌آورد.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = '🌊 سفر آرون';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = '🌊 Aaron’s Journey';
+      }
+    }
+  </script>
+
+</body>
+</html>
