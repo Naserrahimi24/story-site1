@@ -284,6 +284,63 @@
       </div>
     </section>
 
+    <section class="story-card" data-index="16">
+  <a href="story17.html">
+    <img src="images/story17.png" alt="The Uninvited Guest" />
+    <h2 class="story-title">The Uninvited Guest</h2>
+  </a>
+  <p class="story-summary">
+    <strong>Summary:</strong> A stranger comes to Mullah's house asking to stay, but receives a clever response.<br>
+    <strong>Theme:</strong> Wit and situational awareness.
+  </p>
+  <div class="like-container">
+    <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+    <span class="like-count">0</span>
+  </div>
+</section>
+<section class="story-card" data-index="17">
+  <a href="story18.html">
+    <img src="images/story18.png" alt="Mullah's Unforgettable Beauty" />
+    <h2 class="story-title">Mullah's Unforgettable Beauty</h2>
+  </a>
+  <p class="story-summary">
+    <strong>Summary:</strong> Mullah Nasruddin tells people he was once so beautiful that no one could forget him — until they ask for proof.<br>
+    <strong>Theme:</strong> Humor in vanity and self-perception.
+  </p>
+  <div class="like-container">
+    <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+    <span class="like-count">0</span>
+  </div>
+</section>
+<section class="story-card" data-index="18">
+  <a href="story19.html">
+    <img src="images/story19.png" alt="Mulla's Magical Stone Soup" />
+    <h2 class="story-title">Mulla's Magical Stone Soup</h2>
+  </a>
+  <p class="story-summary">
+    <strong>Summary:</strong> Mulla Nasruddin tricks a stingy villager into making delicious soup — starting with just a stone!<br>
+    <strong>Theme:</strong> Cleverness and sharing.
+  </p>
+  <div class="like-container">
+    <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+    <span class="like-count">0</span>
+  </div>
+</section>
+<section class="story-card" data-index="19">
+  <a href="story20.html">
+    <img src="images/story20.png" alt="Mulla's Sweet Dream" />
+    <h2 class="story-title">Mulla's Sweet Dream</h2>
+  </a>
+  <p class="story-summary">
+    <strong>Summary:</strong> Mulla Nasruddin wakes up angry from a dream where he lost a bag of gold—and keeps blaming the dream thief!<br>
+    <strong>Theme:</strong> Absurdity of holding onto what isn’t real.
+  </p>
+  <div class="like-container">
+    <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+    <span class="like-count">0</span>
+  </div>
+</section>
+
   </main>
 
   <script>
@@ -331,6 +388,11 @@
         "The Fire and the Clay",
         "The Three Doors of Speech",
         "The Silent Sage"
+        "The Uninvited Guest"
+        "Mullah's Unforgettable Beauty"
+        "Mulla's Magical Stone Soup"
+        "Mulla's Sweet Dream"
+
       ];
 
       const englishSummaries = [
@@ -350,6 +412,11 @@
         "<strong>Summary:</strong> Fire mocks clay, but learns clay’s humble service to humanity is lasting and valuable.<br><strong>Theme:</strong> Humility in true service.",
         "<strong>Summary:</strong> A young man learns that every speech must pass through three gates: truth, necessity, and kindness—or better remain silent.<br><strong>Theme:</strong> Wisdom in speech.",
         "<strong>Summary:</strong> A sage teaches that silence sometimes speaks louder than words, bringing clarity and peace.<br><strong>Theme:</strong> Power of silence."
+        "<strong>Summary:</strong> A stranger comes to Mullah's house asking to stay, but receives a clever response.<br><strong>Theme:</strong> Wit and situational awareness."
+        "<strong>Summary:</strong> Mullah Nasruddin tells people he was once so beautiful that no one could forget him — until they ask for proof.<br><strong>Theme:</strong> Humor in vanity and self-perception."
+        "<strong>Summary:</strong> Mulla Nasruddin tricks a stingy villager into making delicious soup — starting with just a stone!<br><strong>Theme:</strong> Cleverness and sharing."
+        "<strong>Summary:</strong> Mulla Nasruddin wakes up angry from a dream where he lost a bag of gold—and keeps blaming the dream thief!<br><strong>Theme:</strong> Absurdity of holding onto what isn’t real."
+
       ];
 
       const persianTitles = [
@@ -369,6 +436,11 @@
         "آتش و گل",
         "سه دروازه گفتار",
         "حکیم خاموش"
+        "مهمان ناخوانده"
+        "زیبایی فراموش‌نشدنی ملا"
+        "سوپ سنگ جادویی ملا"
+        "رویای شیرین ملا"
+
       ];
 
       const persianSummaries = [
@@ -388,6 +460,11 @@
         "<strong>خلاصه:</strong> آتش با تمسخر گل شروع می‌کند، اما می‌فهمد که گل ساده، خدمتی بی‌ادعا ولی ماندگار به بشر می‌کند.<br><strong>موضوع:</strong> تواضع در برابر خدمت‌گزاری واقعی.",
         "<strong>خلاصه:</strong> مرد جوان می‌آموزد که هر سخنی باید از سه دروازه عبور کند: حقیقت، ضرورت، و مهربانی—وگرنه بهتر است خاموش ماند.<br><strong>موضوع:</strong> حکمت در گفتار.",
         "<strong>خلاصه:</strong> حکیمی می‌آموزد که سکوت گاهی از کلمات بلندتر سخن می‌گوید و وضوح و آرامش می‌آورد.<br><strong>موضوع:</strong> قدرت سکوت."
+        "<strong>خلاصه:</strong> غریبه‌ای به خانه ملا می‌آید و درخواست اقامت می‌کند؛ اما پاسخ هوشمندانه ملا شنیدنی است.<br><strong>مضمون:</strong> شوخ‌طبعی و درک موقعیت."
+        "<strong>خلاصه:</strong> ملا نصرالدین می‌گوید زمانی آن‌قدر زیبا بوده که هیچ‌کس او را فراموش نمی‌کرد — تا وقتی که از او مدرک می‌خواهند!<br><strong>مضمون:</strong> شوخی با خودشیفتگی و برداشت شخصی."
+        "<strong>خلاصه:</strong> ملا نصرالدین روستایی خسیسی را فریب می‌دهد تا با یک سنگ، سوپی خوشمزه درست کند!<br><strong>مضمون:</strong> زیرکی و به اشتراک گذاشتن."
+        "<strong>خلاصه:</strong> ملا نصرالدین از خواب بیدار می‌شود و عصبانی‌ست چون در خواب کیسه طلایش را دزدیده‌اند—و همچنان دزد خواب را سرزنش می‌کند!<br><strong>مضمون:</strong> پوچی وابستگی به چیزهایی که واقعی نیستند."
+
       ];
 
       if (isEnglish) {
@@ -468,3 +545,4 @@
       width: 280px;
       padding: 15px;
       box-shadow: 0 3px 8px rgb(0 
+
