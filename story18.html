@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mullah's Unforgettable Beauty - Mulla Nasruddin</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      direction: ltr;
+      text-align: left;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Tahoma', sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+      position: relative;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #1f6391;
+    }
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+
+  <header>
+    <h1 id="pageTitle">Mullah's Unforgettable Beauty</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+
+    <div id="enText">
+      <img src="images/mullah-beauty.png" alt="Mullah's Unforgettable Beauty" />
+      <p>One day, Mulla Nasruddin decided to impress the villagers by describing a beautiful woman he had seen. He spoke with great admiration about her charm, grace, and smile.</p>
+      
+      <p>Curious, the villagers asked him to show a picture or describe her more clearly. Mulla just smiled and said, "Ah, my friends, the beauty is unforgettable — so much so that it only lives in my heart and imagination."</p>
+      
+      <p>The villagers laughed and realized sometimes beauty is more about how we feel inside than what we see outside.</p>
+      
+      <p><strong>Moral:</strong> True beauty is in the heart and imagination, not just in appearances.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/mullah-beauty.png" alt="زیبایی فراموش‌نشدنی ملا" />
+      <p>روزی ملا نصرالدین تصمیم گرفت تا مردم روستا را با تعریف از زنی زیبا تحت تأثیر قرار دهد. او با تحسین از جذابیت، وقار و لبخند او سخن گفت.</p>
+      
+      <p>مردم کنجکاو شدند و از او خواستند که تصویری نشان دهد یا واضح‌تر توضیح دهد. ملا فقط لبخندی زد و گفت: «دوستان من، این زیبایی آنقدر فراموش‌نشدنی است که فقط در قلب و خیال من زندگی می‌کند.»</p>
+      
+      <p>مردم با خنده فهمیدند که گاهی زیبایی بیشتر به احساسات درونی ما بستگی دارد تا ظاهر بیرونی.</p>
+      
+      <p><strong>نتیجه‌گیری:</strong> زیبایی واقعی در قلب و خیال است، نه فقط در ظاهر.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'زیبایی فراموش‌نشدنی ملا';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = "Mullah's Unforgettable Beauty";
+      }
+    }
+  </script>
+
+</body>
+</html>
