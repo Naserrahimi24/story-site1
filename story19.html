@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mulla's Magical Stone Soup - Mulla Nasruddin</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      direction: ltr;
+      text-align: left;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Tahoma', sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+      position: relative;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #1f6391;
+    }
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+
+  <header>
+    <h1 id="pageTitle">Mulla's Magical Stone Soup</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+
+    <div id="enText">
+      <img src="images/magical-stone-soup.png" alt="Mulla's Magical Stone Soup" />
+      <p>One cold evening, Mulla Nasruddin came to a village carrying just a large pot and a single stone. Curious villagers asked what he was doing.</p>
+      
+      <p>Mulla said, "Tonight, I will make a magical stone soup that will feed us all!"</p>
+      
+      <p>He filled the pot with water and dropped in the stone. As the soup began to simmer, villagers started bringing vegetables, spices, and meat to add.</p>
+      
+      <p>By the end of the night, everyone shared a delicious feast made possible by the magic of cooperation and generosity.</p>
+      
+      <p><strong>Moral:</strong> Together, even the simplest things can become extraordinary.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/magical-stone-soup.png" alt="سوپ جادویی سنگ ملا" />
+      <p>یک شب سرد، ملا نصرالدین با یک دیگ بزرگ و یک سنگ به روستا آمد. مردم کنجکاو پرسیدند چه کار می‌کند.</p>
+      
+      <p>ملا گفت: «امشب سوپ جادویی سنگ درست می‌کنم که همه ما را سیر می‌کند!»</p>
+      
+      <p>او دیگ را از آب پر کرد و سنگ را داخل آن انداخت. وقتی سوپ جوشید، مردم سبزیجات، ادویه‌ها و گوشت آوردند تا اضافه کنند.</p>
+      
+      <p>تا پایان شب، همه با هم ضیافتی خوشمزه داشتند که حاصل جادوی همکاری و سخاوت بود.</p>
+      
+      <p><strong>نتیجه‌گیری:</strong> با همکاری، حتی ساده‌ترین چیزها می‌توانند خارق‌العاده شوند.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'سوپ جادویی سنگ ملا';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = "Mulla's Magical Stone Soup";
+      }
+    }
+  </script>
+
+</body>
+</html>
