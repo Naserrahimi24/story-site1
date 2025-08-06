@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mulla's Sweet Dream - Mulla Nasruddin</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      direction: ltr;
+      text-align: left;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Tahoma', sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+      position: relative;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #1f6391;
+    }
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+
+  <header>
+    <h1 id="pageTitle">Mulla's Sweet Dream</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+
+    <div id="enText">
+      <img src="images/mulla-sweet-dream.png" alt="Mulla's Sweet Dream" />
+      <p>One night, Mulla Nasruddin dreamed he was eating a giant, delicious cake. When he woke up, he told his friends excitedly about the dream.</p>
+      
+      <p>They laughed and asked, “Did you really eat the cake?”</p>
+      
+      <p>Mulla replied, “No, but it felt so real and sweet that it made my morning happy.”</p>
+      
+      <p>He taught them that sometimes, even a sweet dream can brighten a day and fill the heart with joy.</p>
+      
+      <p><strong>Moral:</strong> Happiness can come from simple, even imaginary moments.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/mulla-sweet-dream.png" alt="رویای شیرین ملا" />
+      <p>یک شب، ملا نصرالدین خواب دید که یک کیک بزرگ و خوشمزه می‌خورد. وقتی بیدار شد، با هیجان این خواب را برای دوستانش تعریف کرد.</p>
+      
+      <p>آنها خندیدند و پرسیدند: «واقعاً کیک را خوردی؟»</p>
+      
+      <p>ملا جواب داد: «نه، اما آنقدر واقعی و شیرین بود که صبحم را خوشحال کرد.»</p>
+      
+      <p>او به آنها آموخت که گاهی حتی یک خواب شیرین می‌تواند روز را روشن و دل را پر از شادی کند.</p>
+      
+      <p><strong>نتیجه‌گیری:</strong> خوشبختی می‌تواند از لحظات ساده و حتی خیالی بیاید.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'رویای شیرین ملا';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = "Mulla's Sweet Dream";
+      }
+    }
+  </script>
+
+</body>
+</html>
