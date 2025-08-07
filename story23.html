@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Navigating the Tempest – A King’s Lesson</title>
+  <style>
+    body {
+      background-color: #f2f4f8;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #34495e;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+    }
+    #toggleLang {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      padding: 8px 14px;
+      font-size: 14px;
+      border: none;
+      background-color: #3498db;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    main {
+      max-width: 750px;
+      background-color: white;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: Tahoma, sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="pageTitle">Navigating the Tempest</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+    <div id="enText">
+      <img src="images/story23.jpg" alt="King's Lesson at Sea" />
+      <p><strong>Navigating the Tempest: A King’s Lesson</strong></p>
+
+      <p>Once, a proud king boarded a ship with his guards and ministers to cross a stormy sea. Among the passengers was a poor man who had never seen the sea before. As the waves grew stronger, the man panicked. He screamed, clutched the sides of the boat, and made the journey miserable for everyone on board.</p>
+
+      <p>The king grew frustrated and asked, “Can no one silence this man?”</p>
+
+      <p>An old wise man approached the king and said, “May I handle this, Your Majesty?”</p>
+
+      <p>The king agreed. The old man ordered the sailors to throw the panicked man into the sea. He splashed and flailed in terror. After a few moments, the sailors pulled him back onto the ship.</p>
+
+      <p>Strangely, the man now sat silently, calm and grateful, clinging peacefully to the deck.</p>
+
+      <p>The king, surprised, asked the old man, “Why is he quiet now?”</p>
+
+      <p>The wise man replied, “He had never tasted true fear before. Now that he’s seen death, he understands the safety of this ship. Sometimes, one must experience hardship to appreciate ease.”</p>
+
+      <p><strong>Moral:</strong> People often fail to value peace until they’ve faced true chaos.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display: none;">
+      <img src="images/story23.jpg" alt="درسی برای پادشاه" />
+      <p><strong>هدایت در طوفان: درسی برای پادشاه</strong></p>
+
+      <p>روزی پادشاهی با وزرا و نگهبانان خود سوار کشتی شد تا از دریایی طوفانی عبور کند. در میان مسافران، مرد فقیری بود که هرگز دریا ندیده بود. چون موج‌ها شدید شد، آن مرد به هراس افتاد. فریاد می‌کشید و بدنه‌ی کشتی را چسبیده بود و همه را مضطرب و آزرده کرده بود.</p>
+
+      <p>پادشاه از آشوب او خشمگین شد و گفت: «آیا کسی نیست که این مرد را آرام کند؟»</p>
+
+      <p>پیرمردی دانا جلو آمد و گفت: «ای پادشاه، اجازه دهید من تدبیر کنم.»</p>
+
+      <p>پادشاه پذیرفت. پیر دانا به ملوانان گفت آن مرد را به دریا بیفکنند. مرد بیچاره به دریا افتاد، دست و پا می‌زد و وحشت‌زده فریاد می‌کشید. پس از مدتی، او را به کشتی بازگرداندند.</p>
+
+      <p>شگفت آنکه، این‌بار مرد ساکت و آرام نشست و با شکرگزاری کف کشتی را گرفته بود.</p>
+
+      <p>پادشاه با تعجب گفت: «چگونه این مرد ناگهان آرام شد؟»</p>
+
+      <p>پیرمرد پاسخ داد: «پیش از آن، او طعم خطر واقعی را نچشیده بود. اکنون که مرگ را دیده، قدر امنیت کشتی را می‌داند. گاه، باید رنج را چشید تا راحتی را فهمید.»</p>
+
+      <p><strong>نتیجه:</strong> مردم تا با آشوب واقعی روبه‌رو نشوند، قدر آرامش را نمی‌دانند.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      const contentArea = document.getElementById('contentArea');
+
+      if (enText.style.display !== 'none') {
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'هدایت در طوفان';
+      } else {
+        enText.style.display = 'block';
+        faText.style.display = 'none';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'Navigating the Tempest';
+      }
+    }
+  </script>
+
+</body>
+</html>
