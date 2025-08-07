@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mulla's Unexpected Gratitude</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      direction: ltr;
+      text-align: left;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Tahoma', sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+      position: relative;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #1f6391;
+    }
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+
+  <header>
+    <h1 id="pageTitle">Mulla's Unexpected Gratitude</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+
+    <div id="enText">
+      <img src="images/story25.jpg" alt="Mulla's Unexpected Gratitude" />
+      <p>One evening, Mulla Nasruddin was walking home when a thief suddenly jumped out of the shadows and robbed him of his small bag of coins.</p>
+
+      <p>The next morning, the villagers were shocked to see Mulla sitting calmly at the tea house, sipping his tea and humming cheerfully.</p>
+
+      <p>“Mulla!” someone asked, “Aren’t you upset about being robbed?”</p>
+
+      <p>Mulla smiled and replied, “Oh no! In fact, I’m deeply thankful.”</p>
+
+      <p>“Thankful? Why on earth?”</p>
+
+      <p>He said, “Because I wasn’t carrying all my savings! The thief only got what I had in my pocket. Just imagine if I had taken my whole coin jar!”</p>
+
+      <p>Everyone laughed, but also nodded in understanding. Mulla had once again turned a loss into a lesson.</p>
+
+      <p><strong>Moral:</strong> Gratitude can shift your focus from what’s lost to what remains.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story25.jpg" alt="قدردانی غیرمنتظره‌ی ملا" />
+      <p>یک شب، ملانصرالدین در راه بازگشت به خانه بود که ناگهان دزدی از تاریکی بیرون پرید و کیسه‌ی کوچک سکه‌هایش را دزدید.</p>
+
+      <p>صبح روز بعد، اهالی روستا با تعجب دیدند که ملا با خیالی آسوده در چایخانه نشسته، چایش را می‌نوشد و با لبخند زمزمه می‌کند.</p>
+
+      <p>یکی پرسید: «ملا! ناراحت نیستی که دیشب دزدیدنَت؟»</p>
+
+      <p>ملا لبخندی زد و گفت: «نه! اتفاقاً خیلی هم شکرگزارم.»</p>
+
+      <p>«شکرگزار؟ برای چی؟»</p>
+
+      <p>ملا گفت: «چون تمام پس‌اندازم همراهم نبود! فقط اون چند سکه‌ی داخل جیبم رو برد. فکر کن اگه کل کوزه‌ی سکه‌هام همراهم بود چی می‌شد!»</p>
+
+      <p>همه خندیدند، اما در دل حرفش را درک کردند. ملا باز هم از یک باخت، درسی ساخت.</p>
+
+      <p><strong>نتیجه‌گیری:</strong> قدردانی می‌تواند نگاه‌مان را از آن‌چه از دست رفته، به آن‌چه باقی‌ست، برگرداند.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      
+      if (enText.style.display !== 'none') {
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'قدردانی غیرمنتظره‌ی ملا';
+      } else {
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = "Mulla's Unexpected Gratitude";
+      }
+    }
+  </script>
+
+</body>
+</html>
