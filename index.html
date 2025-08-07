@@ -484,30 +484,31 @@
   </main>
 
   <script>
-    // Like button toggle
-    function toggleLike(button) {
-      const countSpan = button.nextElementSibling;
-      let count = parseInt(countSpan.textContent);
-      if(button.classList.contains('liked')) {
-        count--;
-        button.classList.remove('liked');
-        button.textContent = '👍 Like';
-      } else {
-        count++;
-        button.classList.add('liked');
-        button.textContent = '❤️ Liked';
-      }
-      countSpan.textContent = count;
+     function toggleLike(button) {
+    const card = button.closest('.story-card');
+    const storyIndex = card.getAttribute('data-index');
+    const countSpan = button.nextElementSibling;
+    const storageKey = 'like-' + storyIndex;
+
+    let liked = localStorage.getItem(storageKey) === 'true';
+    let count = parseInt(countSpan.textContent);
+
+    if (liked) {
+      count--;
+      localStorage.setItem(storageKey, 'false');
+      button.classList.remove('liked');
+      button.textContent = '👍 Like';
+    } else {
+      count++;
+      localStorage.setItem(storageKey, 'true');
+      button.classList.add('liked');
+      button.textContent = '❤️ Liked';
     }
 
-    // Dark mode toggle
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-    }
-
-    // Language toggle English/Persian
-    let isEnglish = true;
-    function toggleLanguage() {
+    countSpan.textContent = count;
+    localStorage.setItem('like-count-' + storyIndex, count);
+  }
+ 
       const titles = document.querySelectorAll('.story-title');
       const summaries = document.querySelectorAll('.story-summary');
 
@@ -667,6 +668,29 @@
         isEnglish = true;
       }
     }
+      window.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.story-card');
+
+    cards.forEach(card => {
+      const index = card.getAttribute('data-index');
+      const liked = localStorage.getItem('like-' + index) === 'true';
+      const count = localStorage.getItem('like-count-' + index) || 0;
+
+      const button = card.querySelector('.like-btn');
+      const countSpan = card.querySelector('.like-count');
+
+      countSpan.textContent = count;
+
+      if (liked) {
+        button.classList.add('liked');
+        button.textContent = '❤️ Liked';
+      } else {
+        button.classList.remove('liked');
+        button.textContent = '👍 Like';
+      }
+    });
+  });
+
   </script>
 
   <style>
@@ -721,6 +745,7 @@
       width: 280px;
       padding: 15px;
       box-shadow: 0 3px 8px rgb(0 
+
 
 
 
