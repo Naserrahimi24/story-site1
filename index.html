@@ -14,7 +14,6 @@
 <meta name="robots" content="index, follow">
 
 </head>
-  
 <body>
 
   <header>
@@ -485,39 +484,30 @@
   </main>
 
   <script>
-    function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
-  localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
-}
-if (localStorage.getItem("darkMode") === "true") {
-  document.body.classList.add("dark-mode");
-}
-
-     function toggleLike(button) {
-    const card = button.closest('.story-card');
-    const storyIndex = card.getAttribute('data-index');
-    const countSpan = button.nextElementSibling;
-    const storageKey = 'like-' + storyIndex;
-
-    let liked = localStorage.getItem(storageKey) === 'true';
-    let count = parseInt(countSpan.textContent);
-
-    if (liked) {
-      count--;
-      localStorage.setItem(storageKey, 'false');
-      button.classList.remove('liked');
-      button.textContent = '👍 Like';
-    } else {
-      count++;
-      localStorage.setItem(storageKey, 'true');
-      button.classList.add('liked');
-      button.textContent = '❤️ Liked';
+    // Like button toggle
+    function toggleLike(button) {
+      const countSpan = button.nextElementSibling;
+      let count = parseInt(countSpan.textContent);
+      if(button.classList.contains('liked')) {
+        count--;
+        button.classList.remove('liked');
+        button.textContent = '👍 Like';
+      } else {
+        count++;
+        button.classList.add('liked');
+        button.textContent = '❤️ Liked';
+      }
+      countSpan.textContent = count;
     }
 
-    countSpan.textContent = count;
-    localStorage.setItem('like-count-' + storyIndex, count);
-  }
- 
+    // Dark mode toggle
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    // Language toggle English/Persian
+    let isEnglish = true;
+    function toggleLanguage() {
       const titles = document.querySelectorAll('.story-title');
       const summaries = document.querySelectorAll('.story-summary');
 
@@ -677,64 +667,9 @@ if (localStorage.getItem("darkMode") === "true") {
         isEnglish = true;
       }
     }
-    
-  
-isEnglish = !isEnglish;
-= localStorage.getItem('language') !== 'fa';
+  </script>
 
-window.onload = () => {
-  if (!isEnglish) {
-    switchToFarsi();
-  }
-};
-
-function toggleLanguage() {
-  isEnglish = !isEnglish;
-  localStorage.setItem('language', isEnglish ? 'en' : 'fa');
-  if (isEnglish) {
-    switchToEnglish();
-  } else {
-    switchToFarsi();
-  }
-}
-
-function switchToFarsi() {
-  titles.forEach((title, i) => { title.textContent = persianTitles[i]; });
-  summaries.forEach((summary, i) => { summary.innerHTML = persianSummaries[i]; });
-  document.getElementById('main-title').textContent = 'داستان‌های اخلاقی انگلیسی';
-  document.getElementById('subtitle').textContent = 'داستان‌های کوتاه با درس‌های ارزشمند زندگی';
-  document.getElementById('nav-home').textContent = 'خانه';
-  document.getElementById('nav-stories').textContent = 'داستان‌ها';
-  document.getElementById('nav-contact').textContent = 'تماس با ما';
-  document.getElementById('nav-support').textContent = 'پشتیبانی';
-  document.getElementById('searchBox').placeholder = '🔍 جستجوی داستان‌ها...';
-}
-
-function switchToEnglish() {
-  titles.forEach((title, i) => { title.textContent = englishTitles[i]; });
-  summaries.forEach((summary, i) => { summary.innerHTML = englishSummaries[i]; });
-  document.getElementById('main-title').textContent = 'English Moral Stories';
-  document.getElementById('subtitle').textContent = 'Short stories with valuable life lessons';
-  document.getElementById('nav-home').textContent = 'Home';
-  document.getElementById('nav-stories').textContent = 'Stories';
-  document.getElementById('nav-contact').textContent = 'Contact Us';
-  document.getElementById('nav-support').textContent = 'Support';
-  document.getElementById('searchBox').placeholder = '🔍 Search stories...';
-}
-
-</script>
-
-    <script>
-  window.onload = () => {
-    if (!isEnglish) {
-      switchToFarsi();
-    }
-    if (localStorage.getItem("darkMode") === "true") {
-      document.body.classList.add("dark-mode");
-    }
-  };
-</script>
- <style>
+  <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0; padding: 0;
@@ -785,22 +720,5 @@ function switchToEnglish() {
       border-radius: 8px;
       width: 280px;
       padding: 15px;
-      box-shadow: 0 3px 8px rgb(0; 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      box-shadow: 0 3px 8px rgb(0 
+~
