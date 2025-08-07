@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The King's Disguise</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      direction: ltr;
+      text-align: left;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Tahoma', sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+      position: relative;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #1f6391;
+    }
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+
+  <header>
+    <h1 id="pageTitle">The King's Disguise</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+
+    <div id="enText">
+      <img src="images/story29.jpg" alt="The King's Disguise" />
+      <p>In ancient Persia, a wise and just king ruled over a vast land. Curious about the true condition of his people, he decided to go among them in disguise. Dressed as a poor traveler, he wandered the streets, markets, and villages to see how his subjects truly lived.</p>
+
+      <p>One evening, the king entered a humble hut and was warmly welcomed by a kind old man. They shared simple bread and water, and the old man spoke honestly about the challenges of life under the king’s rule — not knowing he was speaking to the king himself.</p>
+
+      <p>Touched by the man’s sincerity and hospitality, the king returned to his palace the next day. He called for changes to be made: taxes were lowered, roads were repaired, and the old man was invited to the palace and honored for his wisdom and honesty.</p>
+
+      <p><strong>Moral:</strong> A good leader listens to the people not from a throne, but from among them.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story29.jpg" alt="لباس مبدّل پادشاه" />
+      <p>در روزگاران قدیم، پادشاهی دانا و دادگر بر سرزمینی پهناور حکمرانی می‌کرد. او برای آگاهی از وضعیت واقعی مردمش، تصمیم گرفت در لباس مبدّل میان آن‌ها برود. با پوشیدن لباسی ساده مانند یک مسافر فقیر، از خیابان‌ها، بازارها و روستاها عبور کرد تا زندگی واقعی مردم را ببیند.</p>
+
+      <p>یک شب وارد کلبه‌ای ساده شد. پیرمردی مهربان از او با نان و آب ساده پذیرایی کرد و بی‌پرده از مشکلات زندگی زیر سایه‌ی حکومت پادشاه گفت — بی‌آنکه بداند در برابر خود همان پادشاه نشسته است.</p>
+
+      <p>پادشاه تحت تأثیر صداقت و میهمان‌نوازی او قرار گرفت. فردای آن روز، به قصر بازگشت و فرمان اصلاحات داد: مالیات‌ها کاهش یافت، جاده‌ها تعمیر شد، و آن پیرمرد به قصر دعوت شد و به‌پاس خرد و صداقتش مورد تجلیل قرار گرفت.</p>
+
+      <p><strong>نتیجه‌گیری:</strong> رهبر خوب، از میان مردم گوش می‌سپارد، نه فقط از بالای تخت سلطنت.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      
+      if (enText.style.display !== 'none') {
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'لباس مبدّل پادشاه';
+      } else {
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = "The King's Disguise";
+      }
+    }
+  </script>
+
+</body>
+</html>
