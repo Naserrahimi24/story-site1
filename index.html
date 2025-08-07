@@ -12,6 +12,9 @@
 <meta name="author" content="نام شما یا نام سایت">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
+<script>
+  let isEnglish = localStorage.getItem('language') !== 'fa';
+</script>
 
 </head>
 <body>
@@ -722,7 +725,17 @@ function switchToEnglish() {
 
 </script>
 
-  <style>
+    <script>
+  window.onload = () => {
+    if (!isEnglish) {
+      switchToFarsi();
+    }
+    if (localStorage.getItem("darkMode") === "true") {
+      document.body.classList.add("dark-mode");
+    }
+  };
+</script>
+ <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0; padding: 0;
@@ -774,6 +787,7 @@ function switchToEnglish() {
       width: 280px;
       padding: 15px;
       box-shadow: 0 3px 8px rgb(0; 
+
 
 
 
