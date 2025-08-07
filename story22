@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Behlul and the Bowl Makers</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      direction: ltr;
+      text-align: left;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Tahoma', sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+      position: relative;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #1f6391;
+    }
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+
+  <header>
+    <h1 id="pageTitle">Behlul and the Bowl Makers</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+
+    <div id="enText">
+      <img src="images/story22.jpg" alt="Behlul and the Bowl Makers" />
+      <p>Once, in a bustling market, Behlul noticed a group of bowl makers complaining loudly about how hard their work was and how little they earned. They said no one appreciated their craft anymore.</p>
+
+      <p>Behlul smiled and said, “Why do you complain when your bowls are so beautiful and useful?”</p>
+
+      <p>One of the bowl makers replied, “People just want cheap things. They don’t care about the work behind these bowls.”</p>
+
+      <p>Behlul thought for a moment, then said, “I have an idea. Tomorrow, bring me your finest bowls.”</p>
+
+      <p>The next day, the bowl makers brought their best bowls. Behlul placed them in the market square and announced, “These bowls are magical! Whoever buys one will never have to buy another bowl again.”</p>
+
+      <p>The crowd gathered, excited and curious. The bowls sold quickly at a good price.</p>
+
+      <p>Later, Behlul told the bowl makers, “You see, it’s not just the bowl but the story and value you attach to it that makes people willing to pay. Work with pride and tell your story well.”</p>
+
+      <p><strong>Moral:</strong> Value and pride in your work can change others’ perceptions and bring success.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story22.jpg" alt="بهلول و کاسه‌سازان" />
+      <p>روزی در بازار شلوغی، بهلول گروهی از کاسه‌سازان را دید که بلند بلند از سختی کارشان و دستمزد کم‌شان شکایت می‌کردند. می‌گفتند کسی دیگر قدر هنر آن‌ها را نمی‌داند.</p>
+
+      <p>بهلول لبخند زد و گفت: «چرا شکایت می‌کنید وقتی کاسه‌هایتان اینقدر زیبا و مفیدند؟»</p>
+
+      <p>یکی از کاسه‌سازان پاسخ داد: «مردم فقط چیزهای ارزان می‌خواهند. به زحمت پشت این کاسه‌ها اهمیتی نمی‌دهند.»</p>
+
+      <p>بهلول کمی فکر کرد و سپس گفت: «ایده‌ای دارم. فردا بهترین کاسه‌هایتان را برای من بیاورید.»</p>
+
+      <p>روز بعد، کاسه‌سازان بهترین کاسه‌هایشان را آوردند. بهلول آن‌ها را وسط بازار گذاشت و اعلام کرد: «این کاسه‌ها جادویی هستند! هرکسی یکی از آن‌ها را بخرد، دیگر نیازی به خرید کاسه دیگری نخواهد داشت.»</p>
+
+      <p>جمعیت کنجکاو و هیجان‌زده جمع شدند. کاسه‌ها به سرعت و با قیمت خوبی فروخته شدند.</p>
+
+      <p>بعداً بهلول به کاسه‌سازان گفت: «دیدید؟ فقط خود کاسه نیست که اهمیت دارد، بلکه داستان و ارزش‌گذاری شماست که باعث می‌شود مردم حاضر باشند پول بدهند. با افتخار کار کنید و داستان‌تان را خوب بگویید.»</p>
+
+      <p><strong>نتیجه‌گیری:</strong> ارزش و افتخار به کار، می‌تواند نگاه دیگران را تغییر دهد و موفقیت بیاورد.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      
+      if (enText.style.display !== 'none') {
+        // Switch to Persian
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'بهلول و کاسه‌سازان';
+      } else {
+        // Switch to English
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = "Behlul and the Bowl Makers";
+      }
+    }
+  </script>
+
+</body>
+</html>
