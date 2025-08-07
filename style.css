@@ -126,3 +126,33 @@ footer {
   background-color: #2b2b2b;
   color: #f1f1f1;
 }
+/* حالت تیره برای دکمه‌ها */
+.dark-mode button {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode button:hover {
+  background-color: #666;
+}
+
+/* حالت تیره برای نوار جستجو */
+.dark-mode #searchBox {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+/* حالت تیره برای لینک‌ها در منو */
+.dark-mode nav {
+  background-color: #111;
+}
+
+.dark-mode nav a {
+  color: #ccc;
+}
+
+.dark-mode .story-card h2 {
+  color: #f1f1f1;
+}
+
