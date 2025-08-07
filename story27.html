@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Behlul and the Ephemeral Palace</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      direction: ltr;
+      text-align: left;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Tahoma', sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+      position: relative;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #1f6391;
+    }
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+
+  <header>
+    <h1 id="pageTitle">Behlul and the Ephemeral Palace</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+
+    <div id="enText">
+      <img src="images/story27.jpg" alt="Behlul and the Ephemeral Palace" />
+      <p>One day, Caliph Harun al-Rashid saw Behlul drawing a palace in the sand. He asked mockingly, "What is this palace for, Behlul?"</p>
+
+      <p>Behlul replied calmly, "It’s a palace for those who understand that all things in this world are temporary."</p>
+
+      <p>The Caliph laughed and said, "That’s foolish! What kind of person would want a palace made of sand?"</p>
+
+      <p>Behlul looked up and said, "And what kind of person builds palaces of stone thinking they will last forever?"</p>
+
+      <p>Stunned by the wisdom in Behlul’s words, the Caliph walked away in silence, realizing the deep truth in what he had just heard.</p>
+
+      <p><strong>Moral:</strong> Everything in this world is fleeting. Build with wisdom, not illusion.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story27.jpg" alt="بهلول و قصر ناپایدار" />
+      <p>روزی، خلیفه هارون‌الرشید دید که بهلول در شن‌ها قصری می‌کشد. با تمسخر پرسید: «این قصر برای کیست، بهلول؟»</p>
+
+      <p>بهلول با آرامش پاسخ داد: «برای کسانی که می‌دانند همه‌چیز در این دنیا ناپایدار است.»</p>
+
+      <p>خلیفه خندید و گفت: «این که خیلی احمقانه‌ست! کی می‌خواد قصری از شن داشته باشه؟»</p>
+
+      <p>بهلول سر بلند کرد و گفت: «و چه کسی قصرهایی از سنگ می‌سازه، به امید اینکه برای همیشه بمانند؟»</p>
+
+      <p>خلیفه که از سخن پرمعنای بهلول متأثر شده بود، سکوت کرد و آرام از آنجا دور شد.</p>
+
+      <p><strong>نتیجه‌گیری:</strong> همه‌چیز در دنیا گذراست؛ با حکمت بساز، نه با توهم.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      
+      if (enText.style.display !== 'none') {
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'بهلول و قصر ناپایدار';
+      } else {
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'Behlul and the Ephemeral Palace';
+      }
+    }
+  </script>
+
+</body>
+</html>
