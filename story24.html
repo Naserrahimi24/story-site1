@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Just King</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      direction: ltr;
+      text-align: left;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Tahoma', sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+      position: relative;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #1f6391;
+    }
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+
+  <header>
+    <h1 id="pageTitle">The Just King</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+
+    <div id="enText">
+      <img src="images/story24.jpg" alt="The Just King" />
+      <p>There once was a king known far and wide for his justice. Every morning, he would leave his palace in disguise and walk among his people to see how they lived. He listened carefully to their needs, their suffering, and their joys — never revealing who he truly was.</p>
+
+      <p>One day, he heard a woman weeping outside the city walls. He approached and asked, “Why do you cry, dear mother?”</p>
+
+      <p>She said, “My son was taken by force to serve in the army. He is my only child. The commander ignored my pleas. Who will care for me now?”</p>
+
+      <p>The king’s heart burned with sorrow. That night, he summoned the commander and demanded justice. The soldier was returned, and the mother’s tears turned to joy.</p>
+
+      <p>The next day, a minister asked the king, “Why do you risk your safety to walk among commoners?”</p>
+
+      <p>The king replied, “How else can I rule justly if I do not feel their pain with my own heart? A ruler behind high walls sees only his reflection — not the truth.”</p>
+
+      <p><strong>Moral:</strong> A true leader serves by listening, not commanding. Justice begins with empathy.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story24.jpg" alt="پادشاه دادگر" />
+      <p>روزی پادشاهی بود که در سراسر سرزمین به عدالتش مشهور بود. هر صبح، لباس مبدل می‌پوشید و از قصر بیرون می‌رفت تا بی‌نام و نشان در میان مردم بگردد. او با دقت به دردها، نیازها و شادی‌های آنان گوش می‌داد — بی‌آنکه خود را معرفی کند.</p>
+
+      <p>روزی، صدای گریه‌ی زنی را بیرون از دروازه‌ی شهر شنید. نزدیک شد و پرسید: «ای مادر، چرا اشک می‌ریزی؟»</p>
+
+      <p>زن گفت: «فرزندم را به زور به خدمت سپاه بردند. او تنها پسرم است. فرمانده به گریه‌هایم گوش نداد. چه کسی از من نگهداری خواهد کرد؟»</p>
+
+      <p>دل پادشاه از درد سوخت. آن شب، فرمانده را خواست و فرمان داد حق به آن زن بازگردد. فرزندش آزاد شد، و اشک‌های غم به اشک شوق بدل شدند.</p>
+
+      <p>فردای آن روز، وزیری از او پرسید: «چرا جان خود را به خطر می‌اندازی و ناشناس در میان مردم می‌گردی؟»</p>
+
+      <p>پادشاه گفت: «چگونه می‌توانم عادل باشم، اگر درد مردم را با دل خود لمس نکنم؟ آن‌که در پس دیوارهای بلند بنشیند، جز تصویر خویش نبیند — نه حقیقت را.»</p>
+
+      <p><strong>نتیجه‌گیری:</strong> پیشوای واقعی با گوش دادن فرمان می‌دهد، نه با فریاد. عدالت از همدلی آغاز می‌شود.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      
+      if (enText.style.display !== 'none') {
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'پادشاه دادگر';
+      } else {
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'The Just King';
+      }
+    }
+  </script>
+
+</body>
+</html>
