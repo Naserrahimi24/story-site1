@@ -676,36 +676,6 @@ if (localStorage.getItem("darkMode") === "true") {
         isEnglish = true;
       }
     }
-    let isEnglish = true;
-
-function toggleLanguage() {
-  const titles = document.querySelectorAll('.story-title');
-  const summaries = document.querySelectorAll('.story-summary');
-
-  if (isEnglish) {
-    titles.forEach((title, i) => { title.textContent = persianTitles[i]; });
-    summaries.forEach((summary, i) => { summary.innerHTML = persianSummaries[i]; });
-    document.getElementById('main-title').textContent = 'داستان‌های اخلاقی انگلیسی';
-    document.getElementById('subtitle').textContent = 'داستان‌های کوتاه با درس‌های ارزشمند زندگی';
-    document.getElementById('nav-home').textContent = 'خانه';
-    document.getElementById('nav-stories').textContent = 'داستان‌ها';
-    document.getElementById('nav-contact').textContent = 'تماس با ما';
-    document.getElementById('nav-support').textContent = 'پشتیبانی';
-    document.getElementById('searchBox').placeholder = '🔍 جستجوی داستان‌ها...';
-    isEnglish = false;
-  } else {
-    titles.forEach((title, i) => { title.textContent = englishTitles[i]; });
-    summaries.forEach((summary, i) => { summary.innerHTML = englishSummaries[i]; });
-    document.getElementById('main-title').textContent = 'English Moral Stories';
-    document.getElementById('subtitle').textContent = 'Short stories with valuable life lessons';
-    document.getElementById('nav-home').textContent = 'Home';
-    document.getElementById('nav-stories').textContent = 'Stories';
-    document.getElementById('nav-contact').textContent = 'Contact Us';
-    document.getElementById('nav-support').textContent = 'Support';
-    document.getElementById('searchBox').placeholder = '🔍 Search stories...';
-    isEnglish = true;
-  }
-}
     
   </script>
 
@@ -761,6 +731,7 @@ function toggleLanguage() {
       width: 280px;
       padding: 15px;
       box-shadow: 0 3px 8px rgb(0 
+
 
 
 
