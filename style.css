@@ -155,4 +155,9 @@ footer {
 .dark-mode .story-card h2 {
   color: #f1f1f1;
 }
+.like-btn.liked {
+  background-color: #ff006e;
+  color: white;
+}
+
 
