@@ -484,7 +484,6 @@
   </main>
 
   <script>
-    let isEnglish = localStorage.getItem('language') !== 'fa';
     function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
   localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
@@ -678,7 +677,50 @@ if (localStorage.getItem("darkMode") === "true") {
       }
     }
     
-  </script>
+  
+let isEnglish = localStorage.getItem('language') !== 'fa';
+
+window.onload = () => {
+  if (!isEnglish) {
+    switchToFarsi();
+  }
+};
+
+function toggleLanguage() {
+  isEnglish = !isEnglish;
+  localStorage.setItem('language', isEnglish ? 'en' : 'fa');
+  if (isEnglish) {
+    switchToEnglish();
+  } else {
+    switchToFarsi();
+  }
+}
+
+function switchToFarsi() {
+  titles.forEach((title, i) => { title.textContent = persianTitles[i]; });
+  summaries.forEach((summary, i) => { summary.innerHTML = persianSummaries[i]; });
+  document.getElementById('main-title').textContent = 'داستان‌های اخلاقی انگلیسی';
+  document.getElementById('subtitle').textContent = 'داستان‌های کوتاه با درس‌های ارزشمند زندگی';
+  document.getElementById('nav-home').textContent = 'خانه';
+  document.getElementById('nav-stories').textContent = 'داستان‌ها';
+  document.getElementById('nav-contact').textContent = 'تماس با ما';
+  document.getElementById('nav-support').textContent = 'پشتیبانی';
+  document.getElementById('searchBox').placeholder = '🔍 جستجوی داستان‌ها...';
+}
+
+function switchToEnglish() {
+  titles.forEach((title, i) => { title.textContent = englishTitles[i]; });
+  summaries.forEach((summary, i) => { summary.innerHTML = englishSummaries[i]; });
+  document.getElementById('main-title').textContent = 'English Moral Stories';
+  document.getElementById('subtitle').textContent = 'Short stories with valuable life lessons';
+  document.getElementById('nav-home').textContent = 'Home';
+  document.getElementById('nav-stories').textContent = 'Stories';
+  document.getElementById('nav-contact').textContent = 'Contact Us';
+  document.getElementById('nav-support').textContent = 'Support';
+  document.getElementById('searchBox').placeholder = '🔍 Search stories...';
+}
+
+</script>
 
   <style>
     body {
@@ -731,7 +773,8 @@ if (localStorage.getItem("darkMode") === "true") {
       border-radius: 8px;
       width: 280px;
       padding: 15px;
-      box-shadow: 0 3px 8px rgb(0 
+      box-shadow: 0 3px 8px rgb(0; 
+
 
 
 
