@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The King's Wisdom</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      direction: ltr;
+      text-align: left;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Tahoma', sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+      position: relative;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #1f6391;
+    }
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+
+  <header>
+    <h1 id="pageTitle">The King's Wisdom</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+
+    <div id="enText">
+      <img src="images/story30.jpg" alt="The King's Wisdom" />
+      <p>Once in the court of a great Persian king, a servant was caught stealing. The ministers demanded harsh punishment. But the king paused and looked at the man carefully.</p>
+
+      <p>“Why did you steal?” he asked gently.</p>
+
+      <p>The servant lowered his head and replied, “My family was starving. I had no other way.”</p>
+
+      <p>After a moment of silence, the king said, “Let this man go. Hunger is the fault of the kingdom, not the citizen. If one man must steal to eat, then I have failed.”</p>
+
+      <p>The ministers were shocked, but the people were moved. The king ordered that grain be distributed to the poor and jobs be created for the needy. His justice earned him lasting respect.</p>
+
+      <p><strong>Moral:</strong> True wisdom in a ruler lies not in punishment, but in compassion and reform.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story30.jpg" alt="حکمت پادشاه" />
+      <p>روزی در دربار پادشاهی بزرگ از سرزمین فارس، خدمتکاری به جرم دزدی دستگیر شد. وزیران خواستار مجازات شدید او شدند. اما پادشاه با نگاهی دقیق به مرد گفت:</p>
+
+      <p>«چرا دزدی کردی؟»</p>
+
+      <p>مرد سرش را پایین انداخت و پاسخ داد: «خانواده‌ام گرسنه بودند. راهی جز این نداشتم.»</p>
+
+      <p>پادشاه لحظه‌ای سکوت کرد و سپس گفت: «او را آزاد کنید. گرسنگی تقصیر حکومت است، نه شهروند. اگر انسانی برای سیر شدن مجبور به دزدی شود، این منم که شکست خورده‌ام.»</p>
+
+      <p>وزیران در شگفت ماندند، اما مردم تحت تأثیر قرار گرفتند. پادشاه دستور داد به فقرا غله بدهند و برای نیازمندان شغل ایجاد شود. این رفتار، او را در دل مردم جاودانه کرد.</p>
+
+      <p><strong>نتیجه‌گیری:</strong> خردِ حقیقی در پادشاهی، در مجازات نیست؛ در مهربانی و اصلاح است.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      
+      if (enText.style.display !== 'none') {
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'حکمت پادشاه';
+      } else {
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = "The King's Wisdom";
+      }
+    }
+  </script>
+
+</body>
+</html>
