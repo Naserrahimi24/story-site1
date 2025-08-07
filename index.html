@@ -706,30 +706,7 @@ function toggleLanguage() {
     isEnglish = true;
   }
 }
-
-      window.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.story-card');
-
-    cards.forEach(card => {
-      const index = card.getAttribute('data-index');
-      const liked = localStorage.getItem('like-' + index) === 'true';
-      const count = localStorage.getItem('like-count-' + index) || 0;
-
-      const button = card.querySelector('.like-btn');
-      const countSpan = card.querySelector('.like-count');
-
-      countSpan.textContent = count;
-
-      if (liked) {
-        button.classList.add('liked');
-        button.textContent = '❤️ Liked';
-      } else {
-        button.classList.remove('liked');
-        button.textContent = '👍 Like';
-      }
-    });
-  });
-
+    
   </script>
 
   <style>
@@ -784,6 +761,7 @@ function toggleLanguage() {
       width: 280px;
       padding: 15px;
       box-shadow: 0 3px 8px rgb(0 
+
 
 
 
