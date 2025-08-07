@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nasruddin's Shoe</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      direction: ltr;
+      text-align: left;
+    }
+    main.rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Tahoma', sans-serif;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+      position: relative;
+    }
+    button#toggleLang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button#toggleLang:hover {
+      background-color: #1f6391;
+    }
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+
+  <header>
+    <h1 id="pageTitle">Nasruddin's Shoe</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+
+    <div id="enText">
+      <img src="images/story26.jpg" alt="Nasruddin's Shoe" />
+      <p>One day, Mulla Nasruddin was sitting at the mosque’s entrance, looking puzzled. A friend approached and asked, “What’s wrong, Mulla?”</p>
+
+      <p>Nasruddin sighed and said, “Someone has stolen one of my shoes!”</p>
+
+      <p>The friend looked around and said, “Well, the thief must’ve taken both. Why would someone take only one?”</p>
+
+      <p>Mulla smiled and held up one shoe. “Ah, but I threw one at the thief as he ran. That’s how I know he only has one!”</p>
+
+      <p>“So... what are you going to do with the one you have left?”</p>
+
+      <p>Mulla replied, “Keep it safe, of course! If I ever find the thief limping around, I’ll match him with the other one!”</p>
+
+      <p><strong>Moral:</strong> Mulla teaches us to stay clever, even when faced with loss.</p>
+
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+
+    <div id="faText" style="display:none;">
+      <img src="images/story26.jpg" alt="کفش ملانصرالدین" />
+      <p>روزی، ملانصرالدین جلوی مسجد نشسته بود و گیج و ناراحت به نظر می‌رسید. دوستی به او نزدیک شد و پرسید: «ملا، چی شده؟»</p>
+
+      <p>ملا آهی کشید و گفت: «یکی از کفش‌هامو دزدیدن!»</p>
+
+      <p>دوستش اطراف را نگاه کرد و گفت: «ولی معمولاً دزد هر دو تا رو می‌بره. چرا فقط یکی؟»</p>
+
+      <p>ملا لبخند زد و یکی از کفش‌ها را بالا گرفت و گفت: «آه، چون یکی‌شو هنگام فرار به سمتش پرت کردم! واسه همین می‌دونم فقط یکی دستشه!»</p>
+
+      <p>دوستش گفت: «خب... حالا می‌خوای با این یکی کفش چی کار کنی؟»</p>
+
+      <p>ملا پاسخ داد: «معلومه! نگهش می‌دارم. اگه یه روز اون دزد رو دیدم که لنگ‌لنگان راه می‌ره، فوری با این یکی کفش شناسایی‌ش می‌کنم!»</p>
+
+      <p><strong>نتیجه‌گیری:</strong> حتی در زمانِ از دست دادن، می‌شه با ذکاوت عمل کرد.</p>
+
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      
+      if (enText.style.display !== 'none') {
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'کفش ملانصرالدین';
+      } else {
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = "Nasruddin's Shoe";
+      }
+    }
+  </script>
+
+</body>
+</html>
