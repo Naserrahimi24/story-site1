@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Case of the Missing Abode</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {max-width: 700px; margin: 30px auto; padding: 20px; font-family: Arial, sans-serif; line-height: 1.6; background-color: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+    main.rtl {direction: rtl; text-align: right; font-family: 'Tahoma', sans-serif;}
+    img {width: 100%; border-radius: 12px; margin-bottom: 20px;}
+    a.back-link {display: inline-block; margin-top: 25px; color: #2980b9; text-decoration: none; font-weight: bold;}
+    a.back-link:hover {text-decoration: underline;}
+    header {text-align: center; padding: 40px 20px; background-color: #2c3e50; color: white; position: relative;}
+    button#toggleLang {position: absolute; top: 15px; right: 20px; background-color: #2980b9; border: none; color: white; padding: 8px 14px; font-size: 14px; border-radius: 6px; cursor: pointer; user-select: none;}
+    button#toggleLang:hover {background-color: #1f6391;}
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+  <header>
+    <h1 id="pageTitle">The Case of the Missing Abode</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+  <main id="contentArea">
+    <img src="images/story31.jpg" alt="The Case of the Missing Abode" />
+    <div id="enText">
+      <p>One crisp morning, Mulla Nasruddin burst into the village square crying, “My house is missing! My house is missing!” His voice startled the roosters and drew the neighbors out of their homes.</p>
+      <p>Villagers gathered, rubbing their eyes and asking how a house could vanish. Some guessed bandits, others joked about magic. Mulla only smiled and asked them to follow.</p>
+      <p>He led them through winding lanes to a small foundation of stones where his cottage had once been. The crowd gasped — but Mulla explained calmly that he had spent the night helping a family who had nowhere to sleep, and had given them his cottage.</p>
+      <p>He described how the family&#x27;s children had sat close, shivering, until Mulla offered his bed and blankets. &#x27;A house that leaves you may find a way to warm a heart,&#x27; he said.</p>
+      <p>By evening, the villagers understood: what looks like loss may be change that brings true gain. They brought food and offered to rebuild with him, but Mulla refused; he only asked them to remember those in need.</p>
+      <p><strong>Moral:</strong> Mending hearts is better than hoarding roofs.</p>
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+    <div id="faText" style="display:none;">
+      <p>یک صبح خنک، ملا نصرالدین با فریاد وارد میدان روستا شد: «خانه‌ام گم شده! خانه‌ام گم شده!» صدایش خروس‌ها را ترساند و همسایه‌ها را بیرون کشید.</p>
+      <p>روستاییان جمع شدند و چشم‌هایشان را مالیدند و پرسیدند چگونه ممکن است خانه ناپدید شود. بعضی گفتند راهزنان، بعضی درباره جادو شوخی کردند. ملا تنها لبخند زد و از آن‌ها خواست دنبالش بیایند.</p>
+      <p>او آن‌ها را از کوچه‌های پیچ در پیچ به پی سنگی کوچکی برد که کلبه‌اش قبلاً آنجا بود. جمعیت بهت زده شد—اما ملا آرام توضیح داد که شب قبل، خانه‌اش را به خانواده‌ای که جایی برای خواب نداشتند بخشیده بود.</p>
+      <p>او شرح داد چگونه بچه‌های آن خانواده نزدیک هم جمع شدند و از سرما میلررزیدند تا اینکه ملا تخت و پتوهایش را به آن‌ها داد. «خانه‌ای که از تو جدا می‌شود ممکن است دل کسی را گرم کند»، گفت.</p>
+      <p>تا شب، اهالی فهمیدند آنچه به نظر باخت می‌آید، ممکن است تغییری باشد که سود واقعی می‌آورد. آن‌ها غذا آوردند و پیشنهاد بازسازی دادند اما ملا نپذیرفت؛ فقط خواست که همیشه به نیازمندان بیندیشند.</p>
+      <p><strong>نتیجه‌گیری:</strong> مرمت دل‌ها بهتر از جمع‌آوری سقف‌هاست.</p>
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      if (enText.style.display !== 'none') {
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'ماجرای خانه گمشده';
+      } else {
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'The Case of the Missing Abode';
+      }
+    }
+  </script>
+</body>
+</html>

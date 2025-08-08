@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Clever Mullah</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {max-width: 700px; margin: 30px auto; padding: 20px; font-family: Arial, sans-serif; line-height: 1.6; background-color: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+    main.rtl {direction: rtl; text-align: right; font-family: 'Tahoma', sans-serif;}
+    img {width: 100%; border-radius: 12px; margin-bottom: 20px;}
+    a.back-link {display: inline-block; margin-top: 25px; color: #2980b9; text-decoration: none; font-weight: bold;}
+    a.back-link:hover {text-decoration: underline;}
+    header {text-align: center; padding: 40px 20px; background-color: #2c3e50; color: white; position: relative;}
+    button#toggleLang {position: absolute; top: 15px; right: 20px; background-color: #2980b9; border: none; color: white; padding: 8px 14px; font-size: 14px; border-radius: 6px; cursor: pointer; user-select: none;}
+    button#toggleLang:hover {background-color: #1f6391;}
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+  <header>
+    <h1 id="pageTitle">The Clever Mullah</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+  <main id="contentArea">
+    <img src="images/story32.jpg" alt="The Clever Mullah" />
+    <div id="enText">
+      <p>On market day, two merchants argued fiercely over a narrow plot beside the bazaar. Voices soared and threats followed until the elders could not calm them.</p>
+      <p>Passing by, Mulla Nasruddin paused, listened, and then drew a straight line across the dusty earth with his cane. &#x27;This is the border,&#x27; he said, &#x27;but the right to this land will belong to the one who makes the other laugh first.&#x27;</p>
+      <p>The proposition felt absurd, yet both men could not refuse. Each attempted jokes, mimicry, and ridiculous tales. Soon one merchant made the other collapse with laughter, and the argument dissolved into shared amusement.</p>
+      <p>Mulla later explained that by inviting laughter he had changed the contest from ownership to empathy. When people laugh together, the desire to feud fades and the village returns to a neighborly rhythm.</p>
+      <p><strong>Moral:</strong> Humor can change enemies into neighbors.</p>
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+    <div id="faText" style="display:none;">
+      <p>روزی در روز بازار، دو تاجر بر سر قطعه زمینی در کنار بازار شدیداً اختلاف پیدا کردند. صداها بالا رفت و تهدیدها آمد تا بزرگان نیز نتوانستند آرامشان کنند.</p>
+      <p>ملا نصرالدین از راه گذشت، گوش داد و عصایش را روی خاک کشید و خطی مستقیم کشید: «این مرز است؛ اما حق این زمین برای کسی است که دیگری را اول بخنداند.»</p>
+      <p>این پیشنهاد مضحک بود اما هیچ‌یک نتوانستند رد کنند. هرکدام جوک و تقلید و داستان‌های خنده‌دار گفتند و سرانجام یکی دیگری را از خنده بر زمین انداخت. اختلاف به بازی تبدیل شد.</p>
+      <p>ملا بعداً توضیح داد با آوردن خنده، مسابقه را از مالکیت به همدلی تبدیل کرده است. وقتی مردم با هم می‌خندند، انگیزه درگیری از بین می‌رود و روستا به همسایگی بازمی‌گردد.</p>
+      <p><strong>نتیجه‌گیری:</strong> شوخ‌طبعی می‌تواند دشمنان را به همسایه تبدیل کند.</p>
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      if (enText.style.display !== 'none') {
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'ملای باهوش';
+      } else {
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'The Clever Mullah';
+      }
+    }
+  </script>
+</body>
+</html>

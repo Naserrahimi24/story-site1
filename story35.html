@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Consistent Sage</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {max-width: 700px; margin: 30px auto; padding: 20px; font-family: Arial, sans-serif; line-height: 1.6; background-color: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+    main.rtl {direction: rtl; text-align: right; font-family: 'Tahoma', sans-serif;}
+    img {width: 100%; border-radius: 12px; margin-bottom: 20px;}
+    a.back-link {display: inline-block; margin-top: 25px; color: #2980b9; text-decoration: none; font-weight: bold;}
+    a.back-link:hover {text-decoration: underline;}
+    header {text-align: center; padding: 40px 20px; background-color: #2c3e50; color: white; position: relative;}
+    button#toggleLang {position: absolute; top: 15px; right: 20px; background-color: #2980b9; border: none; color: white; padding: 8px 14px; font-size: 14px; border-radius: 6px; cursor: pointer; user-select: none;}
+    button#toggleLang:hover {background-color: #1f6391;}
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+  <header>
+    <h1 id="pageTitle">The Consistent Sage</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+  <main id="contentArea">
+    <img src="images/story35.jpg" alt="The Consistent Sage" />
+    <div id="enText">
+      <p>A traveler asked a sage why he wore the same cloak and kept simple meals when fame and wealth awaited him. The sage answered that consistency breeds trust.</p>
+      <p>When the river ran low and promises broke, the sage&#x27;s steady presence became a lifeline. He organized shared food, set watches, and taught the value of calm discipline.</p>
+      <p>People realized that flashy generosity fades but reliable goodness endures. The sage taught by example that constancy builds the bones of a community.</p>
+      <p><strong>Moral:</strong> Steady virtue outlasts showy goodness.</p>
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+    <div id="faText" style="display:none;">
+      <p>سفری از حکیمی پرسید چرا همیشه همان ردای کهنه را به تن می‌کند و غذای ساده می‌خورد وقتی شهرت و ثروت ممکن است به سراغش آید. حکیم پاسخ داد که ثبات اعتماد می‌آورد.</p>
+      <p>وقتی رود کم شد و وعده‌ها شکست، حضور ثابت حکیم ستون نجات شد. او تقسیم غذا را سازمان داد، نگهبانانی تعیین کرد و ارزش دیسیپلین آرام را آموخت.</p>
+      <p>مردم دریافتند که بخشندگی نمایشی زودگذر است اما خوبی قابل اعتماد پایدار است. حکیم با عمل آموخت که ثبات پایه‌های جامعه را می‌سازد.</p>
+      <p><strong>نتیجه‌گیری:</strong> فضیلت ثابت از خوبی نمایشی پایدارتر است.</p>
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      if (enText.style.display !== 'none') {
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'حکیم استوار';
+      } else {
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'The Consistent Sage';
+      }
+    }
+  </script>
+</body>
+</html>

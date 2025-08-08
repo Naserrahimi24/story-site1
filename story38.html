@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Egg-cellent Wisdom of Mullah Nasruddin</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {max-width: 700px; margin: 30px auto; padding: 20px; font-family: Arial, sans-serif; line-height: 1.6; background-color: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+    main.rtl {direction: rtl; text-align: right; font-family: 'Tahoma', sans-serif;}
+    img {width: 100%; border-radius: 12px; margin-bottom: 20px;}
+    a.back-link {display: inline-block; margin-top: 25px; color: #2980b9; text-decoration: none; font-weight: bold;}
+    a.back-link:hover {text-decoration: underline;}
+    header {text-align: center; padding: 40px 20px; background-color: #2c3e50; color: white; position: relative;}
+    button#toggleLang {position: absolute; top: 15px; right: 20px; background-color: #2980b9; border: none; color: white; padding: 8px 14px; font-size: 14px; border-radius: 6px; cursor: pointer; user-select: none;}
+    button#toggleLang:hover {background-color: #1f6391;}
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+  <header>
+    <h1 id="pageTitle">The Egg-cellent Wisdom of Mullah Nasruddin</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+  <main id="contentArea">
+    <img src="images/story38.jpg" alt="The Egg-cellent Wisdom of Mullah Nasruddin" />
+    <div id="enText">
+      <p>Mulla placed an egg on a stone and declared that the secret to its worth was not in recipes but in patience and care. Townsfolk offered spices and techniques, but Mulla shook his head.</p>
+      <p>An elderly cook explained that eggs handled with respect produce warm meals shared among many. She took the egg, cooked it gently, and handed portions to hungry children.</p>
+      <p>Mulla smiled: the egg&#x27;s value was multiplied by the kindness that followed. Small things treated well become great gifts.</p>
+      <p><strong>Moral:</strong> Patience and care make small things precious.</p>
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+    <div id="faText" style="display:none;">
+      <p>ملا تخم‌مرغی را روی سنگ گذاشت و گفت راز ارزش آن در دستورها نیست بلکه در صبر و مراقبت است. مردم ادویه و فنون پیشنهاد دادند اما ملا سر تکان داد.</p>
+      <p>پختگر سالخورده‌ای گفت که تخم‌ها با احترام پخته شوند غذای گرمی برای بسیاری فراهم می‌کنند. او تخم را گرفت، آرام پخت و سهم‌هایی به کودکان گرسنه داد.</p>
+      <p>ملا لبخند زد: ارزش تخم با مهربانی‌ای که پس از آن آمد چند برابر شد. چیزهای کوچک اگر درست مراقبت شوند، هدایای بزرگی می‌شوند.</p>
+      <p><strong>نتیجه‌گیری:</strong> صبر و مراقبت، چیزهای کوچک را گران‌بها می‌کند.</p>
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      if (enText.style.display !== 'none') {
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'حکمت تخم‌مرغی ملا نصرالدین';
+      } else {
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'The Egg-cellent Wisdom of Mullah Nasruddin';
+      }
+    }
+  </script>
+</body>
+</html>

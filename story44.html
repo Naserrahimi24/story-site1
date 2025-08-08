@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Thief Who Got Stolen From</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {max-width: 700px; margin: 30px auto; padding: 20px; font-family: Arial, sans-serif; line-height: 1.6; background-color: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+    main.rtl {direction: rtl; text-align: right; font-family: 'Tahoma', sans-serif;}
+    img {width: 100%; border-radius: 12px; margin-bottom: 20px;}
+    a.back-link {display: inline-block; margin-top: 25px; color: #2980b9; text-decoration: none; font-weight: bold;}
+    a.back-link:hover {text-decoration: underline;}
+    header {text-align: center; padding: 40px 20px; background-color: #2c3e50; color: white; position: relative;}
+    button#toggleLang {position: absolute; top: 15px; right: 20px; background-color: #2980b9; border: none; color: white; padding: 8px 14px; font-size: 14px; border-radius: 6px; cursor: pointer; user-select: none;}
+    button#toggleLang:hover {background-color: #1f6391;}
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+  <header>
+    <h1 id="pageTitle">The Thief Who Got Stolen From</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+  <main id="contentArea">
+    <img src="images/story44.jpg" alt="The Thief Who Got Stolen From" />
+    <div id="enText">
+      <p>A nimble thief slipped into a house to steal a purse but tripped, leaving the purse behind as he fled. The homeowner discovered the attempt and called Mulla.</p>
+      <p>Instead of calls for punishment, Mulla invited the thief to breakfast and offered him work repairing nets. He explained that shame and hunger drive small crimes.</p>
+      <p>The thief took the work and, grateful, turned his skill to mending rather than stealing. Over time he became a steady helper and a symbol of how kindness can redirect a life.</p>
+      <p><strong>Moral:</strong> Kindness reforms where punishment might not.</p>
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+    <div id="faText" style="display:none;">
+      <p>دزدی چابک وارد خانه‌ای شد تا کیف را بدزدد اما به زمین خورد و کیف را جا گذاشت و گریخت. صاحب خانه این تلاش را کشف کرد و ملا را فراخواند.</p>
+      <p>ملا به جای درخواست مجازات، دزد را به صبحانه دعوت کرد و کاری برای وصله کردن تورها پیشنهاد داد. او توضیح داد که شرم و گرسنگی مردم را به راه‌های نادرست می‌کشاند.</p>
+      <p>دزد کار را پذیرفت و با سپاس مهارتش را به وصله کردن بدل کرد. با گذشت زمان او کمک‌رسانی ثابت شد و نمونه‌ای از اینکه مهربانی می‌تواند زندگی را تغییر دهد.</p>
+      <p><strong>نتیجه‌گیری:</strong> مهربانی جایی را اصلاح می‌کند که مجازات توان ندارد.</p>
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      if (enText.style.display !== 'none') {
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'دزدی که خودش دزدیده شد';
+      } else {
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'The Thief Who Got Stolen From';
+      }
+    }
+  </script>
+</body>
+</html>

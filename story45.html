@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Guest at His Own House</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {max-width: 700px; margin: 30px auto; padding: 20px; font-family: Arial, sans-serif; line-height: 1.6; background-color: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+    main.rtl {direction: rtl; text-align: right; font-family: 'Tahoma', sans-serif;}
+    img {width: 100%; border-radius: 12px; margin-bottom: 20px;}
+    a.back-link {display: inline-block; margin-top: 25px; color: #2980b9; text-decoration: none; font-weight: bold;}
+    a.back-link:hover {text-decoration: underline;}
+    header {text-align: center; padding: 40px 20px; background-color: #2c3e50; color: white; position: relative;}
+    button#toggleLang {position: absolute; top: 15px; right: 20px; background-color: #2980b9; border: none; color: white; padding: 8px 14px; font-size: 14px; border-radius: 6px; cursor: pointer; user-select: none;}
+    button#toggleLang:hover {background-color: #1f6391;}
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+  <header>
+    <h1 id="pageTitle">The Guest at His Own House</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+  <main id="contentArea">
+    <img src="images/story45.jpg" alt="The Guest at His Own House" />
+    <div id="enText">
+      <p>Returning after months away, Mulla found his family greeting him as if he were a visitor, with songs and a feast prepared. No one expected a homecoming to feel like hospitality.</p>
+      <p>Mulla accepted the celebration with gentle humor, telling tales of his travels and offering compliments to those who had held the home together.</p>
+      <p>The family realized they had grown used to routine and had forgotten to cherish presence. From then on, small returns were marked with care and gratitude.</p>
+      <p><strong>Moral:</strong> Value presence as you would a guest.</p>
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+    <div id="faText" style="display:none;">
+      <p>پس از ماه‌ها بازگشت، ملا دید خانواده‌اش او را مانند مهمان استقبال کردند، با آواز و ضیافت. هیچ‌کس انتظار نداشت بازگشت به خانه این‌چنین پذیرایی شود.</p>
+      <p>ملا جشن را با شوخ‌طبعی پذیرفت، حکایاتی از سفر تعریف کرد و از کسانی که خانه را نگه داشته بودند تشکر کرد.</p>
+      <p>خانواده فهمیدند که به عادت خو گرفته‌اند و یادشان رفته بود حضور هم را قدر بدانند. از آن پس بازگشت‌های کوچک با قدردانی همراه شد.</p>
+      <p><strong>نتیجه‌گیری:</strong> قدردان حضور باش مانند یک مهمان.</p>
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      if (enText.style.display !== 'none') {
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'مهمان در خانه خودش';
+      } else {
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'The Guest at His Own House';
+      }
+    }
+  </script>
+</body>
+</html>

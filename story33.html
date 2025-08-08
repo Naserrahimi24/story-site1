@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Muddy Prayer</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {max-width: 700px; margin: 30px auto; padding: 20px; font-family: Arial, sans-serif; line-height: 1.6; background-color: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+    main.rtl {direction: rtl; text-align: right; font-family: 'Tahoma', sans-serif;}
+    img {width: 100%; border-radius: 12px; margin-bottom: 20px;}
+    a.back-link {display: inline-block; margin-top: 25px; color: #2980b9; text-decoration: none; font-weight: bold;}
+    a.back-link:hover {text-decoration: underline;}
+    header {text-align: center; padding: 40px 20px; background-color: #2c3e50; color: white; position: relative;}
+    button#toggleLang {position: absolute; top: 15px; right: 20px; background-color: #2980b9; border: none; color: white; padding: 8px 14px; font-size: 14px; border-radius: 6px; cursor: pointer; user-select: none;}
+    button#toggleLang:hover {background-color: #1f6391;}
+  </style>
+</head>
+<body style="background-color: #f7f9fc;">
+  <header>
+    <h1 id="pageTitle">The Muddy Prayer</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+  <main id="contentArea">
+    <img src="images/story33.jpg" alt="The Muddy Prayer" />
+    <div id="enText">
+      <p>Heavy rain had turned the mosque&#x27;s courtyard to a tapestry of mud. Worshippers argued whether to move prayer indoors to the smoky room or delay until the ground dried.</p>
+      <p>Mulla rolled his single prayer mat right into the mud and performed his ritual with quiet devotion. Some whispered that he should be cleaner; others admired his resolve.</p>
+      <p>When a puzzled villager asked why he did not wait, Mulla answered softly: &#x27;A clean heart is not made of spotless cloth. Prayer seeks the soul, not shirts.&#x27;</p>
+      <p>Afterward, people helped one another wash mats and clothes and, more importantly, felt a renewed closeness. The mosque became a place of humility rather than obligation.</p>
+      <p><strong>Moral:</strong> Sincerity matters more than surface cleanliness.</p>
+      <a href="index.html" class="back-link">← Back to stories</a>
+    </div>
+    <div id="faText" style="display:none;">
+      <p>باران سنگین حیاط مسجد را به تکه‌های گل تبدیل کرده بود. نمازگزاران درباره اینکه نماز را به اتاق دودی ببرند یا تا خشک شدن زمین صبر کنند، بحث کردند.</p>
+      <p>ملا جانماز خود را در همان گل پهن کرد و با خشوع نماز خواند. برخی پچ‌پچ کردند که او باید تمیزتر باشد؛ برخی نیز از استقامت او خوششان آمد.</p>
+      <p>وقتی شخصی پرسید چرا صبر نمی‌کند، ملا نرم پاسخ داد: «دل پاک با پارچه بی‌لکه ساخته نمی‌شود. نماز به روح می‌نگرد، نه به پیراهن.»</p>
+      <p>پس از نماز، مردم به هم کمک کردند تا جانماز و لباس‌ها را بشویند و مهم‌تر از آن، ارتباط تازه‌ای حس کردند. مسجد مکانی برای تواضع شد نه تکلیف. </p>
+      <p><strong>نتیجه‌گیری:</strong> خلوص بیشتر از پاکی ظاهری اهمیت دارد.</p>
+      <a href="index.html" class="back-link">← بازگشت به داستان‌ها</a>
+    </div>
+  </main>
+  <script>
+    function toggleLanguage() {
+      const enText = document.getElementById('enText');
+      const faText = document.getElementById('faText');
+      const contentArea = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const pageTitle = document.getElementById('pageTitle');
+      if (enText.style.display !== 'none') {
+        enText.style.display = 'none';
+        faText.style.display = 'block';
+        contentArea.classList.add('rtl');
+        btn.textContent = 'English';
+        pageTitle.textContent = 'نماز گِلی';
+      } else {
+        faText.style.display = 'none';
+        enText.style.display = 'block';
+        contentArea.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        pageTitle.textContent = 'The Muddy Prayer';
+      }
+    }
+  </script>
+</body>
+</html>
