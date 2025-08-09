@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Judge and the Unnamed Letter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {background:#f7f9fc; font-family:Arial, sans-serif; margin:0; padding:0;}
+    header {background:#2c3e50; color:#fff; padding:30px 20px; text-align:center; position:relative;}
+    main {max-width:900px; margin:20px auto; background:#fff; padding:26px; border-radius:10px;}
+    .rtl {direction:rtl; text-align:right; font-family:'Tahoma', sans-serif;}
+    img.story-img {width:100%; max-height:320px; object-fit:cover; border-radius:8px; margin-bottom:16px;}
+    button#toggleLang {position:absolute; top:18px; right:18px; padding:8px 12px; border:none; background:#e67e22; color:white; border-radius:6px; cursor:pointer;}
+    a.back {display:inline-block; margin-top:18px; color:#2980b9; text-decoration:none;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="pageTitle">The Judge and the Unnamed Letter</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+  <main id="mainContent">
+    <img class="story-img" src="images/story89.jpg" alt="The Judge and the Unnamed Letter" />
+    <section id="en" class="en">
+      <p>The Judge and the Unnamed Letter — A letter without a name solves a mystery in court.</p>
+<p>It began one morning when ordinary rhythms were interrupted by a small, curious event. Neighbors gathered, questions were asked, and the main character found themselves in a situation that required more than quick wit.</p>
+<p>As the days passed the problem grew a little larger: misunderstandings multiplied, choices were tested, and small acts revealed deeper motives. The protagonist tried various solutions—some clumsy, some clever—but each taught a lesson.</p>
+<p>At the turning point, a simple act or surprise revealed the truth: kindness, honesty, or a keen observation changed the outcome. People who had laughed or doubted now reconsidered and the community reacted in ways that matched the heart of the tale.</p>
+<p>In the end, life returned to a new normality. The character kept one reminder of the event — a phrase, a small habit, or a changed outlook — and the village learned that simple acts and clear eyes are sometimes the true miracles.</p>
+<p>**Moral:** A letter without a name solves a mystery in court.</p>
+
+      <p><a class="back" href="index.html">← Back to stories</a></p>
+    </section>
+    <section id="fa" class="fa" style="display:none;">
+      <div class="rtl"><p>قاضی و نامه بی‌نام — نامه‌ای بی‌نام معمایی را در دادگاه حل می‌کند.</p>
+<p>همه چیز با صبحی عادی شروع شد؛ تا یک اتفاق ساده کنجکاوی مردم را برانگیخت. همسایه‌ها جمع شدند، سوال‌ها پرسیده شد و نقش اصلی ما در وضعیتی افتاد که نیاز به بیش از تیزهوشی داشت.</p>
+<p>روزها گذشت و مشکل کمی پیچیده‌تر شد: سوتفاهم‌ها زیاد شدند، انتخاب‌ها آزموده شد و رفتارهای کوچک انگیزه‌های عمیق‌تری را نشان دادند. قهرمان داستان راه‌حل‌های مختلفی آزمود—بعضی ناشیانه، بعضی زیرکانه—اما هرکدام درسی آموختند.</p>
+<p>نقطه‌ی عطف با یک کار ساده یا اتفاق غیرمنتظره حقیقت را آشکار کرد: مهربانی، صداقت یا یک مشاهده دقیق سرنوشت را دگرگون ساخت. آنان که می‌خندیدند یا شک داشتند اکنون تجدیدنظر کردند و جامعه واکنش‌هایی نشان داد که با روح داستان همخوانی داشت.</p>
+<p>در پایان، زندگی به گونه‌ای تازه بازگشت. شخصیت داستان یادگاری از آن ماجرا نگه داشت — عبارتی، عادتی کوچک یا نگرشی دگرگون — و روستا آموخت که اعمال ساده و چشمانی روشن گاهی خود معجزه‌اند.</p>
+<p>**درس:** نامه‌ای بی‌نام معمایی را در دادگاه حل می‌کند.</p>
+</div>
+      <p><a class="back" href="index.html">← بازگشت به داستان‌ها</a></p>
+    </section>
+  </main>
+  <script>
+    function toggleLanguage() {
+      const en = document.getElementById('en'), fa = document.getElementById('fa');
+      const btn = document.getElementById('toggleLang'), title = document.getElementById('pageTitle');
+      if (en.style.display === 'none') { en.style.display='block'; fa.style.display='none'; btn.textContent='فارسی'; title.textContent='The Judge and the Unnamed Letter'; document.getElementById('mainContent').classList.remove('rtl'); }
+      else { en.style.display='none'; fa.style.display='block'; btn.textContent='English'; title.textContent='قاضی و نامه بی‌نام'; document.getElementById('mainContent').classList.add('rtl'); }
+    }
+  </script>
+</body>
+</html>
