@@ -143,3 +143,78 @@ body{
   border: 1px solid #ccc;
 }
 
+/* === Novel sidebar styles (append to end of style.css) === */
+#novel-sidebar {
+  font-family: "Vazirmatn", "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fff0f6 0%, #fff7e6 100%);
+  border: 2px solid #ff6b81;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(255, 99, 132, 0.12);
+}
+
+/* individual category box */
+.novel-box {
+  background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6));
+  border-radius: 10px;
+  padding: 8px;
+  margin: 8px 6px;
+  border: 1px solid rgba(255,107,129,0.18);
+}
+
+/* title */
+.novel-box h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #c9184a;
+  display: flex;
+  justify-content: center;
+  gap:6px;
+  align-items:center;
+}
+
+/* table layout */
+.novel-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.novel-table td {
+  border: 1px solid rgba(201, 63, 99, 0.15);
+  padding: 6px 8px;
+  vertical-align: middle;
+  text-align: right; /* default for RTL */
+}
+.novel-table td a {
+  text-decoration: none;
+  color: #7a1531;
+  display: block;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: inherit;
+}
+.novel-table td a:hover {
+  color: #ff3b6f;
+  text-decoration: underline;
+}
+
+/* close button hover */
+#close-novel-sidebar:hover { transform: scale(1.05); }
+
+/* adjust for LTR pages when language == en */
+html[dir="ltr"] .novel-table td {
+  text-align: left;
+}
+html[dir="ltr"] .novel-box h3 { justify-content: flex-start; padding-left: 8px; }
+
+/* dark mode tweaks (uses existing .dark-mode on body) */
+.dark-mode #novel-sidebar {
+  background: linear-gradient(135deg, #2b1220 0%, #201718 100%);
+  border-color: #ff7b9c;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+.dark-mode .novel-box h3 { color: #ffd6e0; }
+.dark-mode .novel-table td a { color: #ffc3d6; }
+
