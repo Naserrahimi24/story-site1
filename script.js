@@ -279,6 +279,11 @@ function setLanguage(fa){
   $$('.en').forEach(el=> el.style.display = isFarsi ? 'none' : 'inline');
 
   renderStories($('#searchBox').value || '');
+  // تغییر زبان داستان‌ها در جدول
+document.querySelectorAll('#novel-categories a').forEach(a => {
+  a.textContent = fa ? a.getAttribute('data-fa') : a.getAttribute('data-en');
+});
+
 }
 
 // ---------- Events ----------
@@ -345,5 +350,156 @@ window.addEventListener('DOMContentLoaded',()=>{
       // nothing required: like counts shown on buttons when created
     }
   });
-});
+  // ===== novel lists (6 categories × 10 items each) =====
+const novelData = {
+  romance: [
+    {fa:"عاشقی در باران", en:"Love in the Rain", link:"novel-romance-1.html"},
+    {fa:"قلب‌های گمشده", en:"Lost Hearts", link:"novel-romance-2.html"},
+    {fa:"زمستان بی‌تو", en:"Winter Without You", link:"novel-romance-3.html"},
+    {fa:"نجوای عشق", en:"Whisper of Love", link:"novel-romance-4.html"},
+    {fa:"پرنده‌های مهاجر", en:"Migrating Birds", link:"novel-romance-5.html"},
+    {fa:"پل سرنوشت", en:"Bridge of Fate", link:"novel-romance-6.html"},
+    {fa:"ماه و من", en:"The Moon and I", link:"novel-romance-7.html"},
+    {fa:"قصه باران", en:"Tale of Rain", link:"novel-romance-8.html"},
+    {fa:"بوسه بر باد", en:"Kiss in the Wind", link:"novel-romance-9.html"},
+    {fa:"رویاهای ممنوع", en:"Forbidden Dreams", link:"novel-romance-10.html"}
+  ],
+  detective: [
+    {fa:"قتل در مه", en:"Murder in the Fog", link:"novel-detective-1.html"},
+    {fa:"راز اتاق بسته", en:"The Locked Room Mystery", link:"novel-detective-2.html"},
+    {fa:"رد پای خون", en:"Trail of Blood", link:"novel-detective-3.html"},
+    {fa:"سایه‌ی کارآگاه", en:"The Detective's Shadow", link:"novel-detective-4.html"},
+    {fa:"نیمه‌شب بازجویی", en:"Midnight Interrogation", link:"novel-detective-5.html"},
+    {fa:"پرونده‌ی بی‌نام", en:"The Nameless Case", link:"novel-detective-6.html"},
+    {fa:"علامت هفت", en:"The Seven Mark", link:"novel-detective-7.html"},
+    {fa:"بند ناف سرخ", en:"The Crimson Cord", link:"novel-detective-8.html"},
+    {fa:"حمله‌ی خاموش", en:"The Silent Assault", link:"novel-detective-9.html"},
+    {fa:"آخرین سرنخ", en:"The Final Clue", link:"novel-detective-10.html"}
+  ],
+  history: [
+    {fa:"سایه‌های قصر", en:"Shadows of the Castle", link:"novel-history-1.html"},
+    {fa:"امپراتوری گمشده", en:"The Lost Empire", link:"novel-history-2.html"},
+    {fa:"نبرد سرنوشت", en:"The Battle of Fate", link:"novel-history-3.html"},
+    {fa:"نامه‌های ممنوع", en:"Forbidden Letters", link:"novel-history-4.html"},
+    {fa:"تاج و گردن‌بند", en:"Crown and Necklace", link:"novel-history-5.html"},
+    {fa:"شهری زیر خاک", en:"The Buried City", link:"novel-history-6.html"},
+    {fa:"کورسوی امید", en:"Glimmer of Hope", link:"novel-history-7.html"},
+    {fa:"حکایتِ روزگار", en:"Tales of the Era", link:"novel-history-8.html"},
+    {fa:"ققنوسِ کهن", en:"The Ancient Phoenix", link:"novel-history-9.html"},
+    {fa:"برگ‌های تاریخ", en:"Pages of History", link:"novel-history-10.html"}
+  ],
+  fantasy: [
+    {fa:"اژدهای سرخ", en:"The Red Dragon", link:"novel-fantasy-1.html"},
+    {fa:"قلعه‌ی آینه", en:"The Mirror Keep", link:"novel-fantasy-2.html"},
+    {fa:"جنگلِ نجواها", en:"The Whispering Forest", link:"novel-fantasy-3.html"},
+    {fa:"سنگِ آرزو", en:"The Wishing Stone", link:"novel-fantasy-4.html"},
+    {fa:"نگهبانِ مه", en:"The Mistwarden", link:"novel-fantasy-5.html"},
+    {fa:"ستاره‌سوار", en:"Starrider", link:"novel-fantasy-6.html"},
+    {fa:"شهرِ شناور", en:"The Floating City", link:"novel-fantasy-7.html"},
+    {fa:"کلاه‌جادو", en:"The Wizard's Hat", link:"novel-fantasy-8.html"},
+    {fa:"حلقه‌ی گمشده", en:"The Lost Ring", link:"novel-fantasy-9.html"},
+    {fa:"پروازِ نور", en:"Flight of Light", link:"novel-fantasy-10.html"}
+  ],
+  scifi: [
+    {fa:"سفر به ستارگان", en:"Journey to the Stars", link:"novel-scifi-1.html"},
+    {fa:"ماشینِ زمان", en:"The Time Machine", link:"novel-scifi-2.html"},
+    {fa:"آخرین کلون", en:"The Last Clone", link:"novel-scifi-3.html"},
+    {fa:"شهرِ آهنی", en:"The Iron City", link:"novel-scifi-4.html"},
+    {fa:"پیام از کوانتا", en:"Message from Quanta", link:"novel-scifi-5.html"},
+    {fa:"مدارِ خاموش", en:"The Silent Orbit", link:"novel-scifi-6.html"},
+    {fa:"شبکه‌ی خاطره", en:"The Memory Net", link:"novel-scifi-7.html"},
+    {fa:"نسلِ تازه", en:"The New Breed", link:"novel-scifi-8.html"},
+    {fa:"هوشِ بیدار", en:"The Awakened AI", link:"novel-scifi-9.html"},
+    {fa:"افقِ مصنوعی", en:"The Artificial Horizon", link:"novel-scifi-10.html"}
+  ],
+  adventure: [
+    {fa:"جزیره اسرار", en:"Island of Secrets", link:"novel-adventure-1.html"},
+    {fa:"نقشه گمشده", en:"The Lost Map", link:"novel-adventure-2.html"},
+    {fa:"کوهِ بی‌پایان", en:"The Endless Mountain", link:"novel-adventure-3.html"},
+    {fa:"سفرِ بی‌نهایت", en:"The Infinite Voyage", link:"novel-adventure-4.html"},
+    {fa:"کاروانِ سایه‌ها", en:"Caravan of Shadows", link:"novel-adventure-5.html"},
+    {fa:"دره‌ی طلا", en:"The Valley of Gold", link:"novel-adventure-6.html"},
+    {fa:"عبور از سرزمین نمک", en:"Crossing the Saltlands", link:"novel-adventure-7.html"},
+    {fa:"غارِ فانوس", en:"The Lantern Cave", link:"novel-adventure-8.html"},
+    {fa:"بندرِ بادها", en:"Harbor of Winds", link:"novel-adventure-9.html"},
+    {fa:"بازمانده‌ی کشتی", en:"Survivor of the Ship", link:"novel-adventure-10.html"}
+  ]
+};
 
+// titles for boxes
+const novelTitles = {
+  romance: {fa:"❤️ رمان‌های عاشقانه", en:"❤️ Romantic Novels"},
+  detective: {fa:"🕵️‍♂️ رمان‌های پلیسی", en:"🕵️‍♂️ Detective Novels"},
+  history: {fa:"🏰 رمان‌های تاریخی", en:"🏰 Historical Novels"},
+  fantasy: {fa:"🐉 رمان‌های فانتزی", en:"🐉 Fantasy Novels"},
+  scifi: {fa:"🚀 رمان‌های علمی‌-تخیلی", en:"🚀 Sci-Fi Novels"},
+  adventure: {fa:"🗺️ رمان‌های ماجراجویی", en:"🗺️ Adventure Novels"}
+};
+
+// render one box (category)
+function renderNovelBox(category){
+  const box = document.createElement('div');
+  box.className = 'novel-box';
+
+  const h3 = document.createElement('h3');
+  const spanFa = document.createElement('span');
+  spanFa.className = 'fa';
+  spanFa.textContent = novelTitles[category].fa;
+  const spanEn = document.createElement('span');
+  spanEn.className = 'en';
+  spanEn.style.display = 'none';
+  spanEn.textContent = novelTitles[category].en;
+  h3.appendChild(spanFa);
+  h3.appendChild(spanEn);
+  box.appendChild(h3);
+
+  const table = document.createElement('table');
+  table.className = 'novel-table';
+
+  novelData[category].forEach(n => {
+    const tr = document.createElement('tr');
+    const td = document.createElement('td');
+    const a = document.createElement('a');
+    a.href = n.link;
+    a.textContent = isFarsi ? n.fa : n.en;
+    a.setAttribute('data-fa', n.fa);
+    a.setAttribute('data-en', n.en);
+    td.appendChild(a);
+    tr.appendChild(td);
+    table.appendChild(tr);
+  });
+
+  box.appendChild(table);
+  return box;
+}
+
+// render all and insert into container
+function renderAllNovelTables(){
+  const container = document.getElementById('novel-categories');
+  if(!container) return;
+  container.innerHTML = '';
+  Object.keys(novelData).forEach(cat => {
+    container.appendChild(renderNovelBox(cat));
+  });
+
+  // ensure language spans visibility matches global isFarsi
+  document.documentElement.dir = isFarsi ? 'rtl' : 'ltr';
+  document.querySelectorAll('.fa').forEach(el => el.style.display = isFarsi ? 'inline' : 'none');
+  document.querySelectorAll('.en').forEach(el => el.style.display = isFarsi ? 'none' : 'inline');
+}
+
+// initial render (call from DOMContentLoaded)
+try { renderAllNovelTables(); } catch(e){ /* if called before DOM ready, fine */ }
+
+// close-button behavior: hide for this session (does NOT persist across refresh)
+const closeBtn = document.getElementById('close-novel-sidebar');
+if(closeBtn){
+  closeBtn.addEventListener('click', ()=>{
+    const sidebar = document.getElementById('novel-sidebar');
+    if(sidebar) sidebar.style.display = 'none';
+  });
+}
+
+// If setLanguage is called elsewhere, it will now call renderAllNovelTables() (see instruction above)
+
+});
