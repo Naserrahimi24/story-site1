@@ -349,7 +349,9 @@ window.addEventListener('DOMContentLoaded',()=>{
     if(k>0){
       // nothing required: like counts shown on buttons when created
     }
-  });
+async function naser(params) {
+    
+}});
   // ===== novel lists (6 categories × 10 items each) =====
 const novelData = {
   romance: [
@@ -502,4 +504,12 @@ if(closeBtn){
 
 // If setLanguage is called elsewhere, it will now call renderAllNovelTables() (see instruction above)
 
+});
+document.addEventListener('DOMContentLoaded', () => {
+  const closeBtn = document.getElementById('close-short-topics');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      document.getElementById('short-topics').style.display = 'none';
+    });
+  }
 });
