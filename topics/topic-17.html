@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fa">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>یاد ماندگار — ۱۰۰ پیام دوزبانه</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root{--maxw:1200px;--card-radius:12px;--gap:12px;--text:#0b2130}
+*{box-sizing:border-box}
+body{font-family:"Vazirmatn",sans-serif;margin:0;padding:20px;direction:rtl;background:linear-gradient(180deg,#fbfdff,#eef6f9);color:var(--text)}
+.header{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.title{margin:0;font-size:20px;font-weight:800;background:linear-gradient(90deg,#ff5973,#5fb7ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.subtitle{margin:0;color:#234;opacity:0.9;font-size:13px}
+.controls{display:flex;gap:8px;align-items:center}
+.lang-btn{background:linear-gradient(90deg,#ff7fa1,#ffb199);color:#fff;font-weight:700;border:none;padding:8px 14px;border-radius:30px;cursor:pointer;transition:all .3s ease;box-shadow:0 4px 14px rgba(0,0,0,0.12)}
+.lang-btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,0.18)}
+body.lang-en .lang-btn{background:linear-gradient(90deg,#5fb7ff,#8fd3ff)}
+.btn{padding:8px 12px;border-radius:10px;border:none;background:#fff;box-shadow:0 6px 18px rgba(20,40,80,0.04);cursor:pointer;font-weight:700}
+.board{max-width:var(--maxw);margin:18px auto 40px;display:grid;gap:var(--gap);grid-template-columns:repeat(1,minmax(0,1fr))}
+@media (min-width:720px){.board{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (min-width:1024px){.board{grid-template-columns:repeat(3,minmax(0,1fr));}}
+@media (min-width:1400px){.board{grid-template-columns:repeat(4,minmax(0,1fr));}}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.96),rgba(250,250,255,0.96));border-radius:var(--card-radius);padding:16px;min-height:100px;box-shadow:0 10px 30px rgba(10,20,40,0.04);display:flex;flex-direction:column;justify-content:center;text-align:center;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;top:0;right:0;height:6px;width:100%;border-top-left-radius:var(--card-radius)}
+.card:nth-child(8n)::before{background:linear-gradient(90deg,#ffb3c6,#ff7fa1)}
+.card:nth-child(8n+1)::before{background:linear-gradient(90deg,#c8fff1,#41d7b0)}
+.card:nth-child(8n+2)::before{background:linear-gradient(90deg,#dceeff,#78b6ff)}
+.card:nth-child(8n+3)::before{background:linear-gradient(90deg,#fff0e3,#ffc37a)}
+.card:nth-child(8n+4)::before{background:linear-gradient(90deg,#e8e2ff,#af8bff)}
+.card:nth-child(8n+5)::before{background:linear-gradient(90deg,#dfffde,#7fef9a)}
+.card:nth-child(8n+6)::before{background:linear-gradient(90deg,#fff0e3,#ff9f68)}
+.card:nth-child(8n+7)::before{background:linear-gradient(90deg,#ffd9f0,#ff7fd1)}
+.msg{margin:0;padding:6px 4px;font-size:16px;line-height:1.6}
+.msg.en{display:none}
+.actions{display:flex;gap:10px;justify-content:center;margin-top:12px}
+.icon-btn{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:10px;border:1px solid rgba(0,0,0,0.06);background:rgba(255,255,255,0.9);cursor:pointer;font-weight:700;font-size:13px}
+body.lang-en{direction:ltr}
+body.lang-en .msg.fa{display:none}
+body.lang-en .msg.en{display:block}
+.note{max-width:var(--maxw);margin:0 auto 80px;text-align:center;color:#2b4050;opacity:0.9;font-size:13px}
+</style>
+</head>
+<body>
+  <header class="header">
+    <div>
+      <h1 class="title" id="pageTitle"></h1>
+      <p class="subtitle" id="pageSubtitle"></p>
+    </div>
+    <div class="controls">
+      <button id="langBtn" class="lang-btn"></button>
+      <button id="shuffleBtn" class="btn"></button>
+      <button id="toggleAnim" class="btn"></button>
+    </div>
+  </header>
+  <main>
+    <section class="board" id="board" aria-live="polite"></section>
+    <div class="note" id="pageNote"></div>
+  </main>
+<script>const MESSAGES = [{"fa": "از دور صدایت را می‌شنوم و دلم نرم می‌شود.", "en": "Evenings are softer when I fold them into remembrance."}, {"fa": "شعرِ ناتمامی در جیبم دارم که همیشه برای توست و تصویری از تو.", "en": "Night folds the world and leaves only thoughts of you."}, {"fa": "یاد ماندگار؛ در کوچه‌های ذهنم، رد پای تو هنوز مشخص است.", "en": "Evenings are softer when I fold them into remembrance."}, {"fa": "از دور صدایت را می‌شنوم و دلم نرم می‌شود و تصویری از تو.", "en": "I dream in fragments of the warmth you used to bring."}, {"fa": "دست‌هایم خالی‌اند اما پر از یادهای تو.", "en": "Rain whispers your name into the empty rooms of my heart."}, {"fa": "یاد ماندگار؛ در خلوتِ شب، گاه تصویری از تو کنارم ظاهر می‌شود.", "en": "I dream in fragments of the warmth you used to bring."}, {"fa": "یادها مثل باران آرام روی شیشه می‌نشیند.", "en": "A single breath can carry the weight of entire evenings."}, {"fa": "یاد ماندگار؛ از دور صدایت را می‌شنوم و دلم نرم می‌شود.", "en": "A soft ache lives where your absence has settled."}, {"fa": "یاد ماندگار؛ خاطره‌ها مثل ستاره‌اند؛ دور اما روشن.", "en": "A soft ache lives where your absence has settled."}, {"fa": "را در خاموشی شب با خود می‌برم.", "en": "The city sleeps while my thoughts trace your silhouette."}, {"fa": "از دور صدایت را می‌شنوم و دلم نرم می‌شود.", "en": "Night folds the world and leaves only thoughts of you."}, {"fa": "زمانی که سکوت می‌آید، صدای قلبم بلندتر می‌شود و تصویری از تو.", "en": "In the late hours, I find the courage to miss you aloud."}, {"fa": "دریچه‌ای باز می‌شود و بوی تو به داخل می‌آید.", "en": "Sometimes I press my palm to the past and feel warmth."}, {"fa": "گاهی یک خط نامرئی میان قلبم و خاطراتت کشیده می‌شود.", "en": "In the hush, memories arrive like slow lanterns."}, {"fa": "شعرِ ناتمامی در جیبم دارم که همیشه برای توست.", "en": "The memory of you is a melody the dark plays softly."}, {"fa": "یاد ماندگار؛ یک لبخند قدیمی هنوز روی لبانم جا مانده است.", "en": "A soft ache lives where your absence has settled."}, {"fa": "همه‌چیز ساکت است جز تپشِ بی‌قرارِ دلم و تصویری از تو.", "en": "I collect small silences and place them by my bed."}, {"fa": "چشمانم به دنبال همان خاطره‌ی قدیمی می‌گردد.", "en": "I trace the outline of old happiness with trembling fingers."}, {"fa": "یاد ماندگار؛ زمانی که سکوت می‌آید، صدای قلبم بلندتر می‌شود.", "en": "The memory of you is a melody the dark plays softly."}, {"fa": "یاد ماندگار؛ گاهی در نیمه‌شب نامه‌ای می‌نویسم و آن را به باد می‌سپارم.", "en": "I collect small silences and place them by my bed."}, {"fa": "در خلوتِ شب، گاه تصویری از تو کنارم ظاهر می‌شود.", "en": "Evenings are softer when I fold them into remembrance."}, {"fa": "یاد ماندگار؛ دریچه‌ای باز می‌شود و بوی تو به داخل می‌آید.", "en": "In the hush, memories arrive like slow lanterns."}, {"fa": "دست‌هایم خالی‌اند اما پر از یادهای تو.", "en": "Longing has its own language; I read it every night."}, {"fa": "یاد ماندگار؛ یک لبخند قدیمی هنوز روی لبانم جا مانده است.", "en": "In the late hours, I find the courage to miss you aloud."}, {"fa": "یاد ماندگار؛ یادها مثل باران آرام روی شیشه می‌نشیند.", "en": "Evenings are softer when I fold them into remembrance."}, {"fa": "یاد ماندگار؛ شعرِ ناتمامی در جیبم دارم که همیشه برای توست.", "en": "I keep a lamp lit for moments that will not return."}, {"fa": "دست‌هایم خالی‌اند اما پر از یادهای تو.", "en": "I collect small silences and place them by my bed."}, {"fa": "یاد ماندگار؛ یادها مثل باران آرام روی شیشه می‌نشیند.", "en": "Evenings are softer when I fold them into remembrance."}, {"fa": "یاد ماندگار؛ یک لبخند قدیمی هنوز روی لبانم جا مانده است.", "en": "A soft ache lives where your absence has settled."}, {"fa": "یاد ماندگار؛ دست‌هایم خالی‌اند اما پر از یادهای تو.", "en": "The moon keeps my secrets and does not betray them."}, {"fa": "را در خاموشی شب با خود می‌برم.", "en": "Sometimes I press my palm to the past and feel warmth."}, {"fa": "یادها مثل باران آرام روی شیشه می‌نشیند.", "en": "A tender hush grows where your voice once lingered."}, {"fa": "خاطره‌ها مثل ستاره‌اند؛ دور اما روشن.", "en": "Evenings are softer when I fold them into remembrance."}, {"fa": "زمانی که سکوت می‌آید، صدای قلبم بلندتر می‌شود.", "en": "I trace the outline of old happiness with trembling fingers."}, {"fa": "آهِی که از سینه برمی‌خیزد، از عشق و دلتنگی خبر می‌دهد و تصویری از تو.", "en": "Evenings are softer when I fold them into remembrance."}, {"fa": "همه‌چیز ساکت است جز تپشِ بی‌قرارِ دلم.", "en": "I collect small silences and place them by my bed."}, {"fa": "یاد ماندگار؛ دریچه‌ای باز می‌شود و بوی تو به داخل می‌آید.", "en": "There is a quiet place in me that still says your name."}, {"fa": "زمانی که سکوت می‌آید، صدای قلبم بلندتر می‌شود.", "en": "I dream in fragments of the warmth you used to bring."}, {"fa": "چشمانم به دنبال همان خاطره‌ی قدیمی می‌گردد.", "en": "Night folds the world and leaves only thoughts of you."}, {"fa": "در خلوتِ شب، گاه تصویری از تو کنارم ظاهر می‌شود.", "en": "In the hush, memories arrive like slow lanterns."}, {"fa": "یاد ماندگار؛ گاهی یک خط نامرئی میان قلبم و خاطراتت کشیده می‌شود.", "en": "I carry a small poem that never finds its paper."}, {"fa": "زمانی که سکوت می‌آید، صدای قلبم بلندتر می‌شود.", "en": "Rain whispers your name into the empty rooms of my heart."}, {"fa": "زمانی که سکوت می‌آید، صدای قلبم بلندتر می‌شود و تصویری از تو.", "en": "I carry a small poem that never finds its paper."}, {"fa": "از دور صدایت را می‌شنوم و دلم نرم می‌شود.", "en": "The moon keeps my secrets and does not betray them."}, {"fa": "چشمانم به دنبال همان خاطره‌ی قدیمی می‌گردد و تصویری از تو.", "en": "Evenings are softer when I fold them into remembrance."}, {"fa": "یادها مثل باران آرام روی شیشه می‌نشیند.", "en": "There is a quiet place in me that still says your name."}, {"fa": "یاد ماندگار؛ حسی گرم از گذشته مرا می‌پوشاند و آرامم می‌کند.", "en": "I collect small silences and place them by my bed."}, {"fa": "خاطره‌ها مثل ستاره‌اند؛ دور اما روشن و تصویری از تو.", "en": "In the late hours, I find the courage to miss you aloud."}, {"fa": "را در خاموشی شب با خود می‌برم و تصویری از تو.", "en": "A single breath can carry the weight of entire evenings."}, {"fa": "از دور صدایت را می‌شنوم و دلم نرم می‌شود.", "en": "I collect small silences and place them by my bed."}, {"fa": "یاد ماندگار؛ خاطره‌ها مثل ستاره‌اند؛ دور اما روشن.", "en": "I trace the outline of old happiness with trembling fingers."}, {"fa": "یاد ماندگار؛ هر شب آوازی در گلو دارم که نامش دلتنگی‌ست.", "en": "Night folds the world and leaves only thoughts of you."}, {"fa": "یاد ماندگار؛ در کوچه‌های ذهنم، رد پای تو هنوز مشخص است.", "en": "I dream in fragments of the warmth you used to bring."}, {"fa": "یاد ماندگار؛ شعرِ ناتمامی در جیبم دارم که همیشه برای توست.", "en": "In the hush, memories arrive like slow lanterns."}, {"fa": "یاد ماندگار؛ حسی گرم از گذشته مرا می‌پوشاند و آرامم می‌کند.", "en": "In the hush, memories arrive like slow lanterns."}, {"fa": "یاد ماندگار؛ گاهی در نیمه‌شب نامه‌ای می‌نویسم و آن را به باد می‌سپارم.", "en": "In the late hours, I find the courage to miss you aloud."}, {"fa": "در خلوتِ شب، گاه تصویری از تو کنارم ظاهر می‌شود.", "en": "In the hush, memories arrive like slow lanterns."}, {"fa": "یاد ماندگار؛ یادها مثل باران آرام روی شیشه می‌نشیند.", "en": "I tuck a silent wish into the folds of the night."}, {"fa": "زمانی که سکوت می‌آید، صدای قلبم بلندتر می‌شود.", "en": "A soft ache lives where your absence has settled."}, {"fa": "دست‌هایم خالی‌اند اما پر از یادهای تو.", "en": "Longing has its own language; I read it every night."}, {"fa": "گاهی یک خط نامرئی میان قلبم و خاطراتت کشیده می‌شود.", "en": "In the late hours, I find the courage to miss you aloud."}, {"fa": "گاهی یک خط نامرئی میان قلبم و خاطراتت کشیده می‌شود و تصویری از تو.", "en": "I tuck a silent wish into the folds of the night."}, {"fa": "یاد ماندگار؛ حسی گرم از گذشته مرا می‌پوشاند و آرامم می‌کند.", "en": "In the late hours, I find the courage to miss you aloud."}, {"fa": "گاهی یک خط نامرئی میان قلبم و خاطراتت کشیده می‌شود.", "en": "Evenings are softer when I fold them into remembrance."}, {"fa": "چشمانم به دنبال همان خاطره‌ی قدیمی می‌گردد.", "en": "In the hush, memories arrive like slow lanterns."}, {"fa": "یاد ماندگار؛ حسی گرم از گذشته مرا می‌پوشاند و آرامم می‌کند.", "en": "Longing has its own language; I read it every night."}, {"fa": "را در خاموشی شب با خود می‌برم و تصویری از تو.", "en": "I carry a small poem that never finds its paper."}, {"fa": "یاد ماندگار؛ همه‌چیز ساکت است جز تپشِ بی‌قرارِ دلم.", "en": "Rain whispers your name into the empty rooms of my heart."}, {"fa": "یاد ماندگار؛ همه‌چیز ساکت است جز تپشِ بی‌قرارِ دلم.", "en": "A single breath can carry the weight of entire evenings."}, {"fa": "یاد ماندگار؛ در خلوتِ شب، گاه تصویری از تو کنارم ظاهر می‌شود.", "en": "A soft ache lives where your absence has settled."}, {"fa": "همه‌چیز ساکت است جز تپشِ بی‌قرارِ دلم.", "en": "In the hush, memories arrive like slow lanterns."}, {"fa": "یاد ماندگار؛ یادها مثل باران آرام روی شیشه می‌نشیند.", "en": "Evenings are softer when I fold them into remembrance."}, {"fa": "یاد ماندگار؛ حسی گرم از گذشته مرا می‌پوشاند و آرامم می‌کند.", "en": "I collect small silences and place them by my bed."}, {"fa": "دریچه‌ای باز می‌شود و بوی تو به داخل می‌آید.", "en": "A soft ache lives where your absence has settled."}, {"fa": "دست‌هایم خالی‌اند اما پر از یادهای تو.", "en": "The memory of you is a melody the dark plays softly."}, {"fa": "از دور صدایت را می‌شنوم و دلم نرم می‌شود.", "en": "In the late hours, I find the courage to miss you aloud."}, {"fa": "همه‌چیز ساکت است جز تپشِ بی‌قرارِ دلم.", "en": "The memory of you is a melody the dark plays softly."}, {"fa": "یاد ماندگار؛ به شمعی نگاه می‌کنم که برای دل من روشن مانده.", "en": "I tuck a silent wish into the folds of the night."}, {"fa": "یادها مثل باران آرام روی شیشه می‌نشیند.", "en": "I keep a lamp lit for moments that will not return."}, {"fa": "یاد ماندگار؛ خاطره‌ها مثل ستاره‌اند؛ دور اما روشن.", "en": "I collect small silences and place them by my bed."}, {"fa": "در کوچه‌های ذهنم، رد پای تو هنوز مشخص است.", "en": "I collect small silences and place them by my bed."}, {"fa": "به شمعی نگاه می‌کنم که برای دل من روشن مانده.", "en": "I carry a small poem that never finds its paper."}, {"fa": "گاهی در نیمه‌شب نامه‌ای می‌نویسم و آن را به باد می‌سپارم.", "en": "A tender hush grows where your voice once lingered."}, {"fa": "گاهی در نیمه‌شب نامه‌ای می‌نویسم و آن را به باد می‌سپارم و تصویری از تو.", "en": "A single breath can carry the weight of entire evenings."}, {"fa": "از دور صدایت را می‌شنوم و دلم نرم می‌شود.", "en": "Rain whispers your name into the empty rooms of my heart."}, {"fa": "یاد ماندگار؛ یک لبخند قدیمی هنوز روی لبانم جا مانده است.", "en": "I dream in fragments of the warmth you used to bring."}, {"fa": "گاهی یک خط نامرئی میان قلبم و خاطراتت کشیده می‌شود و تصویری از تو.", "en": "Night folds the world and leaves only thoughts of you."}, {"fa": "یاد ماندگار؛ حسی گرم از گذشته مرا می‌پوشاند و آرامم می‌کند.", "en": "I dream in fragments of the warmth you used to bring."}, {"fa": "یاد ماندگار؛ در خلوتِ شب، گاه تصویری از تو کنارم ظاهر می‌شود.", "en": "Rain whispers your name into the empty rooms of my heart."}, {"fa": "یاد ماندگار؛ در کوچه‌های ذهنم، رد پای تو هنوز مشخص است.", "en": "There is a quiet place in me that still says your name."}, {"fa": "از دور صدایت را می‌شنوم و دلم نرم می‌شود.", "en": "Evenings are softer when I fold them into remembrance."}, {"fa": "گاهی یک خط نامرئی میان قلبم و خاطراتت کشیده می‌شود.", "en": "A tender hush grows where your voice once lingered."}, {"fa": "همه‌چیز ساکت است جز تپشِ بی‌قرارِ دلم.", "en": "The memory of you is a melody the dark plays softly."}, {"fa": "زمانی که سکوت می‌آید، صدای قلبم بلندتر می‌شود و تصویری از تو.", "en": "The memory of you is a melody the dark plays softly."}, {"fa": "یاد ماندگار؛ در کوچه‌های ذهنم، رد پای تو هنوز مشخص است.", "en": "I trace the outline of old happiness with trembling fingers."}, {"fa": "یاد ماندگار؛ خیالِ تو شبیه نوری ملايم است که آرام مرا می‌تاباند.", "en": "Evenings are softer when I fold them into remembrance."}, {"fa": "یاد ماندگار؛ خیالِ تو شبیه نوری ملايم است که آرام مرا می‌تاباند.", "en": "I trace the outline of old happiness with trembling fingers."}, {"fa": "یاد ماندگار را در خاموشی شب با خود می‌برم.", "en": "I keep a lamp lit for moments that will not return."}, {"fa": "حسی گرم از گذشته مرا می‌پوشاند و آرامم می‌کند و تصویری از تو.", "en": "I tuck a silent wish into the folds of the night."}, {"fa": "یاد ماندگار؛ دست‌هایم خالی‌اند اما پر از یادهای تو.", "en": "A tender hush grows where your voice once lingered."}];
+const UI = {"fa": {"title": "یاد ماندگار — ۱۰۰ پیام دوزبانه", "subtitle": "دو زبانه — فارسی و انگلیسی (ادبی)", "langBtn": "English", "shuffle": "تعویض ترتیب", "animationOn": "انیمیشن: روشن", "animationOff": "انیمیشن: خاموش", "copy": "کپی", "copied": "کپی شد", "share": "ارسال", "shared": "ارسال شد", "note": "برای کپی کردن پیام روی دکمهٔ «کپی» بزن و برای اشتراک‌گذاری از دکمهٔ «ارسال» استفاده کن."}, "en": {"title": "یاد ماندگار — 100 Bilingual Messages", "subtitle": "Bilingual — Persian & English (literary)", "langBtn": "فارسی", "shuffle": "Shuffle", "animationOn": "Animation: On", "animationOff": "Animation: Off", "copy": "Copy", "copied": "Copied", "share": "Share", "shared": "Shared", "note": "Click “Copy” to copy the message or “Share” to send it."}};
+
+let messages = MESSAGES;
+let ui = UI;
+let animateOn = true;
+const board = document.getElementById('board');
+const langBtn = document.getElementById('langBtn');
+const shuffleBtn = document.getElementById('shuffleBtn');
+const toggleAnim = document.getElementById('toggleAnim');
+const pageTitle = document.getElementById('pageTitle');
+const pageSubtitle = document.getElementById('pageSubtitle');
+const pageNote = document.getElementById('pageNote');
+let currentLangKey = 'siteLang_topic17';
+let currentLang = localStorage.getItem(currentLangKey) || 'fa';
+
+function renderUI(){
+  const t = ui[currentLang];
+  pageTitle.textContent = t.title;
+  pageSubtitle.textContent = t.subtitle;
+  langBtn.textContent = t.langBtn;
+  shuffleBtn.textContent = t.shuffle;
+  toggleAnim.textContent = animateOn ? t.animationOn : t.animationOff;
+  pageNote.textContent = t.note;
+}
+
+function render(list){
+  board.innerHTML = '';
+  list.forEach(function(m,i){
+    var card = document.createElement('article'); card.className = 'card';
+    var pfa = document.createElement('p'); pfa.className = 'msg fa'; pfa.textContent = m.fa;
+    var pen = document.createElement('p'); pen.className = 'msg en'; pen.textContent = m.en;
+    var actions = document.createElement('div'); actions.className = 'actions';
+    var copyBtn = document.createElement('button'); copyBtn.className = 'icon-btn copy'; copyBtn.innerHTML = '<span class="txt">'+ui[currentLang].copy+'</span>';
+    copyBtn.addEventListener('click', function(){ var text = currentLang==='fa'?m.fa:m.en; navigator.clipboard.writeText(text).then(function(){ copyBtn.querySelector('.txt').textContent = ui[currentLang].copied; setTimeout(function(){ copyBtn.querySelector('.txt').textContent = ui[currentLang].copy; },1200); }).catch(function(){ alert('مرورگر اجازهٔ کپی مستقیم را نمی‌دهد.'); }); });
+    var shareBtn = document.createElement('button'); shareBtn.className = 'icon-btn share'; shareBtn.innerHTML = '<span class="txt">'+ui[currentLang].share+'</span>';
+    shareBtn.addEventListener('click', function(){ var text = currentLang==='fa'?m.fa:m.en; if(navigator.share){ navigator.share({text: text}).then(function(){ shareBtn.querySelector('.txt').textContent = ui[currentLang].shared; setTimeout(function(){ shareBtn.querySelector('.txt').textContent = ui[currentLang].share; },1200); }).catch(function(){}); } else { var encoded = encodeURIComponent(text); var wa = 'https://wa.me/?text=' + encoded; var tg = 'https://t.me/share/url?url=&text=' + encoded; var tw = 'https://twitter.com/intent/tweet?text=' + encoded; var fb = 'https://www.facebook.com/sharer/sharer.php?u=&quote=' + encoded; var mail = 'mailto:?subject=' + encodeURIComponent('پیامی برای تو') + '&body=' + encoded; var w = window.open('', '_blank', 'width=520,height=480'); var html = '<html><head><meta charset="utf-8"><title>Share</title></head><body style="font-family:Arial;padding:18px"><h3>ارسال پیام</h3> <p><a href="'+ wa +'" target="_blank">WhatsApp</a></p> <p><a href="'+ tg +'" target="_blank">Telegram</a></p> <p><a href="'+ tw +'" target="_blank">Twitter</a></p> <p><a href="'+ fb +'" target="_blank">Facebook</a></p> <p><a href="'+ mail +'" target="_blank">Email</a></p> <p>یا متن را اینجا کپی کن:</p><textarea style="width:100%;height:120px">' + text + '</textarea></body></html>'; w.document.write(html); w.document.close(); } });
+    actions.appendChild(copyBtn); actions.appendChild(shareBtn); card.appendChild(pfa); card.appendChild(pen); card.appendChild(actions); board.appendChild(card);
+  });
+}
+
+function setLang(en){ currentLang = en ? 'en' : 'fa'; document.body.classList.toggle('lang-en', currentLang==='en'); localStorage.setItem(currentLangKey, currentLang); renderUI(); render(messages); }
+
+langBtn.addEventListener('click', function(){ setLang(!(currentLang==='en')); });
+shuffleBtn.addEventListener('click', function(){ var shuffled = messages.slice().sort(function(){ return Math.random()-0.5; }); render(shuffled); });
+toggleAnim.addEventListener('click', function(){ animateOn = !animateOn; toggleAnim.textContent = animateOn ? ui[currentLang].animationOn : ui[currentLang].animationOff; });
+
+setLang(currentLang==='en');
+</script>
+</body>
+</html>

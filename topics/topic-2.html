@@ -1,0 +1,141 @@
+
+<!doctype html>
+<html lang="fa">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Nighttime Longing</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+body{font-family:"Vazirmatn",sans-serif;margin:0;padding:20px;direction:rtl;background:#f9fbfd}
+.header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.board{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:20px}
+.card{background:#fff;padding:15px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,0.05)}
+.msg.en{display:none}
+.actions{display:flex;gap:8px;margin-top:10px;justify-content:center}
+.btn{padding:6px 12px;border:none;border-radius:8px;background:#eee;cursor:pointer;transition:all .3s ease;font-weight:600}
+.btn:hover{box-shadow:0 4px 12px rgba(0,0,0,0.08)}
+.note{margin-top:20px;font-size:14px;color:#555}
+body.lang-en{direction:ltr}
+body.lang-en .msg.fa{display:none}
+body.lang-en .msg.en{display:block}
+
+/* Colorful card accents */
+.card::before{content:"";display:block;height:5px;width:100%;border-top-left-radius:12px;border-top-right-radius:12px;background:linear-gradient(90deg,#ff7fa1,#ffd480)}
+.card:nth-child(2n)::before{background:linear-gradient(90deg,#5fb7ff,#b28dff)}
+.card:nth-child(3n)::before{background:linear-gradient(90deg,#6ee7b7,#3b82f6)}
+.card:nth-child(4n)::before{background:linear-gradient(90deg,#ff9f68,#ff5973)}
+
+/* Styled language toggle */
+.lang-btn{background:linear-gradient(90deg,#ff7fa1,#ffb199);color:#fff;font-weight:700;border:none;padding:8px 14px;border-radius:30px;cursor:pointer;transition:all .3s ease;box-shadow:0 4px 14px rgba(0,0,0,0.12)}
+.lang-btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,0.18)}
+body.lang-en .lang-btn{background:linear-gradient(90deg,#5fb7ff,#8fd3ff)}
+</style>
+</head>
+<body>
+<div class="header">
+  <div>
+    <h1 id="pageTitle"></h1>
+    <p id="pageSubtitle"></p>
+  </div>
+  <div>
+    <button id="langBtn" class="lang-btn"></button>
+    <button id="shuffleBtn" class="btn"></button>
+    <button id="toggleAnim" class="btn"></button>
+  </div>
+</div>
+<div class="board" id="board"></div>
+<div class="note" id="pageNote"></div>
+<script>
+const messages = [{"fa": "شب که می‌شود، صدایت در گوشم زمزمه می‌کند و من دوباره کودک خاطره‌ها می‌شوم.", "en": "When night falls, your voice whispers in my ear and I become a child of memories once more."}, {"fa": "ماه امشب شبیه چشم‌هایت شده است تا سپیده‌دمی که نمی‌رسد.", "en": "Tonight the moon has taken after your eyes until a dawn that never comes."}, {"fa": "ستاره‌ها از دلتنگی من خبر دارند و اشک که بی‌دعوت می‌آید.", "en": "The stars know about my longing and tears arrive uninvited."}, {"fa": "هر نسیم شب، بوی تو را با خود می‌آورد و من در تاریکی گم می‌شوم.", "en": "Every night breeze carries your scent and I lose myself in the dark."}, {"fa": "در سکوت نیمه‌شب، نامت را صدا می‌زنم و دلم آرام نمی‌گیرد.", "en": "In the midnight silence, I call your name and my heart finds no rest."}, {"fa": "هر شب، پنجره رو به خیالت باز می‌کنم با بغضی کهنه در گلو.", "en": "Each night, I open a window toward your memory with an old sob caught in my throat."}, {"fa": "ماه تنها شاهد اشک‌های پنهانی من است در سکوتی که جهان را بلعیده.", "en": "The moon is the only witness to my hidden tears in the silence that swallows the world."}, {"fa": "سایه‌ها در تاریکی شب، شکل تو را می‌گیرند بی‌آنکه پاسخی بیاید.", "en": "Shadows in the darkness take your shape without an answer in return."}, {"fa": "هر شب با فکر تو به خواب می‌روم و ستاره‌ها هم خسته می‌شوند.", "en": "Each night I fall asleep thinking of you and even the stars grow weary."}, {"fa": "شب‌ها بی‌حضور تو، طولانی‌تر می‌شوند و روحم سبک می‌شود.", "en": "Nights grow longer without your presence and my soul feels lighter."}, {"fa": "شب که می‌شود، صدایت در گوشم زمزمه می‌کند و من دوباره کودک خاطره‌ها می‌شوم.", "en": "When night falls, your voice whispers in my ear and I become a child of memories once more."}, {"fa": "ماه امشب شبیه چشم‌هایت شده است تا سپیده‌دمی که نمی‌رسد.", "en": "Tonight the moon has taken after your eyes until a dawn that never comes."}, {"fa": "ستاره‌ها از دلتنگی من خبر دارند و اشک که بی‌دعوت می‌آید.", "en": "The stars know about my longing and tears arrive uninvited."}, {"fa": "هر نسیم شب، بوی تو را با خود می‌آورد و من در تاریکی گم می‌شوم.", "en": "Every night breeze carries your scent and I lose myself in the dark."}, {"fa": "در سکوت نیمه‌شب، نامت را صدا می‌زنم و دلم آرام نمی‌گیرد.", "en": "In the midnight silence, I call your name and my heart finds no rest."}, {"fa": "هر شب، پنجره رو به خیالت باز می‌کنم با بغضی کهنه در گلو.", "en": "Each night, I open a window toward your memory with an old sob caught in my throat."}, {"fa": "ماه تنها شاهد اشک‌های پنهانی من است در سکوتی که جهان را بلعیده.", "en": "The moon is the only witness to my hidden tears in the silence that swallows the world."}, {"fa": "سایه‌ها در تاریکی شب، شکل تو را می‌گیرند بی‌آنکه پاسخی بیاید.", "en": "Shadows in the darkness take your shape without an answer in return."}, {"fa": "هر شب با فکر تو به خواب می‌روم و ستاره‌ها هم خسته می‌شوند.", "en": "Each night I fall asleep thinking of you and even the stars grow weary."}, {"fa": "شب‌ها بی‌حضور تو، طولانی‌تر می‌شوند و روحم سبک می‌شود.", "en": "Nights grow longer without your presence and my soul feels lighter."}, {"fa": "شب که می‌شود، صدایت در گوشم زمزمه می‌کند و من دوباره کودک خاطره‌ها می‌شوم.", "en": "When night falls, your voice whispers in my ear and I become a child of memories once more."}, {"fa": "ماه امشب شبیه چشم‌هایت شده است تا سپیده‌دمی که نمی‌رسد.", "en": "Tonight the moon has taken after your eyes until a dawn that never comes."}, {"fa": "ستاره‌ها از دلتنگی من خبر دارند و اشک که بی‌دعوت می‌آید.", "en": "The stars know about my longing and tears arrive uninvited."}, {"fa": "هر نسیم شب، بوی تو را با خود می‌آورد و من در تاریکی گم می‌شوم.", "en": "Every night breeze carries your scent and I lose myself in the dark."}, {"fa": "در سکوت نیمه‌شب، نامت را صدا می‌زنم و دلم آرام نمی‌گیرد.", "en": "In the midnight silence, I call your name and my heart finds no rest."}, {"fa": "هر شب، پنجره رو به خیالت باز می‌کنم با بغضی کهنه در گلو.", "en": "Each night, I open a window toward your memory with an old sob caught in my throat."}, {"fa": "ماه تنها شاهد اشک‌های پنهانی من است در سکوتی که جهان را بلعیده.", "en": "The moon is the only witness to my hidden tears in the silence that swallows the world."}, {"fa": "سایه‌ها در تاریکی شب، شکل تو را می‌گیرند بی‌آنکه پاسخی بیاید.", "en": "Shadows in the darkness take your shape without an answer in return."}, {"fa": "هر شب با فکر تو به خواب می‌روم و ستاره‌ها هم خسته می‌شوند.", "en": "Each night I fall asleep thinking of you and even the stars grow weary."}, {"fa": "شب‌ها بی‌حضور تو، طولانی‌تر می‌شوند و روحم سبک می‌شود.", "en": "Nights grow longer without your presence and my soul feels lighter."}, {"fa": "شب که می‌شود، صدایت در گوشم زمزمه می‌کند و من دوباره کودک خاطره‌ها می‌شوم.", "en": "When night falls, your voice whispers in my ear and I become a child of memories once more."}, {"fa": "ماه امشب شبیه چشم‌هایت شده است تا سپیده‌دمی که نمی‌رسد.", "en": "Tonight the moon has taken after your eyes until a dawn that never comes."}, {"fa": "ستاره‌ها از دلتنگی من خبر دارند و اشک که بی‌دعوت می‌آید.", "en": "The stars know about my longing and tears arrive uninvited."}, {"fa": "هر نسیم شب، بوی تو را با خود می‌آورد و من در تاریکی گم می‌شوم.", "en": "Every night breeze carries your scent and I lose myself in the dark."}, {"fa": "در سکوت نیمه‌شب، نامت را صدا می‌زنم و دلم آرام نمی‌گیرد.", "en": "In the midnight silence, I call your name and my heart finds no rest."}, {"fa": "هر شب، پنجره رو به خیالت باز می‌کنم با بغضی کهنه در گلو.", "en": "Each night, I open a window toward your memory with an old sob caught in my throat."}, {"fa": "ماه تنها شاهد اشک‌های پنهانی من است در سکوتی که جهان را بلعیده.", "en": "The moon is the only witness to my hidden tears in the silence that swallows the world."}, {"fa": "سایه‌ها در تاریکی شب، شکل تو را می‌گیرند بی‌آنکه پاسخی بیاید.", "en": "Shadows in the darkness take your shape without an answer in return."}, {"fa": "هر شب با فکر تو به خواب می‌روم و ستاره‌ها هم خسته می‌شوند.", "en": "Each night I fall asleep thinking of you and even the stars grow weary."}, {"fa": "شب‌ها بی‌حضور تو، طولانی‌تر می‌شوند و روحم سبک می‌شود.", "en": "Nights grow longer without your presence and my soul feels lighter."}, {"fa": "شب که می‌شود، صدایت در گوشم زمزمه می‌کند و من دوباره کودک خاطره‌ها می‌شوم.", "en": "When night falls, your voice whispers in my ear and I become a child of memories once more."}, {"fa": "ماه امشب شبیه چشم‌هایت شده است تا سپیده‌دمی که نمی‌رسد.", "en": "Tonight the moon has taken after your eyes until a dawn that never comes."}, {"fa": "ستاره‌ها از دلتنگی من خبر دارند و اشک که بی‌دعوت می‌آید.", "en": "The stars know about my longing and tears arrive uninvited."}, {"fa": "هر نسیم شب، بوی تو را با خود می‌آورد و من در تاریکی گم می‌شوم.", "en": "Every night breeze carries your scent and I lose myself in the dark."}, {"fa": "در سکوت نیمه‌شب، نامت را صدا می‌زنم و دلم آرام نمی‌گیرد.", "en": "In the midnight silence, I call your name and my heart finds no rest."}, {"fa": "هر شب، پنجره رو به خیالت باز می‌کنم با بغضی کهنه در گلو.", "en": "Each night, I open a window toward your memory with an old sob caught in my throat."}, {"fa": "ماه تنها شاهد اشک‌های پنهانی من است در سکوتی که جهان را بلعیده.", "en": "The moon is the only witness to my hidden tears in the silence that swallows the world."}, {"fa": "سایه‌ها در تاریکی شب، شکل تو را می‌گیرند بی‌آنکه پاسخی بیاید.", "en": "Shadows in the darkness take your shape without an answer in return."}, {"fa": "هر شب با فکر تو به خواب می‌روم و ستاره‌ها هم خسته می‌شوند.", "en": "Each night I fall asleep thinking of you and even the stars grow weary."}, {"fa": "شب‌ها بی‌حضور تو، طولانی‌تر می‌شوند و روحم سبک می‌شود.", "en": "Nights grow longer without your presence and my soul feels lighter."}, {"fa": "شب که می‌شود، صدایت در گوشم زمزمه می‌کند و من دوباره کودک خاطره‌ها می‌شوم.", "en": "When night falls, your voice whispers in my ear and I become a child of memories once more."}, {"fa": "ماه امشب شبیه چشم‌هایت شده است تا سپیده‌دمی که نمی‌رسد.", "en": "Tonight the moon has taken after your eyes until a dawn that never comes."}, {"fa": "ستاره‌ها از دلتنگی من خبر دارند و اشک که بی‌دعوت می‌آید.", "en": "The stars know about my longing and tears arrive uninvited."}, {"fa": "هر نسیم شب، بوی تو را با خود می‌آورد و من در تاریکی گم می‌شوم.", "en": "Every night breeze carries your scent and I lose myself in the dark."}, {"fa": "در سکوت نیمه‌شب، نامت را صدا می‌زنم و دلم آرام نمی‌گیرد.", "en": "In the midnight silence, I call your name and my heart finds no rest."}, {"fa": "هر شب، پنجره رو به خیالت باز می‌کنم با بغضی کهنه در گلو.", "en": "Each night, I open a window toward your memory with an old sob caught in my throat."}, {"fa": "ماه تنها شاهد اشک‌های پنهانی من است در سکوتی که جهان را بلعیده.", "en": "The moon is the only witness to my hidden tears in the silence that swallows the world."}, {"fa": "سایه‌ها در تاریکی شب، شکل تو را می‌گیرند بی‌آنکه پاسخی بیاید.", "en": "Shadows in the darkness take your shape without an answer in return."}, {"fa": "هر شب با فکر تو به خواب می‌روم و ستاره‌ها هم خسته می‌شوند.", "en": "Each night I fall asleep thinking of you and even the stars grow weary."}, {"fa": "شب‌ها بی‌حضور تو، طولانی‌تر می‌شوند و روحم سبک می‌شود.", "en": "Nights grow longer without your presence and my soul feels lighter."}, {"fa": "شب که می‌شود، صدایت در گوشم زمزمه می‌کند و من دوباره کودک خاطره‌ها می‌شوم.", "en": "When night falls, your voice whispers in my ear and I become a child of memories once more."}, {"fa": "ماه امشب شبیه چشم‌هایت شده است تا سپیده‌دمی که نمی‌رسد.", "en": "Tonight the moon has taken after your eyes until a dawn that never comes."}, {"fa": "ستاره‌ها از دلتنگی من خبر دارند و اشک که بی‌دعوت می‌آید.", "en": "The stars know about my longing and tears arrive uninvited."}, {"fa": "هر نسیم شب، بوی تو را با خود می‌آورد و من در تاریکی گم می‌شوم.", "en": "Every night breeze carries your scent and I lose myself in the dark."}, {"fa": "در سکوت نیمه‌شب، نامت را صدا می‌زنم و دلم آرام نمی‌گیرد.", "en": "In the midnight silence, I call your name and my heart finds no rest."}, {"fa": "هر شب، پنجره رو به خیالت باز می‌کنم با بغضی کهنه در گلو.", "en": "Each night, I open a window toward your memory with an old sob caught in my throat."}, {"fa": "ماه تنها شاهد اشک‌های پنهانی من است در سکوتی که جهان را بلعیده.", "en": "The moon is the only witness to my hidden tears in the silence that swallows the world."}, {"fa": "سایه‌ها در تاریکی شب، شکل تو را می‌گیرند بی‌آنکه پاسخی بیاید.", "en": "Shadows in the darkness take your shape without an answer in return."}, {"fa": "هر شب با فکر تو به خواب می‌روم و ستاره‌ها هم خسته می‌شوند.", "en": "Each night I fall asleep thinking of you and even the stars grow weary."}, {"fa": "شب‌ها بی‌حضور تو، طولانی‌تر می‌شوند و روحم سبک می‌شود.", "en": "Nights grow longer without your presence and my soul feels lighter."}, {"fa": "شب که می‌شود، صدایت در گوشم زمزمه می‌کند و من دوباره کودک خاطره‌ها می‌شوم.", "en": "When night falls, your voice whispers in my ear and I become a child of memories once more."}, {"fa": "ماه امشب شبیه چشم‌هایت شده است تا سپیده‌دمی که نمی‌رسد.", "en": "Tonight the moon has taken after your eyes until a dawn that never comes."}, {"fa": "ستاره‌ها از دلتنگی من خبر دارند و اشک که بی‌دعوت می‌آید.", "en": "The stars know about my longing and tears arrive uninvited."}, {"fa": "هر نسیم شب، بوی تو را با خود می‌آورد و من در تاریکی گم می‌شوم.", "en": "Every night breeze carries your scent and I lose myself in the dark."}, {"fa": "در سکوت نیمه‌شب، نامت را صدا می‌زنم و دلم آرام نمی‌گیرد.", "en": "In the midnight silence, I call your name and my heart finds no rest."}, {"fa": "هر شب، پنجره رو به خیالت باز می‌کنم با بغضی کهنه در گلو.", "en": "Each night, I open a window toward your memory with an old sob caught in my throat."}, {"fa": "ماه تنها شاهد اشک‌های پنهانی من است در سکوتی که جهان را بلعیده.", "en": "The moon is the only witness to my hidden tears in the silence that swallows the world."}, {"fa": "سایه‌ها در تاریکی شب، شکل تو را می‌گیرند بی‌آنکه پاسخی بیاید.", "en": "Shadows in the darkness take your shape without an answer in return."}, {"fa": "هر شب با فکر تو به خواب می‌روم و ستاره‌ها هم خسته می‌شوند.", "en": "Each night I fall asleep thinking of you and even the stars grow weary."}, {"fa": "شب‌ها بی‌حضور تو، طولانی‌تر می‌شوند و روحم سبک می‌شود.", "en": "Nights grow longer without your presence and my soul feels lighter."}, {"fa": "شب که می‌شود، صدایت در گوشم زمزمه می‌کند و من دوباره کودک خاطره‌ها می‌شوم.", "en": "When night falls, your voice whispers in my ear and I become a child of memories once more."}, {"fa": "ماه امشب شبیه چشم‌هایت شده است تا سپیده‌دمی که نمی‌رسد.", "en": "Tonight the moon has taken after your eyes until a dawn that never comes."}, {"fa": "ستاره‌ها از دلتنگی من خبر دارند و اشک که بی‌دعوت می‌آید.", "en": "The stars know about my longing and tears arrive uninvited."}, {"fa": "هر نسیم شب، بوی تو را با خود می‌آورد و من در تاریکی گم می‌شوم.", "en": "Every night breeze carries your scent and I lose myself in the dark."}, {"fa": "در سکوت نیمه‌شب، نامت را صدا می‌زنم و دلم آرام نمی‌گیرد.", "en": "In the midnight silence, I call your name and my heart finds no rest."}, {"fa": "هر شب، پنجره رو به خیالت باز می‌کنم با بغضی کهنه در گلو.", "en": "Each night, I open a window toward your memory with an old sob caught in my throat."}, {"fa": "ماه تنها شاهد اشک‌های پنهانی من است در سکوتی که جهان را بلعیده.", "en": "The moon is the only witness to my hidden tears in the silence that swallows the world."}, {"fa": "سایه‌ها در تاریکی شب، شکل تو را می‌گیرند بی‌آنکه پاسخی بیاید.", "en": "Shadows in the darkness take your shape without an answer in return."}, {"fa": "هر شب با فکر تو به خواب می‌روم و ستاره‌ها هم خسته می‌شوند.", "en": "Each night I fall asleep thinking of you and even the stars grow weary."}, {"fa": "شب‌ها بی‌حضور تو، طولانی‌تر می‌شوند و روحم سبک می‌شود.", "en": "Nights grow longer without your presence and my soul feels lighter."}, {"fa": "شب که می‌شود، صدایت در گوشم زمزمه می‌کند و من دوباره کودک خاطره‌ها می‌شوم.", "en": "When night falls, your voice whispers in my ear and I become a child of memories once more."}, {"fa": "ماه امشب شبیه چشم‌هایت شده است تا سپیده‌دمی که نمی‌رسد.", "en": "Tonight the moon has taken after your eyes until a dawn that never comes."}, {"fa": "ستاره‌ها از دلتنگی من خبر دارند و اشک که بی‌دعوت می‌آید.", "en": "The stars know about my longing and tears arrive uninvited."}, {"fa": "هر نسیم شب، بوی تو را با خود می‌آورد و من در تاریکی گم می‌شوم.", "en": "Every night breeze carries your scent and I lose myself in the dark."}, {"fa": "در سکوت نیمه‌شب، نامت را صدا می‌زنم و دلم آرام نمی‌گیرد.", "en": "In the midnight silence, I call your name and my heart finds no rest."}, {"fa": "هر شب، پنجره رو به خیالت باز می‌کنم با بغضی کهنه در گلو.", "en": "Each night, I open a window toward your memory with an old sob caught in my throat."}, {"fa": "ماه تنها شاهد اشک‌های پنهانی من است در سکوتی که جهان را بلعیده.", "en": "The moon is the only witness to my hidden tears in the silence that swallows the world."}, {"fa": "سایه‌ها در تاریکی شب، شکل تو را می‌گیرند بی‌آنکه پاسخی بیاید.", "en": "Shadows in the darkness take your shape without an answer in return."}, {"fa": "هر شب با فکر تو به خواب می‌روم و ستاره‌ها هم خسته می‌شوند.", "en": "Each night I fall asleep thinking of you and even the stars grow weary."}, {"fa": "شب‌ها بی‌حضور تو، طولانی‌تر می‌شوند و روحم سبک می‌شود.", "en": "Nights grow longer without your presence and my soul feels lighter."}];
+const ui = {"fa": {"title": "۱۰۰ پیام «دلتنگی شبانه»", "subtitle": "دو زبانه — فارسی و انگلیسی (ادبی)", "langBtn": "English", "shuffle": "تعویض ترتیب", "animationOn": "انیمیشن: روشن", "animationOff": "انیمیشن: خاموش", "copy": "کپی", "copied": "کپی شد", "share": "ارسال", "shared": "ارسال شد", "note": "برای کپی کردن پیام روی دکمهٔ «کپی» بزن و برای اشتراک‌گذاری از دکمهٔ «ارسال» استفاده کن."}, "en": {"title": "100 Nighttime Longing Messages", "subtitle": "Bilingual — Persian & English (literary)", "langBtn": "فارسی", "shuffle": "Shuffle", "animationOn": "Animation: On", "animationOff": "Animation: Off", "copy": "Copy", "copied": "Copied", "share": "Share", "shared": "Shared", "note": "Click “Copy” to copy the message or “Share” to send it."}};
+let animateOn = true;
+const board = document.getElementById('board');
+const langBtn = document.getElementById('langBtn');
+const shuffleBtn = document.getElementById('shuffleBtn');
+const toggleAnim = document.getElementById('toggleAnim');
+const pageTitle = document.getElementById('pageTitle');
+const pageSubtitle = document.getElementById('pageSubtitle');
+const pageNote = document.getElementById('pageNote');
+
+let currentLang = localStorage.getItem('siteLang3') || 'fa';
+
+function renderUI(){
+  const t = ui[currentLang];
+  pageTitle.textContent = t.title;
+  pageSubtitle.textContent = t.subtitle;
+  langBtn.textContent = t.langBtn;
+  shuffleBtn.textContent = t.shuffle;
+  toggleAnim.textContent = animateOn ? t.animationOn : t.animationOff;
+  pageNote.textContent = t.note;
+}
+
+function renderMessages(list){
+  board.innerHTML = '';
+  list.forEach((m,i)=>{
+    const card = document.createElement('div');
+    card.className = 'card';
+    const pfa = document.createElement('p');
+    pfa.className = 'msg fa';
+    pfa.textContent = m.fa;
+    const pen = document.createElement('p');
+    pen.className = 'msg en';
+    pen.textContent = m.en;
+    const actions = document.createElement('div');
+    actions.className = 'actions';
+    const copyBtn = document.createElement('button');
+    copyBtn.className = 'btn copy';
+    copyBtn.textContent = ui[currentLang].copy;
+    copyBtn.addEventListener('click',()=>{
+      const text = currentLang==='fa'?m.fa:m.en;
+      navigator.clipboard.writeText(text).then(()=>{
+        copyBtn.textContent = ui[currentLang].copied;
+        setTimeout(()=>copyBtn.textContent = ui[currentLang].copy, 1200);
+      });
+    });
+    const shareBtn = document.createElement('button');
+    shareBtn.className = 'btn share';
+    shareBtn.textContent = ui[currentLang].share;
+    shareBtn.addEventListener('click',()=>{
+      const text = currentLang==='fa'?m.fa:m.en;
+      if(navigator.share){
+        navigator.share({text}).then(()=>{
+          shareBtn.textContent = ui[currentLang].shared;
+          setTimeout(()=>shareBtn.textContent = ui[currentLang].share,1200);
+        });
+      }else{
+        alert(text);
+      }
+    });
+    actions.append(copyBtn,shareBtn);
+    card.append(pfa,pen,actions);
+    board.appendChild(card);
+  });
+}
+
+function setLang(lang){
+  currentLang = lang;
+  document.body.classList.toggle('lang-en', lang==='en');
+  localStorage.setItem('siteLang3', lang);
+  renderUI();
+  renderMessages(messages);
+}
+
+langBtn.addEventListener('click',()=>{
+  setLang(currentLang==='fa'?'en':'fa');
+});
+
+shuffleBtn.addEventListener('click',()=>{
+  const shuffled = messages.slice().sort(()=>Math.random()-0.5);
+  renderMessages(shuffled);
+});
+
+toggleAnim.addEventListener('click',()=>{
+  animateOn = !animateOn;
+  toggleAnim.textContent = animateOn ? ui[currentLang].animationOn : ui[currentLang].animationOff;
+});
+
+setLang(currentLang);
+</script>
+</body>
+</html>
