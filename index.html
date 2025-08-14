@@ -164,7 +164,16 @@
   </a>
 </div>
 <script>
-  
+  document.addEventListener('DOMContentLoaded', function() {
+  const socialSidebar = document.getElementById('social-sidebar');
+  const closeSocialSidebar = document.getElementById('close-social-sidebar');
+
+  if (socialSidebar && closeSocialSidebar) {
+    closeSocialSidebar.addEventListener('click', () => {
+      socialSidebar.style.display = 'none';
+    });
+  }
+});
 </script>
 <aside id="short-topics" class="floating-pane novel-pane">
   <button class="pane-close" id="close-short-topics">×</button>
@@ -258,4 +267,5 @@
   
 </body>
 </html>
+
 
