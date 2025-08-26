@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Whispering Forest — جنگل نجواها</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root{
+      --bg:#fbfcfe;
+      --header:#071627;
+      --g1:#4caf50;
+      --g2:#81c784;
+      --text:#081425;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--text)}
+    header{background:var(--header);color:white;padding:36px 18px;text-align:center;position:relative}
+    #pageTitle{margin:0;font-size:42px;font-weight:900;
+      background:linear-gradient(90deg,var(--g1),var(--g2));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    button#toggleLang{position:absolute;top:14px;right:16px;background:#235b8a;border:none;color:white;padding:8px 14px;border-radius:8px;cursor:pointer;font-weight:700}
+    main{max-width:960px;margin:28px auto;padding:34px;background:white;border-radius:14px;box-shadow:0 12px 34px rgba(2,6,23,0.07);line-height:1.85;direction:ltr;text-align:left}
+    main.rtl{direction:rtl;text-align:right;font-family:Tahoma,Arial,sans-serif}
+    .story p{margin:0 0 12px;white-space:pre-wrap;font-size:15.4px}
+    .back-link{display:inline-block;margin-top:18px;color:#235b8a;text-decoration:none;font-weight:700}
+    .qmark{color:#0b84ff;font-weight:800}
+    .emark{color:#ff6b35;font-weight:800}
+    @media (max-width:720px){#pageTitle{font-size:30px}main{margin:16px;padding:18px}button#toggleLang{top:10px;right:12px;padding:6px 10px}}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="pageTitle">Whispering Forest — جنگل نجواها</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+    <!-- English -->
+    <div id="enText" class="story" lang="en">
+      <p>The Whispering Forest began where the river bent and the wind refused to carry silence.</p>
+      <p>Travelers claimed the trees spoke, but never the same story twice. One night they warned of storms, another of betrayals, and sometimes of long-forgotten names.</p>
+      <p>Liora, a healer’s daughter, entered the forest seeking herbs that grew only in the shade of voices. She carried a lantern, though she knew the light often offended whispers.</p>
+      <p>“Do not turn back,” the voices murmured. “Do not look behind.”</p>
+      <p>She obeyed, but each step weighed heavier, as if the soil remembered everyone who had walked it and pressed them into her soles.</p>
+      <p>At the third mile, she met a stag crowned with vines. Its antlers glittered with dew like constellations. It spoke without mouth: <em>You carry questions. Ask one, but only one.</em></p>
+      <p>Liora’s breath faltered. She could ask of her mother’s illness, of her father’s absence, of her own path. She whispered: “How do I cure what has no name?”</p>
+      <p>The stag bowed. <em>By listening to what the forest hides, not what it says.</em></p>
+      <p>Then it leapt away, dissolving into the thickets like dawn into mist.</p>
+      <p>She continued, and the trees leaned closer. Their bark etched with words not carved but grown. She traced one with her fingers: <em>Every wound is a door.</em></p>
+      <p>The forest thickened. Whispers tangled. Some begged for help, some laughed cruelly, some repeated her own name until it felt like a stranger’s.</p>
+      <p>She reached a clearing where a pond mirrored not the sky but memories. She saw her mother laughing, her father carving wood, herself as a child weaving crowns of grass. Then the pond rippled, and she saw shadows—disease, departure, despair.</p>
+      <p>A voice from beneath the water: <em>Choose which memory to keep, which to forget.</em></p>
+      <p>Liora dropped to her knees. “If I forget, I lose who I am. If I keep, I drown in sorrow.”</p>
+      <p>The pond stilled. <em>Then learn to carry both. Healing is not erasure but endurance.</em></p>
+      <p>She drank a handful of the pond’s water. It tasted of salt and sweetness, grief and hope.</p>
+      <p>Night descended, stars dim behind the canopy. Whispers softened into lullabies. She followed a glow that was not her lantern but the forest’s own pulse.</p>
+      <p>At the heart stood an oak vast enough to hold centuries. Its trunk bore a hollow. Inside lay a book bound in moss.</p>
+      <p>She opened it. The pages were leaves, each inscribed with remedies. Not recipes, but journeys: <em>Walk barefoot on frost until the skin remembers warmth. Breathe smoke of cedar to recall forgotten dreams. Share bread with a stranger to mend the lungs of loneliness.</em></p>
+      <p>Liora copied what she could. The book resisted ink, so she memorized instead, letting the leaves etch themselves into her mind.</p>
+      <p>A whisper sharper than others: <em>If you take knowledge, you must give a truth.</em></p>
+      <p>She hesitated. Then confessed aloud: “I fear becoming healer to all but myself.”</p>
+      <p>The oak sighed. Its branches shed light like tears. <em>Then you are already ready,</em> it said.</p>
+      <p>Dawn crept. She retraced her steps, though the path was never the same. The trees now whispered blessings, encouragements, farewells.</p>
+      <p>When she emerged, the lantern was cold, but her hands glowed faintly, as if carrying fragments of dawn.</p>
+      <p>She returned to her mother and brewed from memory, not ingredients. Her mother’s breath steadied, her eyes opened with recognition.</p>
+      <p>Word spread of the healer who had walked the Whispering Forest and returned whole. Some came seeking cures, some came seeking answers. Liora gave neither directly; she gave stories. For in each story, a remedy hid.</p>
+      <p>Years later, when Liora was old and her hair silver as birch, children asked if the forest still whispered to her. She smiled and pressed a finger to her lips. “Only when I forget to listen.”</p>
+      <p>The Whispering Forest endures, not because of its voices, but because of those who choose to hear beyond them.</p>
+    </div>
+
+    <!-- Persian -->
+    <div id="faText" class="story" lang="fa" style="display:none">
+      <p>جنگل نجواها آن‌جا آغاز می‌شد که رود خم می‌کرد و باد از حمل سکوت سر باز می‌زد.</p>
+      <p>مسافران می‌گفتند درختان سخن می‌گویند، اما هرگز یک داستان را دوبار نه. شبی از طوفان‌ها هشدار می‌دادند، شبی از خیانت‌ها، و گاه از نام‌های فراموش‌شده.</p>
+      <p>لیورا، دختر درمانگر، به جنگل رفت در پی گیاهانی که تنها در سایهٔ صداها می‌روییدند. فانوسی همراه داشت، هرچند می‌دانست نور اغلب نجواها را می‌رنجاند.</p>
+      <p>«باز مگرد،» صداها زمزمه کردند. «پشت سر مچرخ.»</p>
+      <p>او فرمان برد، اما هر گام سنگین‌تر شد، گویی خاک همهٔ رهگذران را به خاطر داشت و وزنشان را به کف پای او می‌سپرد.</p>
+      <p>در سومین میل، با گوزنی روبه‌رو شد که تاجی از پیچک داشت. شاخ‌هایش با شبنم می‌درخشید چون صور فلکی. بی‌لب سخن گفت: <em>سؤالی در دل داری. تنها یکی بپرس.</em></p>
+      <p>نفس لیورا لرزید. می‌توانست از بیماری مادرش بپرسد، از غیبت پدر، از راه خودش. نجوا کرد: «چگونه درمان کنم چیزی را که نامی ندارد؟»</p>
+      <p>گوزن سر فرود آورد. <em>با گوش دادن به آنچه جنگل پنهان می‌کند، نه آنچه می‌گوید.</em></p>
+      <p>سپس پرید و در بوته‌زار محو شد، چون سپیده در مه.</p>
+      <p>او ادامه داد، و درختان نزدیک‌تر شدند. پوستشان واژه‌هایی داشت نه حک‌شده، که روییده. با انگشت خطی را پی گرفت: <em>هر زخم دری است.</em></p>
+      <p>جنگل انبوه‌تر شد. نجواها درهم تنیدند. برخی کمک می‌خواستند، برخی با تمسخر می‌خندیدند، برخی نامش را تکرار می‌کردند تا غریبه بنماید.</p>
+      <p>به هامونی رسید که حوضی داشت. حوض آسمان را نه، که خاطرات را بازمی‌تاباند. مادرش را دید در خنده، پدرش را در چوب‌تراشی، خود را در کودکی با تاج‌های علف. سپس حوض لرزید و سایه‌ها را نشان داد—بیماری، کوچ، اندوه.</p>
+      <p>صدایی از زیر آب: <em>برگزین کدام خاطره را نگاه داری و کدام را فراموش.</em></p>
+      <p>لیورا به زانو افتاد. «اگر فراموش کنم، خودم را از دست می‌دهم. اگر نگاه دارم، در غم غرق می‌شوم.»</p>
+      <p>حوض آرام شد. <em>پس بیاموز هر دو را حمل کنی. درمان محو کردن نیست، تاب آوردن است.</em></p>
+      <p>مشتی از آب نوشید. مزه‌اش شوری و شیرینی داشت، غم و امید.</p>
+      <p>شب فرود آمد، ستارگان پشت سایه‌بان کمرنگ. نجواها لالایی شدند. او به نوری پیوست که نه فانوسش بود، که تپش خودِ جنگل.</p>
+      <p>در دل جنگل، بلوطی ایستاده بود به وسعت سده‌ها. تنه‌اش حفره‌ای داشت. درون، کتابی بود بسته در خزه.</p>
+      <p>گشودش. برگ‌ها صفحه‌ها بودند، هر یک نسخه‌ای از درمان. نه دستور، که سفر: <em>پابرهنه بر یخ راه برو تا پوست گرما را به یاد آورد. دودِ سرو را تنفس کن تا خواب‌های فراموش‌شده بازگردند. با غریبه‌ای نان تقسیم کن تا ریه‌های تنهایی ترمیم شوند.</em></p>
+      <p>لیورا هرچه توانست رونویسی کرد. اما کتاب به جوهر تن نمی‌داد، پس به خاطر سپرد، گذاشت برگ‌ها خود را در ذهنش بنگارند.</p>
+      <p>نجوایی تیزتر: <em>اگر دانشی برگرفتی، راستی بده.</em></p>
+      <p>مکث کرد. سپس اعتراف کرد: «می‌ترسم درمانگرِ همه باشم جز خودم.»</p>
+      <p>بلوط آه کشید. شاخه‌هایش نوری چون اشک فرو ریختند. <em>پس آماده‌ای،</em> گفت.</p>
+      <p>سپیده خزید. راه را برگرفت، هرچند دیگر همان نبود. درختان این بار برکت نجوا می‌کردند، دلگرمی و بدرود.</p>
+      <p>چون برآمد، فانوس سرد بود، اما دست‌هایش فروغی ملایم داشتند، انگار پاره‌ای از سپیده را حمل می‌کردند.</p>
+      <p>بازگشت نزد مادر و با یاد نه با گیاهان دارو ساخت. نفس مادر آرام شد، چشمانش به شناسایی گشوده.</p>
+      <p>خبر پیچید از درمانگری که از جنگل نجواها گذشت و بازگشت. برخی برای درمان آمدند، برخی برای پاسخ. لیورا هیچ‌یک را مستقیم نداد؛ داستان بخشید. چراکه در هر داستان، درمانی نهفته بود.</p>
+      <p>سال‌ها بعد، لیورا پیر شد، مویش سیمین چون غان. کودکان پرسیدند آیا جنگل هنوز با او نجوا می‌کند. لبخند زد و انگشتی بر لب نهاد: «تنها وقتی فراموش می‌کنم گوش بسپارم.»</p>
+      <p>جنگل نجواها پایدار است، نه به خاطر صداهایش، که به خاطر کسانی که برمی‌گزینند فراتر از آن‌ها بشنوند.</p>
+    </div>
+
+    <a class="back-link" href="index.html">← بازگشت به داستان‌ها</a>
+  </main>
+
+  <script>
+    function toggleLanguage(){
+      const en = document.getElementById('enText');
+      const fa = document.getElementById('faText');
+      const content = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const title = document.getElementById('pageTitle');
+
+      if(en.style.display !== 'none'){
+        en.style.display = 'none';
+        fa.style.display = 'block';
+        content.classList.add('rtl');
+        btn.textContent = 'English';
+        title.textContent = 'جنگل نجواها';
+        document.documentElement.lang = 'fa';
+      } else {
+        fa.style.display = 'none';
+        en.style.display = 'block';
+        content.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        title.textContent = 'Whispering Forest';
+        document.documentElement.lang = 'en';
+      }
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      function colorPunctuation(container){
+        const ps = container.querySelectorAll('p');
+        ps.forEach(p => {
+          if (p.dataset.colored) return;
+          let html = p.innerHTML;
+          html = html.replace(/\?/g, '<span class="qmark">?</span>');
+          html = html.replace(/؟/g, '<span class="qmark">؟</span>');
+          html = html.replace(/!/g, '<span class="emark">!</span>');
+          p.innerHTML = html;
+          p.dataset.colored = '1';
+        });
+      }
+      colorPunctuation(document.getElementById('enText'));
+      colorPunctuation(document.getElementById('faText'));
+
+      document.getElementById('enText').style.display = 'block';
+      document.getElementById('faText').style.display = 'none';
+      document.getElementById('contentArea').classList.remove('rtl');
+      document.getElementById('toggleLang').textContent = 'فارسی';
+      document.getElementById('pageTitle').textContent = 'Whispering Forest — جنگل نجواها';
+      document.documentElement.lang = 'en';
+    });
+  </script>
+
+</body>
+</html>
