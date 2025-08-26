@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Floating City — شهر شناور</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root{
+      --bg:#fbfcfe;
+      --header:#071627;
+      --g1:#009688;
+      --g2:#4db6ac;
+      --text:#081425;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--text)}
+    header{background:var(--header);color:white;padding:36px 18px;text-align:center;position:relative}
+    #pageTitle{margin:0;font-size:42px;font-weight:900;
+      background:linear-gradient(90deg,var(--g1),var(--g2));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    button#toggleLang{position:absolute;top:14px;right:16px;background:#235b8a;border:none;color:white;padding:8px 14px;border-radius:8px;cursor:pointer;font-weight:700}
+    main{max-width:960px;margin:28px auto;padding:34px;background:white;border-radius:14px;box-shadow:0 12px 34px rgba(2,6,23,0.07);line-height:1.85;direction:ltr;text-align:left}
+    main.rtl{direction:rtl;text-align:right;font-family:Tahoma,Arial,sans-serif}
+    .story p{margin:0 0 12px;white-space:pre-wrap;font-size:15.4px}
+    .back-link{display:inline-block;margin-top:18px;color:#235b8a;text-decoration:none;font-weight:700}
+    .qmark{color:#0b84ff;font-weight:800}
+    .emark{color:#ff6b35;font-weight:800}
+    @media (max-width:720px){#pageTitle{font-size:30px}main{margin:16px;padding:18px}button#toggleLang{top:10px;right:12px;padding:6px 10px}}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="pageTitle">The Floating City — شهر شناور</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+    <!-- English -->
+    <div id="enText" class="story" lang="en">
+      <p>Far above the ocean, suspended by anchors of light, drifted the Floating City. Its towers shimmered like crystal, its bridges arched across clouds, and its streets rang with bells that no hand touched.</p>
+      <p>It was said the City was born from a wish of the first dreamer, a child who wanted a home where storms could never reach. For centuries, it had hovered, drifting slowly with the winds of heaven.</p>
+      <p>Liora, an apprentice cartographer, had long gazed upward. She sketched maps of the clouds, traced the paths of migrating birds, and yearned for the day she might climb into the sky itself.</p>
+      <p>On her sixteenth birthday, the chance arrived. A tether of silver descended into the port of her coastal town, glowing softly as though waiting for her hand. Without hesitation, she grasped it, and the rope lifted her into the heavens.</p>
+      <p>The ascent stole her breath. The ocean shrank, villages became specks, clouds brushed her cheeks. At last, she rose into a city unlike any tale had prepared her for.</p>
+      <p>Markets floated on platforms woven of mist. Children chased spheres of light that bobbed like lanterns. Gardens bloomed on terraces where rain never fell but dew gathered each dawn.</p>
+      <p>Yet all was not peace. Beneath the shimmer, she sensed unease. Shadows slid along walls where no sun should cast them. Bridges trembled though no wind blew.</p>
+      <p>“The anchors are weakening,” an elder told her, voice trembling. “The City sinks inch by inch. One day it will crash into the sea.”</p>
+      <p>Liora’s heart clenched. “Then we must repair them!”</p>
+      <p>The elder shook his head. “Only the one who hears the City’s song may weave new anchors.”</p>
+      <p>That night, Liora could not sleep. She wandered the terraces until she found a tower crowned with bells of glass. Sitting beneath them, she closed her eyes.</p>
+      <p>A hum rose through the floor, soft and sorrowful. It swelled into melody—the City’s voice, weary and fading. Tears filled her eyes as she listened.</p>
+      <p>“I hear you,” she whispered. “Teach me.”</p>
+      <p>The music deepened. Threads of light unraveled from the bells, weaving around her fingers. She felt the City’s pulse sync with her own heartbeat.</p>
+      <p>For days she trained, guided by the song. She learned to braid light into chains, to stitch them into the sky itself. Each anchor she reforged blazed like a newborn star.</p>
+      <p>But the work demanded sacrifice. With each chain woven, a memory slipped away—her father’s face, her mother’s voice, the taste of her favorite fruit. The City asked for pieces of her life in exchange for its own.</p>
+      <p>Liora faltered. Was she willing to forget who she was, simply to save this dream of air and crystal?</p>
+      <p>Then she looked down from the highest bridge. Below lay the ocean, storming and endless. She saw her village clinging to the shore, unaware of the City that might one day crush them. She saw children waving at the sky, imagining wonders.</p>
+      <p>“Yes,” she said. “Take what you will. I will not let them fall.”</p>
+      <p>With the last of her strength, she forged the final anchor. The City shuddered, then rose, higher than ever before. Its towers gleamed, its bells rang, and the shadows melted like mist in morning light.</p>
+      <p>Liora collapsed, memories scattering like leaves. When she awoke, she no longer remembered her name. But the City whispered it back to her: “You are the Keeper of Anchors.”</p>
+      <p>From then on, she walked the streets as guardian, unknown even to herself, yet bound forever to the Floating City she had saved.</p>
+      <p>And whenever children asked who held the City aloft, the elders smiled and pointed to the towers. “Listen,” they said. “Her heart beats in every bell.”</p>
+    </div>
+
+    <!-- Persian -->
+    <div id="faText" class="story" lang="fa" style="display:none">
+      <p>بسی فراز دریا، بر زنجیرهایی از نور، شهری شناور آویخته بود. برج‌هایش چون بلور می‌درخشیدند، پل‌هایش بر ابرها قوس می‌زدند، و خیابان‌هایش با زنگ‌هایی طنین داشت که هیچ دستی ننواخته بود.</p>
+      <p>می‌گفتند شهر از آرزوی نخستین خیال‌پرور زاده شد؛ کودکی که خانه‌ای خواست که توفان هرگز بدان نرسد. سده‌ها بود که شناور مانده، آهسته با بادهای آسمان رانده می‌شد.</p>
+      <p>لیورا، شاگرد نقشه‌کش، همواره رو به آسمان داشت. ابرها را نقش می‌زد، راه پرندگان مهاجر را دنبال می‌کرد، و آرزو داشت روزی خود به آسمان صعود کند.</p>
+      <p>در شانزده‌سالگی، فرصت آمد. ریسمانی سیمین در بندر شهر ساحلی‌اش فرود آمد، نرم‌فروزان گویی منتظر دست او. بی‌درنگ گرفتش، و طناب او را به سوی آسمان برد.</p>
+      <p>صعود نفسش را ربود. دریا کوچک شد، روستاها به نقطه شدند، ابرها گونه‌هایش را بوسیدند. سرانجام به شهری رسید که هیچ داستانی او را آماده نکرده بود.</p>
+      <p>بازارها بر سکویی از مه شناور بودند. کودکان کره‌های نور را دنبال می‌کردند که چون فانوس می‌جنبیدند. باغ‌ها بر بام‌ها شکوفا بودند، بی‌باران اما با شبنم سحرگاهی.</p>
+      <p>اما آرامش نبود. زیر درخشش، اضطراب پنهان بود. سایه‌ها بر دیوارها می‌لغزیدند بی‌خورشید، پل‌ها می‌لرزیدند بی‌باد.</p>
+      <p>پیری گفت: «لنگرها سست می‌شوند. شهر ذره‌ذره فرومی‌افتد. روزی بر دریا خواهد کوفت.»</p>
+      <p>دل لیورا فشرده شد. «باید ترمیمشان کنیم!»</p>
+      <p>پیر سر جنباند. «تنها کسی که آواز شهر را بشنود می‌تواند لنگر نو ببافد.»</p>
+      <p>آن شب نخوابید. بر بام‌ها پرسه زد تا برجی یافت با زنگ‌های شیشه‌ای. زیرشان نشست و چشم بست.</p>
+      <p>زمزمه‌ای از زمین برخاست، نرم و اندوهناک. به ترانه بدل شد—صدای شهر، خسته و کم‌رنگ. اشک در چشمانش نشست.</p>
+      <p>زمزمه کرد: «می‌شنومت. بیاموزم.»</p>
+      <p>نغمه ژرف شد. رشته‌های نور از زنگ‌ها گسستند و به انگشتانش پیچیدند. تپش شهر با ضربانش یکی شد.</p>
+      <p>روزها تمرین کرد. آموخت نور را به زنجیر ببافد، آن را به خود آسمان بدوزد. هر لنگر نو چون ستاره‌ای می‌درخشید.</p>
+      <p>اما کار، بهایی داشت. با هر زنجیر، خاطره‌ای می‌رفت—چهرهٔ پدر، صدای مادر، طعم میوهٔ محبوب. شهر در برابر زندگی خویش، پاره‌هایی از او می‌خواست.</p>
+      <p>لیورا لرزید. آیا می‌خواست خود را فراموش کند تنها برای نجات این رؤیای هوا و بلور؟</p>
+      <p>از بلندترین پل نگریست. زیرش دریا خروشید. روستایش بر ساحل می‌لرزید، بی‌خبر از شهری که شاید روزی بر آنان فرو افتد. کودکان را دید که دست به آسمان تکان می‌دادند.</p>
+      <p>گفت: «آری. هرچه می‌خواهی بگیر. نمی‌گذارم فرو افتید.»</p>
+      <p>با واپسین نیرو، آخرین لنگر را ساخت. شهر لرزید، سپس اوج گرفت، برتر از هر زمان. برج‌هایش درخشیدند، زنگ‌هایش نواختند، و سایه‌ها چون مه بامدادی زدوده شدند.</p>
+      <p>لیورا فرو افتاد، خاطره‌ها چون برگ ریختند. چون بیدار شد، نام خود را به یاد نداشت. اما شهر در گوشش نجوا کرد: «تو نگهبان لنگرهایی.»</p>
+      <p>از آن پس، در کوچه‌ها گام زد به‌سان نگهبان، ناشناس حتی به خویش، اما پیوندخورده تا ابد با شهر شناوری که نجات داده بود.</p>
+      <p>و چون کودکان پرسیدند چه کسی شهر را بر هوا نگاه می‌دارد، پیران لبخند زدند و به برج‌ها اشاره کردند: «گوش بسپارید. دل او در هر زنگ می‌تپد.»</p>
+    </div>
+
+    <a class="back-link" href="index.html">← بازگشت به داستان‌ها</a>
+  </main>
+
+  <script>
+    function toggleLanguage(){
+      const en = document.getElementById('enText');
+      const fa = document.getElementById('faText');
+      const content = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const title = document.getElementById('pageTitle');
+
+      if(en.style.display !== 'none'){
+        en.style.display = 'none';
+        fa.style.display = 'block';
+        content.classList.add('rtl');
+        btn.textContent = 'English';
+        title.textContent = 'شهر شناور';
+        document.documentElement.lang = 'fa';
+      } else {
+        fa.style.display = 'none';
+        en.style.display = 'block';
+        content.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        title.textContent = 'The Floating City';
+        document.documentElement.lang = 'en';
+      }
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      function colorPunctuation(container){
+        const ps = container.querySelectorAll('p');
+        ps.forEach(p => {
+          if (p.dataset.colored) return;
+          let html = p.innerHTML;
+          html = html.replace(/\?/g, '<span class="qmark">?</span>');
+          html = html.replace(/؟/g, '<span class="qmark">؟</span>');
+          html = html.replace(/!/g, '<span class="emark">!</span>');
+          p.innerHTML = html;
+          p.dataset.colored = '1';
+        });
+      }
+      colorPunctuation(document.getElementById('enText'));
+      colorPunctuation(document.getElementById('faText'));
+
+      document.getElementById('enText').style.display = 'block';
+      document.getElementById('faText').style.display = 'none';
+      document.getElementById('contentArea').classList.remove('rtl');
+      document.getElementById('toggleLang').textContent = 'فارسی';
+      document.getElementById('pageTitle').textContent = 'The Floating City — شهر شناور';
+      document.documentElement.lang = 'en';
+    });
+  </script>
+
+</body>
+</html>
