@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Guardian of the Mist — نگهبان مه</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root{
+      --bg:#fbfcfe;
+      --header:#071627;
+      --g1:#607d8b;
+      --g2:#90a4ae;
+      --text:#081425;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--text)}
+    header{background:var(--header);color:white;padding:36px 18px;text-align:center;position:relative}
+    #pageTitle{margin:0;font-size:42px;font-weight:900;
+      background:linear-gradient(90deg,var(--g1),var(--g2));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    button#toggleLang{position:absolute;top:14px;right:16px;background:#235b8a;border:none;color:white;padding:8px 14px;border-radius:8px;cursor:pointer;font-weight:700}
+    main{max-width:960px;margin:28px auto;padding:34px;background:white;border-radius:14px;box-shadow:0 12px 34px rgba(2,6,23,0.07);line-height:1.85;direction:ltr;text-align:left}
+    main.rtl{direction:rtl;text-align:right;font-family:Tahoma,Arial,sans-serif}
+    .story p{margin:0 0 12px;white-space:pre-wrap;font-size:15.4px}
+    .back-link{display:inline-block;margin-top:18px;color:#235b8a;text-decoration:none;font-weight:700}
+    .qmark{color:#0b84ff;font-weight:800}
+    .emark{color:#ff6b35;font-weight:800}
+    @media (max-width:720px){#pageTitle{font-size:30px}main{margin:16px;padding:18px}button#toggleLang{top:10px;right:12px;padding:6px 10px}}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="pageTitle">Guardian of the Mist — نگهبان مه</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+    <!-- English -->
+    <div id="enText" class="story" lang="en">
+      <p>The valley was forever shrouded in mist, a veil that no sun could pierce. Travelers called it cursed, but the villagers whispered of a guardian unseen.</p>
+      <p>Kael, a wanderer with a scar across his brow, entered the valley at dawn. The mist curled around his boots, tugging like anxious hands.</p>
+      <p>“Turn back,” the wind urged. “No path lies ahead.”</p>
+      <p>He pressed forward, guided only by the bell chimes that rang though no towers stood.</p>
+      <p>At the river crossing, the mist thickened into a figure—a woman with eyes like hollow moons. “Why disturb the veil?” she asked.</p>
+      <p>Kael bowed. “I seek the heart of the mist. My village is dying of drought, and they say within lies a well of endless water.”</p>
+      <p>Her gaze deepened. “The mist gives not water, but reflection. What you find is yourself.”</p>
+      <p>Still, she led him. Through groves of pale willows, through bridges woven of nothing but vapor.</p>
+      <p>At the center stood a mirror-lake, surface unbroken though no rain had touched it. Kael peered within. He saw himself as child, laughing; as man, weary; as elder, alone.</p>
+      <p>The guardian’s voice echoed: “What do you desire—to save your people, or to save yourself?”</p>
+      <p>Kael clenched his fists. “Both. For I am of them, and they of me.”</p>
+      <p>The lake rippled. Mist surged upward, condensing into a silver jar brimming with water. “Take it,” she said, “but know: each drop recalls a memory. To drink is to forget.”</p>
+      <p>Kael lifted the jar. Already he felt names slipping, faces fading. Yet he thought of the fields cracked with thirst, of children crying. He chose their life over his memory.</p>
+      <p>When he returned to his village, rain followed him. Crops revived, rivers swelled, children laughed. But when they called his name, he only stared, unable to answer.</p>
+      <p>They wept, not for drought, but for the man who saved them yet lost himself.</p>
+      <p>And still the valley holds its mist, waiting for the next who dares its veil, and the guardian who asks: “What will you surrender to save what you love?”</p>
+    </div>
+
+    <!-- Persian -->
+    <div id="faText" class="story" lang="fa" style="display:none">
+      <p>دره همیشه در مه پوشیده بود؛ پرده‌ای که هیچ خورشیدی نمی‌شکافت. رهگذران آن را نفرین‌شده می‌خواندند، اما روستاییان از نگهبانی نادیدنی نجوا می‌کردند.</p>
+      <p>کائل، آواره‌ای با زخمی بر پیشانی، بامدادان به دره درآمد. مه دور چکمه‌هایش می‌پیچید، چون دستانی نگران.</p>
+      <p>باد هشدار داد: «بازگرد. پیش رو راهی نیست.»</p>
+      <p>او پیش رفت، راهنمایش تنها صدای ناقوس‌هایی بود که هیچ برجی نداشت.</p>
+      <p>بر گذر رود، مه به پیکری غلیظ شد—زنی با چشمانی چون ماه‌های توخالی. پرسید: «چرا پرده را برهم می‌زنی؟»</p>
+      <p>کائل سر فرود آورد. «دل مه را می‌جویم. روستایم از خشکسالی می‌میرد و گفته‌اند درون، چاهی بی‌پایان است.»</p>
+      <p>نگاهش ژرف‌تر شد. «مه آب نمی‌دهد، که بازتاب است. آنچه می‌یابی، خودِ تویی.»</p>
+      <p>با این همه، او را رهنمون شد. از میان بیدهای پریده‌رنگ، بر پل‌هایی بافته از بخار تنها.</p>
+      <p>در مرکز، دریاچه‌ای آینه‌گون بود، سطحی دست‌نخورده بی‌باران. کائل درون نگریست: خود را دید در کودکی، خندان؛ در جوانی، فرسوده؛ در پیری، تنها.</p>
+      <p>صدای نگهبان طنین انداخت: «چه می‌خواهی—نجات مردم، یا نجات خود؟»</p>
+      <p>کائل مشت فشرد. «هردو. چراکه من از آنانم و آنان از من.»</p>
+      <p>دریاچه لرزید. مه بالا جهید و به کوزه‌ای سیمین پرآب فشرده شد. گفت: «بگیر. اما بدان: هر قطره خاطره‌ای را می‌زداید. نوشیدن، فراموشی است.»</p>
+      <p>کوزه را برداشت. نام‌ها لغزیدند، چهره‌ها محو شدند. اما به یاد آورد زمین‌های ترک‌خورده و کودکان گریان. زندگی‌شان را بر یاد خویش ترجیح داد.</p>
+      <p>چون به روستا بازگشت، باران دنبالش آمد. کشتزاران جان گرفتند، رودها فزونی یافتند، کودکان خندیدند. اما چون نامش را خواندند، تنها خیره شد، بی‌پاسخ.</p>
+      <p>آنان گریستند، نه برای خشکسالی، که برای مردی که نجاتشان داد و خود را باخت.</p>
+      <p>و هنوز، دره مه را در آغوش دارد، چشم‌به‌راهِ دیگری که پرده را جرئت کند، و نگهبانی که بپرسد: «چه می‌بخشی تا آنچه دوست می‌داری، بماند؟»</p>
+    </div>
+
+    <a class="back-link" href="index.html">← بازگشت به داستان‌ها</a>
+  </main>
+
+  <script>
+    function toggleLanguage(){
+      const en = document.getElementById('enText');
+      const fa = document.getElementById('faText');
+      const content = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const title = document.getElementById('pageTitle');
+
+      if(en.style.display !== 'none'){
+        en.style.display = 'none';
+        fa.style.display = 'block';
+        content.classList.add('rtl');
+        btn.textContent = 'English';
+        title.textContent = 'نگهبان مه';
+        document.documentElement.lang = 'fa';
+      } else {
+        fa.style.display = 'none';
+        en.style.display = 'block';
+        content.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        title.textContent = 'Guardian of the Mist';
+        document.documentElement.lang = 'en';
+      }
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      function colorPunctuation(container){
+        const ps = container.querySelectorAll('p');
+        ps.forEach(p => {
+          if (p.dataset.colored) return;
+          let html = p.innerHTML;
+          html = html.replace(/\?/g, '<span class="qmark">?</span>');
+          html = html.replace(/؟/g, '<span class="qmark">؟</span>');
+          html = html.replace(/!/g, '<span class="emark">!</span>');
+          p.innerHTML = html;
+          p.dataset.colored = '1';
+        });
+      }
+      colorPunctuation(document.getElementById('enText'));
+      colorPunctuation(document.getElementById('faText'));
+
+      document.getElementById('enText').style.display = 'block';
+      document.getElementById('faText').style.display = 'none';
+      document.getElementById('contentArea').classList.remove('rtl');
+      document.getElementById('toggleLang').textContent = 'فارسی';
+      document.getElementById('pageTitle').textContent = 'Guardian of the Mist — نگهبان مه';
+      document.documentElement.lang = 'en';
+    });
+  </script>
+
+</body>
+</html>
