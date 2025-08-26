@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Magic Hat — کلاه جادو</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root{
+      --bg:#fbfcfe;
+      --header:#071627;
+      --g1:#8e24aa;
+      --g2:#ba68c8;
+      --text:#081425;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--text)}
+    header{background:var(--header);color:white;padding:36px 18px;text-align:center;position:relative}
+    #pageTitle{margin:0;font-size:42px;font-weight:900;
+      background:linear-gradient(90deg,var(--g1),var(--g2));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    button#toggleLang{position:absolute;top:14px;right:16px;background:#235b8a;border:none;color:white;padding:8px 14px;border-radius:8px;cursor:pointer;font-weight:700}
+    main{max-width:960px;margin:28px auto;padding:34px;background:white;border-radius:14px;box-shadow:0 12px 34px rgba(2,6,23,0.07);line-height:1.85;direction:ltr;text-align:left}
+    main.rtl{direction:rtl;text-align:right;font-family:Tahoma,Arial,sans-serif}
+    .story p{margin:0 0 12px;white-space:pre-wrap;font-size:15.4px}
+    .back-link{display:inline-block;margin-top:18px;color:#235b8a;text-decoration:none;font-weight:700}
+    .qmark{color:#0b84ff;font-weight:800}
+    .emark{color:#ff6b35;font-weight:800}
+    @media (max-width:720px){#pageTitle{font-size:30px}main{margin:16px;padding:18px}button#toggleLang{top:10px;right:12px;padding:6px 10px}}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="pageTitle">The Magic Hat — کلاه جادو</h1>
+    <button id="toggleLang" onclick="toggleLanguage()">فارسی</button>
+  </header>
+
+  <main id="contentArea">
+    <!-- English -->
+    <div id="enText" class="story" lang="en">
+      <p>In a forgotten alley of the old market, under sagging lanterns, hung a dusty hat. No merchant claimed it, no thief dared steal it. People said it belonged to the Trickster of Ages.</p>
+      <p>Miran, a boy with ink-stained fingers, found it one rain-slick evening. The brim was wide, the crown tall, and when he set it upon his head, the world seemed to lean closer.</p>
+      <p>At first, the magic was small. Coins appeared when he tipped it, flowers blossomed when he sneezed, cats bowed politely. Miran laughed, thinking it harmless.</p>
+      <p>But each trick asked a price. A coin for a memory, a flower for a secret, a bow for a heartbeat. Slowly, his past thinned, his chest ached, his eyes grew weary.</p>
+      <p>“Remove it,” warned his friend Lira. “It devours you.”</p>
+      <p>“But I can help the village,” he argued. With the hat he healed the sick, mended broken roofs, lit lamps without oil. Neighbors called him blessed, children clapped in awe.</p>
+      <p>One night, a storm tore across the town. Roofs lifted, trees snapped, fire spread. Miran stood in the square, hat pulled low. He shouted words not his own, and the storm stilled. Silence fell, broken only by his gasp.</p>
+      <p>He collapsed. The hat rolled from his head, yet hovered, waiting. Shadows writhed within its crown, whispering.</p>
+      <p>Lira seized it. “Enough!” She hurled it into the river. But the river froze midcurrent, bending around the brim. The hat returned, dripping, hungry.</p>
+      <p>Miran rose weakly. “It chose me. If I cast it away, it will find another. Better it consume me than devour the world.”</p>
+      <p>He placed it again upon his head. Light burst, scattering into ravens of flame. They soared skyward, drawing the storm with them until stars broke through.</p>
+      <p>When dawn came, the hat lay still beside him, empty. Miran breathed shallow, older by decades, hair turned silver.</p>
+      <p>“Was it worth it?” Lira wept.</p>
+      <p>He smiled faintly. “Every wish has its weight. I carried it for them.”</p>
+      <p>He never removed the hat again. Sometimes it glowed, sometimes it whispered, sometimes it laughed when no one else did. Villagers learned not to ask, only to bow when he passed.</p>
+      <p>Years later, when Miran was gone, the hat remained on his chair. Still, no one claimed it. Some nights, lanterns flicker though no wind blows, and children swear they hear laughter in the alley.</p>
+      <p>And the hat waits, brim wide, crown tall, for another to try it on.</p>
+    </div>
+
+    <!-- Persian -->
+    <div id="faText" class="story" lang="fa" style="display:none">
+      <p>در کوچه‌ای فراموش‌شده از بازار کهن، زیر فانوس‌های خمیده، کلاهی غبارآلود آویخته بود. نه تاجری آن را می‌فروخت، نه دزدی جرئت می‌کرد بدزدد. می‌گفتند از آنِ فریبکار اعصار است.</p>
+      <p>میران، پسری با انگشتان مرکبی، شبی بارانی آن را یافت. لبه‌اش پهن بود، تاجش بلند، و چون بر سر گذاشت، جهان انگار نزدیک‌تر شد.</p>
+      <p>نخست، جادو اندک بود. با خم‌کردن کلاه سکه پدید می‌آمد، با عطسه گل می‌شکفت، گربه‌ها مودبانه تعظیم می‌کردند. میران خندید و بی‌خطرش پنداشت.</p>
+      <p>اما هر نیرنگ بهایی داشت. سکه‌ای در برابر خاطره‌ای، گلی در برابر رازی، تعظیمی در برابر تپشی. آرام‌آرام گذشته‌اش کم‌رنگ شد، سینه‌اش سنگین، چشمانش خسته.</p>
+      <p>لیرا، دوستش، هشدار داد: «بردارش. می‌بلعدت.»</p>
+      <p>او پاسخ داد: «اما می‌توانم روستا را یاری کنم.» با کلاه بیماران را درمان می‌کرد، سقف‌ها را مرمت می‌نمود، چراغ‌ها را بی‌نفت می‌افروخت. همسایگانش او را برکت‌داده خواندند، کودکان کف می‌زدند.</p>
+      <p>شبی توفان بر شهر تاخت. سقف‌ها کنده شد، درختان شکستند، آتش پخش شد. میران در میدان ایستاد، کلاه را پایین کشید. واژگانی بیگانه فریاد زد، و توفان آرام گرفت. سکوت ماند، جز نفس‌هایش.</p>
+      <p>فرو افتاد. کلاه از سرش غلتید، اما در هوا ماند، منتظر. سایه‌ها در تاجش پیچیدند و نجوا کردند.</p>
+      <p>لیرا آن را گرفت. «کافی‌ست!» و به رود پرتابش کرد. اما رود در میانه ایستاد، دور لبه خمید. کلاه بازگشت، خیس و گرسنه.</p>
+      <p>میران برخاست. «مرا برگزیده. اگر رهایش کنم، دیگری را می‌یابد. بهتر که مرا ببلعد تا جهان را.»</p>
+      <p>دوباره بر سر گذاشت. نوری جهید، به کلاغ‌های آتشین بدل شد. بر آسمان پرکشیدند و توفان را بردند تا ستارگان آشکار شدند.</p>
+      <p>سپیده که آمد، کلاه خاموش کنارش بود. میران کم‌جان نفس می‌کشید، دهه‌ها پیرتر، مویش سیمین.</p>
+      <p>لیرا گریست: «ارزش داشت؟»</p>
+      <p>لبخند زد. «هر آرزو وزنی دارد. من به دوش کشیدمشان.»</p>
+      <p>دیگر کلاه را برنداشت. گاه می‌درخشید، گاه نجوا می‌کرد، گاه می‌خندید بی‌هیچ‌کس. مردم آموختند نپرسند، تنها تعظیم کنند.</p>
+      <p>سال‌ها بعد، که میران رفت، کلاه بر صندلی ماند. هنوز هیچ‌کس برنگرفت. برخی شب‌ها فانوس‌ها بی‌باد می‌لرزند، و کودکان سوگند می‌خورند که خنده‌ای در کوچه شنیدند.</p>
+      <p>و کلاه همچنان چشم‌به‌راه است؛ لبه‌گسترده، تاج‌بلند، برای دیگری که جرئت کند بر سر گذارد.</p>
+    </div>
+
+    <a class="back-link" href="index.html">← بازگشت به داستان‌ها</a>
+  </main>
+
+  <script>
+    function toggleLanguage(){
+      const en = document.getElementById('enText');
+      const fa = document.getElementById('faText');
+      const content = document.getElementById('contentArea');
+      const btn = document.getElementById('toggleLang');
+      const title = document.getElementById('pageTitle');
+
+      if(en.style.display !== 'none'){
+        en.style.display = 'none';
+        fa.style.display = 'block';
+        content.classList.add('rtl');
+        btn.textContent = 'English';
+        title.textContent = 'کلاه جادو';
+        document.documentElement.lang = 'fa';
+      } else {
+        fa.style.display = 'none';
+        en.style.display = 'block';
+        content.classList.remove('rtl');
+        btn.textContent = 'فارسی';
+        title.textContent = 'The Magic Hat';
+        document.documentElement.lang = 'en';
+      }
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      function colorPunctuation(container){
+        const ps = container.querySelectorAll('p');
+        ps.forEach(p => {
+          if (p.dataset.colored) return;
+          let html = p.innerHTML;
+          html = html.replace(/\?/g, '<span class="qmark">?</span>');
+          html = html.replace(/؟/g, '<span class="qmark">؟</span>');
+          html = html.replace(/!/g, '<span class="emark">!</span>');
+          p.innerHTML = html;
+          p.dataset.colored = '1';
+        });
+      }
+      colorPunctuation(document.getElementById('enText'));
+      colorPunctuation(document.getElementById('faText'));
+
+      document.getElementById('enText').style.display = 'block';
+      document.getElementById('faText').style.display = 'none';
+      document.getElementById('contentArea').classList.remove('rtl');
+      document.getElementById('toggleLang').textContent = 'فارسی';
+      document.getElementById('pageTitle').textContent = 'The Magic Hat — کلاه جادو';
+      document.documentElement.lang = 'en';
+    });
+  </script>
+
+</body>
+</html>
