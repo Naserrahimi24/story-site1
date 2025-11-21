@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title id="page-title">بانک حکایت</title>
+  
+  <!-- Tailwind + Custom Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { vazir: ['Vazirmatn', 'sans-serif'] },
+          colors: { primary: '#f59e0b' },
+          animation: { 'fade-in': 'fadeIn 0.6s ease-out forwards' },
+          keyframes: { fadeIn: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } } }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-vazir min-h-screen transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-b border-gray-200 dark:border-gray-800">
+    <div class="container mx-auto px-6 py-5 flex items-center justify-between">
+      <h1 class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent">
+        بانک حکایت
+      </h1>
+      
+      <nav class="flex items-center gap-4">
+        <a href="index.html" class="flex items-center gap-2.5 px-5 py-3 bg-gray-100 dark:bg-gray-800 rounded-2xl hover:bg-amber-100 dark:hover:bg-amber-900/30 transition group">
+          <i class="fa-solid fa-arrow-right group-hover:-translate-x-1 transition"></i>
+          <span class="font-medium">بازگشت</span>
+        </a>
+        
+        <button id="theme-toggle" class="p-3.5 rounded-2xl bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+          <i class="fa-solid fa-moon text-xl"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-32 pb-24 px-6">
+    <div class="container mx-auto max-w-7xl">
+      <!-- Hero Section -->
+      <div class="text-center mb-16">
+        <h1 id="character-name" class="text-5xl md:text-7xl font-black mb-8 bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent animate-fade-in" data-aos="fade-down">
+          <!-- Filled by JS -->
+        </h1>
+        
+        <div class="relative max-w-3xl mx-auto" data-aos="zoom-in" data-aos-delay="200">
+          <img id="character-image" src="" alt="" loading="lazy" class="w-full rounded-3xl shadow-2xl object-cover aspect-[4/3] ring-8 ring-white/50 dark:ring-gray-800/50">
+          <div class="absolute inset-0 rounded-3xl bg-gradient-to-t from-black/50 to-transparent pointer-events-none"></div>
+        </div>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="max-w-2xl mx-auto mb-16" data-aos="fade-up" data-aos-delay="400">
+        <div class="relative">
+          <i class="fa-solid fa-magnifying-glass absolute start-6 top-1/2 -translate-y-1/2 text-2xl text-gray-500"></i>
+          <input 
+            type="search" 
+            id="stories-search" 
+            placeholder="جستجوی حکایت..." 
+            class="w-full pr-12 pl-16 py-5 rounded-full bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-4 focus:ring-amber-500/30 text-lg shadow-lg transition"
+          >
+        </div>
+      </div>
+
+      <!-- Stories Grid -->
+      <div id="stories-list" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <!-- Filled dynamically by script.js -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="hidden text-center py-20">
+        <i class="fa-solid fa-face-sad-tear text-8xl text-gray-300 dark:text-gray-700 mb-6"></i>
+        <p class="text-2xl font-medium text-gray-500 dark:text-gray-400">حکایتی با این کلمات پیدا نشد...</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden flex items-center justify-center z-50 p-6" onclick="if(event.target===this) closeModal()">
+    <div class="bg-white dark:bg-gray-900 rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-3xl animate-modal" data-aos="zoom-in">
+      <div class="sticky top-0 bg-gradient-to-b from-white dark:from-gray-900 to-transparent p-6 border-b border-gray-200 dark:border-gray-800 backdrop-blur-xl z-10">
+        <div class="flex justify-between items-start">
+          <h2 id="story-title" class="text-3xl md:text-4xl font-bold text-amber-600 dark:text-amber-400 pr-10"></h2>
+          <button onclick="closeModal()" class="p-3 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition">
+            <i class="fa-solid fa-xmark text-3xl"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="p-8 md:p-12 text-lg leading-relaxed space-y-6" id="story-text"></div>
+      
+      <div class="p-6 border-t border-gray-200 dark:border-gray-800 text-center">
+        <button onclick="closeModal()" class="px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-2xl transition shadow-lg">
+          بستن
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: 'ease-out-cubic'
+    });
+  </script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
