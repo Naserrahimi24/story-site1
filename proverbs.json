@@ -1,0 +1,3868 @@
+[
+  {
+    "fa": "آزموده را آزمودن خطاست",
+    "en": "Testing the tested is a mistake",
+    "meaning_fa": "اعتماد به تجربه قبلی کافی است",
+    "meaning_en": "Trusting past experience is enough"
+  },
+  {
+    "fa": "از تو حرکت، از خدا برکت",
+    "en": "From you the effort, from God the blessing",
+    "meaning_fa": "تلاش کن، نتیجه با خداست",
+    "meaning_en": "Do your part, leave the result to God"
+  },
+  {
+    "fa": "نابرده رنج، گنج میسر نمی‌شود",
+    "en": "No pain, no gain",
+    "meaning_fa": "بدون تلاش به موفقیت نمی‌رسی",
+    "meaning_en": "Without effort, treasure is not attained"
+  },
+  {
+    "fa": "بنی‌آدم اعضای یکدیگرند",
+    "en": "The children of Adam are limbs of one body",
+    "meaning_fa": "همه انسان‌ها به هم وابسته‌اند",
+    "meaning_en": "All humans are interconnected"
+  },
+  {
+    "fa": "مشت نمونه خروار",
+    "en": "A handful shows the whole sack",
+    "meaning_fa": "جزء نشان‌دهنده کل است",
+    "meaning_en": "A sample represents the whole"
+  },
+    {
+    "fa": "هر که بامش بیش، برفش بیشتر",
+    "en": "The higher the roof, the more snow it gets",
+    "meaning_fa": "هر کس موقعیت و مسئولیت بیشتری دارد، مشکلاتش هم بیشتر است",
+    "meaning_en": "Those in higher positions face greater troubles"
+  },
+  {
+    "fa": "دل به دریا زدن",
+    "en": "To cast one's heart into the sea",
+    "meaning_fa": "ریسک کردن و با شجاعت دست به کار شدن",
+    "meaning_en": "To take a bold risk"
+  },
+  {
+    "fa": "چاه نکن بهر کسی، اول خودت دوم کسی",
+    "en": "Don't dig a pit for others, first yourself, then someone else",
+    "meaning_fa": "کار بد برای دیگران نکن، چون اول به خودت آسیب می‌زند",
+    "meaning_en": "Harm intended for others often backfires on oneself"
+  },
+  {
+    "fa": "آفتابه لگن هفت دست، شام نداریم نون قسطی",
+    "en": "Seven hands have touched the pitcher and basin, but we have no dinner, just bread on credit",
+    "meaning_fa": "ظاهر و تجمل زیاد ولی باطن و وضعیت مالی خراب",
+    "meaning_en": "All show and no substance"
+  },
+  {
+    "fa": "آدم عجله‌کاری، یا ماستش را کیسه کرد یا دوغش را",
+    "en": "A hasty person either bags their yogurt or their doogh",
+    "meaning_fa": "عجله کردن باعث اشتباه و خرابکاری می‌شود",
+    "meaning_en": "Haste makes waste"
+  },
+  {
+    "fa": "بعد از خراب شدن بازار، نرخ را تعیین کردن",
+    "en": "Setting the price after the market has crashed",
+    "meaning_fa": "کار از کار گذشته و دیگر فایده‌ای ندارد",
+    "meaning_en": "Too little, too late"
+  },
+  {
+    "fa": "شتر دیدی ندیدی",
+    "en": "You saw the camel, you didn't see it",
+    "meaning_fa": "چشم‌پوشی عمدی از چیزی که واضح است",
+    "meaning_en": "Willful blindness / turning a blind eye"
+  },
+  {
+    "fa": "دیگ به دیگ می‌گه روت سیاه",
+    "en": "The pot calls the kettle black",
+    "meaning_fa": "کسی که خودش عیب دارد، دیگری را سرزنش می‌کند",
+    "meaning_en": "The pot calling the kettle black"
+  },
+  {
+    "fa": "گربه دستش به گوشت نمی‌رسه می‌گه پی‌اش بو می‌ده",
+    "en": "When the cat can't reach the meat, it says it smells of tallow",
+    "meaning_fa": "توجیه کردن ناتوانی با بهانه‌جویی",
+    "meaning_en": "Sour grapes"
+  },
+  {
+    "fa": "یک دست صدا ندارد",
+    "en": "One hand does not make a sound",
+    "meaning_fa": "کارها با همکاری و همیاری پیش می‌رود",
+    "meaning_en": "It takes two to tango / Unity is strength"
+  },
+  {
+    "fa": "چاه مکن بهر کسی، خودت بیفتی توش تَلی",
+    "en": "Don't dig a well for someone, you'll fall in it in heaps",
+    "meaning_fa": "بدخواهی برای دیگران به خودت برمی‌گردد",
+    "meaning_en": "What goes around comes around"
+  },
+  {
+    "fa": "خواهی نشوی رسوا، بزن دامن به دریا",
+    "en": "If you don't want to be disgraced, lift your skirt and cross the sea",
+    "meaning_fa": "اگر نمی‌خواهی آبرویت برود، فرار کن",
+    "meaning_en": "Flee to save your reputation"
+  },
+    {
+    "fa": "بنی‌آدم اعضای یکدیگرند که در آفرینش ز یک گوهرند",
+    "en": "The children of Adam are limbs of one body, created from one essence",
+    "meaning_fa": "همه انسان‌ها به هم متصل و وابسته‌اند و باید با هم مهربان باشند",
+    "meaning_en": "All human beings are interconnected and should treat each other with compassion"
+  },
+  {
+    "fa": "تا مرد سخن نگفته باشد عیب و هنرش نهفته باشد",
+    "en": "Until a man has spoken, his faults and virtues remain hidden",
+    "meaning_fa": "تا کسی حرف نزند، نمی‌توان خوبی یا بدی‌اش را فهمید",
+    "meaning_en": "A person's true character is revealed when they speak"
+  },
+  {
+    "fa": "هر که با اهل دل است دلبر است",
+    "en": "Whoever is with the people of heart is a beloved",
+    "meaning_fa": "معاشرت با انسان‌های پاک‌سرشت آدمی را محبوب می‌کند",
+    "meaning_en": "Good company makes one lovable"
+  },
+  {
+    "fa": "آسایش دو گیتی تفسیر این دو حرف است با دوستان مروت با دشمنان مدارا",
+    "en": "The comfort of both worlds lies in these two words: loyalty to friends, tolerance with enemies",
+    "meaning_fa": "آرامش دنیا و آخرت در مهربانی با دوست و مدارا با دشمن است",
+    "meaning_en": "Peace in this world and the next comes from kindness to friends and patience with foes"
+  },
+  {
+    "fa": "گل بی‌خار خدا را هیچ ندیدم",
+    "en": "I have never seen a rose without thorns from God",
+    "meaning_fa": "هیچ نعمتی بدون سختی و نقص نیست",
+    "meaning_en": "There is no gain without pain, no rose without thorns"
+  },
+  {
+    "fa": "در کار خیر حاجت هیچ استخاره نیست",
+    "en": "When it comes to good deeds, there is no need for istikhara",
+    "meaning_fa": "برای کارهای نیک نباید تردید کرد یا استخاره گرفت",
+    "meaning_en": "Good deeds require no divination or hesitation"
+  },
+  {
+    "fa": "علاج واقعه پیش از وقوع باید کرد",
+    "en": "The remedy for an event must be sought before it occurs",
+    "meaning_fa": "پیشگیری بهتر از درمان است",
+    "meaning_en": "Prevention is better than cure"
+  },
+  {
+    "fa": "دریغ است سود ندارد چو رفت کار از دست",
+    "en": "Regret brings no profit when the matter has slipped from hand",
+    "meaning_fa": "پشیمانی بعد از از دست رفتن فرصت فایده‌ای ندارد",
+    "meaning_en": "Regret is useless after the opportunity is lost"
+  },
+  {
+    "fa": "هر نشیبی را فرازی و هر فرازی را نشیبی",
+    "en": "Every valley has a peak, and every peak has a valley",
+    "meaning_fa": "زندگی بالا و پایین دارد، هیچ چیز دائمی نیست",
+    "meaning_en": "Life has its ups and downs; nothing is permanent"
+  },
+  {
+    "fa": "ابر و باد و مه و خورشید و فلک در کارند تا تو نانی به کف آری و به غفلت نخوری",
+    "en": "Clouds, wind, moon, sun and heavens work so you may earn bread and not eat it heedlessly",
+    "meaning_fa": "همه عالم برای روزی تو در تلاشند، قدرش را بدان",
+    "meaning_en": "The universe works for your sustenance; appreciate it"
+  },
+  {
+    "fa": "با خرابات‌نشینان ز کرامات ملائک بشنو نه از ملا",
+    "en": "Hear of angels’ miracles from tavern-dwellers, not from the cleric",
+    "meaning_fa": "گاهی از آدم‌های به‌ظاهر ساده درس‌های بزرگ می‌توان گرفت",
+    "meaning_en": "True wisdom can come from unexpected people"
+  },
+  {
+    "fa": "تکیه بر جای بزرگان نتوان زد به گزاف",
+    "en": "One cannot casually claim the seat of the great",
+    "meaning_fa": "ادعای بزرگی کردن بدون شایستگی ممکن نیست",
+    "meaning_en": "Greatness cannot be claimed without merit"
+  },
+    {
+    "fa": "بشنو از نی چون حکایت می‌کند، از جدایی‌ها شکایت می‌کند",
+    "en": "Listen to the reed how it complains, telling tales of separations",
+    "meaning_fa": "هر چیزی که از اصل و وطن خود جدا شود، ناله و شکایت می‌کند",
+    "meaning_en": "Anything separated from its source longs and complains"
+  },
+  {
+    "fa": "تو مگو ما را بدان شادی نرسید، این همه از غصهٔ ما شادی رسید",
+    "en": "Don’t say we never reached that joy — all this joy came from our sorrow",
+    "meaning_fa": "بسیاری از شادی‌ها و موفقیت‌ها از دل غم و سختی بیرون می‌آیند",
+    "meaning_en": "Great joy often arises from deep sorrow"
+  },
+  {
+    "fa": "از کجا آمده‌ام، آمدنم بهر چه بود",
+    "en": "Where have I come from, and what was the purpose of my arrival?",
+    "meaning_fa": "انسان باید به ریشه و هدف زندگی خود فکر کند",
+    "meaning_en": "One must contemplate the origin and purpose of existence"
+  },
+  {
+    "fa": "بیا که وقت درنگ نیست، وقت تنگ است",
+    "en": "Come, for there is no time to linger — time is short",
+    "meaning_fa": "عمر کوتاه است، فرصت را از دست نده",
+    "meaning_en": "Life is short; do not waste time"
+  },
+  {
+    "fa": "در دل هر ذره رازی از ما گفتند، بشنو تا تو هم آن راز را بدانی",
+    "en": "In every particle’s heart they told us a secret — listen so you may know it too",
+    "meaning_fa": "جهان پر از نشانه و راز خداست، گوش دل باز کن",
+    "meaning_en": "The universe is full of divine secrets; open your heart"
+  },
+  {
+    "fa": "تو مرا جانی و جهانی، من چگویم که تو نیستی",
+    "en": "You are my soul and my world — how can I say you are not?",
+    "meaning_fa": "معشوق (چه انسانی چه الهی) همه چیز آدمی است",
+    "meaning_en": "The beloved (human or divine) is everything to the lover"
+  },
+  {
+    "fa": "عشق از اول سرکش و خویی بود، تا گریزد هر که بیرونی بود",
+    "en": "Love has always been rebellious and wild — it flees from anyone superficial",
+    "meaning_fa": "عشق واقعی با آدم‌های سطحی و ترسو سازگار نیست",
+    "meaning_en": "True love rejects the cowardly and superficial"
+  },
+  {
+    "fa": "ما ز بالاییم و بالا می‌رویم",
+    "en": "We are from above and we ascend higher",
+    "meaning_fa": "روح انسان متعلق به عالم بالاست و باید به سوی کمال برود",
+    "meaning_en": "The human soul belongs to the higher realm and must ascend"
+  },
+  {
+    "fa": "دیوانه شوی، دیوانه نباشی نگردی",
+    "en": "You must become mad to truly become mad (in love)",
+    "meaning_fa": "برای رسیدن به عشق و معرفت باید از عقل ظاهری گذشت",
+    "meaning_en": "To reach divine love, one must transcend ordinary reason"
+  },
+  {
+    "fa": "خاموش که صدای سینهٔ ما، از نالهٔ نی می‌آید بیرون",
+    "en": "Be silent — the sound of our burning heart comes out as the reed’s lament",
+    "meaning_fa": "گاهی سکوت بهتر از هر ناله و فریادی است",
+    "meaning_en": "Sometimes silence speaks louder than any cry"
+  },
+  {
+    "fa": "تو بُت مرا شکستی، من بُت تو را بشکنم",
+    "en": "You broke my idol, I will break yours",
+    "meaning_fa": "اگر کسی بت و تعصب تو را شکست، تو هم تعصب او را بشکن",
+    "meaning_en": "Break the idols and prejudices of those who break yours"
+  },
+  {
+    "fa": "گر تو را عشق نباشد، همه عالم تو را دشمن است",
+    "en": "If you have no love, the whole world is your enemy",
+    "meaning_fa": "بدون عشق، زندگی پر از دشمنی و سختی است",
+    "meaning_en": "Without love, the entire world feels hostile"
+  },
+    {
+    "fa": "آهسته و پیوسته، مسابقه را می‌برد",
+    "en": "Slow and steady wins the race",
+    "meaning_fa": "عجله نکن، با حوصله و مداوم پیش برو",
+    "meaning_en": "Consistency and patience lead to success"
+  },
+  {
+    "fa": "آب که سربالا رود، نمازش را هم سربالا می‌خواند",
+    "en": "When water flows uphill, it even prays uphill",
+    "meaning_fa": "وقتی موقعیت کسی عوض شود، رفتار و اعتقاداتش هم عوض می‌شود",
+    "meaning_en": "Power changes people's principles"
+  },
+  {
+    "fa": "آفتابه خرج لحیمش می‌شه",
+    "en": "The pitcher costs more to solder than it's worth",
+    "meaning_fa": "هزینه تعمیر چیزی از خودش بیشتر شده",
+    "meaning_en": "Not worth fixing"
+  },
+  {
+    "fa": "آورده را به پس انداخته می‌گوید نان شب ندارم",
+    "en": "The one with savings pretends to have no bread for tonight",
+    "meaning_fa": "آدمای پولدار گاهی نقش فقیر بازی می‌کنند",
+    "meaning_en": "The rich pretend to be poor"
+  },
+  {
+    "fa": "از مایه گذاشتن، مایه دار شدن",
+    "en": "By spending capital, one becomes wealthy",
+    "meaning_fa": "برای پولدار شدن باید گاهی خرج کنی و سرمایه‌گذاری کنی",
+    "meaning_en": "You have to spend money to make money"
+  },
+  {
+    "fa": "به مرگ گرفته تا به تب راضی شود",
+    "en": "He threatens death so the other agrees to fever",
+    "meaning_fa": "زیاده از حد سخت‌گیری و تهدید می‌کند تا طرف کوتاه بیاید",
+    "meaning_en": "Over-negotiating by starting extremely high"
+  },
+  {
+    "fa": "پای خودتو به اندازه گلیمت دراز کن",
+    "en": "Stretch your feet only as far as your rug allows",
+    "meaning_fa": "بیشتر از توان مالی‌ات خرج نکن",
+    "meaning_en": "Live within your means"
+  },
+  {
+    "fa": "تخم مرغ دزد شتر دزد می‌شه",
+    "en": "The egg thief eventually becomes a camel thief",
+    "meaning_fa": "دزدی کوچک اگر ادامه پیدا کند به دزدی بزرگ می‌رسد",
+    "meaning_en": "Small crimes lead to big ones"
+  },
+  {
+    "fa": "چوب خدا صدا نداره",
+    "en": "God's stick makes no sound",
+    "meaning_fa": "مجازات الهی ناگهانی و بی‌صدا می‌آید",
+    "meaning_en": "Divine punishment comes silently"
+  },
+  {
+    "fa": "چشمش آب نمی‌خوره",
+    "en": "His eyes don't take water",
+    "meaning_fa": "به هیچ‌وجه باور نمی‌کند یا قبول نمی‌کند",
+    "meaning_en": "He won't buy it / completely distrusts"
+  },
+  {
+    "fa": "دستش به دهنش نمی‌رسه",
+    "en": "His hand doesn't reach his mouth",
+    "meaning_fa": "خیلی فقیر است و حتی نمی‌تواند خرج خورد و خوراکش را بدهد",
+    "meaning_en": "Extremely poor"
+  },
+  {
+    "fa": "دود چراغ خوردن",
+    "en": "Eating the smoke of the lamp",
+    "meaning_fa": "با سختی و شب‌بیداری درس خواندن یا کار کردن",
+    "meaning_en": "Burning the midnight oil"
+  },
+  {
+    "fa": "روغن ریخته را نماز نمی‌خوانند",
+    "en": "They don't pray over spilled oil",
+    "meaning_fa": "آنچه ریخته و از دست رفته، دیگر فایده‌ای ندارد",
+    "meaning_en": "No use crying over spilt milk"
+  },
+  {
+    "fa": "زمینه بازی بده",
+    "en": "Give him space to play",
+    "meaning_fa": "بگذار آزاد باشد و کار خودش را بکند",
+    "meaning_en": "Let him do his thing"
+  },
+  {
+    "fa": "سر پیاز هم هستی، ته پیاز هم هستی",
+    "en": "You're both the head and the tail of the onion",
+    "meaning_fa": "هم شروع‌کننده کاری و هم مجری و تمام‌کننده‌اش هستی",
+    "meaning_en": "You're doing everything yourself"
+  },
+  {
+    "fa": "شتر در خواب بیند پنبه‌دانه",
+    "en": "The camel dreams of cotton seeds",
+    "meaning_fa": "آرزوهای محال و خیال‌پردازی بیهوده",
+    "meaning_en": "Pipe dream"
+  },
+  {
+    "fa": "کوزه‌گر از کوزه شکسته آب می‌خوره",
+    "en": "The potter drinks from a broken pot",
+    "meaning_fa": "خودش متخصص است ولی وضع خودش خراب است",
+    "meaning_en": "The cobbler's children have no shoes"
+  },
+  {
+    "fa": "کسی که باد بکارد، طوفان درو می‌کند",
+    "en": "He who sows the wind shall reap the whirlwind",
+    "meaning_fa": "هر کار بدی بکنی، نتیجه بدتری می‌گیری",
+    "meaning_en": "You reap what you sow (in a severe way)"
+  },
+  {
+    "fa": "گاو پیشونی‌سفید",
+    "en": "The white-foreheaded cow",
+    "meaning_fa": "کسی که خیلی عزیز و نازپرورده است",
+    "meaning_en": "The golden child / spoiled favorite"
+  },
+  {
+    "fa": "مار از پونه خوشش نمیاد",
+    "en": "The snake doesn't like pennyroyal",
+    "meaning_fa": "دشمن ذاتی چیزی را هر چقدر هم خوب باشد دوست ندارد",
+    "meaning_en": "A leopard can't change its spots"
+  },
+  {
+    "fa": "نونش تو روغن است",
+    "en": "His bread is in oil",
+    "meaning_fa": "زندگی مرفه و بی‌دغدغه‌ای دارد",
+    "meaning_en": "Living in clover / well-off"
+  },
+  {
+    "fa": "هر چه بادابادا",
+    "en": "Whatever will be, will be",
+    "meaning_fa": "هر چی پیش بیاد خوش میاد، بی‌خیال",
+    "meaning_en": "Que sera, sera"
+  },
+  {
+    "fa": "همه جا تاریک است، کور که خوشش بیاد",
+    "en": "Everywhere is dark — good for the blind who like it",
+    "meaning_fa": "وضعیت خراب است ولی بعضی‌ها از همین خرابی سود می‌برند",
+    "meaning_en": "Some people benefit from chaos"
+  },
+  {
+    "fa": "یکی به میخ یکی به نعل زدن",
+    "en": "Hitting both the nail and the horseshoe",
+    "meaning_fa": "دو پهلو حرف زدن، نه این ور نه آن ور",
+    "meaning_en": "Sitting on the fence / being ambiguous"
+  },
+  {
+    "fa": "آخرین نفر چراغ را خاموش کند",
+    "en": "The last one to leave turns off the light",
+    "meaning_fa": "همه رفتن، یکی هم آخرش باید کار را جمع کند",
+    "meaning_en": "Last one out, shut the door"
+  },
+    {
+    "fa": "آدم حسود از حسادت می‌سوزه",
+    "en": "The jealous person burns from jealousy",
+    "meaning_fa": "حسادت فقط خود فرد را آزار می‌دهد",
+    "meaning_en": "Jealousy harms the jealous most"
+  },
+  {
+    "fa": "آفتاب همیشه نمی‌تابه",
+    "en": "The sun doesn't always shine",
+    "meaning_fa": "روزگار همیشه خوب نمی‌ماند",
+    "meaning_en": "Good times don't last forever"
+  },
+  {
+    "fa": "با یک گل بهار نمی‌شه",
+    "en": "One flower doesn't make spring",
+    "meaning_fa": "یک اتفاق خوب کافی نیست، باید ادامه‌دار باشد",
+    "meaning_en": "One swallow doesn't make a summer"
+  },
+  {
+    "fa": "بزغاله رو باید از بچگی شاخ‌شکسته کرد",
+    "en": "You have to break the kid goat's horns from childhood",
+    "meaning_fa": "تربیت باید از کودکی شروع شود",
+    "meaning_en": "Nip bad habits in the bud"
+  },
+  {
+    "fa": "پنبه از گوش درآوردن",
+    "en": "Taking cotton out of one's ears",
+    "meaning_fa": "بالاخره گوش دادن و متوجه شدن",
+    "meaning_en": "Finally paying attention"
+  },
+  {
+    "fa": "تیر به تاریکی انداختن",
+    "en": "Shooting an arrow in the dark",
+    "meaning_fa": "کار بدون برنامه و شانسی انجام دادن",
+    "meaning_en": "A shot in the dark"
+  },
+  {
+    "fa": "جارو به دست گرفتن",
+    "en": "Taking the broom in hand",
+    "meaning_fa": "شروع خانه‌تکانی یا پاکسازی اساسی",
+    "meaning_en": "Spring cleaning / major cleanup"
+  },
+  {
+    "fa": "چاه نفت زدن",
+    "en": "Striking oil",
+    "meaning_fa": "به پول هنگفت رسیدن",
+    "meaning_en": "Hitting the jackpot"
+  },
+  {
+    "fa": "چشم‌هاش چهار تا شدن",
+    "en": "His eyes became four",
+    "meaning_fa": "از تعجب یا ترس چشمانش گشاد شد",
+    "meaning_en": "His eyes popped out in surprise"
+  },
+  {
+    "fa": "خاک تو سرش کردن",
+    "en": "Putting dirt on his head",
+    "meaning_fa": "خیلی شرمنده و خوار کردن",
+    "meaning_en": "Utterly humiliating someone"
+  },
+  {
+    "fa": "خشت اول را کج گذاشتن",
+    "en": "Laying the first brick crooked",
+    "meaning_fa": "از اول اشتباه کردن و کار خراب شدن",
+    "meaning_en": "Getting off on the wrong foot"
+  },
+  {
+    "fa": "دلش شور می‌زنه",
+    "en": "His heart is pounding with worry",
+    "meaning_fa": "احساس بدی دارد، نگران است",
+    "meaning_en": "Having a bad feeling / gut instinct"
+  },
+  {
+    "fa": "دستش نمک داره",
+    "en": "His hand has salt",
+    "meaning_fa": "هر چی می‌خره یا درست می‌کنه خوب و باکیفیت می‌شه",
+    "meaning_en": "Having a lucky/golden touch"
+  },
+  {
+    "fa": "دودش رفت تو چشم خودش",
+    "en": "The smoke went into his own eyes",
+    "meaning_fa": "نیت بدش به خودش برگشت",
+    "meaning_en": "His scheme backfired"
+  },
+  {
+    "fa": "رنگش پرید",
+    "en": "His color drained",
+    "meaning_fa": "از ترس یا شوک رنگ صورتش رفت",
+    "meaning_en": "He went pale"
+  },
+  {
+    "fa": "زبانش بند اومد",
+    "en": "His tongue got tied",
+    "meaning_fa": "از خجالت یا ترس نتوانست حرف بزند",
+    "meaning_en": "He was speechless"
+  },
+  {
+    "fa": "زیر آب کسی را زدن",
+    "en": "Pulling someone underwater",
+    "meaning_fa": "پشت سر بدگویی کردن و خراب کردن",
+    "meaning_en": "Backstabbing / undermining"
+  },
+  {
+    "fa": "سرش را شیره مالیدن",
+    "en": "Rubbing syrup on his head",
+    "meaning_fa": "با حرف‌های شیرین فریب دادن",
+    "meaning_en": "Sweet-talking / buttering up"
+  },
+  {
+    "fa": "سگ زرد برادر شغال است",
+    "en": "The yellow dog is the jackal's brother",
+    "meaning_fa": "همه این‌ها هم‌دست و شبیه هم‌اند",
+    "meaning_en": "They're all the same / birds of a feather"
+  },
+  {
+    "fa": "شاگرد اول بودن",
+    "en": "Being the top student",
+    "meaning_fa": "بهترین و سرآمد بودن",
+    "meaning_en": "Being the best / top of the class"
+  },
+  {
+    "fa": "شانه تخم مرغ گذاشتن",
+    "en": "Putting eggs under the rug",
+    "meaning_fa": "خیلی با احتیاط و ملایم رفتار کردن",
+    "meaning_en": "Walking on eggshells"
+  },
+  {
+    "fa": "شیره را خوردن و گفتن انگار بود",
+    "en": "Eating the syrup and saying it was just grapes",
+    "meaning_fa": "فایده را بردن و بعد انکار کردن",
+    "meaning_en": "Having the cake and eating it too"
+  },
+  {
+    "fa": "صبر و حوصله‌اش سر رفت",
+    "en": "His patience ran out",
+    "meaning_fa": "دیگه طاقتش تمام شد",
+    "meaning_en": "He lost his patience"
+  },
+  {
+    "fa": "طشت رسوایی افتاد از بام",
+    "en": "The tray of disgrace fell from the roof",
+    "meaning_fa": "رازش لو رفت و رسوا شد",
+    "meaning_en": "His secret was exposed"
+  },
+  {
+    "fa": "عقده‌ای شدن",
+    "en": "Becoming complex-ridden",
+    "meaning_fa": "از یک موضوع کوچک خیلی ناراحت و حساس شدن",
+    "meaning_en": "Developing a complex"
+  },
+  {
+    "fa": "فیلش یاد هندوستان کرد",
+    "en": "His elephant remembered India",
+    "meaning_fa": "یاد قدیما و عادت‌های بد افتاد",
+    "meaning_en": "Old habits die hard"
+  },
+  {
+    "fa": "قورمه‌سبزی راه انداختن",
+    "en": "Starting a ghormeh sabzi",
+    "meaning_fa": "شروع یک کار پرزحمت و طولانی",
+    "meaning_en": "Starting a big, complicated project"
+  },
+  {
+    "fa": "کاسه داغ‌تر از آش شدن",
+    "en": "Being hotter than the stew",
+    "meaning_fa": "بیشتر از صاحب کار ذوق و علاقه نشان دادن",
+    "meaning_en": "More royalist than the king"
+  },
+  {
+    "fa": "کک‌اش گرفتن",
+    "en": "His flea got him",
+    "meaning_fa": "ترسید یا نگران شد",
+    "meaning_en": "He got scared / the jitters"
+  },
+  {
+    "fa": "گربه را دم حجله کشتن",
+    "en": "Killing the cat at the wedding threshold",
+    "meaning_fa": "در آخرین لحظه خرابکاری کردن",
+    "meaning_en": "Ruining everything at the last moment"
+  },
+  {
+    "fa": "مال خر خودش است",
+    "en": "It's his own donkey's property",
+    "meaning_fa": "هر جور بخواهد رفتار می‌کند چون مال خودش است",
+    "meaning_en": "It's his own, he can do what he wants"
+  },
+  {
+    "fa": "مثل سگ عباسی",
+    "en": "Like Abbas's dog",
+    "meaning_fa": "خیلی وفادار و فرمانبردار",
+    "meaning_en": "Loyal like a dog"
+  },
+  {
+    "fa": "موش تو سوراخ نمی‌رفت، جارو به دمش بست",
+    "en": "The mouse wouldn't go in the hole, so he tied a broom to its tail",
+    "meaning_fa": "بیش از حد زیاده‌روی کردن",
+    "meaning_en": "Overdoing it ridiculously"
+  },
+  {
+    "fa": "نون به نرخ روز خوردن",
+    "en": "Eating bread at the day's rate",
+    "meaning_fa": "با شرایط روز سازگار شدن و تغییر عقیده دادن",
+    "meaning_en": "Going with the flow / opportunism"
+  },
+  {
+    "fa": "همه چیز رو هم زدن",
+    "en": "Stirring everything together",
+    "meaning_fa": "همه چیز را به هم ریختن و قاطی کردن",
+    "meaning_en": "Making a mess of everything"
+  },
+  {
+    "fa": "یک لا قبا بودن",
+    "en": "Wearing a single-layer robe",
+    "meaning_fa": "ساده، بی‌آلایش و بی‌ریا بودن",
+    "meaning_en": "Being straightforward and unpretentious"
+  },
+  {
+    "fa": "یک وجب نون و دو غاز پنیر",
+    "en": "One span of bread and two pennies of cheese",
+    "meaning_fa": "زندگی خیلی ساده و کم‌خرج",
+    "meaning_en": "Living very simply"
+  },
+  {
+    "fa": "آبکشیدن از حرف",
+    "en": "Taking water out of words",
+    "meaning_fa": "حرفش را پس گرفتن یا کم کردن از شدت حرفش",
+    "meaning_en": "Backpedaling / eating one's words"
+  },
+  {
+    "fa": "آتیش بیار معرکه بودن",
+    "en": "Being the fire-bringer of the scene",
+    "meaning_fa": "تحریک‌کننده و شروع‌کننده دعوا بودن",
+    "meaning_en": "Instigating trouble"
+  },
+  {
+    "fa": "آفتاب لب بام بودن",
+    "en": "The sun is on the roof's edge",
+    "meaning_fa": "وقت خیلی کم مانده، آخرین لحظات است",
+    "meaning_en": "Time is running out"
+  },
+    {
+    "fa": "آدم حسابیه دو دو تا چهار تا می‌گه",
+    "en": "A sensible person says two and two make four",
+    "meaning_fa": "شفاف و بدون پیچوندن حرف می‌زنه",
+    "meaning_en": "Straightforward and honest"
+  },
+  {
+    "fa": "آتیش زیر خاکستر",
+    "en": "Fire under the ashes",
+    "meaning_fa": "خطر یا کینه‌ای که پنهان است ولی هنوز زنده است",
+    "meaning_en": "Smoldering danger or grudge"
+  },
+  {
+    "fa": "از قدیم و ندیم",
+    "en": "From old and ancient times",
+    "meaning_fa": "از خیلی وقت پیش، از بچگی",
+    "meaning_en": "Since forever"
+  },
+  {
+    "fa": "از این ستون به اون ستون فرجه",
+    "en": "From this pillar to that pillar is a break",
+    "meaning_fa": "بالاخره یه راهی پیدا می‌شه، نگران نباش",
+    "meaning_en": "Things will work out somehow"
+  },
+  {
+    "fa": "اسبش را زین کرده",
+    "en": "He has saddled his horse",
+    "meaning_fa": "آماده رفتن یا فرار است",
+    "meaning_en": "Ready to bolt"
+  },
+  {
+    "fa": "اسمش رو هم نمی‌برن",
+    "en": "They don’t even mention his name",
+    "meaning_fa": "کاملاً فراموش شده یا طرد شده",
+    "meaning_en": "Persona non grata"
+  },
+  {
+    "fa": "انگشت به دهن موندن",
+    "en": "Remaining with finger in mouth",
+    "meaning_fa": "از تعجب خشکش زده",
+    "meaning_en": "Stunned in amazement"
+  },
+  {
+    "fa": "باد به چاک دادن",
+    "en": "Giving wind to the crack",
+    "meaning_fa": "خیلی سریع فرار کردن",
+    "meaning_en": "Running away fast"
+  },
+  {
+    "fa": "بادنجان دور قاب چین کردن",
+    "en": "Arranging eggplants around the pan",
+    "meaning_fa": "زیاده چاپلوسی و تملق کردن",
+    "meaning_en": "Brown-nosing excessively"
+  },
+  {
+    "fa": "برگ برنده",
+    "en": "Trump card",
+    "meaning_fa": "آخرین حربه یا نقطه قوت مخفی",
+    "meaning_en": "Ace up the sleeve"
+  },
+  {
+    "fa": "به قدر پشه کشتن، به قدر شتر خوردن",
+    "en": "Killing as much as a mosquito, eating as much as a camel",
+    "meaning_fa": "کم خرج کردن و زیاد سود بردن",
+    "meaning_en": "Stingy but greedy"
+  },
+  {
+    "fa": "به جان خریدن",
+    "en": "Buying with one's life",
+    "meaning_fa": "با تمام وجود پذیرفتن یا انجام دادن",
+    "meaning_en": "Taking full responsibility"
+  },
+  {
+    "fa": "پایش را تو یک کفش کرده",
+    "en": "He put his foot in one shoe",
+    "meaning_fa": "لجبازی می‌کنه و کوتاه نمیاد",
+    "meaning_en": "Being stubborn"
+  },
+  {
+    "fa": "پشت کسی را داشتن",
+    "en": "Having someone's back",
+    "meaning_fa": "حمایت کردن از کسی",
+    "meaning_en": "Supporting someone"
+  },
+  {
+    "fa": "تار مویش را هم نمی‌تونه تکون بده",
+    "en": "He can't even move a hair",
+    "meaning_fa": "هیچ قدرتی نداره",
+    "meaning_en": "Completely powerless"
+  },
+  {
+    "fa": "تخته‌گاز رفتن",
+    "en": "Flooring the gas pedal",
+    "meaning_fa": "با حداکثر سرعت پیش رفتن",
+    "meaning_en": "Going full speed"
+  },
+  {
+    "fa": "تیر خلاص زدن",
+    "en": "Delivering the coup de grâce",
+    "meaning_fa": "کار کسی را یک‌سره کردن",
+    "meaning_en": "Finishing someone off"
+  },
+  {
+    "fa": "جای سوزن انداختن نبود",
+    "en": "There wasn't room to drop a needle",
+    "meaning_fa": "خیلی شلوغ بود",
+    "meaning_en": "Packed like sardines"
+  },
+  {
+    "fa": "چپ و راست کردن",
+    "en": "Doing left and right",
+    "meaning_fa": "بی‌حساب خرج کردن یا هدیه دادن",
+    "meaning_en": "Spending lavishly"
+  },
+  {
+    "fa": "چشمش دنبال کسی رفتن",
+    "en": "His eyes follow someone",
+    "meaning_fa": "خیلی دلش می‌خواد یا عاشق شده",
+    "meaning_en": "Having eyes for someone"
+  },
+  {
+    "fa": "حرفش تو دهنش نچرخید",
+    "en": "The word didn't turn in his mouth",
+    "meaning_fa": "بدون فکر حرفش را زد",
+    "meaning_en": "Speaking without thinking"
+  },
+  {
+    "fa": "حسابش با کرام‌الکاتبین",
+    "en": "His account is with the noble scribes",
+    "meaning_fa": "کارش با خداست، ما کاری بهش نداریم",
+    "meaning_en": "It's between him and God"
+  },
+  {
+    "fa": "خط و نشون کشیدن",
+    "en": "Drawing lines and signs",
+    "meaning_fa": "تهدید کردن",
+    "meaning_en": "Making threats"
+  },
+  {
+    "fa": "داغ کردن",
+    "en": "Heating up",
+    "meaning_fa": "خیلی پرطرفدار کردن چیزی",
+    "meaning_en": "Making something trendy"
+  },
+  {
+    "fa": "در به در دنبال چیزی گشتن",
+    "en": "Searching door to door",
+    "meaning_fa": "با جدیت تمام دنبال چیزی بودن",
+    "meaning_en": "Searching high and low"
+  },
+  {
+    "fa": "دستمالی شدن",
+    "en": "Being handled",
+    "meaning_fa": "خیلی استفاده شدن یا خراب شدن",
+    "meaning_en": "Worn out / overused"
+  },
+  {
+    "fa": "دلش گرفت",
+    "en": "His heart tightened",
+    "meaning_fa": "ناراحت و دلگیر شد",
+    "meaning_en": "Feeling down"
+  },
+  {
+    "fa": "دورش را خط کشیدن",
+    "en": "Drawing a line around him",
+    "meaning_fa": "کاملاً ازش فاصله گرفتن",
+    "meaning_en": "Cutting someone off"
+  },
+  {
+    "fa": "ذوق مرگ شدن",
+    "en": "Dying of excitement",
+    "meaning_fa": "خیلی خوشحال و ذوق‌زده شدن",
+    "meaning_en": "Over the moon"
+  },
+  {
+    "fa": "روده‌درازی کردن",
+    "en": "Making long intestines",
+    "meaning_fa": "زیادی حرف زدن و اطناب کردن",
+    "meaning_en": "Beating around the bush"
+  },
+  {
+    "fa": "زیر سبیلش خندیدن",
+    "en": "Laughing under his mustache",
+    "meaning_fa": "پنهانی و با تمسخر خندیدن",
+    "meaning_en": "Smirking"
+  },
+  {
+    "fa": "زیرش را کردن",
+    "en": "Doing under it",
+    "meaning_fa": "فریب دادن یا خراب کردن نقشه کسی",
+    "meaning_en": "Undermining"
+  },
+  {
+    "fa": "سرش بوی قرمه‌سبزی آمده",
+    "en": "His head smells of ghormeh sabzi",
+    "meaning_fa": "هوس غذا کرده",
+    "meaning_en": "Craving food"
+  },
+  {
+    "fa": "سرش را کلاه گذاشتن",
+    "en": "Putting a hat on his head",
+    "meaning_fa": "فریبش دادن",
+    "meaning_en": "Pulling the wool over his eyes"
+  },
+  {
+    "fa": "سگ صاحبش را نمی‌شناسه",
+    "en": "The dog doesn't recognize its owner",
+    "meaning_fa": "وضعیت خیلی به‌هم‌ریخته است",
+    "meaning_en": "Chaos reigns"
+  },
+  {
+    "fa": "شیرش را حلال نکردن",
+    "en": "Not making his milk halal",
+    "meaning_fa": "قدردان زحماتش نبودن",
+    "meaning_en": "Not appreciating someone's efforts"
+  },
+  {
+    "fa": "شیره رو کشیدن",
+    "en": "Pulling the syrup",
+    "meaning_fa": "بهترین و خالص‌ترین قسمت را بردن",
+    "meaning_en": "Taking the cream"
+  },
+  {
+    "fa": "صبر ایوب داشتن",
+    "en": "Having the patience of Job",
+    "meaning_fa": "خیلی صبور بودن",
+    "meaning_en": "Immensely patient"
+  },
+  {
+    "fa": "طول و تفسیر کشیدن",
+    "en": "Drawing it out long",
+    "meaning_fa": "بیخودی کش دادن موضوع",
+    "meaning_en": "Dragging things out"
+  },
+  {
+    "fa": "عقب گوش انداختن",
+    "en": "Throwing behind the ear",
+    "meaning_fa": "به تعویق انداختن",
+    "meaning_en": "Procrastinating"
+  },
+  {
+    "fa": "غوره نشده مویز شدن",
+    "en": "Becoming raisin before turning into sour grape",
+    "meaning_fa": "خیلی زود پیر شدن",
+    "meaning_en": "Aging prematurely"
+  },
+  {
+    "fa": "فاز دادن",
+    "en": "Giving phase",
+    "meaning_fa": "ادای کسی را درآوردن یا تظاهر کردن",
+    "meaning_en": "Acting a certain way"
+  },
+  {
+    "fa": "قالب تهی کردن",
+    "en": "Emptying the mold",
+    "meaning_fa": "فرار کردن یا رفتن",
+    "meaning_en": "Making a quick exit"
+  },
+  {
+    "fa": "قوز بالا قوز شدن",
+    "en": "Hump on top of hump",
+    "meaning_fa": "بدبختی روی بدبختی",
+    "meaning_en": "One misfortune after another"
+  },
+  {
+    "fa": "کاسه کوزه سر کسی شکستن",
+    "en": "Breaking bowls and pots over someone's head",
+    "meaning_fa": "همه تقصیرها را گردن یکی انداختن",
+    "meaning_en": "Blaming someone for everything"
+  },
+  {
+    "fa": "کفگیر به ته دیگ خوردن",
+    "en": "The spatula hit the bottom of the pot",
+    "meaning_fa": "پول یا امکانات تمام شد",
+    "meaning_en": "Hitting rock bottom financially"
+  },
+  {
+    "fa": "کلک کندن",
+    "en": "Uprooting the raft",
+    "meaning_fa": "حقه زدن یا کار را خراب کردن",
+    "meaning_en": "Pulling a fast one"
+  },
+  {
+    "fa": "گاو نه، گوساله نه، یه چیزی وسطش",
+    "en": "Not a cow, not a calf — something in between",
+    "meaning_fa": "نه این نه آن، چیزی مبهم",
+    "meaning_en": "Neither fish nor fowl"
+  },
+  {
+    "fa": "لنگه کفش تو حموم پیدا کردن",
+    "en": "Finding the other shoe in the bathhouse",
+    "meaning_fa": "بالاخره چیزی پیدا کردن یا همتا پیدا کردن",
+    "meaning_en": "Finding a perfect match"
+  },
+  {
+    "fa": "ماست‌مالی کردن",
+    "en": "Yogurt-plastering",
+    "meaning_fa": "سر و ته قضیه را هم آوردن، رفع و رجوع سطحی",
+    "meaning_en": "Whitewashing / covering up"
+  },
+    {
+    "fa": "آدم بدها رو خدا درست کرده که خوبا بشناسن",
+    "en": "God created bad people so the good ones can be recognized",
+    "meaning_fa": "بد و خوب با مقایسه معلوم می‌شوند",
+    "meaning_en": "Good is known by contrast with evil"
+  },
+  {
+    "fa": "آقای خودش بودن",
+    "en": "Being his own boss",
+    "meaning_fa": "مستقل و آزاد بودن",
+    "meaning_en": "Being independent"
+  },
+  {
+    "fa": "آواز دهل از دور خوش است",
+    "en": "The drum sounds nice from afar",
+    "meaning_fa": "از دور همه چیز قشنگ به نظر می‌رسد",
+    "meaning_en": "The grass is always greener on the other side"
+  },
+  {
+    "fa": "آینده رو پیش‌بینی کردن مثل آب خوردن نیست",
+    "en": "Predicting the future isn't like drinking water",
+    "meaning_fa": "آینده قابل پیش‌بینی دقیق نیست",
+    "meaning_en": "The future is unpredictable"
+  },
+  {
+    "fa": "باد هوا کردن",
+    "en": "Blowing wind",
+    "meaning_fa": "حرف مفت زدن یا بزرگ‌نمایی کردن",
+    "meaning_en": "Talking big / hot air"
+  },
+  {
+    "fa": "با دست پس زدن و با پا پیش کشیدن",
+    "en": "Pushing away with hand, pulling with foot",
+    "meaning_fa": "تظاهر به بی‌میلی در حالی که خیلی هم می‌خواهد",
+    "meaning_en": "Playing hard to get"
+  },
+  {
+    "fa": "بز بز قندی",
+    "en": "Sugar-candy goat",
+    "meaning_fa": "خیلی ناز و عشوه‌گر",
+    "meaning_en": "Being coy and flirtatious"
+  },
+  {
+    "fa": "بفرما تو، بفرما من",
+    "en": "You first, no you first",
+    "meaning_fa": "تعارف بیش از حد",
+    "meaning_en": "Excessive politeness"
+  },
+  {
+    "fa": "به جان خودم افتادن",
+    "en": "Falling upon oneself",
+    "meaning_fa": "خودش را خیلی اذیت کردن برای چیزی",
+    "meaning_en": "Killing oneself over something"
+  },
+  {
+    "fa": "به خاک سیاه نشاندن",
+    "en": "Sitting someone in black soil",
+    "meaning_fa": "کاملاً نابود و بدبخت کردن",
+    "meaning_en": "Ruining someone completely"
+  },
+  {
+    "fa": "پاچه‌خواری کردن",
+    "en": "Licking trousers",
+    "meaning_fa": "چاپلوسی و تملق زیاد",
+    "meaning_en": "Bootlicking"
+  },
+  {
+    "fa": "پوست کلفت بودن",
+    "en": "Having thick skin",
+    "meaning_fa": "بی‌حیا یا مقاوم به حرف مردم",
+    "meaning_en": "Thick-skinned"
+  },
+  {
+    "fa": "پول پارو کردن",
+    "en": "Shoveling money",
+    "meaning_fa": "خیلی پول درآوردن",
+    "meaning_en": "Raking in cash"
+  },
+  {
+    "fa": "تار و پودش به هم ریخته",
+    "en": "His warp and weft are tangled",
+    "meaning_fa": "خیلی به‌هم ریخته و آشفته است",
+    "meaning_en": "Completely messed up"
+  },
+  {
+    "fa": "تخته کردن",
+    "en": "Boarding up",
+    "meaning_fa": "کاملاً تعطیل کردن",
+    "meaning_en": "Shutting down completely"
+  },
+  {
+    "fa": "توی خط بودن",
+    "en": "Being in line",
+    "meaning_fa": "در مسیر درست بودن",
+    "meaning_en": "On the right track"
+  },
+  {
+    "fa": "جای پاشنه کفشش راه رفتن",
+    "en": "Walking in the heel-print of his shoe",
+    "meaning_fa": "دقیقاً دنباله‌رو کسی بودن",
+    "meaning_en": "Following in someone's footsteps"
+  },
+  {
+    "fa": "چای دم کردن",
+    "en": "Brewing tea",
+    "meaning_fa": "طول دادن به کار و وقت‌کشی",
+    "meaning_en": "Stalling"
+  },
+  {
+    "fa": "چشمش به دهن کسی بودن",
+    "en": "His eyes are on someone's mouth",
+    "meaning_fa": "منتظر دستور یا حرف کسی بودن",
+    "meaning_en": "Waiting for orders"
+  },
+  {
+    "fa": "حساب دو دو تا چهار تا نکردن",
+    "en": "Not calculating two and two make four",
+    "meaning_fa": "بی‌فکر و بی‌منطق عمل کردن",
+    "meaning_en": "Acting illogically"
+  },
+  {
+    "fa": "خاک بر سرش کردن",
+    "en": "Throwing dirt on his head",
+    "meaning_fa": "خیلی تحقیر کردن",
+    "meaning_en": "Humiliating deeply"
+  },
+  {
+    "fa": "خط قرمز",
+    "en": "Red line",
+    "meaning_fa": "مرزی که نباید از آن عبور کرد",
+    "meaning_en": "Non-negotiable boundary"
+  },
+  {
+    "fa": "داغ شدن بازار",
+    "en": "The market heating up",
+    "meaning_fa": "شروع رونق و فعالیت زیاد",
+    "meaning_en": "Things picking up"
+  },
+  {
+    "fa": "در رفتن",
+    "en": "Slipping away",
+    "meaning_fa": "فرار کردن یا خلاص شدن",
+    "meaning_en": "Getting away"
+  },
+  {
+    "fa": "دست به سر کردن",
+    "en": "Brushing off",
+    "meaning_fa": "با بهانه رد کردن و خلاص شدن",
+    "meaning_en": "Fobbing off"
+  },
+  {
+    "fa": "دست و پاش را جمع کردن",
+    "en": "Gathering his hands and feet",
+    "meaning_fa": "مراقب شدن و ولخرجی را کنار گذاشتن",
+    "meaning_en": "Tightening the belt"
+  },
+  {
+    "fa": "دلش را به دریا زدن",
+    "en": "Throwing his heart into the sea",
+    "meaning_fa": "ریسک بزرگ کردن",
+    "meaning_en": "Taking a leap of faith"
+  },
+  {
+    "fa": "ذوق‌زده شدن",
+    "en": "Becoming ecstatic",
+    "meaning_fa": "خیلی خوشحال و هیجان‌زده شدن",
+    "meaning_en": "Being thrilled"
+  },
+  {
+    "fa": "رگ خواب کسی را پیدا کردن",
+    "en": "Finding someone's sleep vein",
+    "meaning_fa": "نقطه ضعف یا راه نفوذ به کسی را پیدا کردن",
+    "meaning_en": "Finding someone's soft spot"
+  },
+  {
+    "fa": "زیر بته پیدا کردن",
+    "en": "Finding under a bush",
+    "meaning_fa": "بی‌ریشه و بی‌اصل و نسب بودن",
+    "meaning_en": "Being of unknown origin"
+  },
+  {
+    "fa": "زیر پای کسی را خالی کردن",
+    "en": "Emptying under someone's feet",
+    "meaning_fa": "بی‌حمایت گذاشتن یا خیانت کردن",
+    "meaning_en": "Pulling the rug out"
+  },
+  {
+    "fa": "سر به سر کسی گذاشتن",
+    "en": "Teasing someone",
+    "meaning_fa": "شوخی و اذیت کردن",
+    "meaning_en": "Messing with someone"
+  },
+  {
+    "fa": "سر کیسه را شل کردن",
+    "en": "Loosening the purse strings",
+    "meaning_fa": "شروع خرج کردن",
+    "meaning_en": "Opening the wallet"
+  },
+  {
+    "fa": "سگ را ول کنی، صاحبش را می‌گیره",
+    "en": "Let the dog go, it bites the owner",
+    "meaning_fa": "بعضی آدما قدر نعمت را نمی‌دانند",
+    "meaning_en": "Biting the hand that feeds"
+  },
+  {
+    "fa": "شتر با بارش گم شده",
+    "en": "The camel and its load are both missing",
+    "meaning_fa": "کاملاً ناپدید شده",
+    "meaning_en": "Vanished without a trace"
+  },
+  {
+    "fa": "شل گرفتن",
+    "en": "Taking it easy",
+    "meaning_fa": "بی‌خیال و راحت گرفتن",
+    "meaning_en": "Slacking off"
+  },
+  {
+    "fa": "شونه بالا انداختن",
+    "en": "Shrugging shoulders",
+    "meaning_fa": "بی‌تفاوتی نشان دادن",
+    "meaning_en": "Not caring"
+  },
+  {
+    "fa": "صبرش لبریز شدن",
+    "en": "His patience overflowing",
+    "meaning_fa": "دیگه تحملش تمام شد",
+    "meaning_en": "Reaching the end of patience"
+  },
+  {
+    "fa": "طول دادن به عمر کسی",
+    "en": "Lengthening someone's life",
+    "meaning_fa": "با حرف یا کار وقت تلف کردن",
+    "meaning_en": "Dragging things out"
+  },
+  {
+    "fa": "عقب افتادن از قافله",
+    "en": "Falling behind the caravan",
+    "meaning_fa": "از پیشرفت جا ماندن",
+    "meaning_en": "Being left behind"
+  },
+  {
+    "fa": "غاز مرغابی شدن",
+    "en": "Turning goose into duck",
+    "meaning_fa": "تغییر ظاهر یا رفتار برای گول زدن",
+    "meaning_en": "Putting on an act"
+  },
+  {
+    "fa": "قد و نیم قد داشتن",
+    "en": "Having height and half-height",
+    "meaning_fa": "خیلی بلند و برجسته بودن",
+    "meaning_en": "Standing head and shoulders above"
+  },
+  {
+    "fa": "قوزه رو قوز",
+    "en": "Hump upon hump",
+    "meaning_fa": "مشکل روی مشکل",
+    "meaning_en": "Adding insult to injury"
+  },
+  {
+    "fa": "کاسه لیسی کردن",
+    "en": "Licking bowls",
+    "meaning_fa": "چاپلوسی و تملق",
+    "meaning_en": "Sucking up"
+  },
+  {
+    "fa": "کفش آهن‌پاره",
+    "en": "Iron-patch shoes",
+    "meaning_fa": "خیلی تنگدست و فقیر",
+    "meaning_en": "Dirt poor"
+  },
+  {
+    "fa": "کلک سوخته",
+    "en": "Burnt raft",
+    "meaning_fa": "حقه‌ای که دیگر جواب نمی‌دهد",
+    "meaning_en": "Old trick that no longer works"
+  },
+  {
+    "fa": "گرفتن آبش را",
+    "en": "Taking his water",
+    "meaning_fa": "حالش را گرفتن یا افسرده کردن",
+    "meaning_en": "Ruining his mood"
+  },
+  {
+    "fa": "گوشش بدهکار نیست",
+    "en": "His ear is not indebted",
+    "meaning_fa": "اصلاً گوش نمی‌دهد",
+    "meaning_en": "Not listening at all"
+  },
+  {
+    "fa": "مهره مار بودن",
+    "en": "Being a snake's bead",
+    "meaning_fa": "خیلی باارزش و نایاب بودن",
+    "meaning_en": "Being priceless"
+  },
+  {
+    "fa": "نون و آب دار بودن",
+    "en": "Having bread and water",
+    "meaning_fa": "راحت و بی‌دغدغه بودن",
+    "meaning_en": "Comfortable and secure"
+  },
+  {
+    "fa": "هزار تا من من کردن",
+    "en": "Saying 'but' a thousand times",
+    "meaning_fa": "بهانه آوردن و مخالفت کردن",
+    "meaning_en": "Making excuses"
+  },
+  {
+    "fa": "همه چیزش رو ریختن به هم",
+    "en": "They spilled everything together",
+    "meaning_fa": "همه چیز را خراب کردن",
+    "meaning_en": "Making a total mess"
+  },
+  {
+    "fa": "یک لقمه نون و دوغ",
+    "en": "One bite of bread and doogh",
+    "meaning_fa": "زندگی خیلی ساده و بی‌آلایش",
+    "meaning_en": "Simple life"
+  },
+  {
+    "fa": "یک پا دو تا کردن",
+    "en": "Making one leg two",
+    "meaning_fa": "خیلی ذوق کردن و خوشحالی",
+    "meaning_en": "Jumping for joy"
+  },
+  {
+    "fa": "آچار فرانسه بودن",
+    "en": "Being a French wrench",
+    "meaning_fa": "در همه کارها وارد بودن",
+    "meaning_en": "Jack of all trades"
+  },
+  {
+    "fa": "آب از سرش گذشته",
+    "en": "Water has passed over his head",
+    "meaning_fa": "دیگه چیزی برای از دست دادن ندارد، بی‌پروا شده",
+    "meaning_en": "Having nothing to lose"
+  },
+  {
+    "fa": "آفتاب از همه جا می‌تابه",
+    "en": "The sun shines everywhere",
+    "meaning_fa": "شانس همه جا هست",
+    "meaning_en": "Opportunity is everywhere"
+  },
+  {
+    "fa": "آه در بساط نداشتن",
+    "en": "Not having a sigh in stock",
+    "meaning_fa": "حتی توان آه کشیدن هم نداشتن",
+    "meaning_en": "Utterly exhausted"
+  },
+  {
+    "fa": "باد به پرچمش خوردن",
+    "en": "Wind hitting his flag",
+    "meaning_fa": "مغرور و پرافاده شدن",
+    "meaning_en": "Getting big-headed"
+  },
+  {
+    "fa": "آب به آسیاب کسی ریختن",
+    "en": "Pouring water into someone's mill",
+    "meaning_fa": "به نفع کسی کار کردن (حتی ناخواسته)",
+    "meaning_en": "Playing into someone's hands"
+  },
+  {
+    "fa": "آتیش بیار معرکه نبودن",
+    "en": "Not being the fire-bringer of the fight",
+    "meaning_fa": "دخالت نکردن و دعوا راه ننداختن",
+    "meaning_en": "Staying out of trouble"
+  },
+  {
+    "fa": "از دستش برنمیاد موی کسی را شانه بزنه",
+    "en": "He can't even comb someone's hair",
+    "meaning_fa": "کاملاً بی‌عرضه است",
+    "meaning_en": "Utterly useless"
+  },
+  {
+    "fa": "از زیر بته نیومده",
+    "en": "Didn't come from under a bush",
+    "meaning_fa": "بی‌تجربه و خام نیست",
+    "meaning_en": "Not born yesterday"
+  },
+  {
+    "fa": "بادمجان دور قاب چینی",
+    "en": "Eggplant arranged around the frame",
+    "meaning_fa": "چاپلوسی و تملق بیش از حد",
+    "meaning_en": "Excessive flattery"
+  },
+  {
+    "fa": "بخت با کسی یار است",
+    "en": "Luck is with someone",
+    "meaning_fa": "شانس خیلی خوب دارد",
+    "meaning_en": "Lady Luck is smiling"
+  },
+  {
+    "fa": "بچه پولدارا",
+    "en": "Rich kids",
+    "meaning_fa": "کسانی که با پول پدر زندگی می‌کنند",
+    "meaning_en": "Trust fund kids"
+  },
+  {
+    "fa": "بوی بارون اومدن",
+    "en": "Smelling the rain coming",
+    "meaning_fa": "حس کردن اینکه اتفاقی در راه است",
+    "meaning_en": "Sensing something coming"
+  },
+  {
+    "fa": "پایین شهر بالا شهر شدن",
+    "en": "Going from downtown to uptown",
+    "meaning_fa": "پولدار شدن و تغییر طبقه اجتماعی",
+    "meaning_en": "Moving up in the world"
+  },
+  {
+    "fa": "توی باغ نبودن",
+    "en": "Not being in the garden",
+    "meaning_fa": "متوجه منظور نشدن، نفهمیدن",
+    "meaning_en": "Not getting the hint"
+  },
+  {
+    "fa": "توی خط کسی بودن",
+    "en": "Being in someone's line",
+    "meaning_fa": "طرفداری کردن از کسی",
+    "meaning_en": "Being on someone's side"
+  },
+  {
+    "fa": "چاه ویل",
+    "en": "Bottomless well",
+    "meaning_fa": "پول خرج کردن بی‌حساب و کتاب",
+    "meaning_en": "Money pit"
+  },
+  {
+    "fa": "چشم روشنی",
+    "en": "Eye-brightener",
+    "meaning_fa": "هدیه‌ای برای تبریک چیزی",
+    "meaning_en": "Congratulatory gift"
+  },
+  {
+    "fa": "حرف مفت زدن",
+    "en": "Talking nonsense",
+    "meaning_fa": "حرف بی‌ارزش و بی‌پشتوانه زدن",
+    "meaning_en": "Talking rubbish"
+  },
+  {
+    "fa": "خاک بر سر شدن",
+    "en": "Becoming dirt on the head",
+    "meaning_fa": "خیلی شرمنده و خوار شدن",
+    "meaning_en": "Being utterly ashamed"
+  },
+  {
+    "fa": "خط و نشون نکشیدن",
+    "en": "Not drawing lines",
+    "meaning_fa": "تهدید نکردن",
+    "meaning_en": "Not making threats"
+  },
+  {
+    "fa": "داغ دل",
+    "en": "Burning heart",
+    "meaning_fa": "غم و ناراحتی عمیق",
+    "meaning_en": "Deep sorrow"
+  },
+  {
+    "fa": "دست کسی رو شدن",
+    "en": "Someone's hand being revealed",
+    "meaning_fa": "نقشه‌اش لو رفتن",
+    "meaning_en": "Being exposed"
+  },
+  {
+    "fa": "دود چراغ خوردن",
+    "en": "Eating lamp smoke",
+    "meaning_fa": "شب تا صبح درس خواندن یا کار کردن",
+    "meaning_en": "Burning the midnight oil"
+  },
+  {
+    "fa": "دور همی",
+    "en": "Gathering",
+    "meaning_fa": "جمع دوستانه و صمیمی",
+    "meaning_en": "Get-together"
+  },
+  {
+    "fa": "ذوق کردن",
+    "en": "Getting excited",
+    "meaning_fa": "خیلی خوشحال شدن از چیزی",
+    "meaning_en": "Being thrilled"
+  },
+  {
+    "fa": "رنگ و لعاب دادن",
+    "en": "Adding color and glaze",
+    "meaning_fa": "جذاب و اغراق‌آمیز نشان دادن",
+    "meaning_en": "Sugarcoating"
+  },
+  {
+    "fa": "زیر پوستش رفتن",
+    "en": "Going under someone's skin",
+    "meaning_fa": "خیلی اعصابش را خرد کردن",
+    "meaning_en": "Getting on someone's nerves"
+  },
+  {
+    "fa": "زیرآبی رفتن",
+    "en": "Going underwater",
+    "meaning_fa": "پنهانی توطئه کردن",
+    "meaning_en": "Scheming secretly"
+  },
+  {
+    "fa": "سرش برای چیزی نمی‌رسه",
+    "en": "His head doesn't reach something",
+    "meaning_fa": "حوصله یا توانش را ندارد",
+    "meaning_en": "Not up for it"
+  },
+  {
+    "fa": "سروصدای الکی",
+    "en": "Fake noise",
+    "meaning_fa": "جنجال بی‌مورد",
+    "meaning_en": "Much ado about nothing"
+  },
+  {
+    "fa": "سگ دو زدن",
+    "en": "Barking twice",
+    "meaning_fa": "عقب‌نشینی کردن",
+    "meaning_en": "Backing down"
+  },
+  {
+    "fa": "شب و روز نداشتن",
+    "en": "Having no night or day",
+    "meaning_fa": "خیلی مشغول و بی‌وقفه کار کردن",
+    "meaning_en": "Working around the clock"
+  },
+  {
+    "fa": "شل و ول بودن",
+    "en": "Being loose",
+    "meaning_fa": "بی‌نظم و بی‌حساب بودن",
+    "meaning_en": "Being sloppy"
+  },
+  {
+    "fa": "شیره جان",
+    "en": "Life syrup",
+    "meaning_fa": "عزیزترین و بهترین چیز",
+    "meaning_en": "The apple of one's eye"
+  },
+  {
+    "fa": "صبر تلخ است ولی میوه‌اش شیرین",
+    "en": "Patience is bitter but its fruit is sweet",
+    "meaning_fa": "سختی صبر ارزش نتیجه خوبش را دارد",
+    "meaning_en": "Good things come to those who wait"
+  },
+  {
+    "fa": "طبیعی بودن",
+    "en": "Being natural",
+    "meaning_fa": "راحت و بدون تظاهر بودن",
+    "meaning_en": "Being oneself"
+  },
+  {
+    "fa": "عقب ماندن از قافله",
+    "en": "Staying behind the caravan",
+    "meaning_fa": "از پیشرفت جا ماندن",
+    "meaning_en": "Being left behind"
+  },
+  {
+    "fa": "غول چراغ جادو",
+    "en": "Genie of the lamp",
+    "meaning_fa": "کسی که همه آرزوها را برآورده می‌کند",
+    "meaning_en": "Wish-granter"
+  },
+  {
+    "fa": "فاز سنگین",
+    "en": "Heavy phase",
+    "meaning_fa": "حالت افسرده یا جدی",
+    "meaning_en": "In a bad/somber mood"
+  },
+  {
+    "fa": "قربون صدقه رفتن",
+    "en": "Going into sacrifices",
+    "meaning_fa": "تعریف و محبت زیاد نشان دادن",
+    "meaning_en": "Showering with affection"
+  },
+  {
+    "fa": "قصه پرغصه",
+    "en": "Sad tale",
+    "meaning_fa": "داستان غم‌انگیز و طولانی",
+    "meaning_en": "Sob story"
+  },
+  {
+    "fa": "کاسه بشقاب شکستن",
+    "en": "Breaking plates and bowls",
+    "meaning_fa": "جشن و پایکوبی کردن",
+    "meaning_en": "Partying hard"
+  },
+  {
+    "fa": "کباب شدن از حسرت",
+    "en": "Grilling from regret",
+    "meaning_fa": "خیلی حسرت چیزی را خوردن",
+    "meaning_en": "Dying of envy"
+  },
+  {
+    "fa": "کله‌پاچه‌ای بودن",
+    "en": "Being head-and-trotters",
+    "meaning_fa": "خوردن غذای سنگین و چرب",
+    "meaning_en": "Eating heavy food"
+  },
+  {
+    "fa": "گرفتار چنگال کسی شدن",
+    "en": "Falling into someone's claws",
+    "meaning_fa": "به دام کسی افتادن",
+    "meaning_en": "Falling into a trap"
+  },
+  {
+    "fa": "گوشه چشمی نشان دادن",
+    "en": "Showing a corner of the eye",
+    "meaning_fa": "توجه یا علاقه کمی نشان دادن",
+    "meaning_en": "Giving a hint of interest"
+  },
+  {
+    "fa": "لال مونی گرفتن",
+    "en": "Becoming mute",
+    "meaning_fa": "از خجالت یا ترس ساکت شدن",
+    "meaning_en": "Being struck speechless"
+  },
+  {
+    "fa": "ماست مالی کردن",
+    "en": "Yogurt plastering",
+    "meaning_fa": "رفع و رجوع سطحی و ظاهری",
+    "meaning_en": "Papering over the cracks"
+  },
+  {
+    "fa": "مثل نقل و نبات",
+    "en": "Like rock candy",
+    "meaning_fa": "خیلی زیاد و همه جا پیدا شدن",
+    "meaning_en": "Everywhere"
+  },
+  {
+    "fa": "مهره اصلی",
+    "en": "Main piece",
+    "meaning_fa": "شخص کلیدی و مهم",
+    "meaning_en": "Key player"
+  },
+  {
+    "fa": "نون و ماست خوردن",
+    "en": "Eating bread and yogurt",
+    "meaning_fa": "زندگی ساده و بی‌دردسر",
+    "meaning_en": "Simple living"
+  },
+  {
+    "fa": "هزار جور شدن",
+    "en": "Becoming a thousand kinds",
+    "meaning_fa": "خیلی تغییر کردن یا پیچیده شدن",
+    "meaning_en": "Getting complicated"
+  },
+  {
+    "fa": "همه فن حریف",
+    "en": "Master of all trades",
+    "meaning_fa": "در همه چیز وارد بودن",
+    "meaning_en": "Jack of all trades"
+  },
+  {
+    "fa": "یک دست داشتن",
+    "en": "Having one hand",
+    "meaning_fa": "همدست و هم‌فکر بودن",
+    "meaning_en": "Being in cahoots"
+  },
+  {
+    "fa": "یک کاسه کردن",
+    "en": "Making one bowl",
+    "meaning_fa": "همه را با هم برابر کردن",
+    "meaning_en": "Treating everyone the same"
+  },
+  {
+    "fa": "آدم حسابی",
+    "en": "Decent person",
+    "meaning_fa": "شخص قابل اعتماد و درستکار",
+    "meaning_en": "Respectable person"
+  },
+  {
+    "fa": "آفت جان بودن",
+    "en": "Being life's plague",
+    "meaning_fa": "خیلی دردسرساز بودن",
+    "meaning_en": "Pain in the neck"
+  },
+  {
+    "fa": "باد در غبغب انداختن",
+    "en": "Throwing wind in the throat",
+    "meaning_fa": "مغرور شدن و خود را گرفتن",
+    "meaning_en": "Getting arrogant"
+  },
+  {
+    "fa": "بوی گوشت سوخته دادن",
+    "en": "Smelling burnt meat",
+    "meaning_fa": "مشکوک بودن یا خراب شدن کار",
+    "meaning_en": "Smelling a rat"
+  },
+  {
+    "fa": "پای کسی گیر بودن",
+    "en": "Being stuck at someone's feet",
+    "meaning_fa": "وابسته بودن یا در بند کسی بودن",
+    "meaning_en": "Being tied to someone"
+  },
+  {
+    "fa": "توی سرش زدن",
+    "en": "Hitting on his head",
+    "meaning_fa": "متوجهش کردن یا تنبیه کردن",
+    "meaning_en": "Knocking some sense into"
+  },
+  {
+    "fa": "چپ کردن",
+    "en": "Turning left",
+    "meaning_fa": "عصبانی شدن یا قهر کردن",
+    "meaning_en": "Getting upset"
+  },
+  {
+    "fa": "چشم و دل سیر شدن",
+    "en": "Eyes and heart satisfied",
+    "meaning_fa": "کاملاً راضی شدن",
+    "meaning_en": "Fully satisfied"
+  },
+  {
+    "fa": "خاک خوردن",
+    "en": "Eating dirt",
+    "meaning_fa": "شکست خوردن یا تحقیر شدن",
+    "meaning_en": "Biting the dust"
+  },
+  {
+    "fa": "دست بر قضا",
+    "en": "By chance",
+    "meaning_fa": "اتفاقی و به‌طور ناگهانی",
+    "meaning_en": "As luck would have it"
+  },
+  {
+    "fa": "دودل بودن",
+    "en": "Being of two hearts",
+    "meaning_fa": "مردد بودن",
+    "meaning_en": "Being undecided"
+  },
+  {
+    "fa": "زبان درازی کردن",
+    "en": "Lengthening the tongue",
+    "meaning_fa": "بی‌ادبی کردن",
+    "meaning_en": "Being cheeky"
+  },
+  {
+    "fa": "سرويس کردن",
+    "en": "Serving",
+    "meaning_fa": "له کردن یا نابود کردن حریف",
+    "meaning_en": "Destroying someone"
+  },
+  {
+    "fa": "شیشه عمر",
+    "en": "Glass of life",
+    "meaning_fa": "عمر شکننده و کوتاه",
+    "meaning_en": "Fragile life"
+  },
+  {
+    "fa": "طاقت فرسا",
+    "en": "Exhausting",
+    "meaning_fa": "خیلی سخت و طاقت‌فرسا",
+    "meaning_en": "Grueling"
+  },
+  {
+    "fa": "عقده گشایی کردن",
+    "en": "Releasing complexes",
+    "meaning_fa": "خالی کردن خشم و کینه قدیمی",
+    "meaning_en": "Venting old grudges"
+  },
+  {
+    "fa": "قانع بودن",
+    "en": "Being content",
+    "meaning_fa": "به کم راضی بودن",
+    "meaning_en": "Being satisfied with little"
+  },
+  {
+    "fa": "کاسه سر کسی گرم بودن",
+    "en": "Someone's head bowl being hot",
+    "meaning_fa": "خیلی مشغول بودن",
+    "meaning_en": "Being very busy"
+  },
+  {
+    "fa": "آب پاکی رو ریختن روی چیزی",
+    "en": "Pouring clean water on something",
+    "meaning_fa": "کاملاً شفاف و قاطع جواب منفی دادن",
+    "meaning_en": "Making it crystal clear (usually rejection)"
+  },
+  {
+    "fa": "آتیش گرفتن از یه جرقه",
+    "en": "Catching fire from a single spark",
+    "meaning_fa": "از یه چیز کوچیک خیلی بزرگ شدن ماجرا",
+    "meaning_en": "Blowing something out of proportion"
+  },
+  {
+    "fa": "از دست دادن کنترل",
+    "en": "Losing control",
+    "meaning_fa": "دیگه نتونستن خودش رو نگه دارن",
+    "meaning_en": "Losing it"
+  },
+  {
+    "fa": "باد کردن حساب بانکی",
+    "en": "Inflating the bank account",
+    "meaning_fa": "خیلی پولدار شدن",
+    "meaning_en": "Getting rich quick"
+  },
+  {
+    "fa": "بوی تعفن دادن",
+    "en": "Smelling rotten",
+    "meaning_fa": "مشکوک بودن و بوی گند ماجرا بلند شدن",
+    "meaning_en": "Something smells fishy"
+  },
+  {
+    "fa": "پای لنگ",
+    "en": "Lame leg",
+    "meaning_fa": "نقطه ضعف یا مشکل اصلی",
+    "meaning_en": "Weak spot"
+  },
+  {
+    "fa": "تار عنکبوت زدن",
+    "en": "Spinning cobwebs",
+    "meaning_fa": "خیلی وقت بی‌استفاده موندن",
+    "meaning_en": "Gathering dust"
+  },
+  {
+    "fa": "توی پوست خودش نگنجیدن",
+    "en": "Not fitting in his own skin",
+    "meaning_fa": "از خوشحالی یا غرور دیوانه شدن",
+    "meaning_en": "Beside himself with joy/pride"
+  },
+  {
+    "fa": "جوش آوردن",
+    "en": "Coming to a boil",
+    "meaning_fa": "عصبانی شدن یا هیجان‌زده شدن",
+    "meaning_en": "Getting worked up"
+  },
+  {
+    "fa": "چرخ زندگی چرخیدن",
+    "en": "The wheel of life turning",
+    "meaning_fa": "اوضاع تغییر کردن (معمولاً به نفع کسی)",
+    "meaning_en": "Fortune turning"
+  },
+  {
+    "fa": "حباب بودن",
+    "en": "Being a bubble",
+    "meaning_fa": "ظاهر قشنگ ولی توخالی و زودگذر",
+    "meaning_en": "All show and no substance"
+  },
+  {
+    "fa": "خط پایان",
+    "en": "Finish line",
+    "meaning_fa": "آخرین مرحله یا لحظه",
+    "meaning_en": "The endgame"
+  },
+  {
+    "fa": "دودل و سه‌دل",
+    "en": "Two-hearted and three-hearted",
+    "meaning_fa": "خیلی مردد و شکاک",
+    "meaning_en": "Very indecisive"
+  },
+  {
+    "fa": "دستش تنگ بودن",
+    "en": "Having a tight hand",
+    "meaning_fa": "خیلی خسیس بودن",
+    "meaning_en": "Being stingy"
+  },
+  {
+    "fa": "دعوا راه انداختن",
+    "en": "Starting a fight",
+    "meaning_fa": "شروع دعوا یا جنجال",
+    "meaning_en": "Kicking up a fuss"
+  },
+  {
+    "fa": "ذوق کردن از چیزی",
+    "en": "Getting excited about something",
+    "meaning_fa": "خیلی خوشحال و هیجان‌زده شدن",
+    "meaning_en": "Being over the moon"
+  },
+  {
+    "fa": "رشته کلام را به دست گرفتن",
+    "en": "Taking the thread of speech",
+    "meaning_fa": "کنترل گفتگو رو به دست گرفتن",
+    "meaning_en": "Steering the conversation"
+  },
+  {
+    "fa": "زبانش مو درآوردن",
+    "en": "His tongue growing hair",
+    "meaning_fa": "خیلی منتظر موندن تا حرف بزنه",
+    "meaning_en": "Waiting forever to speak"
+  },
+  {
+    "fa": "زیر دندان چیزی را گرفتن",
+    "en": "Taking something under the tooth",
+    "meaning_fa": "با دقت بررسی کردن",
+    "meaning_en": "Looking closely at something"
+  },
+  {
+    "fa": "سر به سر هم گذاشتن",
+    "en": "Teasing each other",
+    "meaning_fa": "شوخی و اذیت کردن همدیگه",
+    "meaning_en": "Joking around"
+  },
+  {
+    "fa": "سطل آشغال تاریخ",
+    "en": "Dustbin of history",
+    "meaning_fa": "کاملاً فراموش شده و بی‌اهمیت",
+    "meaning_en": "Consigned to oblivion"
+  },
+  {
+    "fa": "شیشه نوشابه لرزیدن",
+    "en": "Soda bottle shaking",
+    "meaning_fa": "عصبانی و آماده انفجار بودن",
+    "meaning_en": "About to explode with anger"
+  },
+  {
+    "fa": "صفر تا صد",
+    "en": "Zero to hundred",
+    "meaning_fa": "از اول تا آخر، کامل",
+    "meaning_en": "From A to Z"
+  },
+  {
+    "fa": "طعم گس",
+    "en": "Bitter taste",
+    "meaning_fa": "تجربه تلخ و ناخوشایند",
+    "meaning_en": "Bitter experience"
+  },
+  {
+    "fa": "عین خیارشور",
+    "en": "Exactly like pickled cucumber",
+    "meaning_fa": "کاملاً بی‌تفاوت و بی‌خیال",
+    "meaning_en": "Cool as a cucumber"
+  },
+  {
+    "fa": "غوره بودن",
+    "en": "Being sour grape",
+    "meaning_fa": "حسود و بداخلاق بودن",
+    "meaning_en": "Being sour/grumpy"
+  },
+  {
+    "fa": "فیل هوا کردن",
+    "en": "Flying an elephant",
+    "meaning_fa": "کار غیرممکن یا خیلی بزرگ",
+    "meaning_en": "Impossible task"
+  },
+  {
+    "fa": "قاطی کردن",
+    "en": "Mixing up",
+    "meaning_fa": "به‌هم ریختن همه چیز",
+    "meaning_en": "Making a mess"
+  },
+  {
+    "fa": "قوزک پا",
+    "en": "Ankle",
+    "meaning_fa": "آخرین حد و مرز",
+    "meaning_en": "The last straw"
+  },
+  {
+    "fa": "کاسه صبر لبریز شدن",
+    "en": "Bowl of patience overflowing",
+    "meaning_fa": "دیگه تحمل تموم شدن",
+    "meaning_en": "Patience wearing thin"
+  },
+  {
+    "fa": "کشک بادمجون",
+    "en": "Eggplant with yogurt",
+    "meaning_fa": "چرت و پرت، حرف بی‌معنی",
+    "meaning_en": "Nonsense"
+  },
+  {
+    "fa": "کلاه سرش رفتن",
+    "en": "Hat going on his head",
+    "meaning_fa": "گول خوردن",
+    "meaning_en": "Being duped"
+  },
+  {
+    "fa": "گرفتن خواب کسی",
+    "en": "Catching someone's sleep",
+    "meaning_fa": "خوابیدن طولانی و راحت",
+    "meaning_en": "Sleeping like a log"
+  },
+  {
+    "fa": "گنده لات",
+    "en": "Big bully",
+    "meaning_fa": "لاف‌زن و قلدر",
+    "meaning_en": "Tough guy"
+  },
+  {
+    "fa": "مثل آب خوردن",
+    "en": "Like drinking water",
+    "meaning_fa": "خیلی راحت و آسان",
+    "meaning_en": "Piece of cake"
+  },
+  {
+    "fa": "مهره شاه‌تکش",
+    "en": "Checkmate piece",
+    "meaning_fa": "حرف یا حرکت نهایی و برنده",
+    "meaning_en": "Checkmate move"
+  },
+  {
+    "fa": "نون سنگک داغ",
+    "en": "Hot fresh sangak bread",
+    "meaning_fa": "تازه و داغ بودن خبر یا موضوع",
+    "meaning_en": "Hot off the press"
+  },
+  {
+    "fa": "هفت‌خوان رستم",
+    "en": "Seven trials of Rostam",
+    "meaning_fa": "مراحل خیلی سخت و پرزحمت",
+    "meaning_en": "Herculean task"
+  },
+  {
+    "fa": "یک وجب روغن",
+    "en": "One span of oil",
+    "meaning_fa": "خیلی چرب‌زبون و چاپلوس",
+    "meaning_en": "Buttering up"
+  },
+  {
+    "fa": "آدمش نیست",
+    "en": "He's not that kind of person",
+    "meaning_fa": "جرات یا توانش رو نداره",
+    "meaning_en": "He's not up to it"
+  },
+  {
+    "fa": "آفتاب پشت ابر",
+    "en": "Sun behind the cloud",
+    "meaning_fa": "موقتاً پنهان بودن استعداد یا موقعیت",
+    "meaning_en": "Hidden talent"
+  },
+  {
+    "fa": "بازی درآوردن",
+    "en": "Acting out",
+    "meaning_fa": "ناز و ادا درآوردن یا تظاهر کردن",
+    "meaning_en": "Putting on an act"
+  },
+  {
+    "fa": "بزک کردن",
+    "en": "Makeup and decoration",
+    "meaning_fa": "زیاد آرایش کردن یا ظاهر رو قشنگ جلوه دادن",
+    "meaning_en": "Dolling up"
+  },
+  {
+    "fa": "پخش شدن تو فضا",
+    "en": "Scattering in space",
+    "meaning_fa": "کاملاً گیج و مات شدن",
+    "meaning_en": "Being spaced out"
+  },
+  {
+    "fa": "تخم دو زرده",
+    "en": "Double-yolk egg",
+    "meaning_fa": "شانس خیلی خوب و غیرمنتظره",
+    "meaning_en": "Double luck"
+  },
+  {
+    "fa": "چایی تلخ",
+    "en": "Bitter tea",
+    "meaning_fa": "خبر بد یا حرف تلخ",
+    "meaning_en": "Bitter truth"
+  },
+  {
+    "fa": "چراغ سبز نشان دادن",
+    "en": "Showing green light",
+    "meaning_fa": "اجازه دادن یا موافقت کردن",
+    "meaning_en": "Giving the go-ahead"
+  },
+  {
+    "fa": "چشم غره رفتن",
+    "en": "Going with glaring eyes",
+    "meaning_fa": "عصبانی نگاه کردن",
+    "meaning_en": "Giving a dirty look"
+  },
+  {
+    "fa": "خط دادن",
+    "en": "Giving a line",
+    "meaning_fa": "راهنمایی یا راه افتادن با کسی",
+    "meaning_en": "Giving hints / flirting"
+  },
+  {
+    "fa": "دودل شدن",
+    "en": "Becoming two-hearted",
+    "meaning_fa": "مردد شدن",
+    "meaning_en": "Having second thoughts"
+  },
+  {
+    "fa": "دستش باز بودن",
+    "en": "Having open/loose hand",
+    "meaning_fa": "ولخرج بودن یا آزادی عمل داشتن",
+    "meaning_en": "Generous / having freedom"
+  },
+  {
+    "fa": "دماغش سوخته",
+    "en": "His nose burned",
+    "meaning_fa": "ناراحت و قهر کرده",
+    "meaning_en": "In a huff"
+  },
+  {
+    "fa": "رگ گردن بالا زدن",
+    "en": "Neck vein popping",
+    "meaning_fa": "خیلی عصبانی شدن",
+    "meaning_en": "Seeing red"
+  },
+  {
+    "fa": "زیر زبونش را کشیدن",
+    "en": "Pulling under his tongue",
+    "meaning_fa": "با حرف و ترفند وادارش کردن حرف بزنه",
+    "meaning_en": "Worming the truth out"
+  },
+  {
+    "fa": "سر کیسه شل کردن",
+    "en": "Loosening the purse",
+    "meaning_fa": "شروع خرج کردن",
+    "meaning_en": "Opening the wallet"
+  },
+  {
+    "fa": "سگ را خوابوندن",
+    "en": "Putting the dog to sleep",
+    "meaning_fa": "آروم کردن یا تمام کردن دعوا",
+    "meaning_en": "Calming things down"
+  },
+  {
+    "fa": "شاخ شدن",
+    "en": "Growing horns",
+    "meaning_fa": "مغرور شدن یا مقابله کردن",
+    "meaning_en": "Getting cocky"
+  },
+  {
+    "fa": "شل کن سفت کن",
+    "en": "Loosen-tighten",
+    "meaning_fa": "کار را کش دادن یا بازی دادن",
+    "meaning_en": "Stringing along"
+  },
+  {
+    "fa": "صبر ایوب",
+    "en": "Patience of Job",
+    "meaning_fa": "تحمل خیلی زیاد",
+    "meaning_en": "Infinite patience"
+  },
+  {
+    "fa": "طرح دوستی ریختن",
+    "en": "Drawing a friendship plan",
+    "meaning_fa": "شروع دوستی یا رابطه",
+    "meaning_en": "Making a move"
+  },
+  {
+    "fa": "عقب گردن",
+    "en": "Back of the neck",
+    "meaning_fa": "آخرین حد تحمل",
+    "meaning_en": "The last straw"
+  },
+  {
+    "fa": "غول مرحله آخر",
+    "en": "Final boss",
+    "meaning_fa": "سخت‌ترین مرحله یا دشمن",
+    "meaning_en": "The ultimate challenge"
+  },
+  {
+    "fa": "قاطی پاطی شدن",
+    "en": "Becoming mixed up",
+    "meaning_fa": "گیج و به‌هم‌ریخته شدن",
+    "meaning_en": "Going haywire"
+  },
+  {
+    "fa": "کباب شدن از گرما",
+    "en": "Grilling from heat",
+    "meaning_fa": "خیلی داغ بودن هوا",
+    "meaning_en": "Sweltering"
+  },
+  {
+    "fa": "کلیه‌هاش را گذاشتن",
+    "en": "Putting his kidneys",
+    "meaning_fa": "با تمام وجود تلاش کردن",
+    "meaning_en": "Giving it everything"
+  },
+  {
+    "fa": "گرفتن نبض بازار",
+    "en": "Taking the market's pulse",
+    "meaning_fa": "فهمیدن وضعیت و جو",
+    "meaning_en": "Reading the room"
+  },
+  {
+    "fa": "گوش ایستاده",
+    "en": "Erect ears",
+    "meaning_fa": "خیلی کنجکاو و شنیدن حرف‌ها",
+    "meaning_en": "All ears"
+  },
+  {
+    "fa": "مثل اجل معلق",
+    "en": "Like suspended death",
+    "meaning_fa": "هر لحظه ممکنه اتفاق بیفته",
+    "meaning_en": "Imminent"
+  },
+  {
+    "fa": "نون شبش را داشتن",
+    "en": "Having bread for the night",
+    "meaning_fa": "امنیت مالی و آرامش",
+    "meaning_en": "Financial security"
+  },
+  {
+    "fa": "هزار بار گفتن",
+    "en": "Saying a thousand times",
+    "meaning_fa": "تکرار زیاد و خسته‌کننده",
+    "meaning_en": "Beating a dead horse"
+  },
+  {
+    "fa": "همه چیز رو ریختن به گردن کسی",
+    "en": "Dumping everything on someone",
+    "meaning_fa": "همه تقصیرها را انداختن گردن یکی",
+    "meaning_en": "Scapegoating"
+  },
+  {
+    "fa": "یک چشم به هم زدن",
+    "en": "In the blink of an eye",
+    "meaning_fa": "خیلی سریع",
+    "meaning_en": "In a flash"
+  },
+  {
+    "fa": "آتیش پاره کردن",
+    "en": "Tearing fire",
+    "meaning_fa": "خیلی سریع و تند رفتن",
+    "meaning_en": "Going like lightning"
+  },
+  {
+    "fa": "باد کردن تو غبغب",
+    "en": "Inflating the throat",
+    "meaning_fa": "مغرور و پرافاده شدن",
+    "meaning_en": "Getting full of oneself"
+  },
+  {
+    "fa": "پوست انداختن",
+    "en": "Shedding skin",
+    "meaning_fa": "تغییر کامل رفتار یا ظاهر",
+    "meaning_en": "Turning over a new leaf"
+  },
+  {
+    "fa": "آب زیر پوست کسی انداختن",
+    "en": "Injecting water under someone's skin",
+    "meaning_fa": "کسی را عصبی و کلافه کردن",
+    "meaning_en": "Getting under someone's skin"
+  },
+  {
+    "fa": "آشپز که دو تا شد، آش یا شور می‌شه یا بی‌نمک",
+    "en": "When there are two cooks, the soup is either too salty or tasteless",
+    "meaning_fa": "چند فرمانده بودن خراب می‌کنه",
+    "meaning_en": "Too many cooks spoil the broth"
+  },
+  {
+    "fa": "از آن طرف بوم افتادن",
+    "en": "Falling off the other side of the roof",
+    "meaning_fa": "از یه افراط رفتن به افراط دیگه",
+    "meaning_en": "Going from one extreme to the other"
+  },
+  {
+    "fa": "بزک نمیر بهار میاد، خربزه باقالی بار میاد",
+    "en": "No need for makeup, spring is coming — melons and beans will bear fruit",
+    "meaning_fa": "خودش خوب می‌شه، کاری لازم نیست",
+    "meaning_en": "It will sort itself out"
+  },
+  {
+    "fa": "پا در کفش کسی کردن",
+    "en": "Putting one's foot in someone's shoe",
+    "meaning_fa": "خودش را جای دیگری گذاشتن و دخالت کردن",
+    "meaning_en": "Putting oneself in another's shoes"
+  },
+  {
+    "fa": "توی سرش خوردن",
+    "en": "It hit him on the head",
+    "meaning_fa": "بالاخره فهمید یا متوجه شد",
+    "meaning_en": "It finally dawned on him"
+  },
+  {
+    "fa": "چاه مکن بهر کسی، اول خودت دوم کسی",
+    "en": "Don't dig a pit for others — first yourself, then someone else",
+    "meaning_fa": "بدخواهی برای دیگران اول به خودت برمی‌گرده",
+    "meaning_en": "Harm intended for others backfires"
+  },
+  {
+    "fa": "حساب کتاب سرش نمی‌شه",
+    "en": "He can't do the math",
+    "meaning_fa": "مغز اقتصادی نداره، خرج و مخارجش رو نمی‌فهمه",
+    "meaning_en": "Bad with money"
+  },
+  {
+    "fa": "خایه‌مالی کردن",
+    "en": "Testicle-rubbing",
+    "meaning_fa": "چاپلوسی و تملق بیش از حد",
+    "meaning_en": "Kissing ass"
+  },
+  {
+    "fa": "دودمان کسی را به باد دادن",
+    "en": "Giving someone's lineage to the wind",
+    "meaning_fa": "کاملاً نابود کردن",
+    "meaning_en": "Wiping someone out"
+  },
+  {
+    "fa": "رنگ و روغن زدن",
+    "en": "Painting and oiling",
+    "meaning_fa": "زیاد آرایش کردن یا ظاهر را قشنگ جلوه دادن",
+    "meaning_en": "Putting on a façade"
+  },
+  {
+    "fa": "زیر پل خوابیدن",
+    "en": "Sleeping under the bridge",
+    "meaning_fa": "خیلی فقیر و بی‌خانمان بودن",
+    "meaning_en": "Being homeless"
+  },
+  {
+    "fa": "سرش بی‌کلاه ماندن",
+    "en": "His head remained without a hat",
+    "meaning_fa": "ضرر کردن یا گول خوردن",
+    "meaning_en": "Coming out empty-handed"
+  },
+  {
+    "fa": "شترمرغ شدن",
+    "en": "Turning into an ostrich",
+    "meaning_fa": "سرش را زیر برف کردن و واقعیت را ندیدن",
+    "meaning_en": "Burying one's head in the sand"
+  },
+  {
+    "fa": "صبرش طاق شدن",
+    "en": "His patience reaching the roof",
+    "meaning_fa": "دیگه تحملش تموم شده",
+    "meaning_en": "At the end of his rope"
+  },
+  {
+    "fa": "طناب پوسیده",
+    "en": "Rotten rope",
+    "meaning_fa": "امید یا رابطه‌ای که دیگه قابل اعتماد نیست",
+    "meaning_en": "Unreliable"
+  },
+  {
+    "fa": "عقب‌گرد داشتن",
+    "en": "Having reverse gear",
+    "meaning_fa": "بتوان عقب‌نشینی کند یا نظرش را عوض کند",
+    "meaning_en": "Being able to back down"
+  },
+  {
+    "fa": "غصه خوردن برای چیزی که از دست رفته",
+    "en": "Grieving over what's lost",
+    "meaning_fa": "حسرت چیزی که دیگه نیست",
+    "meaning_en": "Crying over spilled milk"
+  },
+  {
+    "fa": "قبر کن بودن",
+    "en": "Being a grave-digger",
+    "meaning_fa": "خیلی ساکت و کم‌حرف",
+    "meaning_en": "Silent as the grave"
+  },
+  {
+    "fa": "کفش نو به پای کسی تنگ بودن",
+    "en": "New shoes being tight on someone's feet",
+    "meaning_fa": "جای جدید یا موقعیت تازه براش سخت بودن",
+    "meaning_en": "Needing time to adjust"
+  },
+  {
+    "fa": "گربه شاخ‌دار",
+    "en": "Horned cat",
+    "meaning_fa": "موجود غیرممکن یا آدم خیلی نادر",
+    "meaning_en": "Rare as hen's teeth"
+  },
+  {
+    "fa": "گوشش را گرفتن",
+    "en": "Covering his ears",
+    "meaning_fa": "نخواستن حقیقت را بشنود",
+    "meaning_en": "Turning a deaf ear"
+  },
+  {
+    "fa": "مثل سوزن تو انبار کاه",
+    "en": "Like a needle in a haystack",
+    "meaning_fa": "خیلی سخت پیدا شدن",
+    "meaning_en": "Needle in a haystack"
+  },
+  {
+    "fa": "نیشش را کشیدن",
+    "en": "Pulling its stinger",
+    "meaning_fa": "بی‌خطر کردن کسی یا چیزی",
+    "meaning_en": "Defanging"
+  },
+  {
+    "fa": "هفتاد من عسل تلخ کن",
+    "en": "Seventy mans of honey made bitter",
+    "meaning_fa": "یک چیز کوچک همه چیز را خراب می‌کند",
+    "meaning_en": "One bad apple spoils the bunch"
+  },
+  {
+    "fa": "یک چشمش کور، چشم دیگرش کم‌سو",
+    "en": "One eye blind, the other dim",
+    "meaning_fa": "کاملاً بی‌سواد یا بی‌تجربه",
+    "meaning_en": "Completely clueless"
+  },
+  {
+    "fa": "آفتاب مهتاب نمی‌تابه",
+    "en": "Sun and moon don't shine together",
+    "meaning_fa": "همه چیز با هم جور درنمیاد",
+    "meaning_en": "You can't have it all"
+  },
+  {
+    "fa": "آوردن وسط",
+    "en": "Bringing to the middle",
+    "meaning_fa": "شروع کردن موضوع یا دعوا",
+    "meaning_en": "Bringing something up"
+  },
+  {
+    "fa": "بزک کردن مرده",
+    "en": "Makeup on a corpse",
+    "meaning_fa": "تلاش بی‌فایده برای خوب جلوه دادن چیزی خراب",
+    "meaning_en": "Lipstick on a pig"
+  },
+  {
+    "fa": "پایش را در یک لنگه گذاشتن",
+    "en": "Putting his foot in one slipper",
+    "meaning_fa": "خیلی لجبازی کردن",
+    "meaning_en": "Digging his heels in"
+  },
+  {
+    "fa": "توی دلش آشوب بودن",
+    "en": "Having a storm in his heart",
+    "meaning_fa": "خیلی نگران و مضطرب بودن",
+    "meaning_en": "Having butterflies"
+  },
+  {
+    "fa": "چاه افتادن تو چاه",
+    "en": "Falling from a well into a well",
+    "meaning_fa": "از چاله دراومدن و افتادن تو چاه",
+    "meaning_en": "Out of the frying pan into the fire"
+  },
+  {
+    "fa": "خارج از سرویس",
+    "en": "Out of service",
+    "meaning_fa": "خراب یا غیرقابل استفاده",
+    "meaning_en": "Out of order"
+  },
+  {
+    "fa": "دست و دل باز",
+    "en": "Open-handed and open-hearted",
+    "meaning_fa": "سخاوتمند و مهربان",
+    "meaning_en": "Generous"
+  },
+  {
+    "fa": "دلش خنک شدن",
+    "en": "His heart cooling down",
+    "meaning_fa": "انتقام گرفتن و آرام شدن",
+    "meaning_en": "Getting revenge"
+  },
+  {
+    "fa": "رشته کار از دستش دررفتن",
+    "en": "The thread slipping from his hand",
+    "meaning_fa": "کنترل را از دست دادن",
+    "meaning_en": "Losing control"
+  },
+  {
+    "fa": "زیرآب خوردن",
+    "en": "Drinking underwater",
+    "meaning_fa": "خراب شدن یا غرق شدن",
+    "meaning_en": "Sinking"
+  },
+  {
+    "fa": "سر به زیر بودن",
+    "en": "Head down",
+    "meaning_fa": "فروتن و متواضع بودن",
+    "meaning_en": "Keeping a low profile"
+  },
+  {
+    "fa": "شانه خالی کردن",
+    "en": "Emptying the shoulder",
+    "meaning_fa": "مسئولیت را نپذیرفتن",
+    "meaning_en": "Shrugging off responsibility"
+  },
+  {
+    "fa": "طاق بستان",
+    "en": "Taq-e Bostan",
+    "meaning_fa": "خیلی قدیمی و کهنه",
+    "meaning_en": "Ancient"
+  },
+  {
+    "fa": "عقب نشینی تاکتیکی",
+    "en": "Tactical retreat",
+    "meaning_fa": "عقب‌نشینی موقت برای نفع بیشتر",
+    "meaning_en": "Strategic withdrawal"
+  },
+  {
+    "fa": "غش و ضعف اومدن",
+    "en": "Fainting coming",
+    "meaning_fa": "از ذوق یا ترس غش کردن",
+    "meaning_en": "Weak in the knees"
+  },
+  {
+    "fa": "قاطی کردن با هم",
+    "en": "Mixing together",
+    "meaning_fa": "درگیری یا دعوا راه انداختن",
+    "meaning_en": "Clashing"
+  },
+  {
+    "fa": "قوز کردن",
+    "en": "Hunching",
+    "meaning_fa": "خمیده و ناامید شدن",
+    "meaning_en": "Being down in the dumps"
+  },
+  {
+    "fa": "کبابش کردن",
+    "en": "Grilling him",
+    "meaning_fa": "خیلی اذیت کردن یا بازجویی شدید",
+    "meaning_en": "Grilling someone"
+  },
+  {
+    "fa": "گرفتن در باغ",
+    "en": "Being in the garden",
+    "meaning_fa": "متوجه منظور نشدن",
+    "meaning_en": "Missing the point"
+  },
+  {
+    "fa": "گوشه رینگ",
+    "en": "Corner of the ring",
+    "meaning_fa": "در موقعیت خیلی سخت و تحت فشار",
+    "meaning_en": "Backed into a corner"
+  },
+  {
+    "fa": "مثل پشه تو تله",
+    "en": "Like a mosquito in a trap",
+    "meaning_fa": "گرفتار و بیچاره بودن",
+    "meaning_en": "Caught like a fly"
+  },
+  {
+    "fa": "نیشخند زدن",
+    "en": "Smirking",
+    "meaning_fa": "با تمسخر خندیدن",
+    "meaning_en": "Sneering"
+  },
+  {
+    "fa": "هزار تا کوفت و زهرمار",
+    "en": "A thousand curses and poisons",
+    "meaning_fa": "فحش و بد و بیراه زیاد",
+    "meaning_en": "All kinds of insults"
+  },
+  {
+    "fa": "یک کلام و دو حرف",
+    "en": "One word and two letters",
+    "meaning_fa": "کاملاً شفاف و بدون تعارف",
+    "meaning_en": "Straight talk"
+  },
+  {
+    "fa": "آدم آهنی",
+    "en": "Iron man",
+    "meaning_fa": "قوی و مقاوم",
+    "meaning_en": "Tough as nails"
+  },
+  {
+    "fa": "آفتاب ندیده",
+    "en": "Never seen the sun",
+    "meaning_fa": "خیلی لوس و نازپرورده",
+    "meaning_en": "Sheltered"
+  },
+  {
+    "fa": "بازی را به هم زدن",
+    "en": "Ruining the game",
+    "meaning_fa": "خراب کردن نقشه یا برنامه",
+    "meaning_en": "Spoiling the party"
+  },
+  {
+    "fa": "پایین کشیدن کسی",
+    "en": "Pulling someone down",
+    "meaning_fa": "تحقیر کردن یا خراب کردن اعتبار",
+    "meaning_en": "Tearing someone down"
+  },
+  {
+    "fa": "توی هپروت",
+    "en": "In a daze",
+    "meaning_fa": "گیج و مات بودن",
+    "meaning_en": "Out of it"
+  },
+  {
+    "fa": "چشمش را بستن",
+    "en": "Closing his eyes",
+    "meaning_fa": "چشم‌پوشی کردن یا ندیدن عمدی",
+    "meaning_en": "Turning a blind eye"
+  },
+  {
+    "fa": "خط کشیدن روی چیزی",
+    "en": "Drawing a line over something",
+    "meaning_fa": "کاملاً فراموش کردن یا حذف کردن",
+    "meaning_en": "Writing something off"
+  },
+  {
+    "fa": "دودل کردن کسی",
+    "en": "Making someone two-hearted",
+    "meaning_fa": "مردد کردن کسی",
+    "meaning_en": "Making someone hesitant"
+  },
+  {
+    "fa": "رنگ به صورتش نماندن",
+    "en": "No color left on his face",
+    "meaning_fa": "از ترس یا خجالت رنگش پرید",
+    "meaning_en": "Going white as a sheet"
+  },
+  {
+    "fa": "زیر سؤال بردن",
+    "en": "Questioning under",
+    "meaning_fa": "شک کردن به صحت چیزی",
+    "meaning_en": "Casting doubt"
+  },
+  {
+    "fa": "سرش شیره مالیدن",
+    "en": "Rubbing syrup on his head",
+    "meaning_fa": "با حرف شیرین گول زدن",
+    "meaning_en": "Sweet-talking"
+  },
+  {
+    "fa": "شل و سفت کردن",
+    "en": "Loosening and tightening",
+    "meaning_fa": "بازی دادن و مطمئن نبودن",
+    "meaning_en": "Jerking around"
+  },
+  {
+    "fa": "طناب دور گردن انداختن",
+    "en": "Throwing a rope around the neck",
+    "meaning_fa": "خودش را به خطر انداختن",
+    "meaning_en": "Putting one's neck on the line"
+  },
+  {
+    "fa": "عقب ماندن از زمان",
+    "en": "Falling behind the times",
+    "meaning_fa": "قدیمی و از مد افتاده بودن",
+    "meaning_en": "Outdated"
+  },
+  {
+    "fa": "غصه‌اش را خوردن",
+    "en": "Eating his sorrow",
+    "meaning_fa": "خیلی ناراحت شدن",
+    "meaning_en": "Being heartbroken"
+  },
+  {
+    "fa": "قاطی شدن با جمع",
+    "en": "Mixing with the crowd",
+    "meaning_fa": "ادغام شدن و عادی شدن",
+    "meaning_en": "Blending in"
+  },
+  {
+    "fa": "قفل بودن",
+    "en": "Being locked",
+    "meaning_fa": "خیلی ساکت و کم‌حرف",
+    "meaning_en": "Clammed up"
+  },
+  {
+    "fa": "کاسه بشقاب سر کسی شکستن",
+    "en": "Breaking plates over someone's head",
+    "meaning_fa": "همه تقصیرها را گردن کسی انداختن",
+    "meaning_en": "Blaming someone unfairly"
+  },
+  {
+    "fa": "گرفتن خرش را رفتن",
+    "en": "Taking his donkey and leaving",
+    "meaning_fa": "فرار کردن یا رفتن",
+    "meaning_en": "Making a run for it"
+  },
+  {
+    "fa": "گوشش سنگین بودن",
+    "en": "Having heavy ears",
+    "meaning_fa": "کندفهم یا ناشنوا بودن",
+    "meaning_en": "Hard of hearing"
+  },
+  {
+    "fa": "مثل پالان دوز",
+    "en": "Like a saddle-maker",
+    "meaning_fa": "خیلی بی‌ادب و پررو",
+    "meaning_en": "Cheeky"
+  },
+  {
+    "fa": "نیش و کنایه زدن",
+    "en": "Stinging and mocking",
+    "meaning_fa": "با طعنه حرف زدن",
+    "meaning_en": "Snide remarks"
+  },
+  {
+    "fa": "هزار جور کردن",
+    "en": "Making a thousand kinds",
+    "meaning_fa": "بهانه آوردن یا پیچیده کردن",
+    "meaning_en": "Making excuses"
+  },
+  {
+    "fa": "یک پا پریدن",
+    "en": "Jumping on one leg",
+    "meaning_fa": "خیلی سریع و با عجله",
+    "meaning_en": "In a hurry"
+  },
+  {
+    "fa": "آدم پخمه",
+    "en": "Dumb person",
+    "meaning_fa": "خیلی کندذهن و ساده‌لوح",
+    "meaning_en": "Dimwit"
+  },
+  {
+    "fa": "آفتابه گرفتن دستش",
+    "en": "Holding the pitcher",
+    "meaning_fa": "مسئولیت داشتن",
+    "meaning_en": "Being in charge"
+  },
+  {
+    "fa": "بازی دادن کسی",
+    "en": "Playing someone",
+    "meaning_fa": "سرگرم کردن و گول زدن",
+    "meaning_en": "Stringing someone along"
+  },
+  {
+    "fa": "پوست موز زیر پای کسی گذاشتن",
+    "en": "Putting a banana peel under someone's foot",
+    "meaning_fa": "تله گذاشتن و زمین زدن",
+    "meaning_en": "Setting a trap"
+  },
+  {
+    "fa": "توی سرش کوفتن",
+    "en": "Knocking on his head",
+    "meaning_fa": "فهمیدن یا متوجه شدن",
+    "meaning_en": "It clicked"
+  },
+  {
+    "fa": "چشمش را درآوردن",
+    "en": "Gouging his eye",
+    "meaning_fa": "خیلی اذیت کردن یا حسرت دادن",
+    "meaning_en": "Making someone jealous"
+  },
+  {
+    "fa": "خط و نشان کشیدن",
+    "en": "Drawing lines and threats",
+    "meaning_fa": "تهدید کردن",
+    "meaning_en": "Making threats"
+  },
+  {
+    "fa": "دود شدن رفتن تو چشم",
+    "en": "Smoke going into the eyes",
+    "meaning_fa": "نتیجه بد به خودت برگشتن",
+    "meaning_en": "Backfiring"
+  },
+  {
+    "fa": "آقای خودمم، نوکر هم نیستم",
+    "en": "I'm my own boss, and I don't even have a servant",
+    "meaning_fa": "کسی بهم کار نمی‌ده، خودمم کارگر ندارم",
+    "meaning_en": "I'm independent but struggling"
+  },
+  {
+    "fa": "از قدیم و ندیم دوستیم",
+    "en": "We've been friends since old and ancient times",
+    "meaning_fa": "از بچگی با هم دوستیم",
+    "meaning_en": "We've been friends forever"
+  },
+  {
+    "fa": "آسمون و ریسمان به هم بافتن",
+    "en": "Weaving sky and rope together",
+    "meaning_fa": "چرت و پرت گفتن، حرف بی‌ربط زدن",
+    "meaning_en": "Talking nonsense"
+  },
+  {
+    "fa": "آش نخورده و دهن سوخته",
+    "en": "Mouth burned without eating the soup",
+    "meaning_fa": "بدون دلیل ضرر کردن",
+    "meaning_en": "Innocent victim"
+  },
+  {
+    "fa": "آفتاب لب بام",
+    "en": "Sun on the edge of the roof",
+    "meaning_fa": "آخرین لحظات، وقت تنگه",
+    "meaning_en": "Time is running out"
+  },
+  {
+    "fa": "آهسته بیا، آهسته برو، که گربه شاخت نزنه",
+    "en": "Come slowly, go slowly, so the cat doesn't horn you",
+    "meaning_fa": "با احتیاط باش، خطر نزدیکه",
+    "meaning_en": "Better safe than sorry"
+  },
+  {
+    "fa": "از اینجا رانده، از آنجا مانده",
+    "en": "Rejected here, stranded there",
+    "meaning_fa": "هیچ جا راهش ندادن",
+    "meaning_en": "Nowhere to go"
+  },
+  {
+    "fa": "از این کوچه، به اون کوچه",
+    "en": "From this alley to that alley",
+    "meaning_fa": "پیچوندن و جواب سربالا دادن",
+    "meaning_en": "Beating around the bush"
+  },
+  {
+    "fa": "با یک تیر دو نشون زدن",
+    "en": "Hitting two targets with one arrow",
+    "meaning_fa": "دو کار رو همزمان انجام دادن",
+    "meaning_en": "Killing two birds with one stone"
+  },
+  {
+    "fa": "بوی قرمه‌سبزی اومد",
+    "en": "The smell of ghormeh sabzi came",
+    "meaning_fa": "هوس غذا کرده، دلش خواست",
+    "meaning_en": "Craving something"
+  },
+  {
+    "fa": "به جان خودم، به قرآن قسم",
+    "en": "By my life, I swear on the Quran",
+    "meaning_fa": "قسم خیلی جدی می‌خوره",
+    "meaning_en": "Dead serious oath"
+  },
+  {
+    "fa": "به خاکت بکشونم",
+    "en": "I'll drag you in the dirt",
+    "meaning_fa": "خیلی تحقیرت می‌کنم",
+    "meaning_en": "I'll humiliate you"
+  },
+  {
+    "fa": "پشت هم انداختن",
+    "en": "Throwing one after another",
+    "meaning_fa": "دروغ پشت دروغ گفتن",
+    "meaning_en": "Lying nonstop"
+  },
+  {
+    "fa": "پول کثیف",
+    "en": "Dirty money",
+    "meaning_fa": "پول حرام یا نامشروع",
+    "meaning_en": "Dirty money"
+  },
+  {
+    "fa": "توی باغ بودن",
+    "en": "Being in the garden",
+    "meaning_fa": "متوجه منظور بودن",
+    "meaning_en": "Getting the hint"
+  },
+  {
+    "fa": "توی خط بودن",
+    "en": "Being in line",
+    "meaning_fa": "در مسیر درست بودن",
+    "meaning_en": "On the right track"
+  },
+  {
+    "fa": "چایی داغ",
+    "en": "Hot tea",
+    "meaning_fa": "خبر داغ و تازه",
+    "meaning_en": "Hot news"
+  },
+  {
+    "fa": "چشمش دراومد",
+    "en": "His eyes popped out",
+    "meaning_fa": "از حسرت یا تعجب خشکش زد",
+    "meaning_en": "Green with envy / shocked"
+  },
+  {
+    "fa": "حرف تو دهن کسی نچرخیدن",
+    "en": "The word not turning in someone's mouth",
+    "meaning_fa": "بدون فکر حرف زدن",
+    "meaning_en": "Speaking without thinking"
+  },
+  {
+    "fa": "حسابش با کرام‌الکاتبینه",
+    "en": "His account is with the noble scribes",
+    "meaning_fa": "کارش با خداست، من دخالت نمی‌کنم",
+    "meaning_en": "It's between him and God"
+  },
+  {
+    "fa": "خاک تو سرم",
+    "en": "Dirt on my head",
+    "meaning_fa": "خیلی شرمنده‌ام",
+    "meaning_en": "I'm so ashamed"
+  },
+  {
+    "fa": "خدا مرگش بده",
+    "en": "May God kill him",
+    "meaning_fa": "فحش ملایم و عامیانه",
+    "meaning_en": "Damn him"
+  },
+  {
+    "fa": "دستت درد نکنه",
+    "en": "May your hand not hurt",
+    "meaning_fa": "ممنون، زحمت کشیدی",
+    "meaning_en": "Thanks a lot"
+  },
+  {
+    "fa": "دلم براش می‌سوزه",
+    "en": "My heart burns for him",
+    "meaning_fa": "دلم براش می‌سوزه، حیفم میاد",
+    "meaning_en": "I feel sorry for him"
+  },
+  {
+    "fa": "دود چراغ خوردن",
+    "en": "Eating lamp smoke",
+    "meaning_fa": "شب تا صبح درس خوندن",
+    "meaning_en": "Burning the midnight oil"
+  },
+  {
+    "fa": "دیگه شورش رو درآوردن",
+    "en": "They've taken the saltiness out of it",
+    "meaning_fa": "زیاده‌روی کردن",
+    "meaning_en": "Going too far"
+  },
+  {
+    "fa": "رگ خوابش رو بلدم",
+    "en": "I know his sleep vein",
+    "meaning_fa": "نقطه ضعفش رو می‌شناسم",
+    "meaning_en": "I know how to handle him"
+  },
+  {
+    "fa": "زیرآبی رفتن",
+    "en": "Going underwater",
+    "meaning_fa": "پنهانی خراب کردن کسی",
+    "meaning_en": "Backstabbing"
+  },
+  {
+    "fa": "زیر پاش له شد",
+    "en": "Crushed under his foot",
+    "meaning_fa": "کاملاً نابود شد",
+    "meaning_en": "Totally crushed"
+  },
+  {
+    "fa": "سرش بی‌کلاه موند",
+    "en": "His head stayed without a hat",
+    "meaning_fa": "گول خورد، ضرر کرد",
+    "meaning_en": "Got scammed"
+  },
+  {
+    "fa": "سگ زرد، برادر شغال",
+    "en": "Yellow dog is jackal's brother",
+    "meaning_fa": "همه‌شون شبیه همن",
+    "meaning_en": "They're all the same"
+  },
+  {
+    "fa": "شاگرد اول",
+    "en": "Top student",
+    "meaning_fa": "بهترین و سرآمد",
+    "meaning_en": "The best"
+  },
+  {
+    "fa": "شیره سرش کشیدن",
+    "en": "Pulling the syrup off his head",
+    "meaning_fa": "حقه زدن، گول زدن",
+    "meaning_en": "Conning someone"
+  },
+  {
+    "fa": "شیره رو کشیدن، گفتن انگار بود",
+    "en": "They took the syrup and said it was just grapes",
+    "meaning_fa": "فایده رو بردن و انکار کردن",
+    "meaning_en": "Having your cake and eating it"
+  },
+  {
+    "fa": "طاقت نداشتن",
+    "en": "Not having patience",
+    "meaning_fa": "دیگه نتونستن تحمل کنن",
+    "meaning_en": "Can't take it anymore"
+  },
+  {
+    "fa": "طناب دور گردنش انداختن",
+    "en": "Throwing a rope around his neck",
+    "meaning_fa": "خودش رو به خطر انداختن",
+    "meaning_en": "Risking his neck"
+  },
+  {
+    "fa": "عقبش رو نگاه کردن",
+    "en": "Looking at his back",
+    "meaning_fa": "بعد از رفتن کسی حرف زدن",
+    "meaning_en": "Talking behind his back"
+  },
+  {
+    "fa": "غصه نخور، خدا بزرگه",
+    "en": "Don't worry, God is great",
+    "meaning_fa": "تسلی دادن",
+    "meaning_en": "It'll be okay"
+  },
+  {
+    "fa": "قربونت برم",
+    "en": "May I be sacrificed for you",
+    "meaning_fa": "عزیزمی، دوستت دارم",
+    "meaning_en": "Love you / bless you"
+  },
+  {
+    "fa": "کاسه داغ‌تر از آش",
+    "en": "Hotter bowl than the stew",
+    "meaning_fa": "بیشتر از صاحب کار ذوق داشتن",
+    "meaning_en": "More royalist than the king"
+  },
+  {
+    "fa": "کفگیر به ته دیگ خورد",
+    "en": "The spatula hit the bottom of the pot",
+    "meaning_fa": "پول تموم شد",
+    "meaning_en": "Broke / out of money"
+  },
+  {
+    "fa": "کلک سوخته",
+    "en": "Burnt raft",
+    "meaning_fa": "حقه قدیمی که دیگه جواب نمیده",
+    "meaning_en": "Old trick"
+  },
+  {
+    "fa": "گاو پیشونی سفید",
+    "en": "White-foreheaded cow",
+    "meaning_fa": "عزیز دردانه",
+    "meaning_en": "Golden child"
+  },
+  {
+    "fa": "گوشت لای سبیلش نذاشتن",
+    "en": "Not putting meat in his mustache",
+    "meaning_fa": "حقش رو ندادن",
+    "meaning_en": "Not giving him his share"
+  },
+  {
+    "fa": "ماست مالی کردن",
+    "en": "Yogurt plastering",
+    "meaning_fa": "رفع و رجوع ظاهری",
+    "meaning_en": "Covering up"
+  },
+  {
+    "fa": "مثل نقل و نبات",
+    "en": "Like rock candy",
+    "meaning_fa": "همه جا پیدا می‌شه",
+    "meaning_en": "Everywhere"
+  },
+  {
+    "fa": "نون به نرخ روز خوردن",
+    "en": "Eating bread at the day's price",
+    "meaning_fa": "با شرایط عوض شدن",
+    "meaning_en": "Opportunist"
+  },
+  {
+    "fa": "هر چی لاشه، جلو سگه",
+    "en": "All the carcass goes to the dog",
+    "meaning_fa": "همه چیز به نفع یه نفر شد",
+    "meaning_en": "The lion's share"
+  },
+  {
+    "fa": "همه چی رو هم زدن",
+    "en": "Stirred everything together",
+    "meaning_fa": "همه چیز رو خراب کردن",
+    "meaning_en": "Made a mess of everything"
+  },
+  {
+    "fa": "یک دست صدا نداره",
+    "en": "One hand doesn't make a sound",
+    "meaning_fa": "تنهایی کاری نمی‌شه کرد",
+    "meaning_en": "It takes two"
+  },
+  {
+    "fa": "یک وجب نون و دو غاز پنیر",
+    "en": "One span of bread and two pennies of cheese",
+    "meaning_fa": "زندگی خیلی ساده",
+    "meaning_en": "Simple life"
+  },
+  {
+    "fa": "آبکشیدن از حرفش",
+    "en": "Taking water out of his words",
+    "meaning_fa": "عقب‌نشینی کردن از حرفش",
+    "meaning_en": "Backpedaling"
+  },
+  {
+    "fa": "آتیش بیار معرکه",
+    "en": "Fire-bringer of the scene",
+    "meaning_fa": "تحریک‌کننده دعوا",
+    "meaning_en": "Troublemaker"
+  },
+  {
+    "fa": "آدمشو پیدا کردن",
+    "en": "Finding the right person",
+    "meaning_fa": "همون که می‌خواستیم",
+    "meaning_en": "Just the person we needed"
+  },
+  {
+    "fa": "باد به چاک دادن",
+    "en": "Giving wind to the crack",
+    "meaning_fa": "خیلی سریع فرار کردن",
+    "meaning_en": "Bolting"
+  },
+  {
+    "fa": "بادنجان دور قاب چین",
+    "en": "Eggplants around the pan",
+    "meaning_fa": "چاپلوسی زیاد",
+    "meaning_en": "Brown-nosing"
+  },
+  {
+    "fa": "پایین کشیدن شلوار کسی",
+    "en": "Pulling someone's pants down",
+    "meaning_fa": "آبروی کسی رو بردن",
+    "meaning_en": "Humiliating publicly"
+  },
+  {
+    "fa": "تخته گاز",
+    "en": "Full throttle",
+    "meaning_fa": "با حداکثر سرعت",
+    "meaning_en": "Full speed ahead"
+  },
+  {
+    "fa": "جای سوزن انداختن نبود",
+    "en": "No room to drop a needle",
+    "meaning_fa": "خیلی شلوغ بود",
+    "meaning_en": "Packed"
+  },
+  {
+    "fa": "چپ و راست کردن",
+    "en": "Left and right",
+    "meaning_fa": "بی‌حساب خرج کردن",
+    "meaning_en": "Spending freely"
+  },
+  {
+    "fa": "چشمش کاسه خون شده",
+    "en": "His eyes became bowls of blood",
+    "meaning_fa": "خیلی منتظر مونده",
+    "meaning_en": "Waiting desperately"
+  },
+  {
+    "fa": "خط قرمز",
+    "en": "Red line",
+    "meaning_fa": "حد و مرز غیرقابل عبور",
+    "meaning_en": "Red line"
+  },
+  {
+    "fa": "داغ شدن بازار",
+    "en": "Market heating up",
+    "meaning_fa": "رونق گرفتن",
+    "meaning_en": "Things picking up"
+  },
+  {
+    "fa": "دست به سر کردن",
+    "en": "Brushing off",
+    "meaning_fa": "با بهانه رد کردن",
+    "meaning_en": "Fobbing off"
+  },
+  {
+    "fa": "ذوق مرگ شدن",
+    "en": "Dying of excitement",
+    "meaning_fa": "خیلی خوشحال شدن",
+    "meaning_en": "Over the moon"
+  },
+  {
+    "fa": "روده درازی کردن",
+    "en": "Long intestines",
+    "meaning_fa": "زیاد حرف زدن",
+    "meaning_en": "Rambling"
+  },
+  {
+    "fa": "زیر سبیلش خندیدن",
+    "en": "Laughing under his mustache",
+    "meaning_fa": "پنهانی خندیدن",
+    "meaning_en": "Smirking"
+  },
+  {
+    "fa": "سر کیسه شل کردن",
+    "en": "Loosening the purse",
+    "meaning_fa": "شروع خرج کردن",
+    "meaning_en": "Opening the wallet"
+  },
+  {
+    "fa": "سگ صاحبش رو گاز گرفت",
+    "en": "The dog bit its owner",
+    "meaning_fa": "ناسپاسی کردن",
+    "meaning_en": "Biting the hand that feeds"
+  },
+  {
+    "fa": "شل گرفتن",
+    "en": "Taking it easy",
+    "meaning_fa": "بی‌خیال بودن",
+    "meaning_en": "Slacking"
+  },
+  {
+    "fa": "صبر ایوب داشتن",
+    "en": "Having Job's patience",
+    "meaning_fa": "خیلی صبور بودن",
+    "meaning_en": "Extremely patient"
+  },
+  {
+    "fa": "طرح دوستی ریختن",
+    "en": "Drawing a friendship plan",
+    "meaning_fa": "شروع دوستی",
+    "meaning_en": "Making a move"
+  },
+  {
+    "fa": "عقب گردن",
+    "en": "Back of the neck",
+    "meaning_fa": "آخرین حد تحمل",
+    "meaning_en": "The last straw"
+  },
+  {
+    "fa": "غول مرحله آخر",
+    "en": "Final boss",
+    "meaning_fa": "سخت‌ترین قسمت",
+    "meaning_en": "The ultimate challenge"
+  },
+  {
+    "fa": "فاز سنگین",
+    "en": "Heavy phase",
+    "meaning_fa": "حالت افسرده",
+    "meaning_en": "In a bad mood"
+  },
+  {
+    "fa": "قاطی پاطی",
+    "en": "Mixed up",
+    "meaning_fa": "گیج و به‌هم‌ریخته",
+    "meaning_en": "Chaotic"
+  },
+  {
+    "fa": "قورمه‌سبزی راه انداختن",
+    "en": "Starting ghormeh sabzi",
+    "meaning_fa": "کار طولانی و پرزحمت",
+    "meaning_en": "Big project"
+  },
+  {
+    "fa": "کاسه کوزه سر کسی شکستن",
+    "en": "Breaking all dishes over someone's head",
+    "meaning_fa": "همه تقصیرها رو گردن یکی انداختن",
+    "meaning_en": "Scapegoating"
+  },
+  {
+    "fa": "کک مک نزنه",
+    "en": "Not even a flea bites",
+    "meaning_fa": "خیلی راحت و بی‌دردسر",
+    "meaning_en": "Smooth sailing"
+  },
+  {
+    "fa": "گربه رو دم حجله کشتن",
+    "en": "Killing the cat at the wedding threshold",
+    "meaning_fa": "آخرین لحظه خراب کردن",
+    "meaning_en": "Last-minute failure"
+  },
+  {
+    "fa": "گوشش بدهکاره",
+    "en": "His ear is in debt",
+    "meaning_fa": "گوش می‌کنه و قبول می‌کنه",
+    "meaning_en": "All ears"
+  },
+  {
+    "fa": "مال خر خودش",
+    "en": "It's his own donkey's property",
+    "meaning_fa": "هر کاری دلش بخواد می‌کنه",
+    "meaning_en": "His own business"
+  },
+  {
+    "fa": "مثل اجل معلق",
+    "en": "Like suspended death",
+    "meaning_fa": "هر لحظه ممکنه اتفاق بیفته",
+    "meaning_en": "Imminent"
+  },
+  {
+    "fa": "مهره مار",
+    "en": "Snake's bead",
+    "meaning_fa": "چیز خیلی باارزش",
+    "meaning_en": "Priceless"
+  },
+  {
+    "fa": "نون و آب دار",
+    "en": "Having bread and water",
+    "meaning_fa": "راحت و بی‌دغدغه",
+    "meaning_en": "Comfortable"
+  },
+  {
+    "fa": "هزار من عسل تلخ کن",
+    "en": "A thousand mans of honey turned bitter",
+    "meaning_fa": "یه چیز کوچیک همه چیز رو خراب کرد",
+    "meaning_en": "One bad apple"
+  },
+  {
+    "fa": "همه فن حریف",
+    "en": "Master of all trades",
+    "meaning_fa": "در همه چیز وارد",
+    "meaning_en": "Jack of all trades"
+  },
+  {
+    "fa": "یک لا قبا",
+    "en": "Single-layer robe",
+    "meaning_fa": "ساده و بی‌ریا",
+    "meaning_en": "Straightforward"
+  },
+{
+    "fa": "آخرین میخ تابوت",
+    "en": "The final nail in the coffin",
+    "meaning_fa": "آخرین ضربه، تمام‌کننده کار",
+    "meaning_en": "The final blow"
+  },
+  {
+    "fa": "آفتابه لگن هفت دست، شام ندارن مردم مست",
+    "en": "Seven sets of pitcher and basin, but people are drunk without dinner",
+    "meaning_fa": "ظاهر فریبنده، باطن خالی",
+    "meaning_en": "All show, no substance"
+  },
+  {
+    "fa": "آقا اجازه؟",
+    "en": "Sir, permission?",
+    "meaning_fa": "تعارف رسمی قبل از ورود یا حرف زدن",
+    "meaning_en": "May I come in?"
+  },
+  {
+    "fa": "آخه مگه می‌شه؟",
+    "en": "Is that even possible?",
+    "meaning_fa": "تعجب + ناباوری",
+    "meaning_en": "No way!"
+  },
+  {
+    "fa": "از بس که گفتی خسته شدم",
+    "en": "I'm tired of hearing it so much",
+    "meaning_fa": "تکرار زیاد یه حرف",
+    "meaning_en": "You've said it a million times"
+  },
+  {
+    "fa": "از خدا پنهون نیست، از شما چه پنهون",
+    "en": "It's not hidden from God, nor from you",
+    "meaning_fa": "راستش رو می‌گم",
+    "meaning_en": "To be honest"
+  },
+  {
+    "fa": "از شما چه پنهون",
+    "en": "Not hidden from you",
+    "meaning_fa": "اعتراف به چیزی",
+    "meaning_en": "Between you and me"
+  },
+  {
+    "fa": "از یه سوراخ دو بار گزیده شدن",
+    "en": "Bitten twice from the same hole",
+    "meaning_fa": "دو بار با یه اشتباه گول خوردن",
+    "meaning_en": "Fool me twice..."
+  },
+  {
+    "fa": "به خدا راست می‌گی؟",
+    "en": "Are you really telling the truth?",
+    "meaning_fa": "تعجب + تأیید",
+    "meaning_en": "No kidding?"
+  },
+  {
+    "fa": "به جان خودم",
+    "en": "By my own life",
+    "meaning_fa": "قسم جدی",
+    "meaning_en": "I swear"
+  },
+  {
+    "fa": "به چشم",
+    "en": "On my eyes",
+    "meaning_fa": "حتماً انجام می‌دم",
+    "meaning_en": "Consider it done"
+  },
+  {
+    "fa": "به کورِ چشم دشمن",
+    "en": "In the blind eye of the enemy",
+    "meaning_fa": "با موفقیت و کامیابی",
+    "meaning_en": "To spite the haters"
+  },
+  {
+    "fa": "به هر حال",
+    "en": "Anyway",
+    "meaning_fa": "در هر صورت",
+    "meaning_en": "Anyway"
+  },
+  {
+    "fa": "به هر کی گفتم گفت آره",
+    "en": "Whoever I asked said yes",
+    "meaning_fa": "همه موافق بودن",
+    "meaning_en": "Everyone agreed"
+  },
+  {
+    "fa": "بچه ننه",
+    "en": "Mommy's boy",
+    "meaning_fa": "لوس و نازپرورده",
+    "meaning_en": "Spoiled brat"
+  },
+  {
+    "fa": "بچه مثبت",
+    "en": "Good kid",
+    "meaning_fa": "مؤدب و درس‌خون",
+    "meaning_en": "Goody two-shoes"
+  },
+  {
+    "fa": "بفرما بشین",
+    "en": "Please sit",
+    "meaning_fa": "تعارف نشستن",
+    "meaning_en": "Have a seat"
+  },
+  {
+    "fa": "بگو ببینم",
+    "en": "Tell me",
+    "meaning_fa": "شروع گوش دادن با علاقه",
+    "meaning_en": "Spill it"
+  },
+  {
+    "fa": "بگو چند شنبه‌ست؟",
+    "en": "Tell me what day is it?",
+    "meaning_fa": "وقتی یکی گیج و ماته",
+    "meaning_en": "You okay?"
+  },
+  {
+    "fa": "بله قربان",
+    "en": "Yes sir",
+    "meaning_fa": "اطاعت کامل",
+    "meaning_en": "Yes sir"
+  },
+  {
+    "fa": "بهت نمیاد",
+    "en": "Doesn't suit you",
+    "meaning_fa": "به شخصیتت نمی‌خوره",
+    "meaning_en": "That's not like you"
+  },
+  {
+    "fa": "بهت مربوط نیست",
+    "en": "None of your business",
+    "meaning_fa": "به تو ربطی نداره",
+    "meaning_en": "Mind your own business"
+  },
+  {
+    "fa": "بهت میاد",
+    "en": "It suits you",
+    "meaning_fa": "بهت خیلی خوب اومده",
+    "meaning_en": "Looks good on you"
+  },
+  {
+    "fa": "بی‌خیال بابا",
+    "en": "Whatever man",
+    "meaning_fa": "ولش کن، بی‌خیال",
+    "meaning_en": "Whatever"
+  },
+  {
+    "fa": "بی‌خیال شد",
+    "en": "He let it go",
+    "meaning_fa": "دیگه ول کرد",
+    "meaning_en": "He dropped it"
+  },
+  {
+    "fa": "تاپ تاپ تاپ، خاله اومد",
+    "en": "Tap tap tap, auntie came",
+    "meaning_fa": "صدای قدم‌های کسی",
+    "meaning_en": "Someone's coming"
+  },
+  {
+    "fa": "تو رو خدا",
+    "en": "For God's sake",
+    "meaning_fa": "التماس یا تأکید",
+    "meaning_en": "Please!"
+  },
+  {
+    "fa": "تو رو سننه",
+    "en": "By the holiness",
+    "meaning_fa": "قسم به مقدسات",
+    "meaning_en": "I swear"
+  },
+  {
+    "fa": "تو که حالیت نیست",
+    "en": "You wouldn't understand",
+    "meaning_fa": "تو نمی‌فهمی",
+    "meaning_en": "You don't get it"
+  },
+  {
+    "fa": "توکو؟",
+    "en": "You okay?",
+    "meaning_fa": "حالت خوبه؟",
+    "meaning_en": "You good?"
+  },
+  {
+    "fa": "جات خالیه",
+    "en": "Your place is empty",
+    "meaning_fa": "حیف که نیستی",
+    "meaning_en": "Wish you were here"
+  },
+  {
+    "fa": "جون به جونش کردن",
+    "en": "Putting life on life",
+    "meaning_fa": "خیلی اذیت کردن",
+    "meaning_en": "Making life hell"
+  },
+  {
+    "fa": "چاکریم",
+    "en": "I'm your sacrifice",
+    "meaning_fa": "ممنون، در خدمتم",
+    "meaning_en": "At your service"
+  },
+  {
+    "fa": "چته؟",
+    "en": "What's wrong with you?",
+    "meaning_fa": "چت شده؟",
+    "meaning_en": "What's up with you?"
+  },
+  {
+    "fa": "چشماتو ببند",
+    "en": "Close your eyes",
+    "meaning_fa": "سورپرایز دارم",
+    "meaning_en": "Surprise!"
+  },
+  {
+    "fa": "چشمم",
+    "en": "My eyes",
+    "meaning_fa": "حتماً، چشم",
+    "meaning_en": "Sure thing"
+  },
+  {
+    "fa": "چشم نخوری",
+    "en": "May no evil eye hit you",
+    "meaning_fa": "ماشاالله، چشم نخوری",
+    "meaning_en": "Knock on wood"
+  },
+  {
+    "fa": "چشمات روز بد نبینه",
+    "en": "May your eyes never see bad days",
+    "meaning_fa": "امیدوارم همیشه خوب باشی",
+    "meaning_en": "Hope you're always well"
+  },
+  {
+    "fa": "چی به چیه؟",
+    "en": "What's what?",
+    "meaning_fa": "چی شده؟ جریان چیه؟",
+    "meaning_en": "What's going on?"
+  },
+{
+    "fa": "آدم عجله‌ای مثل خروس بی‌محل",
+    "en": "A hasty person is like a misplaced rooster",
+    "meaning_fa": "خیلی بی‌جا عجله می‌کنه",
+    "meaning_en": "All talk and no action"
+  },
+  {
+    "fa": "آخرین نفر همیشه چراغو خاموش می‌کنه",
+    "en": "The last person always turns off the light",
+    "meaning_fa": "آخرین نفر همیشه ضرر می‌کنه",
+    "meaning_en": "Last one gets the short end"
+  },
+  {
+    "fa": "آدم بی‌محل مثل شپش تو رختخواب",
+    "en": "An unwelcome person is like a louse in bed",
+    "meaning_fa": "کسی که هیچ‌جا راهش نمیدن",
+    "meaning_en": "Persona non grata"
+  },
+  {
+    "fa": "از بس ناز کردن، شترشون قاطر زایید",
+    "en": "They pampered so much their camel gave birth to a mule",
+    "meaning_fa": "زیاد لوس کردن نتیجه عکس داد",
+    "meaning_en": "Overindulgence backfired"
+  },
+  {
+    "fa": "از ماست که بر ماست",
+    "en": "It's from yogurt that it becomes yogurt",
+    "meaning_fa": "از خودمونه، از خودمون درمیاد",
+    "meaning_en": "One of our own"
+  },
+  {
+    "fa": "از هفت دولت آزاد",
+    "en": "Free from seven governments",
+    "meaning_fa": "کاملاً بی‌قید و بند",
+    "meaning_en": "Footloose and fancy-free"
+  },
+  {
+    "fa": "آسه برو آسه بیا که ریخته نشه",
+    "en": "Go slowly, come slowly so it doesn't spill",
+    "meaning_fa": "با احتیاط باش",
+    "meaning_en": "Easy does it"
+  },
+  {
+    "fa": "آفتاب از سرش گذشته",
+    "en": "The sun has passed over his head",
+    "meaning_fa": "دیگه خیلی پیر شده",
+    "meaning_en": "Over the hill"
+  },
+  {
+    "fa": "آقازاده راه انداختن",
+    "en": "Launching a prince",
+    "meaning_fa": "با پارتی و رانت بالا اومدن",
+    "meaning_en": "Nepotism success"
+  },
+  {
+    "fa": "آهنگ دو زار و نیم",
+    "en": "Two-and-a-half penny song",
+    "meaning_fa": "چیز بی‌ارزش و دمده",
+    "meaning_en": "Cheap and outdated"
+  },
+  {
+    "fa": "آدمش نیست که زیر بار بره",
+    "en": "He's not the type to bow down",
+    "meaning_fa": "تعارف نداره، رک و راست",
+    "meaning_en": "No-nonsense guy"
+  },
+  {
+    "fa": "آهنگش کوک نیست",
+    "en": "His tune is off-key",
+    "meaning_fa": "حالت عادیش نیست، به‌هم ریخته",
+    "meaning_en": "Off his game"
+  },
+  {
+    "fa": "آینده‌ات تباه شد",
+    "en": "Your future is ruined",
+    "meaning_fa": "تمسخر وقتی یکی اشتباه بزرگ می‌کنه",
+    "meaning_en": "You're done for"
+  },
+  {
+    "fa": "آدم باحال باش",
+    "en": "Be a cool person",
+    "meaning_fa": "خودتو لوس نکن",
+    "meaning_en": "Don't be a buzzkill"
+  },
+  {
+    "fa": "آبرو بردن",
+    "en": "Taking away honor",
+    "meaning_fa": "آبروی کسی رو بردن",
+    "meaning_en": "Disgracing someone"
+  },
+  {
+    "fa": "آبرو باختن",
+    "en": "Losing face",
+    "meaning_fa": "آبروریزی کردن",
+    "meaning_en": "Losing face"
+  },
+  {
+    "fa": "آبروم رفت",
+    "en": "My honor is gone",
+    "meaning_fa": "دیگه آبروم برده شد",
+    "meaning_en": "I'm humiliated"
+  },
+  {
+    "fa": "آبرومو خریدن",
+    "en": "They bought my honor",
+    "meaning_fa": "با پول یا پارتی ساکتش کردن",
+    "meaning_en": "Bought silence"
+  },
+  {
+    "fa": "آدم حسابی باش",
+    "en": "Be a decent person",
+    "meaning_fa": "مثل آدما رفتار کن",
+    "meaning_en": "Act your age"
+  },
+  {
+    "fa": "آدم خوبه از راه دور معلومه",
+    "en": "A good person is recognizable from afar",
+    "meaning_fa": "آدم خوب از دور پیدا می‌شه",
+    "meaning_en": "Good vibes from afar"
+  },
+  {
+    "fa": "آدم وقتی پولدار می‌شه یادش می‌ره کیه",
+    "en": "When someone gets rich, they forget who they are",
+    "meaning_fa": "پول آدمو عوض می‌کنه",
+    "meaning_en": "Money changes people"
+  },
+  {
+    "fa": "آدمو باید تو تنگنا دید",
+    "en": "You see a person's true colors in hardship",
+    "meaning_fa": "تو سختی معلوم می‌شه کی چه جوریه",
+    "meaning_en": "True character shows in crisis"
+  },
+  {
+    "fa": "آره دیگه، همین بود که بود",
+    "en": "Yeah, that's all there was",
+    "meaning_fa": "دیگه تموم شد، همین بود",
+    "meaning_en": "That's it, end of story"
+  },
+  {
+    "fa": "آره بابا، تو دیگه کی هستی؟",
+    "en": "Yeah right, who do you think you are?",
+    "meaning_fa": "خودتو خیلی گرفتی",
+    "meaning_en": "Who died and made you king?"
+  },
+  {
+    "fa": "آره، قربون اون دهنت",
+    "en": "Yeah, bless your mouth",
+    "meaning_fa": "کنایه وقتی یکی حرف مسخره می‌زنه",
+    "meaning_en": "Yeah right (sarcastic)"
+  },
+  {
+    "fa": "آقا بالاسر",
+    "en": "Man upstairs",
+    "meaning_fa": "رئیس، خدا، یا کسی که بالا سرته",
+    "meaning_en": "The boss / God"
+  },
+  {
+    "fa": "آقا خیلی پولدار شده",
+    "en": "The gentleman got very rich",
+    "meaning_fa": "یهو پولدار شده",
+    "meaning_en": "Hit the jackpot"
+  },
+  {
+    "fa": "آلاف و علاف بودن",
+    "en": "Being idle and useless",
+    "meaning_fa": "بیکار و ولگرد بودن",
+    "meaning_en": "Loitering"
+  },
+  {
+    "fa": "آلونک",
+    "en": "Shack",
+    "meaning_fa": "خونه خیلی کوچیک و فقیرانه",
+    "meaning_en": "Humble abode"
+  },
+  {
+    "fa": "آمپاس دادن",
+    "en": "Passing the ball",
+    "meaning_fa": "مسئولیت رو گردن یکی دیگه انداختن",
+    "meaning_en": "Passing the buck"
+  },
+  {
+    "fa": "آهای مردم!",
+    "en": "Hey people!",
+    "meaning_fa": "جلب توجه",
+    "meaning_en": "Listen up!"
+  },
+  {
+    "fa": "آی کی می‌خواد؟",
+    "en": "Who wants ice cream?",
+    "meaning_fa": "تعارف بامزه",
+    "meaning_en": "Who wants some?"
+  },
+  {
+    "fa": "آینده داره",
+    "en": "Has a future",
+    "meaning_fa": "آینده روش می‌شه",
+    "meaning_en": "Promising"
+  },
+  {
+    "fa": "آیینه چون نقش تو بنمود راست",
+    "en": "The mirror shows your true image",
+    "meaning_fa": "خودت باعث این شدی",
+    "meaning_en": "You brought this on yourself"
+  },
+  {
+    "fa": "آیینه دق شده",
+    "en": "The mirror broke from grief",
+    "meaning_fa": "از ناراحتی داغون شده",
+    "meaning_en": "Heartbroken"
+  },
+  {
+    "fa": "بابا وایرال شدی",
+    "en": "Dude, you went viral",
+    "meaning_fa": "فیلمت همه جا پخش شد",
+    "meaning_en": "You blew up"
+  },
+  {
+    "fa": "بابا لنگش کن",
+    "en": "Cool it down",
+    "meaning_fa": "آروم باش",
+    "meaning_en": "Chill out"
+  },
+  {
+    "fa": "بابا لِوِلش بالاست",
+    "en": "Dude, his level is high",
+    "meaning_fa": "خیلی خفنه",
+    "meaning_en": "He's on another level"
+  },
+  {
+    "fa": "بابا تو دیگه کی هستی؟",
+    "en": "Who the hell are you?",
+    "meaning_fa": "خودتو خیلی گرفتی",
+    "meaning_en": "Who do you think you are?"
+  },
+  {
+    "fa": "بابا جونشو بگیر",
+    "en": "Take his dear life",
+    "meaning_fa": "خیلی اذیتش کن",
+    "meaning_en": "Drive him crazy"
+  },
+  {
+    "fa": "بابا دیگه بسه",
+    "en": "Enough already",
+    "meaning_fa": "دیگه تمومش کن",
+    "meaning_en": "Cut it out"
+  },
+  {
+    "fa": "بابا این دیگه چیه؟",
+    "en": "What the hell is this?",
+    "meaning_fa": "این دیگه چیه؟",
+    "meaning_en": "What is this crap?"
+  },
+  {
+    "fa": "باد هوا کردن",
+    "en": "Blowing hot air",
+    "meaning_fa": "حرف الکی زدن",
+    "meaning_en": "Talking big"
+  },
+  {
+    "fa": "بادمجان دور قاب چین حرفه",
+    "en": "Eggplant arranger is a pro",
+    "meaning_fa": "چاپلوس حرفه‌ای",
+    "meaning_en": "Professional brown-noser"
+  },
+  {
+    "fa": "بار کج به منزل نمی‌رسه",
+    "en": "A crooked load never reaches home",
+    "meaning_fa": "کار غلط نتیجه نمیده",
+    "meaning_en": "Wrong path leads nowhere"
+  },
+  {
+    "fa": "بارید و برد",
+    "en": "It rained and took away",
+    "meaning_fa": "یهو همه چیز تموم شد",
+    "meaning_en": "It all vanished"
+  },
+  {
+    "fa": "بازار شام",
+    "en": "Damascus market",
+    "meaning_fa": "شلوغ پلوغ و به‌هم ریخته",
+    "meaning_en": "Total chaos"
+  },
+  {
+    "fa": "باشه دیگه، چشم",
+    "en": "Okay, sure",
+    "meaning_fa": "حتماً، باشه",
+    "meaning_en": "Got it"
+  },
+  {
+    "fa": "باشه قربانت",
+    "en": "Yes, at your service",
+    "meaning_fa": "چشم، انجام می‌دم",
+    "meaning_en": "Your wish is my command"
+  },
+  {
+    "fa": "باشه، حالا شد",
+    "en": "Okay, now it's good",
+    "meaning_fa": "بالاخره قبول کرد",
+    "meaning_en": "Finally agreed"
+  },
+  {
+    "fa": "باشه، حالا شد یه چیزی",
+    "en": "Okay, now that's something",
+    "meaning_fa": "قبول، بهتر شد",
+    "meaning_en": "Now we're talking"
+  },
+  {
+    "fa": "باشما نمی‌شه حرف زد",
+    "en": "Can't talk to you",
+    "meaning_fa": "حرف آدم به گوشت نمیره",
+    "meaning_en": "You're impossible"
+  },
+  {
+    "fa": "بادش کرده",
+    "en": "It's inflated him",
+    "meaning_fa": "خفنش کرده، پررو کرده",
+    "meaning_en": "Got a big head"
+  },
+  {
+    "fa": "بادشو گرفتن",
+    "en": "They took his wind",
+    "meaning_fa": "جلویشو گرفتن، حالشو گرفتن",
+    "meaning_en": "Put him in his place"
+  },
+  {
+    "fa": "بادکنک حرف",
+    "en": "Balloon talk",
+    "meaning_fa": "حرف الکی و بزرگ",
+    "meaning_en": "Empty promises"
+  },
+  {
+    "fa": "باغ وحش راه انداختن",
+    "en": "Opening a zoo",
+    "meaning_fa": "سر و صدا و شلوغی زیاد",
+    "meaning_en": "Total mayhem"
+  },
+  {
+    "fa": "باغی شدن",
+    "en": "Going wild",
+    "meaning_fa": "از کنترل خارج شدن",
+    "meaning_en": "Going off the rails"
+  },
+  {
+    "fa": "باغچه‌اتون سبز",
+    "en": "May your garden be green",
+    "meaning_fa": "آفرین، موفق باشی",
+    "meaning_en": "Well done!"
+  },
+{
+    "fa": "باید بجنبی",
+    "en": "You gotta hustle",
+    "meaning_fa": "باید سریع باشی",
+    "meaning_en": "Get moving"
+  },
+  {
+    "fa": "باید خیلی حال کنی",
+    "en": "You must be having a blast",
+    "meaning_fa": "حتماً خیلی خوش می‌گذره",
+    "meaning_en": "Living it up"
+  },
+  {
+    "fa": "باید یه فکری بکنیم",
+    "en": "We need to figure something out",
+    "meaning_fa": "باید یه راهی پیدا کنیم",
+    "meaning_en": "We need a plan"
+  },
+  {
+    "fa": "باید یه دستی به سر و گوشش بکشی",
+    "en": "You gotta fix him up a bit",
+    "meaning_fa": "باید ادبش کنی",
+    "meaning_en": "Teach him a lesson"
+  },
+  {
+    "fa": "باید یه فازمتر بزنیم",
+    "en": "We need to test the voltage",
+    "meaning_fa": "باید ببینیم چی به چیه",
+    "meaning_en": "Let's see what's up"
+  },
+  {
+    "fa": "باید یه کمکی بهش بکنیم",
+    "en": "We should help him a bit",
+    "meaning_fa": "باید یه دستی بهش برسونیم",
+    "meaning_en": "Lend a hand"
+  },
+  {
+    "fa": "باید یه چیزی بگم؟",
+    "en": "Should I say something?",
+    "meaning_fa": "حرف خاصی داری؟",
+    "meaning_en": "Got something to say?"
+  },
+  {
+    "fa": "باید یه چیزی بشه",
+    "en": "Something's gotta happen",
+    "meaning_fa": "باید یه اتفاقی بیفته",
+    "meaning_en": "Something's brewing"
+  },
+  {
+    "fa": "باید یه فکر بکنی",
+    "en": "You gotta think",
+    "meaning_fa": "یه فکری به حالت کن",
+    "meaning_en": "Use your brain"
+  },
+  {
+    "fa": "باید یه چیزی بهش بچسبی",
+    "en": "You gotta pin something on him",
+    "meaning_fa": "یه چیزی بهش بچسبون",
+    "meaning_en": "Find dirt on him"
+  },
+  {
+    "fa": "باید یه چیزی بگی دیگه",
+    "en": "You gotta say something",
+    "meaning_fa": "یه حرفی بزن",
+    "meaning_en": "Speak up"
+  },
+  {
+    "fa": "باید یه چیزی بکنیم",
+    "en": "We gotta do something",
+    "meaning_fa": "باید یه کاری بکنیم",
+    "meaning_en": "We need action"
+  },
+  {
+    "fa": "باید یه چیزی بشه دیگه",
+    "en": "Something's gotta give",
+    "meaning_fa": "دیگه باید یه اتفاقی بیفته",
+    "meaning_en": "Something's coming"
+  },
+  {
+    "fa": "باید یه چیزی بهش بگی",
+    "en": "You gotta tell him something",
+    "meaning_fa": "یه چیزی به گوشش برسون",
+    "meaning_en": "Give him a hint"
+  },
+  {
+    "fa": "باید یه چیزی بکنی دیگه",
+    "en": "You gotta do something already",
+    "meaning_fa": "دیگه یه کاری بکن",
+    "meaning_en": "Make a move"
+  },
+  {
+    "fa": "باید یه چیزی بشه",
+    "en": "Something's gotta happen",
+    "meaning_fa": "دیگه باید یه اتفاقی بیفته",
+    "meaning_en": "It's about time"
+  },
+  {
+    "fa": "باید یه دستی بهش بکشی",
+    "en": "You gotta fix him",
+    "meaning_fa": "باید یه ادبی بهش بدی",
+    "meaning_en": "Put him in line"
+  }
+
+
+]

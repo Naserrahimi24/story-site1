@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta name="description" content="بانک جامع حکایت‌ها، داستان‌ها، اشعار و ضرب‌المثل‌های پارسی | Persian Tales, Poems & Proverbs"/>
+  
+  <title data-lang="fa">بانک حکایت و اشعار</title>
+  <title data-lang="en" class="hidden">Persian Tales & Poems</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { vazir: ['Vazirmatn', 'sans-serif'] },
+          colors: { primary: '#d97706' }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+  <style>
+    .line-clamp-2 {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+    }
+    .prose pre { white-space: pre-wrap; }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-vazir min-h-screen transition-colors duration-500">
+
+  <!-- Header -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <button id="theme-toggle" class="p-2.5 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-800 transition">
+            <i class="fa-solid fa-moon text-lg"></i>
+          </button>
+          <button id="language-switch" class="px-4 py-2 text-sm bg-primary text-white rounded-xl hover:bg-amber-600 transition font-medium">EN</button>
+        </div>
+
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+          <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold whitespace-nowrap">
+            <span data-lang="fa">بانک حکایت و اشعار</span>
+            <span data-lang="en" class="hidden">Persian Tales & Poems</span>
+          </h1>
+        </div>
+
+        <div class="flex-1 max-w-md mx-auto">
+          <div class="relative">
+            <input type="search" id="global-search" 
+                   placeholder-fa="جستجو در حکایات و اشعار..." 
+                   placeholder-en="Search tales & poems..."
+                   class="w-full pl-10 pr-4 py-2.5 rounded-full bg-gray-100 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary transition text-sm">
+            <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"></i>
+          </div>
+        </div>
+
+        <div class="w-12"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- دکمه‌های کناری ثابت -->
+  <div class="fixed inset-0 pointer-events-none z-40">
+    <div class="pointer-events-auto">
+      <div class="flex flex-col gap-5 fixed top-28 right-4 z-50">
+        <!-- اشعار -->
+        <button id="open-poems-sidebar" class="group relative w-14 h-14 sm:w-16 sm:h-16 bg-amber-600 hover:bg-amber-700 text-white rounded-full shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center">
+          <i class="fa-solid fa-feather-pointed text-lg sm:text-xl"></i>
+          <span class="absolute -left-28 top-1/2 -translate-y-1/2 bg-gray-900/95 text-white text-xs px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap backdrop-blur-sm pointer-events-none">
+            <span data-lang="fa">اشعار</span><span data-lang="en" class="hidden">Poems</span>
+          </span>
+        </button>
+
+        <!-- کتاب‌ها -->
+        <button id="open-books-sidebar" class="group relative w-14 h-14 sm:w-16 sm:h-16 bg-amber-700 hover:bg-amber-800 text-white rounded-full shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center">
+          <i class="fa-solid fa-book-open text-lg sm:text-xl"></i>
+          <span class="absolute -left-28 top-1/2 -translate-y-1/2 bg-gray-900/95 text-white text-xs px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap backdrop-blur-sm pointer-events-none">
+            <span data-lang="fa">کتاب‌ها</span><span data-lang="en" class="hidden">Books</span>
+          </span>
+        </button>
+
+        <!-- ضرب‌المثل‌ها -->
+        <button id="open-proverbs-sidebar" class="group relative w-14 h-14 sm:w-16 sm:h-16 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center">
+          <i class="fa-solid fa-lightbulb text-lg sm:text-xl"></i>
+          <span class="absolute -left-28 top-1/2 -translate-y-1/2 bg-gray-900/95 text-white text-xs px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap backdrop-blur-sm pointer-events-none">
+            <span data-lang="fa">ضرب‌المثل‌ها</span><span data-lang="en" class="hidden">Proverbs</span>
+          </span>
+        </button>
+
+        <!-- ذخیره‌شده‌ها -->
+        <button id="open-bookmarks-sidebar" class="group relative w-14 h-14 sm:w-16 sm:h-16 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center">
+          <i class="fa-solid fa-bookmark text-lg sm:text-xl"></i>
+          <span class="absolute -left-36 top-1/2 -translate-y-1/2 bg-gray-900/95 text-white text-xs px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap backdrop-blur-sm pointer-events-none flex items-center gap-2">
+            <span data-lang="fa">ذخیره‌شده‌ها</span><span data-lang="en" class="hidden">Bookmarks</span>
+            <span class="bookmark-count-badge bg-red-500 text-white text-xs rounded-full px-2 min-w-[20px] h-5 flex items-center justify-center">0</span>
+          </span>
+          <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-2 min-w-[20px] h-5 flex items-center justify-center shadow-lg bookmark-count-live">0</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 pt-28 sm:pt-32 md:pt-36 pb-32 md:pb-16">
+    <div id="characters-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-4 sm:gap-6"></div>
+  </main>
+
+  <!-- سایدبار اشعار -->
+  <aside id="poems-sidebar" class="fixed inset-0 bg-white dark:bg-gray-900 shadow-2xl transform translate-x-full transition-transform duration-500 z-50 overflow-y-auto" aria-hidden="true">
+    <div class="sticky top-0 bg-white dark:bg-gray-900 border-b dark:border-gray-800 px-6 py-5 flex justify-between items-center">
+      <h2 class="text-2xl font-bold text-amber-700 dark:text-amber-400 flex items-center gap-3"><i class="fa-solid fa-feather-pointed"></i> <span data-lang="fa">اشعار</span><span data-lang="en" class="hidden">Poems</span></h2>
+      <button id="close-poems-sidebar" class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-red-500 hover:text-white text-3xl transition-all shadow-lg">×</button>
+    </div>
+    <div class="p-5"><input type="text" id="poems-search" placeholder-fa="جستجوی شاعر یا شعر..." placeholder-en="Search poet or poem..." class="w-full px-4 py-3 rounded-xl border dark:border-gray-700 bg-gray-50 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-500"></div>
+    <ul id="poems-list" class="px-5 space-y-4 pb-24"></ul>
+  </aside>
+
+  <!-- سایدبار کتاب‌ها - اصلاح شده و کاملاً داینامیک -->
+  <aside id="books-sidebar" class="fixed inset-0 bg-gradient-to-b from-amber-50/95 to-amber-100/95 dark:from-gray-900/95 dark:to-gray-950/95 shadow-2xl transform translate-x-full transition-transform duration-500 z-50 overflow-y-auto backdrop-blur-xl" aria-hidden="true">
+    <div class="sticky top-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl border-b border-amber-200 dark:border-gray-800 px-6 py-5 flex justify-between items-center z-10">
+      <h2 class="text-2xl font-bold text-amber-700 dark:text-amber-400 flex items-center gap-3"><i class="fa-solid fa-book-open-reader"></i> <span data-lang="fa">کتاب‌های مشهور</span><span data-lang="en" class="hidden">Famous Books</span></h2>
+      <button id="close-books-sidebar" class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-red-500 hover:text-white text-3xl transition-all shadow-lg">×</button>
+    </div>
+
+    <!-- جستجو -->
+    <div class="p-6 relative" id="books-search-wrapper">
+      <input type="text" id="books-search-input" placeholder-fa="جستجو در کتاب‌ها و فصل‌ها..." placeholder-en="Search in books & chapters..." class="w-full px-4 py-3 rounded-xl border dark:border-gray-700 bg-gray-50 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-500">
+      <button id="books-search-clear" class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-red-500 hidden"><i class="fa-solid fa-xmark"></i></button>
+      <p id="books-results-count" class="text-sm text-gray-600 dark:text-gray-400 mt-3 text-center opacity-0 transition-opacity"></p>
+    </div>
+
+    <!-- مهم: حالا همه کتاب‌ها نمایش داده می‌شن (حتی ۱۰۰ تا!) -->
+    <div id="books-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-6 pb-32 auto-rows-min">
+      <!-- تمام کتاب‌ها اینجا به صورت داینامیک توسط books-sidebar.js اضافه می‌شن -->
+    </div>
+  </aside>
+
+  <!-- سایدبار ضرب‌المثل‌ها -->
+  <aside id="proverbs-sidebar" class="fixed inset-0 bg-gradient-to-b from-indigo-50/95 to-indigo-100/95 dark:from-gray-900/95 dark:to-gray-950/95 shadow-2xl transform translate-x-full transition-transform duration-500 z-50 overflow-y-auto backdrop-blur-xl" aria-hidden="true">
+    <div class="sticky top-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl border-b border-indigo-200 dark:border-gray-800 px-6 py-5 flex justify-between items-center z-10">
+      <h2 class="text-2xl font-bold flex items-center gap-3 text-indigo-700 dark:text-indigo-400"><i class="fa-solid fa-lightbulb"></i> <span data-lang="fa">ضرب‌المثل‌های پارسی</span><span data-lang="en" class="hidden">Persian Proverbs</span></h2>
+      <button id="close-proverbs-sidebar" class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-red-500 hover:text-white text-3xl transition-all shadow-lg">×</button>
+    </div>
+    <div class="px-6 pt-6 pb-4 sticky top-[73px] bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl z-10 border-b border-indigo-100 dark:border-indigo-900">
+      <div class="relative">
+        <input type="text" id="proverbs-search-input" placeholder-fa="جستجوی ضرب‌المثل..." placeholder-en="Search proverbs..." class="w-full px-4 py-3 pr-12 rounded-xl border border-indigo-200 dark:border-indigo-800 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+        <button id="proverbs-search-clear" class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-red-500 hidden"><i class="fa-solid fa-xmark"></i></button>
+        <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-indigo-500"></i>
+      </div>
+      <p id="proverbs-results-count" class="text-sm text-gray-600 dark:text-gray-400 mt-3 text-center opacity-0 transition-opacity"></p>
+    </div>
+    <div class="px-6 py-6 grid grid-cols-1 md:grid-cols-2 gap-5" id="proverbs-container"></div>
+  </aside>
+
+  <!-- سایدبار ذخیره‌شده‌ها -->
+  <aside id="bookmarks-sidebar" class="fixed inset-0 bg-white dark:bg-gray-900 shadow-2xl transform translate-x-full transition-transform duration-500 z-50 overflow-y-auto" aria-hidden="true">
+    <div class="sticky top-0 bg-white dark:bg-gray-900 border-b dark:border-gray-800 px-6 py-5 flex justify-between items-center z-10">
+      <h2 class="text-2xl font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-3">
+        <i class="fa-solid fa-bookmark"></i>
+        <span data-lang="fa">ذخیره‌شده‌ها</span>
+        <span data-lang="en" class="hidden">Bookmarks</span>
+      </h2>
+      <button id="close-bookmarks-sidebar" class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-red-500 hover:text-white text-3xl transition-all shadow-lg">×</button>
+    </div>
+    <div id="bookmarks-list" class="p-6 space-y-4"></div>
+    <div class="p-8 text-center text-gray-500 dark:text-gray-400" id="bookmarks-empty">
+      <i class="fa-solid fa-heart-crack text-5xl mb-4 block opacity-30"></i>
+      <p class="text-lg">
+        <span data-lang="fa">هنوز چیزی ذخیره نکرده‌اید</span>
+        <span data-lang="en" class="hidden">You haven't saved anything yet</span>
+      </p>
+    </div>
+  </aside>
+
+  <!-- مودال کتاب -->
+  <div id="book-modal" class="fixed inset-0 bg-black/70 dark:bg-black/80 flex items-center justify-center z-50 hidden">
+    <div class="bg-white dark:bg-gray-900 w-full max-w-4xl h-[90vh] rounded-2xl shadow-2xl overflow-hidden relative">
+      <div class="sticky top-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl border-b border-gray-200 dark:border-gray-800 px-6 py-5 flex justify-between items-center z-10">
+        <h2 id="modal-book-title" class="text-2xl font-bold text-amber-700 dark:text-amber-400"></h2>
+        <button class="close-modal w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-red-500 hover:text-white text-3xl transition-all shadow-lg">×</button>
+      </div>
+      <div id="modal-book-content" class="p-6 overflow-y-auto h-[calc(100%-80px)]"></div>
+    </div>
+  </div>
+
+  <!-- اسکریپت‌ها -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ once: true, duration: 800 });</script>
+
+  <!-- سوئیچ زبان -->
+  <script>
+    const langSwitch = document.getElementById('language-switch');
+    let currentLang = localStorage.getItem("preferredLang") || 'fa';
+    const updateLang = () => {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.classList.toggle('hidden', el.dataset.lang !== currentLang);
+      });
+      document.documentElement.lang = currentLang;
+      document.documentElement.dir = currentLang === 'fa' ? 'rtl' : 'ltr';
+      langSwitch.textContent = currentLang === 'fa' ? 'EN' : 'FA';
+      document.querySelectorAll('[placeholder-fa]').forEach(el => {
+        el.placeholder = currentLang === 'fa' ? el.getAttribute('placeholder-fa') : (el.getAttribute('placeholder-en') || '');
+      });
+    };
+    langSwitch.addEventListener('click', () => {
+      currentLang = currentLang === 'fa' ? 'en' : 'fa';
+      localStorage.setItem("preferredLang", currentLang);
+      updateLang();
+    });
+    updateLang();
+  </script>
+
+  <!-- سیستم بوکمارک و openBookDirectly -->
+  <script>
+    class StorageManager {
+      static get(key, def = []) { 
+        try { return JSON.parse(localStorage.getItem(key)) || def; } 
+        catch { return def; } 
+      }
+      static set(key, val) { localStorage.setItem(key, JSON.stringify(val)); }
+      static addBookmark(item) {
+        let list = this.get('bookmarks', []);
+        if (!list.some(i => i.id === item.id)) {
+          list.push({ ...item, savedAt: Date.now() });
+          this.set('bookmarks', list);
+        }
+      }
+      static removeBookmark(id) {
+        this.set('bookmarks', this.get('bookmarks', []).filter(i => i.id !== id));
+      }
+      static getBookmarks() { return this.get('bookmarks', []); }
+    }
+
+    function updateBookmarkCount() {
+      const count = StorageManager.getBookmarks().length;
+      document.querySelectorAll('.bookmark-count-live, .bookmark-count-badge').forEach(el => {
+        el.textContent = count;
+        el.style.display = count > 0 ? 'flex' : 'none';
+      });
+    }
+
+    function renderBookmarks() {
+      const list = document.getElementById('bookmarks-list');
+      const empty = document.getElementById('bookmarks-empty');
+      const items = StorageManager.getBookmarks().sort((a, b) => (b.savedAt || 0) - (a.savedAt || 0));
+
+      if (items.length === 0) {
+        list.innerHTML = '';
+        empty.style.display = 'block';
+        return;
+      }
+      empty.style.display = 'none';
+      list.innerHTML = items.map(item => {
+        const isChapter = item.id && item.id.includes('-chapter-');
+        const bookId = isChapter ? item.id.split('-chapter-')[0] : null;
+        const chapterIndex = isChapter ? parseInt(item.id.split('-chapter-')[1]) - 1 : null;
+
+        return `
+          <div class="bg-gray-100 dark:bg-gray-800 rounded-xl p-5 flex justify-between items-center hover:bg-gray-200 dark:hover:bg-gray-700 transition cursor-pointer"
+               ${isChapter ? `onclick="openBookDirectly('${bookId}', ${chapterIndex})"` : `onclick="openBookDirectly('${item.id}')"`}>
+            <div class="flex-1">
+              <h3 class="font-bold text-primary text-lg">${item.title || 'بدون عنوان'}</h3>
+              ${item.type ? `<span class="text-sm text-gray-500">${item.type}</span>` : ''}
+            </div>
+            <button onclick="event.stopPropagation(); StorageManager.removeBookmark('${item.id}'); updateBookmarkCount(); renderBookmarks();" 
+                    class="text-red-500 hover:bg-red-100 dark:hover:bg-red-900/50 p-3 rounded-lg transition">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        `;
+      }).join('');
+    }
+
+    window.openBookDirectly = async function(bookId, chapterIndex = 0) {
+      try {
+        const res = await fetch(`books.json?t=${Date.now()}`);
+        const data = await res.json();
+        const book = data.books.find(b => b.id === bookId);
+        if (!book) return alert("کتاب پیدا نشد!");
+
+        document.getElementById('books-sidebar').classList.remove('translate-x-full');
+        if (window.openBookModal) {
+          window.openBookModal(book);
+          if (chapterIndex >= 0) {
+            setTimeout(() => {
+              const chapters = document.querySelectorAll('#modal-book-content article');
+              if (chapters[chapterIndex]) {
+                chapters[chapterIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+                chapters[chapterIndex].style.backgroundColor = 'rgba(34, 197, 94, 0.1)';
+                setTimeout(() => chapters[chapterIndex].style.backgroundColor = '', 2000);
+              }
+            }, 300);
+          }
+        }
+      } catch (err) { console.error(err); }
+    };
+
+    document.getElementById('open-bookmarks-sidebar')?.addEventListener('click', () => {
+      document.getElementById('bookmarks-sidebar').classList.remove('translate-x-full');
+      renderBookmarks();
+      updateBookmarkCount();
+    });
+
+    document.getElementById('close-bookmarks-sidebar')?.addEventListener('click', () => {
+      document.getElementById('bookmarks-sidebar').classList.add('translate-x-full');
+    });
+
+    document.getElementById('bookmarks-sidebar')?.addEventListener('click', e => {
+      if (e.target === e.currentTarget) e.currentTarget.classList.add('translate-x-full');
+    });
+
+    document.addEventListener('DOMContentLoaded', updateBookmarkCount);
+  </script>
+
+  <!-- ماژول‌های اصلی -->
+  <script type="module" src="theme.js"></script>
+  <script type="module" src="poems-sidebar.js"></script>
+  <script type="module" src="books-sidebar.js"></script>
+  <script type="module" src="proverbs-sidebar.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

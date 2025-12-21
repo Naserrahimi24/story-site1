@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اشعار شاعر</title>
+  <meta name="description" content="مجموعه کامل اشعار و غزلیات شاعران پارسی با ترجمه انگلیسی" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Vazirmatn', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+          colors: {
+            amber: { 50: '#fffbeb', 500: '#f59e0b', 600: '#d97706', 700: '#b45309' },
+            primary: '#f59e0b',
+          },
+          animation: {
+            float: 'float 6s ease-in-out infinite',
+            'fade-in': 'fadeIn 0.8s ease-out forwards',
+            'slide-up': 'slideUp 0.7s ease-out forwards',
+          },
+          keyframes: {
+            float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-20px)' } },
+            fadeIn: { from: { opacity: 0 }, to: { opacity: 1 } },
+            slideUp: { from: { opacity: 0, transform: 'translateY(40px)' }, to: { opacity: 1, transform: 'translateY(0)' } },
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- فونت و آیکون -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #f59e0b40; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #f59e0b60; }
+    .glass { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+    pre { white-space: pre-wrap; word-wrap: break-word; line-height: 2.2; }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50 dark:from-slate-950 dark:via-gray-900 dark:to-black text-gray-900 dark:text-gray-100 min-h-screen transition-all duration-500">
+
+  <!-- هدر ثابت با افکت شیشه‌ای -->
+  <header class="fixed inset-x-0 top-0 z-50 glass bg-white/70 dark:bg-black/60 border-b border-white/20 dark:border-white/10 backdrop-blur-2xl">
+    <div class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <button onclick="history.back()" class="group p-3 rounded-full bg-white/20 dark:bg-white/10 hover:bg-white/40 dark:hover:bg-white/20 transition-all duration-300">
+        <i class="fa-solid fa-arrow-right text-lg group-hover:scale-110 transition"></i>
+      </button>
+
+      <h1 id="poet-name" class="text-xl sm:text-2xl font-extrabold bg-gradient-to-r from-amber-600 to-rose-600 bg-clip-text text-transparent">
+        در حال بارگذاری...
+      </h1>
+
+      <div class="flex items-center gap-2 sm:gap-4">
+        <button id="theme-toggle" class="p-3 rounded-full bg-white/20 dark:bg-white/10 hover:bg-white/40 dark:hover:bg-white/20 transition-all duration-300">
+          <i class="fa-solid fa-moon text-lg"></i>
+        </button>
+        <button id="lang-toggle" class="p-3 rounded-full bg-white/20 dark:bg-white/10 hover:bg-white/40 dark:hover:bg-white/20 transition-all duration-300">
+          <span class="text-sm font-bold">FA</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 sm:px-6 pt-28 pb-20 max-w-7xl">
+
+    <!-- Hero Section -->
+    <section class="text-center mb-16 sm:mb-24 animate-fade-in">
+      <div id="poet-avatar" class="relative inline-block animate-float mb-10">
+        <div class="w-32 h-32 sm:w-44 sm:h-44 rounded-full bg-gradient-to-br from-amber-400 via-orange-500 to-rose-600 p-1.5 shadow-2xl ring-8 ring-white/30">
+          <div class="w-full h-full rounded-full bg-white/20 backdrop-blur-xl flex items-center justify-center text-white text-6xl sm:text-8xl font-black">
+            <span class="drop-shadow-2xl">ش</span>
+          </div>
+        </div>
+        <div class="absolute -inset-8 rounded-full bg-gradient-to-br from-amber-400/30 to-rose-600/30 blur-3xl animate-pulse"></div>
+      </div>
+
+      <h2 id="poet-fullname" class="text-5xl sm:text-6xl md:text-7xl font-black bg-gradient-to-r from-amber-600 to-rose-600 bg-clip-text text-transparent leading-tight">
+        در حال بارگذاری...
+      </h2>
+      <p id="poet-lifespan" class="mt-4 text-lg sm:text-xl font-medium text-amber-700 dark:text-amber-400"></p>
+      <p id="poet-bio" class="mt-8 max-w-4xl mx-auto text-lg sm:text-xl leading-9 text-gray-700 dark:text-gray-300 opacity-90 px-4"></p>
+    </section>
+
+    <!-- شبکه اشعار - کاملاً ریسپانسیو -->
+    <section id="poems-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 animate-slide-up">
+      <!-- اسکلتون -->
+      <template id="skeleton-template">
+        <div class="bg-white/70 dark:bg-gray-900/70 rounded-3xl p-6 sm:p-8 shadow-xl animate-pulse">
+          <div class="h-8 bg-gradient-to-r from-amber-200 to-amber-300 dark:from-amber-800 dark:to-amber-900 rounded-xl w-4/5 mb-4"></div>
+          <div class="space-y-3">
+            <div class="h-5 bg-gray-200 dark:bg-gray-700 rounded w-full"></div>
+            <div class="h-5 bg-gray-200 dark:bg-gray-700 rounded w-11/12"></div>
+            <div class="h-5 bg-gray-200 dark:bg-gray-700 rounded w-10/12"></div>
+          </div>
+        </div>
+      </template>
+    </section>
+  </main>
+
+  <!-- مودال شعر کامل -->
+  <dialog id="poem-modal" class="fixed inset-0 z-[999] p-4 bg-black/70 glass open:flex hidden items-center justify-center overflow-y-auto">
+    <article class="relative bg-white/95 dark:bg-gray-950/95 rounded-3xl shadow-2xl max-w-4xl w-full max-h-[92vh] overflow-y-auto border border-white/20 backdrop-blur-xl">
+      <button onclick="closeModal()" class="absolute top-5 left-5 w-12 h-12 rounded-full bg-white/20 dark:bg-black/40 hover:bg-red-500/30 text-white text-3xl z-10 transition hover:scale-110">×</button>
+      <div class="p-8 sm:p-12 pt-20 text-center">
+        <h2 id="modal-title" class="text-4xl sm:text-5xl font-black bg-gradient-to-r from-amber-600 to-rose-600 bg-clip-text text-transparent mb-6"></h2>
+        <p id="modal-firstline" class="text-xl sm:text-2xl italic text-amber-700 dark:text-amber-400 mb-10 leading-relaxed"></p>
+        <pre id="modal-poem" class="text-lg sm:text-2xl leading-loose font-medium max-w-3xl mx-auto text-right text-gray-800 dark:text-gray-200"></pre>
+        <p class="mt-12 text-sm opacity-60" id="modal-lang-note"></p>
+      </div>
+    </article>
+  </dialog>
+
+  <script type="module">
+    let currentLang = localStorage.getItem('lang') || (navigator.language.startsWith('fa') ? 'fa' : 'en');
+
+    const t = (fa, en = fa) => currentLang === 'fa' ? fa : en;
+
+    // تغییر زبان — حالا ۱۰۰٪ کار می‌کنه
+    const langToggle = document.getElementById('lang-toggle');
+    const updateLangButton = () => {
+      langToggle.innerHTML = `<span class="text-sm font-bold">${currentLang.toUpperCase()}</span>`;
+    };
+
+    langToggle.addEventListener('click', () => {
+      currentLang = currentLang === 'fa' ? 'en' : 'fa';
+      localStorage.setItem('lang', currentLang);
+      document.documentElement.lang = currentLang;
+      document.documentElement.dir = currentLang === 'fa' ? 'rtl' : 'ltr';
+      updateLangButton();
+      loadPoetPage(); // بازسازی کامل صفحه با زبان جدید
+    });
+
+    // تم تاریک/روشن
+    const themeToggle = document.getElementById('theme-toggle');
+    const applyTheme = () => {
+      const isDark = localStorage.getItem('theme') === 'dark' || 
+        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.classList.toggle('dark', isDark);
+      themeToggle.innerHTML = `<i class="fa-solid ${isDark ? 'fa-sun' : 'fa-moon'} text-lg"></i>`;
+    };
+
+    themeToggle.addEventListener('click', () => {
+      const willBeDark = !document.documentElement.classList.contains('dark');
+      localStorage.setItem('theme', willBeDark ? 'dark' : 'light');
+      applyTheme();
+    });
+
+    // اسکلتون
+    const grid = document.getElementById('poems-grid');
+    const skeleton = document.getElementById('skeleton-template');
+    for (let i = 0; i < 12; i++) {
+      grid.appendChild(skeleton.content.cloneNode(true));
+    }
+
+    let poetsData = [], currentPoet = null;
+    const urlParams = new URLSearchParams(location.search);
+    const urlPoetName = decodeURIComponent(urlParams.get('poet') || '');
+    const urlLang = urlParams.get('lang');
+
+    if (urlLang && ['fa', 'en'].includes(urlLang)) {
+      currentLang = urlLang;
+      localStorage.setItem('lang', currentLang);
+      document.documentElement.dir = currentLang === 'fa' ? 'rtl' : 'ltr';
+      document.documentElement.lang = currentLang;
+    }
+
+    const loadPoetPage = async () => {
+      try {
+        const res = await fetch('poems-data.json?t=' + Date.now());
+        if (!res.ok) throw new Error('داده‌ها بارگذاری نشد');
+        poetsData = await res.json();
+
+        currentPoet = poetsData.find(p => 
+          p.poet === urlPoetName || 
+          (p.poet_en && p.poet_en.toLowerCase() === urlPoetName.toLowerCase())
+        );
+
+        if (!currentPoet) {
+          document.body.innerHTML = `<div class="flex items-center justify-center min-h-screen text-5xl font-bold text-red-600">شاعر "${urlPoetName}" یافت نشد!</div>`;
+          return;
+        }
+
+        document.title = t(`${currentPoet.poet} — مجموعه اشعار`, `${currentPoet.poet_en || currentPoet.poet} — Complete Poems`);
+        const name = t(currentPoet.poet, currentPoet.poet_en || currentPoet.poet);
+
+        document.getElementById('poet-name').textContent = name;
+        document.getElementById('poet-fullname').textContent = name;
+        document.getElementById('poet-avatar').querySelector('span').textContent = currentPoet.initials || name[0];
+        document.getElementById('poet-lifespan').textContent = t(currentPoet.lifespan || '', currentPoet.lifespan_en || '');
+        document.getElementById('poet-bio').textContent = t(currentPoet.bio || '', currentPoet.bio_en || '');
+
+        grid.innerHTML = currentPoet.poems.map((poem, i) => `
+          <article onclick="showPoem(${i})" 
+                   class="group relative bg-white/80 dark:bg-gray-900/80 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-amber-100 dark:border-gray-800 overflow-hidden cursor-pointer backdrop-blur-sm">
+            <div class="absolute inset-0 bg-gradient-to-br from-amber-400/10 to-rose-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative p-6 sm:p-8">
+              <h3 class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-amber-600 to-rose-600 bg-clip-text text-transparent mb-4">
+                ${t(poem.title, poem.title_en || poem.title)}
+              </h3>
+              <p class="text-right text-gray-600 dark:text-gray-300 italic leading-loose line-clamp-4 text-sm sm:text-base">
+                ${t(poem.firstLine, poem.firstLine_en || poem.firstLine)}
+              </p>
+              <div class="mt-6 flex justify-end">
+                <span class="inline-flex items-center gap-2 text-amber-600 dark:text-amber-400 font-medium opacity-0 group-hover:opacity-100 transition-opacity text-sm">
+                  ${t('مشاهده کامل', 'Read full')} <i class="fa-solid fa-arrow-left"></i>
+                </span>
+              </div>
+            </div>
+          </article>
+        `).join('');
+
+      } catch (err) {
+        console.error(err);
+        grid.innerHTML = `<div class="col-span-full text-center py-20 text-3xl text-red-600">خطا در بارگذاری اشعار</div>`;
+      }
+    };
+
+    window.showPoem = (i) => {
+      const p = currentPoet.poems[i];
+      document.getElementById('modal-title').textContent = t(p.title, p.title_en);
+      document.getElementById('modal-firstline').textContent = t(p.firstLine, p.firstLine_en);
+      document.getElementById('modal-poem').textContent = t(p.poem_fa, p.poem_en || p.poem_fa).trim();
+      document.getElementById('modal-lang-note').textContent = currentLang === 'fa' ? 'متن اصلی فارسی' : 'English translation';
+      document.getElementById('poem-modal').showModal();
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeModal = () => {
+      document.getElementById('poem-modal').close();
+      document.body.style.overflow = '';
+    };
+
+    document.addEventListener('keydown', e => e.key === 'Escape' && closeModal());
+
+    // اجرای اولیه
+    updateLangButton();
+    applyTheme();
+    loadPoetPage();
+  </script>
+</body>
+</html>

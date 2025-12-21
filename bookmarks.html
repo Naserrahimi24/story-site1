@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ذخیره‌شده‌ها</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <aside class="sidebar">
+        <!-- همان سایدبار -->
+        <div class="logo"><h2>پنل من</h2></div>
+        <nav class="menu">
+            <a href="index.html" class="menu-item"><i class="fas fa-home"></i><span>داشبورد</span></a>
+            <a href="bookmarks.html" class="menu-item active">
+                <i class="fas fa-bookmark"></i><span>ذخیره‌شده‌ها</span>
+                <span class="badge bookmark-count">۰</span>
+            </a>
+            <a href="history.html" class="menu-item"><i class="fas fa-history"></i><span>آخرین جستجوها</span></a>
+            <a href="#" class="menu-item" id="theme-toggle"><i class="fas fa-moon"></i><span>تم تیره</span></a>
+        </nav>
+    </aside>
+
+    <main class="main">
+        <header class="header">
+            <h1>ذخیره‌شده‌ها</h1>
+        </header>
+        <div id="bookmarks-list" class="bookmarks-list">
+            <!-- پر میشه توسط جاوااسکریپت -->
+        </div>
+    </main>
+
+    <script src="storageManager.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
